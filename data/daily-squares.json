@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-08",
+  "boards": {
+    "4": {
+      "size": 4,
+      "cells": [
+        "s",
+        null,
+        null,
+        "g",
+        null,
+        "r",
+        "e",
+        null,
+        "l",
+        null,
+        null,
+        null,
+        null,
+        null,
+        "k",
+        null
+      ],
+      "answer": "eyJyb3dzIjpbInNvbmciLCJhcmVhIiwibGFjeSIsImVsa3MiXX0="
+    },
+    "5": {
+      "size": 5,
+      "cells": [
+        null,
+        null,
+        "a",
+        "l",
+        null,
+        "p",
+        null,
+        null,
+        "a",
+        null,
+        "e",
+        null,
+        null,
+        null,
+        null,
+        "w",
+        null,
+        "n",
+        "e",
+        null,
+        null,
+        "e",
+        null,
+        null,
+        "s"
+      ],
+      "answer": "eyJyb3dzIjpbInNlYWxzIiwicGV0YWwiLCJlcm9kZSIsIndpbmVkIiwic2VlZHMiXX0="
+    }
+  },
+  "fetchedAt": "2026-08-08T08:58:47.515Z"
+}

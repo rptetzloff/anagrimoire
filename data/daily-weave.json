@@ -1,0 +1,17 @@
+{
+  "date": "2026-08-08",
+  "clue": "Trick or treat",
+  "cols": 6,
+  "board": [
+    "hbzocu",
+    "airmla",
+    "eubomd",
+    "denosr",
+    "htitno",
+    "alcksn",
+    "loteek",
+    "nowele"
+  ],
+  "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiaGFsbG93ZWVuIiwicGF0aCI6WzI0LDMwLDMxLDM2LDM3LDQ0LDQ1LDQwLDM1XX0sIndvcmRzIjpbeyJ3IjoiaGF1bnRlZCIsInBhdGgiOlswLDYsMTMsMjAsMjUsMTksMThdfSx7InciOiJicm9vbXN0aWNrIiwicGF0aCI6WzEsOCwxNSwyMSwxNiwyMiwyNywyNiwzMiwzM119LHsidyI6InpvbWJpZSIsInBhdGgiOlsyLDMsOSwxNCw3LDEyXX0seyJ3IjoiY2F1bGRyb24iLCJwYXRoIjpbNCwxMSw1LDEwLDE3LDIzLDI5LDI4XX0seyJ3Ijoic2tlbGV0b24iLCJwYXRoIjpbMzQsNDEsNDcsNDYsMzksMzgsNDMsNDJdfV19",
+  "fetchedAt": "2026-08-08T08:58:47.515Z"
+}
