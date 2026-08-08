@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { fileURLToPath, URL } from 'node:url';
-import { execFileSync } from 'node:child_process';
+import { readFileSync } from 'node:fs';
 
 // Link-preview tags have to carry absolute URLs — a scraper reads the HTML
 // without ever running our JS, so it can't work the origin out for itself.
@@ -22,72 +22,18 @@ const SITEMAP_PATHS = [
   '/legal/terms',
 ];
 
-// Which source files decide what a given page actually says. A page's lastmod
-// is the date of the last commit touching them, which is the closest thing we
-// have to "when this page last changed" — and much closer than the deploy
-// timestamp, which is the same for every URL and is the pattern search engines
-// learn to ignore.
-const GAME_FILES: Record<string, string> = {
-  guess: 'src/GuessGame.tsx',
-  scramble: 'src/ScrambleGame.tsx',
-  hive: 'src/HiveGame.tsx',
-  grid: 'src/GridGame.tsx',
-  boxed: 'src/BoxGame.tsx',
-  weave: 'src/WeaveGame.tsx',
-  squares: 'src/SquaresGame.tsx',
-};
-
-function sourcesFor(path: string): string[] {
-  if (path === '/') return ['src/HomeView.tsx'];
-  // the About panel lives in App.tsx rather than a file of its own, so its date
-  // is an upper bound: App.tsx moves for reasons About didn't
-  if (path === '/about') return ['src/App.tsx'];
-  if (path.startsWith('/legal/')) return ['src/LegalDocs.tsx'];
-  const [, view, slug] = path.split('/');
-  const game = GAME_FILES[slug];
-  if (!game) return [];
-  if (view === 'solve') return [game, 'src/solvers.ts'];
-  if (view === 'learn') return [game, 'src/LearnMode.tsx'];
-  return [game];
-}
-
-// A shallow clone has one commit, so every file would report the same date —
-// precisely the useless uniform timestamp we're trying to avoid. Better to emit
-// no lastmod at all than a date we know is an artefact of how the CI cloned.
-const gitAvailable = (() => {
+// When each page last changed, worked out by scripts/route-lastmod.mjs and
+// committed. It used to be computed here with `git log`, which was wrong in a
+// way only production showed: Render builds without usable history, so the
+// call returned nothing and the sitemap shipped 33 URLs and no dates at all.
+// Reading a file works wherever the build runs.
+const LASTMOD: Record<string, string> = (() => {
   try {
-    const out = execFileSync('git', ['rev-parse', '--is-shallow-repository'], {
-      encoding: 'utf8',
-      stdio: ['ignore', 'pipe', 'ignore'],
-    });
-    return out.trim() === 'false';
+    return JSON.parse(readFileSync('data/route-lastmod.json', 'utf8')) as Record<string, string>;
   } catch {
-    return false;
+    return {};
   }
 })();
-
-const dateCache = new Map<string, string | null>();
-
-/** The most recent commit touching any of these files, as a W3C datetime.
- *  One git call per page, memoised, so pages sharing a source share the call. */
-function lastModified(files: string[]): string | null {
-  if (!gitAvailable || !files.length) return null;
-  const key = files.join('\0');
-  const hit = dateCache.get(key);
-  if (hit !== undefined) return hit;
-  let date: string | null = null;
-  try {
-    const out = execFileSync('git', ['log', '-1', '--format=%cI', '--', ...files], {
-      encoding: 'utf8',
-      stdio: ['ignore', 'pipe', 'ignore'],
-    }).trim();
-    date = out || null;
-  } catch {
-    date = null;
-  }
-  dateCache.set(key, date);
-  return date;
-}
 
 function sitemapXml(origin: string): string {
   const url = (p: string) => {
@@ -96,7 +42,7 @@ function sitemapXml(origin: string): string {
     // wrong for the rest. lastmod is optional per URL; omitting it is honest
     // where a claim wouldn't be, and changefreq still says what's true.
     const daily = p.startsWith('/daily/');
-    const lastmod = daily ? null : lastModified(sourcesFor(p));
+    const lastmod = daily ? null : (LASTMOD[p] ?? null);
     return [
       '  <url>',
       `    <loc>${origin}${p}</loc>`,
@@ -135,11 +81,10 @@ export default defineConfig({
       apply: 'build',
       generateBundle() {
         const isProd = SITE_ORIGIN === 'https://anagrimoire.com';
-        if (!gitAvailable) {
-          // Silence here would look identical to "nothing changed recently",
-          // so say it: the sitemap is going out without any lastmod at all.
-          this.warn('no usable git history — sitemap emitted without lastmod dates');
-        }
+        // A page the script doesn't know about, or a stale file, would just
+        // quietly lose its date. Say so instead.
+        const undated = SITEMAP_PATHS.filter((p) => !p.startsWith('/daily/') && !LASTMOD[p]);
+        if (undated.length) this.warn(`no lastmod for ${undated.join(', ')} — run npm run lastmod`);
         this.emitFile({ type: 'asset', fileName: 'sitemap.xml', source: sitemapXml(SITE_ORIGIN) });
         this.emitFile({
           type: 'asset',

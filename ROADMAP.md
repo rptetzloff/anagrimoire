@@ -141,6 +141,119 @@ open, and the exposure is bounded — `daily_progress` holds one row per puzzle,
 so nobody can claim more solves than there are days, unlike an unbounded score.
 Doing it for Squares alone would leave one trustworthy board among seven.
 
+### Puzzles in Postgres, and difficulty instead of dictionary size
+Three things that turned out to be one thing. Agreed in full; not started.
+
+**Why move the puzzle data off GitHub.** Delivery isn't the problem —
+`raw.githubusercontent.com` is Fastly-fronted and answers in under 100ms.
+Generation is: if Actions is down at 07:15 and 08:15 UTC there's no puzzle that
+morning. Worse, the generator is a pure function of the Eastern date seeded by
+`xmur3` in a public repo, so *every future day is computable today, forever* —
+anyone can clone and run it with tomorrow's date. Pre-publishing a rolling
+window would fix the outage problem but makes the leak explicit rather than
+merely available. In a table the two goals stop fighting: rows for the next
+fortnight sit there while a security-definer RPC, taking no date parameter,
+serves only `date <= today ET`.
+
+Cost, stated plainly: today a Supabase outage costs accounts and sync but the
+dailies still play, because they come from somewhere else. Afterwards it costs
+both. Pair it with a client-side last-good copy so an outage mid-session
+doesn't blank a board already in progress.
+
+Cheapest route is two steps. First keep Actions as the generator and have it
+write to Supabase — nothing puzzle-related is public any more, and no Deno
+port. Later move the schedule to `pg_cron`/Edge Functions, which removes the
+credential question entirely: no service-role key in CI, because the generator
+is already inside the database it writes to. That second step is what needs the
+word list server-side, which is the entry above.
+
+**Difficulty instead of dictionary size.** The current setting is backwards as
+difficulty. Answers always come from `common`; the tier only widens what's
+*accepted*, so choosing "full" makes Guess **easier** — more guesses are legal
+and the answer is no harder. Renaming to easy/hard/extreme and generating per
+difficulty makes the label mean what it says. Generation sits a notch below
+validation at every level, which is the rule Squares already uses
+(`genWords`=common, `valWords`=standard), generalised:
+
+| difficulty | answers from | guesses validated against |
+|---|---|---|
+| easy | SCOWL 10–35 (39,137) | 10–55 |
+| hard | SCOWL 10–55 (67,309) | 10–70 |
+| extreme | SCOWL 10–70 (111,630) | full ∪ hard (275,458) |
+
+`extreme` has to be the **union**, not `an-array-of-english-words` alone: 521
+words in `standard` are missing from it — mostly accented forms (café, cliché,
+attaché) plus `ok` — so without the union, moving *up* a difficulty starts
+rejecting words that were legal below. The ladder must nest strictly.
+
+Generating extreme answers from the raw 275k would give unguessable
+obscurities; 10–70 is hard for the right reason.
+
+**Guess caps at 12.** One puzzle per length per day means each length is its own
+stream, and on `common` the long ones are threadbare: 82 words at 15 (under
+three months before every 15-letter daily has been used), 199 at 14, 558 at 13.
+Cutting at 10 rather than 12 costs ~3,000 words across lengths 11–12 and buys
+nothing, because the binding constraint at either cap is length 3, not the long
+end. The requirement is a cooldown, not permanent exclusion — "don't repeat
+within a year" needs ≥365 words per length, which lengths 3–13 all clear.
+
+**A blocked-words table, not a hardcoded list.** ESDB (the English Speller
+Database, `en-wl/wordlist` — the upstream `wordlist-english` is built from)
+marks words with usage notes: `offensive-1` (7 racial slurs), `offensive-2`
+(4), `vulgar-1` (21 swear words) and `vulgar-3` (11 mild). Its own README warns
+the marking "only covers the worst offenders", and the categories don't split
+cleanly — `vulgar-3` sweeps in **craps**, **dickens** and **dicker**, which are
+flagged for their roots, not themselves.
+
+```sql
+create table blocked_words (
+  word     text primary key,
+  origin   text not null,   -- 'esdb:offensive-1' | 'esdb:vulgar-1' | 'manual'
+  scope    text not null,   -- 'generation' | 'both'
+  added_at timestamptz not null default now(),
+  note     text
+);
+```
+
+`scope` carries the distinction that matters: refusing to *publish* a word as an
+answer is not the same as refusing to *accept* one a player typed. Slurs and
+`vulgar-1` are `both`. bugger/crap/crapper/dick/fart/piss/pisser are
+`generation` only. craps/dickens/dicker aren't blocked at all. Filtering a
+validation dictionary is where Scunthorpe bites, so `both` stays small and
+deliberate.
+
+Generation always subtracts the blocklist, at **every** difficulty — publishing
+a slur as the answer isn't a matter of anyone's filter setting. Because every
+generated solution is therefore filter-clean, a player with the filter on can
+always finish any puzzle, which is why no variant pools are needed: the filter
+only ever subtracts from what's accepted, never from what's required.
+
+Two measurements worth not re-deriving: none of the flagged words are in
+`common` (they all sit at level 40+), so the filter is a no-op until generation
+moves to `standard` — and every currently published pool and daily is clean.
+
+**Play mode doesn't read the dictionary setting at all**, which is worth
+knowing before touching any of this. `dictionaries[mode]` is consumed in one
+place — `App.tsx`, for the *solver*. Play uses hardcoded lists: Guess validates
+guesses against `full`, every other game against `standard`. So no player
+setting can make a puzzle unsolvable today, and this is also where the ladder
+being backwards is most stark — Guess draws answers from 39k `common` while
+accepting guesses from 275k `full`, the most permissive combination available,
+for everyone, always.
+
+The consequence is that a puzzle's own solution words must be exempted from
+validation *as part of* the difficulty work, not before it: the exemption only
+matters once play-validation varies. Guess already does it
+(`current !== secret`); Squares and Weave will need it the moment their play
+dictionary stops being a constant.
+
+**Difficulty is a dimension, not a setting.** Taking it through the dailies
+means `daily_puzzles`, `daily_progress`, `game_results`, the leaderboard RPC and
+its boards, streaks and share cards all carry it. A streak has to be
+per-difficulty or dropping to easy for a day quietly protects one earned on
+hard. Boards currently hold about one entry per game per day, so splitting them
+three ways will look thin before it looks rich.
+
 ### Admin portal — much later
 Everything owner-facing is SQL-editor-only today: clearing a display name,
 adding blocklist entries, reading `suspect_daily_results`. That's fine, and
