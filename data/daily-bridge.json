@@ -1,0 +1,84 @@
+{
+  "date": "2026-08-22",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "change",
+          "y": "land"
+        },
+        {
+          "x": "bloc",
+          "y": "fisher"
+        },
+        {
+          "x": "quick",
+          "y": "castle"
+        },
+        {
+          "x": "print",
+          "y": "crop"
+        },
+        {
+          "x": "count",
+          "y": "ward"
+        }
+      ],
+      "answers": "WyJvdmVyIiwia2luZyIsInNhbmQiLCJvdXQiLCJkb3duIl0=",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "horse",
+          "y": "off"
+        },
+        {
+          "x": "flower",
+          "y": "pan"
+        },
+        {
+          "x": "clap",
+          "y": "door"
+        },
+        {
+          "x": "nit",
+          "y": "ting"
+        },
+        {
+          "x": "passage",
+          "y": "ward"
+        }
+      ],
+      "answers": "WyJwbGF5IiwiYmVkIiwidHJhcCIsIndpdCIsIndheSJd",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "out",
+          "y": "packer"
+        },
+        {
+          "x": "light",
+          "y": "boat"
+        },
+        {
+          "x": "hand",
+          "y": "store"
+        },
+        {
+          "x": "hill",
+          "y": "show"
+        },
+        {
+          "x": "second",
+          "y": "some"
+        }
+      ],
+      "answers": "WyJiYWNrIiwiaG91c2UiLCJib29rIiwic2lkZSIsImhhbmQiXQ==",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-08-22T08:46:22.427Z"
+}

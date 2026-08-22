@@ -1,0 +1,54 @@
+{
+  "date": "2026-08-22",
+  "byDifficulty": {
+    "easy": {
+      "clue": "Weather report",
+      "cols": 6,
+      "board": [
+        "fshbez",
+        "owoere",
+        "ercfst",
+        "resaro",
+        "dmwtst",
+        "riroht",
+        "inzeeu",
+        "dzrldn"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZm9yZWNhc3QiLCJwYXRoIjpbMCw2LDEzLDE5LDE0LDIxLDE2LDE3XX0sIndvcmRzIjpbeyJ3Ijoic2hvd2VyIiwicGF0aCI6WzEsMiw4LDcsMTIsMThdfSx7InciOiJicmVlemUiLCJwYXRoIjpbMywxMCw5LDQsNSwxMV19LHsidyI6ImZyb3N0IiwicGF0aCI6WzE1LDIyLDIzLDI4LDM1XX0seyJ3Ijoic3Rvcm0iLCJwYXRoIjpbMjAsMjcsMzMsMzIsMjVdfSx7InciOiJkcml6emxlIiwicGF0aCI6WzI0LDMwLDM2LDQzLDM4LDQ1LDQwXX0seyJ3Ijoid2luZCIsInBhdGgiOlsyNiwzMSwzNyw0Ml19LHsidyI6InRodW5kZXIiLCJwYXRoIjpbMjksMzQsNDEsNDcsNDYsMzksNDRdfV19"
+    },
+    "hard": {
+      "clue": "Trick or treat",
+      "cols": 7,
+      "board": [
+        "lbroswi",
+        "anlmokt",
+        "taslekc",
+        "heotlch",
+        "cnrwien",
+        "hogheet",
+        "sauonoc",
+        "tesntea",
+        "umtydnd"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiaGFsbG93ZWVuIiwicGF0aCI6WzIxLDE1LDksMTcsMjMsMzEsMzksNDAsMzRdfSwid29yZHMiOlt7InciOiJsYW50ZXJuIiwicGF0aCI6WzAsNyw4LDE0LDIyLDMwLDI5XX0seyJ3IjoiYnJvb21zdGljayIsInBhdGgiOlsxLDIsMywxMSwxMCwxNiwyNCwzMiwyNiwxOV19LHsidyI6InNrZWxldG9uIiwicGF0aCI6WzQsMTIsMTgsMjUsMzMsNDEsNDcsNDZdfSx7InciOiJ3aXRjaCIsInBhdGgiOls1LDYsMTMsMjAsMjddfSx7InciOiJjb3N0dW1lIiwicGF0aCI6WzI4LDM2LDQyLDQ5LDU2LDU3LDUwXX0seyJ3IjoiaGF1bnRlZCIsInBhdGgiOlszNSw0Myw0NCw1Miw1Myw1NCw2Ml19LHsidyI6Imdob3N0IiwicGF0aCI6WzM3LDM4LDQ1LDUxLDU4XX0seyJ3IjoiY2FuZHkiLCJwYXRoIjpbNDgsNTUsNjEsNjAsNTldfV19"
+    },
+    "extreme": {
+      "clue": "Picture perfect",
+      "cols": 8,
+      "board": [
+        "neexpepo",
+        "gftivosr",
+        "raseeeut",
+        "aelgirra",
+        "mtofraih",
+        "ohszptpt",
+        "phoimdar",
+        "utfoxpir",
+        "etlheook",
+        "raslmodr"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoicGhvdG9ncmFwaCIsInBhdGgiOls0OCw0MSw0MCwzMywzNCwyNywzNiwzNyw0NiwzOV19LCJ3b3JkcyI6W3sidyI6Im5lZ2F0aXZlIiwicGF0aCI6WzAsMSw4LDE3LDEwLDExLDEyLDVdfSx7InciOiJleHBvc3VyZSIsInBhdGgiOlsyLDMsNCwxMywxNCwyMiwyOSwyMF19LHsidyI6InBvcnRyYWl0IiwicGF0aCI6WzYsNywxNSwyMywzMCwzMSwzOCw0NV19LHsidyI6ImZyYW1lIiwicGF0aCI6WzksMTYsMjQsMzIsMjVdfSx7InciOiJzZWxmaWUiLCJwYXRoIjpbMTgsMTksMjYsMzUsMjgsMjFdfSx7InciOiJzaHV0dGVyIiwicGF0aCI6WzQyLDQ5LDU2LDU3LDY1LDY0LDcyXX0seyJ3Ijoiem9vbSIsInBhdGgiOls0Myw1MCw1OSw1Ml19LHsidyI6InBpeGVsIiwicGF0aCI6WzQ0LDUxLDYwLDY4LDc1XX0seyJ3IjoidHJpcG9kIiwicGF0aCI6WzQ3LDU1LDYyLDYxLDY5LDc4XX0seyJ3IjoiZGFya3Jvb20iLCJwYXRoIjpbNTMsNTQsNjMsNzEsNzksNzAsNzcsNzZdfSx7InciOiJmbGFzaCIsInBhdGgiOls1OCw2Niw3Myw3NCw2N119XX0="
+    }
+  },
+  "fetchedAt": "2026-08-22T08:46:28.018Z"
+}

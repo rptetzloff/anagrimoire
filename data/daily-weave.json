@@ -1,0 +1,54 @@
+{
+  "date": "2026-08-22",
+  "byDifficulty": {
+    "easy": {
+      "clue": "Getting around town",
+      "cols": 6,
+      "board": [
+        "scnwgo",
+        "oasarn",
+        "ropert",
+        "tbtotr",
+        "icyclo",
+        "riyele",
+        "meclsh",
+        "opdkwa"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoidHJhbnNwb3J0IiwicGF0aCI6WzE4LDEyLDcsMiw4LDE0LDIxLDE2LDE3XX0sIndvcmRzIjpbeyJ3Ijoic2Nvb3RlciIsInBhdGgiOlswLDEsNiwxMywyMCwxNSwxMF19LHsidyI6IndhZ29uIiwicGF0aCI6WzMsOSw0LDUsMTFdfSx7InciOiJiaWN5Y2xlIiwicGF0aCI6WzE5LDI0LDI1LDI2LDI3LDI4LDM1XX0seyJ3IjoidHJvbGxleSIsInBhdGgiOlsyMiwyMywyOSwzNCwzOSwzMywzMl19LHsidyI6InJpY2tzaGF3IiwicGF0aCI6WzMwLDMxLDM4LDQ1LDQwLDQxLDQ3LDQ2XX0seyJ3IjoibW9wZWQiLCJwYXRoIjpbMzYsNDIsNDMsMzcsNDRdfV19"
+    },
+    "hard": {
+      "clue": "Airing dirty laundry",
+      "cols": 7,
+      "board": [
+        "lndewdr",
+        "itteary",
+        "ltrsber",
+        "naghali",
+        "ieuecen",
+        "hrrndhs",
+        "aosfrte",
+        "nmtooma",
+        "perener"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibGF1bmRyb21hdCIsInBhdGgiOlsxNCwyMiwzMCwzOCwzOSw0Niw1Myw1NCw1NSw0N119LCJ3b3JkcyI6W3sidyI6ImxpbnQiLCJwYXRoIjpbMCw3LDEsOF19LHsidyI6ImRldGVyZ2VudCIsInBhdGgiOlsyLDMsOSwxMCwxNiwyMywyOSwyMSwxNV19LHsidyI6Indhc2hlciIsInBhdGgiOls0LDExLDE3LDI0LDMxLDM3XX0seyJ3IjoiZHJ5ZXIiLCJwYXRoIjpbNSw2LDEzLDE5LDEyXX0seyJ3IjoiYmxlYWNoIiwicGF0aCI6WzE4LDI2LDMzLDI1LDMyLDQwXX0seyJ3Ijoicmluc2UiLCJwYXRoIjpbMjAsMjcsMzQsNDEsNDhdfSx7InciOiJpcm9uIiwicGF0aCI6WzI4LDM2LDQzLDQ5XX0seyJ3IjoiaGFtcGVyIiwicGF0aCI6WzM1LDQyLDUwLDU2LDU3LDU4XX0seyJ3Ijoic29mdGVuZXIiLCJwYXRoIjpbNDQsNTIsNDUsNTEsNTksNjAsNjEsNjJdfV19"
+    },
+    "extreme": {
+      "clue": "Slice of the action",
+      "cols": 8,
+      "board": [
+        "tpneplec",
+        "oiapophe",
+        "cmateses",
+        "truepela",
+        "dsripima",
+        "ognoaoig",
+        "umhcnvla",
+        "piuohyer",
+        "mrzsvcil",
+        "oohzeria"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoicGl6emVyaWEiLCJwYXRoIjpbNTYsNTcsNjYsNzUsNzYsNzcsNzgsNzldfSwid29yZHMiOlt7InciOiJ0b21hdG8iLCJwYXRoIjpbMCw4LDE3LDE4LDE5LDEyXX0seyJ3IjoicGluZWFwcGxlIiwicGF0aCI6WzEsOSwyLDMsMTAsMTEsNCw1LDZdfSx7InciOiJjaGVlc2UiLCJwYXRoIjpbNywxNCwxNSwyMiwyMSwyOV19LHsidyI6InBlcHBlcm9uaSIsInBhdGgiOlsxMywyMCwyOCwzNiwyNywzNCw0Myw0MiwzNV19LHsidyI6ImNydXN0IiwicGF0aCI6WzE2LDI1LDI2LDMzLDI0XX0seyJ3Ijoic2FsYW1pIiwicGF0aCI6WzIzLDMxLDMwLDM5LDM4LDM3XX0seyJ3IjoiZG91Z2giLCJwYXRoIjpbMzIsNDAsNDgsNDEsNTBdfSx7InciOiJhbmNob3Z5IiwicGF0aCI6WzQ0LDUyLDUxLDYwLDU5LDY4LDYxXX0seyJ3Ijoib2xpdmUiLCJwYXRoIjpbNDUsNTQsNDYsNTMsNjJdfSx7InciOiJnYXJsaWMiLCJwYXRoIjpbNDcsNTUsNjMsNzEsNzAsNjldfSx7InciOiJtdXNocm9vbSIsInBhdGgiOls0OSw1OCw2Nyw3NCw2NSw3Myw3Miw2NF19XX0="
+    }
+  },
+  "fetchedAt": "2026-08-22T08:46:22.427Z"
+}

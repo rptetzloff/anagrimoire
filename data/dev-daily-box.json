@@ -1,0 +1,33 @@
+{
+  "date": "2026-08-22",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "irs",
+        "hga",
+        "ecl",
+        "ntz"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "tel",
+        "msg",
+        "nro",
+        "iap"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "eto",
+        "alx",
+        "rnb",
+        "cig"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-08-22T08:46:28.018Z"
+}

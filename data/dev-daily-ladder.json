@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-22",
+  "byDifficulty": {
+    "easy": {
+      "from": "famed",
+      "to": "noted",
+      "par": 4
+    },
+    "hard": {
+      "from": "goon",
+      "to": "punk",
+      "par": 6
+    },
+    "extreme": {
+      "from": "buck",
+      "to": "clam",
+      "par": 8
+    }
+  },
+  "fetchedAt": "2026-08-22T08:46:28.018Z"
+}

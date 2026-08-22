@@ -1,0 +1,162 @@
+{
+  "date": "2026-08-22",
+  "byDifficulty": {
+    "easy": [
+      {
+        "from": "hint",
+        "to": "mite",
+        "par": 3
+      },
+      {
+        "from": "mint",
+        "to": "raft",
+        "par": 4
+      },
+      {
+        "from": "pate",
+        "to": "poll",
+        "par": 3
+      },
+      {
+        "from": "bang",
+        "to": "bash",
+        "par": 3
+      },
+      {
+        "from": "bung",
+        "to": "cask",
+        "par": 4
+      },
+      {
+        "from": "furred",
+        "to": "haired",
+        "par": 4
+      },
+      {
+        "from": "jaded",
+        "to": "tired",
+        "par": 4
+      },
+      {
+        "from": "dare",
+        "to": "defy",
+        "par": 4
+      },
+      {
+        "from": "east",
+        "to": "west",
+        "par": 3
+      },
+      {
+        "from": "scan",
+        "to": "skim",
+        "par": 4
+      }
+    ],
+    "hard": [
+      {
+        "from": "cursed",
+        "to": "darned",
+        "par": 5
+      },
+      {
+        "from": "lock",
+        "to": "mesh",
+        "par": 5
+      },
+      {
+        "from": "camp",
+        "to": "tent",
+        "par": 5
+      },
+      {
+        "from": "lion",
+        "to": "mane",
+        "par": 6
+      },
+      {
+        "from": "dashed",
+        "to": "dotted",
+        "par": 6
+      },
+      {
+        "from": "tame",
+        "to": "wild",
+        "par": 5
+      },
+      {
+        "from": "bray",
+        "to": "mash",
+        "par": 6
+      },
+      {
+        "from": "foot",
+        "to": "yard",
+        "par": 5
+      },
+      {
+        "from": "beef",
+        "to": "cows",
+        "par": 5
+      },
+      {
+        "from": "mitt",
+        "to": "palm",
+        "par": 5
+      }
+    ],
+    "extreme": [
+      {
+        "from": "pout",
+        "to": "sulk",
+        "par": 7
+      },
+      {
+        "from": "belly",
+        "to": "navel",
+        "par": 8
+      },
+      {
+        "from": "slops",
+        "to": "swill",
+        "par": 8
+      },
+      {
+        "from": "plume",
+        "to": "pride",
+        "par": 8
+      },
+      {
+        "from": "booth",
+        "to": "stall",
+        "par": 8
+      },
+      {
+        "from": "raft",
+        "to": "slew",
+        "par": 7
+      },
+      {
+        "from": "helm",
+        "to": "ship",
+        "par": 7
+      },
+      {
+        "from": "body",
+        "to": "neck",
+        "par": 7
+      },
+      {
+        "from": "tree",
+        "to": "wood",
+        "par": 8
+      },
+      {
+        "from": "eats",
+        "to": "grub",
+        "par": 8
+      }
+    ]
+  },
+  "fetchedAt": "2026-08-22T08:47:02.281Z"
+}

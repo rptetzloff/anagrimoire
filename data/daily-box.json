@@ -1,0 +1,33 @@
+{
+  "date": "2026-08-22",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "esf",
+        "mtr",
+        "adv",
+        "iny"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "ynl",
+        "igm",
+        "eob",
+        "sad"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "csl",
+        "oer",
+        "aht",
+        "nmb"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-08-22T08:46:22.427Z"
+}

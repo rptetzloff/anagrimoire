@@ -1,0 +1,84 @@
+{
+  "date": "2026-08-22",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "wash",
+          "y": "let"
+        },
+        {
+          "x": "after",
+          "y": "time"
+        },
+        {
+          "x": "chess",
+          "y": "walk"
+        },
+        {
+          "x": "rubber",
+          "y": "tie"
+        },
+        {
+          "x": "sup",
+          "y": "ray"
+        }
+      ],
+      "answers": "WyJvdXQiLCJsaWZlIiwiYm9hcmQiLCJuZWNrIiwicG9ydCJd",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "house",
+          "y": "load"
+        },
+        {
+          "x": "owner",
+          "y": "yard"
+        },
+        {
+          "x": "hatch",
+          "y": "ward"
+        },
+        {
+          "x": "push",
+          "y": "seer"
+        },
+        {
+          "x": "dust",
+          "y": "ache"
+        }
+      ],
+      "answers": "WyJ3b3JrIiwic2hpcCIsImJhY2siLCJvdmVyIiwicGFuIl0=",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "shut",
+          "y": "glass"
+        },
+        {
+          "x": "salt",
+          "y": "bed"
+        },
+        {
+          "x": "hair",
+          "y": "work"
+        },
+        {
+          "x": "air",
+          "y": "wad"
+        },
+        {
+          "x": "guide",
+          "y": "feed"
+        }
+      ],
+      "answers": "WyJleWUiLCJ3YXRlciIsInBpZWNlIiwidGlnaHQiLCJsaW5lIl0=",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-08-22T08:46:28.018Z"
+}
