@@ -56,5 +56,5 @@ if (!res.ok) {
 
 console.log(
   `Published ${rows.length} rows for ${rows[0].puzzle_date}: ` +
-    `${GAMES.length} games x prod+dev, ${POOLS.length} shared pools`
+    `${GAMES.length} games x prod+dev, ${POOL_FEEDS.length} shared pools`
 );
