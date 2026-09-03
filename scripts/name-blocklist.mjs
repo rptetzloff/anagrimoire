@@ -23,7 +23,11 @@
 import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
-const words = blockedEntries();
+// The same list the generator blocklist is built from — {word, origin, scope}.
+// This read `blockedEntries()`, which was never defined or imported anywhere,
+// so the script threw on line 26 and had never once run. Nothing noticed,
+// because it is invoked by hand and prints SQL rather than applying it.
+const words = require('../src/wordbands/blocked-words.json').words;
 
 // Which slurs are actually safe to match anywhere in a name, computed rather
 // than assumed. Mapping every `both` entry to substring looked right and was
