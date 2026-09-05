@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-05",
+  "byDifficulty": {
+    "easy": {
+      "from": "bum",
+      "to": "rat",
+      "par": 3
+    },
+    "hard": {
+      "from": "heat",
+      "to": "wake",
+      "par": 6
+    },
+    "extreme": {
+      "from": "savor",
+      "to": "taste",
+      "par": 7
+    }
+  },
+  "fetchedAt": "2026-09-05T11:49:31.340Z"
+}

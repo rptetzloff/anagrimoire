@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-05",
+  "byDifficulty": {
+    "easy": {
+      "from": "share",
+      "to": "stock",
+      "par": 4
+    },
+    "hard": {
+      "from": "pole",
+      "to": "push",
+      "par": 5
+    },
+    "extreme": {
+      "from": "draw",
+      "to": "line",
+      "par": 8
+    }
+  },
+  "fetchedAt": "2026-09-05T11:49:33.050Z"
+}

@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-05",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "rnd",
+        "ago",
+        "lef",
+        "ibs"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "nck",
+        "imw",
+        "rdg",
+        "est"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "lno",
+        "rep",
+        "atd",
+        "skb"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-09-05T11:49:31.340Z"
+}

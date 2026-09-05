@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-05",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "obg",
+        "uln",
+        "tre",
+        "ipd"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "uct",
+        "rel",
+        "dpv",
+        "osa"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "oem",
+        "iur",
+        "nca",
+        "tds"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-09-05T11:49:33.050Z"
+}

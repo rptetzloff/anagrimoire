@@ -1,0 +1,84 @@
+{
+  "date": "2026-09-05",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "grid",
+          "y": "smith"
+        },
+        {
+          "x": "show",
+          "y": "size"
+        },
+        {
+          "x": "base",
+          "y": "park"
+        },
+        {
+          "x": "under",
+          "y": "path"
+        },
+        {
+          "x": "crow",
+          "y": "man"
+        }
+      ],
+      "answers": "WyJsb2NrIiwiZG93biIsImJhbGwiLCJmb290IiwiYmFyIl0=",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "assembly",
+          "y": "hunt"
+        },
+        {
+          "x": "change",
+          "y": "cast"
+        },
+        {
+          "x": "buy",
+          "y": "let"
+        },
+        {
+          "x": "life",
+          "y": "keeper"
+        },
+        {
+          "x": "hind",
+          "y": "read"
+        }
+      ],
+      "answers": "WyJtYW4iLCJvdmVyIiwib3V0IiwidGltZSIsInNpZ2h0Il0=",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "red",
+          "y": "washer"
+        },
+        {
+          "x": "off",
+          "y": "book"
+        },
+        {
+          "x": "bother",
+          "y": "way"
+        },
+        {
+          "x": "come",
+          "y": "hand"
+        },
+        {
+          "x": "skin",
+          "y": "first"
+        }
+      ],
+      "answers": "WyJkaXNoIiwiaGFuZCIsInNvbWUiLCJiYWNrIiwiaGVhZCJd",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-09-05T11:49:31.340Z"
+}

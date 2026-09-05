@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-05",
+  "byDifficulty": {
+    "easy": {
+      "words": {
+        "3": "cm90",
+        "4": "d2lyeQ==",
+        "5": "cHVmZnk=",
+        "6": "c2VhbWVu",
+        "7": "Y29ubmVjdA==",
+        "8": "ZGVyaWRpbmc=",
+        "9": "ZXF1aXBtZW50",
+        "10": "c2ltcGxpY2l0eQ==",
+        "11": "Z3JhbmRtb3RoZXI=",
+        "12": "Y3Jpc3Njcm9zc2Vk"
+      }
+    },
+    "hard": {
+      "words": {
+        "3": "cGFy",
+        "4": "bGltbw==",
+        "5": "YXJzZWQ=",
+        "6": "c29ycmVs",
+        "7": "cHlnbWllcw==",
+        "8": "bWlzZGVhbHQ=",
+        "9": "Y29uZmFiYmVk",
+        "10": "dHJhZmZpY2tlcg==",
+        "11": "c3Vic3RhbnRpdmU=",
+        "12": "bXVsdGlsYXRlcmFs"
+      }
+    },
+    "extreme": {
+      "words": {
+        "3": "aHVn",
+        "4": "Z2VzdA==",
+        "5": "bmlzdXM=",
+        "6": "c3ViaXRv",
+        "7": "a3VyYmFzaA==",
+        "8": "dW5pdm9jYWw=",
+        "9": "ZGV4dHJhbGx5",
+        "10": "bWlzY3JlYW5jZQ==",
+        "11": "cHJvY2VwaGFsaWM=",
+        "12": "b3JvdHVuZGl0aWVz"
+      }
+    }
+  },
+  "fetchedAt": "2026-09-05T11:49:33.050Z"
+}

@@ -1,0 +1,162 @@
+{
+  "date": "2026-09-05",
+  "byDifficulty": {
+    "easy": [
+      {
+        "from": "clank",
+        "to": "clash",
+        "par": 3
+      },
+      {
+        "from": "shed",
+        "to": "slop",
+        "par": 3
+      },
+      {
+        "from": "cling",
+        "to": "stick",
+        "par": 4
+      },
+      {
+        "from": "cast",
+        "to": "mold",
+        "par": 4
+      },
+      {
+        "from": "gob",
+        "to": "yap",
+        "par": 3
+      },
+      {
+        "from": "sand",
+        "to": "spit",
+        "par": 4
+      },
+      {
+        "from": "gab",
+        "to": "yak",
+        "par": 3
+      },
+      {
+        "from": "back",
+        "to": "hind",
+        "par": 4
+      },
+      {
+        "from": "peck",
+        "to": "pile",
+        "par": 4
+      },
+      {
+        "from": "just",
+        "to": "meet",
+        "par": 4
+      }
+    ],
+    "hard": [
+      {
+        "from": "kind",
+        "to": "sort",
+        "par": 5
+      },
+      {
+        "from": "roar",
+        "to": "yowl",
+        "par": 5
+      },
+      {
+        "from": "past",
+        "to": "then",
+        "par": 6
+      },
+      {
+        "from": "same",
+        "to": "very",
+        "par": 6
+      },
+      {
+        "from": "hire",
+        "to": "rent",
+        "par": 6
+      },
+      {
+        "from": "haven",
+        "to": "oasis",
+        "par": 5
+      },
+      {
+        "from": "salty",
+        "to": "tasty",
+        "par": 6
+      },
+      {
+        "from": "gape",
+        "to": "yawn",
+        "par": 5
+      },
+      {
+        "from": "flog",
+        "to": "welt",
+        "par": 5
+      },
+      {
+        "from": "hemp",
+        "to": "rope",
+        "par": 6
+      }
+    ],
+    "extreme": [
+      {
+        "from": "board",
+        "to": "plank",
+        "par": 8
+      },
+      {
+        "from": "grip",
+        "to": "hold",
+        "par": 7
+      },
+      {
+        "from": "poky",
+        "to": "slow",
+        "par": 7
+      },
+      {
+        "from": "grow",
+        "to": "turn",
+        "par": 8
+      },
+      {
+        "from": "deep",
+        "to": "late",
+        "par": 7
+      },
+      {
+        "from": "phase",
+        "to": "stage",
+        "par": 7
+      },
+      {
+        "from": "grade",
+        "to": "place",
+        "par": 8
+      },
+      {
+        "from": "plume",
+        "to": "pride",
+        "par": 8
+      },
+      {
+        "from": "burned",
+        "to": "cooked",
+        "par": 8
+      },
+      {
+        "from": "goof",
+        "to": "zany",
+        "par": 8
+      }
+    ]
+  },
+  "fetchedAt": "2026-09-05T11:50:24.588Z"
+}

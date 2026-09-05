@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-05",
+  "byDifficulty": {
+    "easy": {
+      "clue": "Paint swatches",
+      "cols": 6,
+      "board": [
+        "oibevi",
+        "lvireo",
+        "elogwl",
+        "oinhoe",
+        "cdhcet",
+        "iermel",
+        "mguaoo",
+        "oaevrn"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY29sb3J3aGVlbCIsInBhdGgiOlsyNCwxOCwxMywxNCw5LDE2LDIxLDI4LDM0LDM1XX0sIndvcmRzIjpbeyJ3Ijoib2xpdmUiLCJwYXRoIjpbMCw2LDEsNywxMl19LHsidyI6ImJlaWdlIiwicGF0aCI6WzIsMyw4LDE1LDEwXX0seyJ3IjoidmlvbGV0IiwicGF0aCI6WzQsNSwxMSwxNywyMywyOV19LHsidyI6ImluZGlnbyIsInBhdGgiOlsxOSwyMCwyNSwzMCwzNyw0Ml19LHsidyI6Im9jaHJlIiwicGF0aCI6WzIyLDI3LDI2LDMyLDMxXX0seyJ3IjoibWFyb29uIiwicGF0aCI6WzMzLDM5LDQ2LDQxLDQwLDQ3XX0seyJ3IjoibWF1dmUiLCJwYXRoIjpbMzYsNDMsMzgsNDUsNDRdfV19"
+    },
+    "hard": {
+      "clue": "Trees of the forest",
+      "cols": 7,
+      "board": [
+        "bwlowpm",
+        "icilopa",
+        "rshplph",
+        "pniaeli",
+        "erecrcc",
+        "aluakde",
+        "desraos",
+        "rawpodr",
+        "hrdoeny"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiaGFyZHdvb2RzIiwicGF0aCI6WzU2LDUwLDU3LDU4LDUxLDU5LDUzLDU0LDQ4XX0sIndvcmRzIjpbeyJ3IjoiYmlyY2giLCJwYXRoIjpbMCw3LDE0LDgsMTZdfSx7InciOiJ3aWxsb3ciLCJwYXRoIjpbMSw5LDEwLDIsMyw0XX0seyJ3IjoicG9wbGFyIiwicGF0aCI6WzUsMTEsMTIsMTgsMjQsMzJdfSx7InciOiJtYXBsZSIsInBhdGgiOls2LDEzLDE5LDI2LDI1XX0seyJ3Ijoic3BydWNlIiwicGF0aCI6WzE1LDIxLDI5LDM3LDMxLDMwXX0seyJ3IjoicGluZSIsInBhdGgiOlsxNywyMywyMiwyOF19LHsidyI6ImhpY2tvcnkiLCJwYXRoIjpbMjAsMjcsMzMsMzksNDcsNTUsNjJdfSx7InciOiJjZWRhciIsInBhdGgiOlszNCw0MSw0MCw0Niw0NV19LHsidyI6ImFsZGVyIiwicGF0aCI6WzM1LDM2LDQyLDQzLDQ5XX0seyJ3IjoiYXNwZW4iLCJwYXRoIjpbMzgsNDQsNTIsNjAsNjFdfV19"
+    },
+    "extreme": {
+      "clue": "Paint swatches",
+      "cols": 8,
+      "board": [
+        "oceivdio",
+        "ahrinrgs",
+        "zmouuaco",
+        "ulavsrli",
+        "reeteltv",
+        "ctlbgece",
+        "oameeirm",
+        "rltanosi",
+        "oeorreel",
+        "clawhoon"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY29sb3J3aGVlbCIsInBhdGgiOls3Miw2NCw1Nyw2Niw2Nyw3NSw3Niw2OSw3MCw3MV19LCJ3b3JkcyI6W3sidyI6Im9jaHJlIiwicGF0aCI6WzAsMSw5LDEwLDJdfSx7InciOiJpbmRpZ28iLCJwYXRoIjpbMywxMiw1LDYsMTQsN119LHsidyI6InZpb2xldCIsInBhdGgiOls0LDExLDE4LDI1LDM0LDQxXX0seyJ3IjoiYXp1cmUiLCJwYXRoIjpbOCwxNiwyNCwzMiwzM119LHsidyI6InJ1c3QiLCJwYXRoIjpbMTMsMjAsMjgsMzVdfSx7InciOiJzY2FybGV0IiwicGF0aCI6WzE1LDIyLDIxLDI5LDM3LDQ1LDM4XX0seyJ3IjoibWF1dmUiLCJwYXRoIjpbMTcsMjYsMTksMjcsMzZdfSx7InciOiJvbGl2ZSIsInBhdGgiOlsyMywzMCwzMSwzOSw0N119LHsidyI6ImNvcmFsIiwicGF0aCI6WzQwLDQ4LDU2LDQ5LDQyXX0seyJ3IjoiYmVpZ2UiLCJwYXRoIjpbNDMsNTIsNTMsNDQsNTFdfSx7InciOiJjcmltc29uIiwicGF0aCI6WzQ2LDU0LDYzLDU1LDYyLDYxLDYwXX0seyJ3IjoibWFyb29uIiwicGF0aCI6WzUwLDU5LDY4LDc3LDc4LDc5XX0seyJ3IjoidGVhbCIsInBhdGgiOls1OCw2NSw3NCw3M119XX0="
+    }
+  },
+  "fetchedAt": "2026-09-05T11:49:31.340Z"
+}

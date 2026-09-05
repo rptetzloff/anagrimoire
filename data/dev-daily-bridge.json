@@ -1,0 +1,84 @@
+{
+  "date": "2026-09-05",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "try",
+          "y": "put"
+        },
+        {
+          "x": "under",
+          "y": "mate"
+        },
+        {
+          "x": "fly",
+          "y": "head"
+        },
+        {
+          "x": "carriage",
+          "y": "side"
+        },
+        {
+          "x": "pocket",
+          "y": "worm"
+        }
+      ],
+      "answers": "WyJvdXQiLCJjbGFzcyIsIm92ZXIiLCJ3YXkiLCJib29rIl0=",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "fresh",
+          "y": "way"
+        },
+        {
+          "x": "frame",
+          "y": "load"
+        },
+        {
+          "x": "sweat",
+          "y": "lift"
+        },
+        {
+          "x": "bare",
+          "y": "locker"
+        },
+        {
+          "x": "tool",
+          "y": "gain"
+        }
+      ],
+      "answers": "WyJ3YXRlciIsIndvcmsiLCJzaG9wIiwiZm9vdCIsImJhciJd",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "here",
+          "y": "life"
+        },
+        {
+          "x": "sac",
+          "y": "head"
+        },
+        {
+          "x": "cut",
+          "y": "load"
+        },
+        {
+          "x": "bob",
+          "y": "fish"
+        },
+        {
+          "x": "come",
+          "y": "lash"
+        }
+      ],
+      "answers": "WyJhZnRlciIsInJlZCIsIm9mZiIsImNhdCIsImJhY2siXQ==",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-09-05T11:49:33.050Z"
+}
