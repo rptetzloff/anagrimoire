@@ -1,0 +1,162 @@
+{
+  "date": "2026-09-13",
+  "byDifficulty": {
+    "easy": [
+      {
+        "from": "pare",
+        "to": "peel",
+        "par": 4
+      },
+      {
+        "from": "flock",
+        "to": "stack",
+        "par": 4
+      },
+      {
+        "from": "hat",
+        "to": "lid",
+        "par": 3
+      },
+      {
+        "from": "mint",
+        "to": "peck",
+        "par": 4
+      },
+      {
+        "from": "said",
+        "to": "same",
+        "par": 3
+      },
+      {
+        "from": "ace",
+        "to": "one",
+        "par": 3
+      },
+      {
+        "from": "left",
+        "to": "near",
+        "par": 4
+      },
+      {
+        "from": "cows",
+        "to": "herd",
+        "par": 4
+      },
+      {
+        "from": "char",
+        "to": "coal",
+        "par": 3
+      },
+      {
+        "from": "cod",
+        "to": "due",
+        "par": 4
+      }
+    ],
+    "hard": [
+      {
+        "from": "more",
+        "to": "much",
+        "par": 5
+      },
+      {
+        "from": "lots",
+        "to": "much",
+        "par": 5
+      },
+      {
+        "from": "potter",
+        "to": "tinker",
+        "par": 5
+      },
+      {
+        "from": "bony",
+        "to": "lean",
+        "par": 5
+      },
+      {
+        "from": "pole",
+        "to": "push",
+        "par": 5
+      },
+      {
+        "from": "loads",
+        "to": "rafts",
+        "par": 6
+      },
+      {
+        "from": "lock",
+        "to": "mesh",
+        "par": 5
+      },
+      {
+        "from": "jammed",
+        "to": "packed",
+        "par": 5
+      },
+      {
+        "from": "peal",
+        "to": "ring",
+        "par": 5
+      },
+      {
+        "from": "rump",
+        "to": "seat",
+        "par": 5
+      }
+    ],
+    "extreme": [
+      {
+        "from": "barb",
+        "to": "jibe",
+        "par": 7
+      },
+      {
+        "from": "only",
+        "to": "sole",
+        "par": 7
+      },
+      {
+        "from": "spent",
+        "to": "tired",
+        "par": 7
+      },
+      {
+        "from": "grip",
+        "to": "hold",
+        "par": 7
+      },
+      {
+        "from": "puss",
+        "to": "slit",
+        "par": 7
+      },
+      {
+        "from": "mate",
+        "to": "twin",
+        "par": 8
+      },
+      {
+        "from": "pile",
+        "to": "slew",
+        "par": 8
+      },
+      {
+        "from": "pout",
+        "to": "sulk",
+        "par": 7
+      },
+      {
+        "from": "fair",
+        "to": "just",
+        "par": 7
+      },
+      {
+        "from": "teeth",
+        "to": "tooth",
+        "par": 8
+      }
+    ]
+  },
+  "fetchedAt": "2026-09-13T12:43:35.589Z"
+}

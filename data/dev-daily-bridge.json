@@ -1,0 +1,84 @@
+{
+  "date": "2026-09-13",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "carry",
+          "y": "put"
+        },
+        {
+          "x": "fresh",
+          "y": "front"
+        },
+        {
+          "x": "there",
+          "y": "play"
+        },
+        {
+          "x": "fore",
+          "y": "pick"
+        },
+        {
+          "x": "melt",
+          "y": "cast"
+        }
+      ],
+      "answers": "WyJvdXQiLCJ3YXRlciIsImZvcmUiLCJoYW5kIiwiZG93biJd",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "clergy",
+          "y": "date"
+        },
+        {
+          "x": "type",
+          "y": "table"
+        },
+        {
+          "x": "fly",
+          "y": "head"
+        },
+        {
+          "x": "heat",
+          "y": "ring"
+        },
+        {
+          "x": "post",
+          "y": "path"
+        }
+      ],
+      "answers": "WyJtYW4iLCJzZXQiLCJvdmVyIiwiaGVyIiwid2FyIl0=",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "quarrel",
+          "y": "day"
+        },
+        {
+          "x": "court",
+          "y": "break"
+        },
+        {
+          "x": "owner",
+          "y": "yard"
+        },
+        {
+          "x": "pass",
+          "y": "shop"
+        },
+        {
+          "x": "one",
+          "y": "table"
+        }
+      ],
+      "answers": "WyJzb21lIiwiaG91c2UiLCJzaGlwIiwiYm9vayIsInRpbWUiXQ==",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-09-13T12:43:00.379Z"
+}

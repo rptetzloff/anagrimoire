@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-13",
+  "byDifficulty": {
+    "easy": {
+      "clue": "Getting around town",
+      "cols": 6,
+      "board": [
+        "trbice",
+        "nacytl",
+        "tiporr",
+        "rnswat",
+        "arammd",
+        "icogoe",
+        "frknpw",
+        "reysha"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoidHJhbnNwb3J0IiwicGF0aCI6WzEyLDE4LDI0LDE5LDIwLDE0LDE1LDE2LDIzXX0sIndvcmRzIjpbeyJ3IjoidHJhaW4iLCJwYXRoIjpbMCwxLDcsMTMsNl19LHsidyI6ImJpY3ljbGUiLCJwYXRoIjpbMiwzLDgsOSw0LDExLDVdfSx7InciOiJ0cmFtIiwicGF0aCI6WzEwLDE3LDIyLDI4XX0seyJ3Ijoid2Fnb24iLCJwYXRoIjpbMjEsMjYsMzMsMzIsMzldfSx7InciOiJyaWNrc2hhdyIsInBhdGgiOlsyNSwzMCwzMSwzOCw0NSw0Niw0Nyw0MV19LHsidyI6Im1vcGVkIiwicGF0aCI6WzI3LDM0LDQwLDM1LDI5XX0seyJ3IjoiZmVycnkiLCJwYXRoIjpbMzYsNDMsNDIsMzcsNDRdfV19"
+    },
+    "hard": {
+      "clue": "A stitch in time",
+      "cols": 7,
+      "board": [
+        "thblebo",
+        "imewobb",
+        "plnuirk",
+        "dicnsth",
+        "eenoher",
+        "nhziapt",
+        "eipedat",
+        "mlpnsne",
+        "reimaer"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibmVlZGxld29yayIsInBhdGgiOlszNSwyOCwyOSwyMSwxNSw5LDEwLDExLDE5LDIwXX0sIndvcmRzIjpbeyJ3IjoidGhpbWJsZSIsInBhdGgiOlswLDEsNyw4LDIsMyw0XX0seyJ3IjoiYm9iYmluIiwicGF0aCI6WzUsNiwxMywxMiwxOCwyNF19LHsidyI6InBpbmN1c2hpb24iLCJwYXRoIjpbMTQsMjIsMTYsMjMsMTcsMjUsMzIsMzgsMzEsMzBdfSx7InciOiJ0aHJlYWQiLCJwYXRoIjpbMjYsMjcsMzQsMzMsMzksNDZdfSx7InciOiJoZW1saW5lIiwicGF0aCI6WzM2LDQyLDQ5LDUwLDU4LDUyLDQ1XX0seyJ3IjoiemlwcGVyIiwicGF0aCI6WzM3LDQzLDQ0LDUxLDU3LDU2XX0seyJ3IjoicGF0dGVybiIsInBhdGgiOls0MCw0Nyw0MSw0OCw1NSw2Miw1NF19LHsidyI6InNlYW0iLCJwYXRoIjpbNTMsNjEsNjAsNTldfV19"
+    },
+    "extreme": {
+      "clue": "Trick or treat",
+      "cols": 8,
+      "board": [
+        "hagilsha",
+        "plnobpur",
+        "gulowine",
+        "hmvcsedt",
+        "posaotee",
+        "kztmpudn",
+        "oincilmn",
+        "emareeao",
+        "ibwulrrn",
+        "hctindet"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiaGFsbG93ZWVuIiwicGF0aCI6WzAsMSw5LDE4LDE5LDIwLDI5LDM4LDQ3XX0sIndvcmRzIjpbeyJ3IjoiZ29ibGluIiwicGF0aCI6WzIsMTEsMTIsNCwzLDEwXX0seyJ3Ijoic3BpZGVyIiwicGF0aCI6WzUsMTMsMjEsMzAsMjMsMTVdfSx7InciOiJoYXVudGVkIiwicGF0aCI6WzYsNywxNCwyMiwzMSwzOSw0Nl19LHsidyI6InB1bXBraW4iLCJwYXRoIjpbOCwxNywyNSwzMiw0MCw0OSw1MF19LHsidyI6Imdob3N0IiwicGF0aCI6WzE2LDI0LDMzLDM0LDQyXX0seyJ3IjoidmFtcGlyZSIsInBhdGgiOlsyNiwzNSw0Myw0NCw1Miw1OSw2MF19LHsidyI6ImNvc3R1bWUiLCJwYXRoIjpbMjcsMzYsMjgsMzcsNDUsNTQsNjFdfSx7InciOiJ6b21iaWUiLCJwYXRoIjpbNDEsNDgsNTcsNjUsNjQsNTZdfSx7InciOiJjYXVsZHJvbiIsInBhdGgiOls1MSw1OCw2Nyw2OCw3Nyw3MCw2Myw1NV19LHsidyI6ImxhbnRlcm4iLCJwYXRoIjpbNTMsNjIsNzEsNzksNzgsNjksNzZdfSx7InciOiJ3aXRjaCIsInBhdGgiOls2Niw3NSw3NCw3Myw3Ml19XX0="
+    }
+  },
+  "fetchedAt": "2026-09-13T12:42:57.910Z"
+}

@@ -1,0 +1,84 @@
+{
+  "date": "2026-09-13",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "mark",
+          "y": "cast"
+        },
+        {
+          "x": "court",
+          "y": "wreck"
+        },
+        {
+          "x": "master",
+          "y": "work"
+        },
+        {
+          "x": "turn",
+          "y": "back"
+        },
+        {
+          "x": "ramp",
+          "y": "eater"
+        }
+      ],
+      "answers": "WyJkb3duIiwic2hpcCIsInBpZWNlIiwib3V0IiwiYW50Il0=",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "throw",
+          "y": "log"
+        },
+        {
+          "x": "awe",
+          "y": "what"
+        },
+        {
+          "x": "home",
+          "y": "man"
+        },
+        {
+          "x": "end",
+          "y": "drum"
+        },
+        {
+          "x": "law",
+          "y": "ability"
+        }
+      ],
+      "answers": "WyJiYWNrIiwic29tZSIsIndvcmsiLCJlYXIiLCJzdWl0Il0=",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "over",
+          "y": "ladder"
+        },
+        {
+          "x": "dam",
+          "y": "ultimate"
+        },
+        {
+          "x": "cross",
+          "y": "shadow"
+        },
+        {
+          "x": "kick",
+          "y": "load"
+        },
+        {
+          "x": "cannon",
+          "y": "room"
+        }
+      ],
+      "answers": "WyJzdGVwIiwicGVuIiwib3ZlciIsIm9mZiIsImJhbGwiXQ==",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-09-13T12:42:57.910Z"
+}

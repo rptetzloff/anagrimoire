@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-13",
+  "byDifficulty": {
+    "easy": {
+      "from": "cram",
+      "to": "drum",
+      "par": 4
+    },
+    "hard": {
+      "from": "both",
+      "to": "some",
+      "par": 6
+    },
+    "extreme": {
+      "from": "lean",
+      "to": "trim",
+      "par": 7
+    }
+  },
+  "fetchedAt": "2026-09-13T12:43:00.379Z"
+}
