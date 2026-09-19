@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-19",
+  "byDifficulty": {
+    "easy": {
+      "from": "spate",
+      "to": "stack",
+      "par": 4
+    },
+    "hard": {
+      "from": "back",
+      "to": "rear",
+      "par": 5
+    },
+    "extreme": {
+      "from": "grate",
+      "to": "stove",
+      "par": 8
+    }
+  },
+  "fetchedAt": "2026-09-19T12:28:52.206Z"
+}

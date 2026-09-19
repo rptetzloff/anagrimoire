@@ -1,0 +1,84 @@
+{
+  "date": "2026-09-19",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "down",
+          "y": "screen"
+        },
+        {
+          "x": "ramp",
+          "y": "hill"
+        },
+        {
+          "x": "blast",
+          "y": "hand"
+        },
+        {
+          "x": "grand",
+          "y": "land"
+        },
+        {
+          "x": "pony",
+          "y": "spin"
+        }
+      ],
+      "answers": "WyJ3aW5kIiwiYW50Iiwib2ZmIiwiZmF0aGVyIiwidGFpbCJd",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "close",
+          "y": "last"
+        },
+        {
+          "x": "arch",
+          "y": "ward"
+        },
+        {
+          "x": "kick",
+          "y": "bone"
+        },
+        {
+          "x": "cook",
+          "y": "store"
+        },
+        {
+          "x": "business",
+          "y": "slaughter"
+        }
+      ],
+      "answers": "WyJvdXQiLCJ3YXkiLCJiYWNrIiwiYm9vayIsIm1hbiJd",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "court",
+          "y": "husband"
+        },
+        {
+          "x": "down",
+          "y": "ration"
+        },
+        {
+          "x": "fore",
+          "y": "bag"
+        },
+        {
+          "x": "bed",
+          "y": "handler"
+        },
+        {
+          "x": "down",
+          "y": "thing"
+        }
+      ],
+      "answers": "WyJob3VzZSIsImNhc3QiLCJoYW5kIiwicGFuIiwicGxheSJd",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-09-19T12:28:58.956Z"
+}

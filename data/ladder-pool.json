@@ -1,0 +1,162 @@
+{
+  "date": "2026-09-19",
+  "byDifficulty": {
+    "easy": [
+      {
+        "from": "heal",
+        "to": "mend",
+        "par": 4
+      },
+      {
+        "from": "lay",
+        "to": "put",
+        "par": 3
+      },
+      {
+        "from": "head",
+        "to": "mind",
+        "par": 4
+      },
+      {
+        "from": "melt",
+        "to": "thaw",
+        "par": 4
+      },
+      {
+        "from": "clang",
+        "to": "crash",
+        "par": 4
+      },
+      {
+        "from": "class",
+        "to": "grade",
+        "par": 4
+      },
+      {
+        "from": "many",
+        "to": "some",
+        "par": 4
+      },
+      {
+        "from": "heap",
+        "to": "peck",
+        "par": 4
+      },
+      {
+        "from": "rent",
+        "to": "tear",
+        "par": 3
+      },
+      {
+        "from": "ace",
+        "to": "one",
+        "par": 3
+      }
+    ],
+    "hard": [
+      {
+        "from": "real",
+        "to": "very",
+        "par": 6
+      },
+      {
+        "from": "gape",
+        "to": "yawn",
+        "par": 5
+      },
+      {
+        "from": "cooked",
+        "to": "stewed",
+        "par": 5
+      },
+      {
+        "from": "curl",
+        "to": "kink",
+        "par": 6
+      },
+      {
+        "from": "ruin",
+        "to": "sack",
+        "par": 6
+      },
+      {
+        "from": "eon",
+        "to": "era",
+        "par": 6
+      },
+      {
+        "from": "plank",
+        "to": "plump",
+        "par": 6
+      },
+      {
+        "from": "heel",
+        "to": "list",
+        "par": 5
+      },
+      {
+        "from": "neat",
+        "to": "tidy",
+        "par": 5
+      },
+      {
+        "from": "bait",
+        "to": "hook",
+        "par": 6
+      }
+    ],
+    "extreme": [
+      {
+        "from": "perch",
+        "to": "roost",
+        "par": 8
+      },
+      {
+        "from": "boiled",
+        "to": "stewed",
+        "par": 8
+      },
+      {
+        "from": "blamed",
+        "to": "damned",
+        "par": 8
+      },
+      {
+        "from": "broad",
+        "to": "thick",
+        "par": 8
+      },
+      {
+        "from": "creep",
+        "to": "sneak",
+        "par": 7
+      },
+      {
+        "from": "spent",
+        "to": "tired",
+        "par": 7
+      },
+      {
+        "from": "blamed",
+        "to": "darned",
+        "par": 7
+      },
+      {
+        "from": "flex",
+        "to": "hump",
+        "par": 7
+      },
+      {
+        "from": "shack",
+        "to": "trail",
+        "par": 7
+      },
+      {
+        "from": "dream",
+        "to": "sleep",
+        "par": 7
+      }
+    ]
+  },
+  "fetchedAt": "2026-09-19T12:30:01.931Z"
+}

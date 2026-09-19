@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-19",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "euy",
+        "nsg",
+        "twa",
+        "rvi"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "iqa",
+        "vsg",
+        "ntc",
+        "oeu"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "uan",
+        "rml",
+        "sdp",
+        "oge"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-09-19T12:28:58.956Z"
+}

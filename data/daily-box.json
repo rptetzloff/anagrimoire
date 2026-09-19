@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-19",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "tps",
+        "rld",
+        "eoc",
+        "aux"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "teh",
+        "iod",
+        "awb",
+        "scl"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "era",
+        "thv",
+        "oyb",
+        "cpl"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-09-19T12:28:52.206Z"
+}

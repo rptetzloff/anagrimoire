@@ -1,0 +1,84 @@
+{
+  "date": "2026-09-19",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "feed",
+          "y": "packer"
+        },
+        {
+          "x": "close",
+          "y": "come"
+        },
+        {
+          "x": "crack",
+          "y": "size"
+        },
+        {
+          "x": "side",
+          "y": "sister"
+        },
+        {
+          "x": "shut",
+          "y": "glass"
+        }
+      ],
+      "answers": "WyJiYWNrIiwib3V0IiwiZG93biIsInN0ZXAiLCJleWUiXQ==",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "awe",
+          "y": "day"
+        },
+        {
+          "x": "back",
+          "y": "kick"
+        },
+        {
+          "x": "turn",
+          "y": "size"
+        },
+        {
+          "x": "malign",
+          "y": "acid"
+        },
+        {
+          "x": "down",
+          "y": "fall"
+        }
+      ],
+      "answers": "WyJzb21lIiwic2lkZSIsIm92ZXIiLCJhbnQiLCJ3aW5kIl0=",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "death",
+          "y": "door"
+        },
+        {
+          "x": "off",
+          "y": "bag"
+        },
+        {
+          "x": "anchor",
+          "y": "slaughter"
+        },
+        {
+          "x": "death",
+          "y": "spread"
+        },
+        {
+          "x": "above",
+          "y": "room"
+        }
+      ],
+      "answers": "WyJ0cmFwIiwiaGFuZCIsIm1hbiIsImJlZCIsImJvYXJkIl0=",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-09-19T12:28:52.206Z"
+}

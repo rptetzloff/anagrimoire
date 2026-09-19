@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-19",
+  "byDifficulty": {
+    "easy": {
+      "clue": "Baking day",
+      "cols": 6,
+      "board": [
+        "incsar",
+        "sglrug",
+        "ratemg",
+        "ehieai",
+        "odregn",
+        "ynvnts",
+        "eaylas",
+        "nileat"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiaW5ncmVkaWVudHMiLCJwYXRoIjpbMCwxLDcsMTIsMTgsMjUsMjAsMjcsMzMsMzQsMzVdfSwid29yZHMiOlt7InciOiJjcmVhbSIsInBhdGgiOlsyLDksMTUsMjIsMTZdfSx7InciOiJzdWdhciIsInBhdGgiOlszLDEwLDExLDQsNV19LHsidyI6InNhbHQiLCJwYXRoIjpbNiwxMyw4LDE0XX0seyJ3IjoiZ2luZ2VyIiwicGF0aCI6WzE3LDIzLDI5LDI4LDIxLDI2XX0seyJ3IjoiaG9uZXkiLCJwYXRoIjpbMTksMjQsMzEsMzYsMzBdfSx7InciOiJ2YW5pbGxhIiwicGF0aCI6WzMyLDM3LDQyLDQzLDQ0LDM5LDQ2XX0seyJ3IjoieWVhc3QiLCJwYXRoIjpbMzgsNDUsNDAsNDEsNDddfV19"
+    },
+    "hard": {
+      "clue": "Bundle up",
+      "cols": 7,
+      "board": [
+        "fopaika",
+        "rsrtrme",
+        "tetfsho",
+        "nirulsv",
+        "wirykle",
+        "saggias",
+        "clrnbtl",
+        "orzflie",
+        "doazihg"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3Ijoid2ludGVydGltZSIsInBhdGgiOlsyOCwyMiwyMSwxNCwxNSw5LDEwLDQsMTIsMTNdfSwid29yZHMiOlt7InciOiJmcm9zdCIsInBhdGgiOlswLDcsMSw4LDE2XX0seyJ3IjoicGFya2EiLCJwYXRoIjpbMiwzLDExLDUsNl19LHsidyI6ImZsdXJyeSIsInBhdGgiOlsxNywyNSwyNCwzMCwyMywzMV19LHsidyI6InNob3ZlbCIsInBhdGgiOlsxOCwxOSwyMCwyNywzNCwzM119LHsidyI6InNrYXRpbmciLCJwYXRoIjpbMjYsMzIsNDAsNDcsMzksNDUsMzhdfSx7InciOiJpZ2xvbyIsInBhdGgiOlsyOSwzNyw0Myw0OSw1N119LHsidyI6InNjYXJmIiwicGF0aCI6WzM1LDQyLDM2LDQ0LDUyXX0seyJ3Ijoic2xlaWdoIiwicGF0aCI6WzQxLDQ4LDU1LDU0LDYyLDYxXX0seyJ3IjoiYmxpenphcmQiLCJwYXRoIjpbNDYsNTMsNjAsNTksNTEsNTgsNTAsNTZdfV19"
+    },
+    "extreme": {
+      "clue": "Pocket change",
+      "cols": 8,
+      "board": [
+        "kfandpoe",
+        "drricruu",
+        "oolmpunr",
+        "anleedob",
+        "paneqoli",
+        "reiulrfl",
+        "poscadty",
+        "eukrence",
+        "cnresllr",
+        "nylhiing"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY3VycmVuY3kiLCJwYXRoIjpbNjQsNTcsNjYsNTksNjAsNjEsNjIsNTVdfSwid29yZHMiOlt7InciOiJrcm9uYSIsInBhdGgiOlswLDksMTYsMjUsMjRdfSx7InciOiJmcmFuYyIsInBhdGgiOlsxLDEwLDIsMywxMl19LHsidyI6ImRpbWUiLCJwYXRoIjpbNCwxMSwxOSwyOF19LHsidyI6InBvdW5kIiwicGF0aCI6WzUsNiwxNCwyMiwyOV19LHsidyI6ImV1cm8iLCJwYXRoIjpbNywxNSwyMywzMF19LHsidyI6ImRvbGxhciIsInBhdGgiOls4LDE3LDE4LDI2LDMzLDQwXX0seyJ3IjoicnVwZWUiLCJwYXRoIjpbMTMsMjEsMjAsMjcsMzVdfSx7InciOiJiaWxsZm9sZCIsInBhdGgiOlszMSwzOSwzOCw0Nyw0NiwzNyw0NCw1M119LHsidyI6InBlc28iLCJwYXRoIjpbMzIsNDEsNTAsNDldfSx7InciOiJuaWNrZWwiLCJwYXRoIjpbMzQsNDIsNTEsNTgsNjcsNzRdfSx7InciOiJxdWFydGVyIiwicGF0aCI6WzM2LDQzLDUyLDQ1LDU0LDYzLDcxXX0seyJ3IjoicGVubnkiLCJwYXRoIjpbNDgsNTYsNjUsNzIsNzNdfSx7InciOiJzaGlsbGluZyIsInBhdGgiOls2OCw3NSw3Niw2OSw3MCw3Nyw3OCw3OV19XX0="
+    }
+  },
+  "fetchedAt": "2026-09-19T12:28:52.206Z"
+}

@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-19",
+  "byDifficulty": {
+    "easy": {
+      "clue": "Kitchen drawer",
+      "cols": 6,
+      "board": [
+        "tosisi",
+        "ngnsle",
+        "sewivs",
+        "tchske",
+        "ukospo",
+        "noteno",
+        "pifila",
+        "remeld"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoidXRlbnNpbHMiLCJwYXRoIjpbMjQsMTgsMTMsOCw5LDMsMTAsMTddfSwid29yZHMiOlt7InciOiJ0b25ncyIsInBhdGgiOlswLDEsNiw3LDJdfSx7InciOiJzaWV2ZSIsInBhdGgiOls0LDUsMTEsMTYsMjNdfSx7InciOiJzY29vcCIsInBhdGgiOlsxMiwxOSwyNiwzMSwzNl19LHsidyI6IndoaXNrIiwicGF0aCI6WzE0LDIwLDE1LDIxLDIyXX0seyJ3Ijoia25pZmUiLCJwYXRoIjpbMjUsMzAsMzcsMzgsMzNdfSx7InciOiJzcG9vbiIsInBhdGgiOlsyNywyOCwyOSwzNSwzNF19LHsidyI6InRpbWVyIiwicGF0aCI6WzMyLDM5LDQ0LDQzLDQyXX0seyJ3IjoibGFkbGUiLCJwYXRoIjpbNDAsNDEsNDcsNDYsNDVdfV19"
+    },
+    "hard": {
+      "clue": "May I have this dance",
+      "cols": 7,
+      "board": [
+        "tsnisru",
+        "iwwgmam",
+        "tsmmbab",
+        "diasbac",
+        "cslatoo",
+        "opsogan",
+        "olwalng",
+        "lalatoa",
+        "bkarozm"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYmFsbHJvb20iLCJwYXRoIjpbNTYsNTAsNDMsNTEsNTksNjAsNTQsNjJdfSwid29yZHMiOlt7InciOiJ0d2lzdCIsInBhdGgiOlswLDgsNywxNSwxNF19LHsidyI6InN3aW5nIiwicGF0aCI6WzEsOSwzLDIsMTBdfSx7InciOiJzYW1iYSIsInBhdGgiOls0LDEyLDExLDE4LDE5XX0seyJ3IjoicnVtYmEiLCJwYXRoIjpbNSw2LDEzLDIwLDI2XX0seyJ3IjoibWFtYm8iLCJwYXRoIjpbMTYsMjMsMTcsMjUsMzNdfSx7InciOiJkaXNjbyIsInBhdGgiOlsyMSwyMiwyOSwyOCwzNV19LHsidyI6InNhbHNhIiwicGF0aCI6WzI0LDMxLDMwLDM3LDQ1XX0seyJ3IjoiY29uZ2EiLCJwYXRoIjpbMjcsMzQsNDEsNDgsNTVdfSx7InciOiJ0YW5nbyIsInBhdGgiOlszMiw0MCw0NywzOSwzOF19LHsidyI6InBvbGthIiwicGF0aCI6WzM2LDQyLDQ5LDU3LDU4XX0seyJ3Ijoid2FsdHoiLCJwYXRoIjpbNDQsNTIsNDYsNTMsNjFdfV19"
+    },
+    "extreme": {
+      "clue": "In the fruit bowl",
+      "cols": 8,
+      "board": [
+        "muitkwia",
+        "rangsild",
+        "foopaach",
+        "rapepyae",
+        "bngaalrm",
+        "amreareo",
+        "ennplypn",
+        "lapapelm",
+        "gonecliu",
+        "rapeahme"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZnJ1aXRzYWxhZCIsInBhdGgiOlsxNiw4LDEsMiwzLDEyLDIxLDE0LDcsMTVdfSwid29yZHMiOlt7InciOiJtYW5nbyIsInBhdGgiOlswLDksMTAsMTEsMThdfSx7InciOiJraXdpIiwicGF0aCI6WzQsMTMsNSw2XX0seyJ3Ijoib3JhbmdlIiwicGF0aCI6WzE3LDI0LDI1LDMzLDM0LDQzXX0seyJ3IjoicGFwYXlhIiwicGF0aCI6WzE5LDIwLDI4LDM2LDI5LDMwXX0seyJ3IjoiY2hlcnJ5IiwicGF0aCI6WzIyLDIzLDMxLDM4LDQ1LDUzXX0seyJ3IjoicGVhciIsInBhdGgiOlsyNiwyNywzNSw0Ml19LHsidyI6ImJhbmFuYSIsInBhdGgiOlszMiw0MCw0OSw1Nyw1MCw1OV19LHsidyI6ImxlbW9uIiwicGF0aCI6WzM3LDQ2LDM5LDQ3LDU1XX0seyJ3IjoibWVsb24iLCJwYXRoIjpbNDEsNDgsNTYsNjUsNjZdfSx7InciOiJhcHBsZSIsInBhdGgiOls0NCw1MSw2MCw1Miw2MV19LHsidyI6InBsdW0iLCJwYXRoIjpbNTQsNjIsNzEsNjNdfSx7InciOiJwZWFjaCIsInBhdGgiOls1OCw2Nyw3Niw2OCw3N119LHsidyI6ImdyYXBlIiwicGF0aCI6WzY0LDcyLDczLDc0LDc1XX0seyJ3IjoibGltZSIsInBhdGgiOls2OSw3MCw3OCw3OV19XX0="
+    }
+  },
+  "fetchedAt": "2026-09-19T12:28:58.956Z"
+}
