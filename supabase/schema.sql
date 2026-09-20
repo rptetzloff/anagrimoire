@@ -34,6 +34,26 @@ create policy "update own profile"
   using ((select auth.uid()) = id)
   with check ((select auth.uid()) = id);
 
+-- ...on the columns a browser has any business writing, and no others.
+--
+-- The policy above exists so a browser can save its own settings. Supabase
+-- grants every table to `authenticated`, so the policy also let it write its
+-- own display_name straight through the REST API: `PATCH /profiles?id=eq.<me>`
+-- with any name at all. That is past set_display_name, and therefore past the
+-- length and character rules, past uniqueness, and past the blocked-names list
+-- -- the one check on this table that exists to protect other people, since a
+-- display name is the only thing about an account anybody else can see.
+--
+-- Column privileges rather than a trigger: the grant is the thing that was too
+-- wide, and narrowing it leaves one way in, which is the function.
+--
+-- What this does not do: it does not touch what set_display_name allows, and
+-- clearing a name by passing an empty one still works, because that goes
+-- through the function like every other change.
+revoke insert, update on public.profiles from anon, authenticated;
+grant insert (id, settings) on public.profiles to authenticated;
+grant update (settings) on public.profiles to authenticated;
+
 create or replace function public.handle_new_user()
 returns trigger
 language plpgsql

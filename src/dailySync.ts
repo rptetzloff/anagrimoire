@@ -372,14 +372,32 @@ function canon(value: unknown): string {
 const baseKey = (game: DailyGame, variant: string, difficulty: Difficulty, date: string) =>
   `${game}:${variant}:${difficulty}:${date}`;
 
+/** Yesterday's puzzles are never coming back; don't grow this forever. */
+const KEEP_DAYS = 8;
+
+/** The keys to let go of. The date is the fourth field of a base key --
+ *  game:variant:difficulty:date.
+ *
+ *  ~~key.split(':')[2]~~ Wrong, corrected 2026-09-20: that is the difficulty,
+ *  and 'hard' is never less than a date, so nothing was ever pruned and the
+ *  store grew for the life of the browser. Storage filling is the one failure
+ *  that makes sync quietly stop, so it grew towards the one thing it must not
+ *  break. A key whose fourth field is not a date is left alone rather than
+ *  guessed at. */
+export function staleBaseKeys(keys: Iterable<string>, now = Date.now()): string[] {
+  const cutoff = new Date(now - KEEP_DAYS * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+  const stale: string[] = [];
+  for (const key of keys) {
+    const date = key.split(':')[3] ?? '';
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
+    if (date < cutoff) stale.push(key);
+  }
+  return stale;
+}
+
 function saveBases(): void {
   try {
-    // yesterday's puzzles are never coming back; don't grow this forever
-    const cutoff = new Date(Date.now() - 8 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
-    for (const key of syncBase.keys()) {
-      const date = key.split(':')[2] ?? '';
-      if (date && date < cutoff) syncBase.delete(key);
-    }
+    for (const key of staleBaseKeys(syncBase.keys())) syncBase.delete(key);
     siteStore.setItem(BASE_STORE, JSON.stringify([...syncBase]));
   } catch {
     // storage full or unavailable — the base holds for this page view
