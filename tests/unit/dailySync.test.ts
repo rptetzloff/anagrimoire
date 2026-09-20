@@ -15,7 +15,10 @@ beforeEach(() => {
   localStorage.clear();
 });
 
-const DATE = '2026-08-09';
+// Today's board. A fixed date goes stale: with the prune working, a base for a
+// board more than a week old is let go the moment it is written, which is the
+// prune doing its job rather than these tests' subject.
+const DATE = new Date().toISOString().slice(0, 10);
 
 describe('a deletion arriving from the other device', () => {
   it('lands on a device that is in step — the case the doorbell exists for', async () => {
@@ -114,5 +117,42 @@ describe('accountChanged', () => {
       updatedAt: 'T2',
     });
     expect(merged?.chain).toEqual(['player']);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Letting go of old bases
+// ---------------------------------------------------------------------------
+describe('staleBaseKeys', () => {
+  const NOW = Date.parse('2026-09-20T12:00:00Z');
+
+  it('lets go of a board more than a week old', async () => {
+    const m = await fresh();
+    expect(m.staleBaseKeys(['box::easy:2026-09-01', 'box::easy:2026-09-16'], NOW)).toEqual([
+      'box::easy:2026-09-01',
+    ]);
+  });
+
+  // The bug: the date is the fourth field, and reading the third -- the
+  // difficulty -- meant nothing was ever old enough to go, because a word is
+  // never less than a date.
+  it('reads the date, not the difficulty', async () => {
+    const m = await fresh();
+    expect(m.staleBaseKeys(['squares:5:hard:2025-01-01'], NOW)).toEqual(['squares:5:hard:2025-01-01']);
+  });
+
+  it('leaves alone a key it does not recognise', async () => {
+    const m = await fresh();
+    expect(m.staleBaseKeys(['something-else', 'a:b:c:not-a-date'], NOW)).toEqual([]);
+  });
+
+  // And the store itself shrinks: the old base is gone the next time anything
+  // is written, which is the growth this was meant to stop.
+  it('drops an old base from storage on the next write', async () => {
+    const m = await fresh();
+    m.noteWritten('box', '', 'easy', '2020-01-01', 'T1', { chain: ['old'] });
+    m.noteWritten('box', '', 'easy', DATE, 'T1', { chain: ['new'] });
+    const stored = JSON.parse(localStorage.getItem('anagrimoire:syncbase:v1') ?? '[]') as [string, unknown][];
+    expect(stored.map(([k]) => k)).toEqual([`box::easy:${DATE}`]);
   });
 });
