@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-26",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "odk",
+        "eus",
+        "nml",
+        "apr"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "tsg",
+        "iac",
+        "ozd",
+        "enl"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "eiu",
+        "hra",
+        "lcn",
+        "tod"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-09-26T13:03:06.554Z"
+}

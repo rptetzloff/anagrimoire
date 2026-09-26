@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-26",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "ugh",
+        "lsd",
+        "rto",
+        "eac"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "nur",
+        "dwm",
+        "tsp",
+        "eao"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "iqc",
+        "eol",
+        "asy",
+        "tuv"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-09-26T13:03:03.587Z"
+}

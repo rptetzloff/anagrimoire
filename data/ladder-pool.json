@@ -1,0 +1,162 @@
+{
+  "date": "2026-09-26",
+  "byDifficulty": {
+    "easy": [
+      {
+        "from": "char",
+        "to": "coal",
+        "par": 3
+      },
+      {
+        "from": "seam",
+        "to": "skin",
+        "par": 4
+      },
+      {
+        "from": "back",
+        "to": "hind",
+        "par": 4
+      },
+      {
+        "from": "cat",
+        "to": "guy",
+        "par": 3
+      },
+      {
+        "from": "meat",
+        "to": "seed",
+        "par": 4
+      },
+      {
+        "from": "lay",
+        "to": "set",
+        "par": 3
+      },
+      {
+        "from": "mint",
+        "to": "peck",
+        "par": 4
+      },
+      {
+        "from": "like",
+        "to": "same",
+        "par": 3
+      },
+      {
+        "from": "hat",
+        "to": "lid",
+        "par": 3
+      },
+      {
+        "from": "dab",
+        "to": "pat",
+        "par": 3
+      }
+    ],
+    "hard": [
+      {
+        "from": "cure",
+        "to": "heal",
+        "par": 5
+      },
+      {
+        "from": "chew",
+        "to": "plug",
+        "par": 6
+      },
+      {
+        "from": "bold",
+        "to": "rash",
+        "par": 5
+      },
+      {
+        "from": "reel",
+        "to": "spin",
+        "par": 6
+      },
+      {
+        "from": "cool",
+        "to": "heat",
+        "par": 5
+      },
+      {
+        "from": "slack",
+        "to": "slump",
+        "par": 6
+      },
+      {
+        "from": "dumps",
+        "to": "mopes",
+        "par": 5
+      },
+      {
+        "from": "jammed",
+        "to": "packed",
+        "par": 5
+      },
+      {
+        "from": "dove",
+        "to": "hawk",
+        "par": 5
+      },
+      {
+        "from": "loaf",
+        "to": "lurk",
+        "par": 5
+      }
+    ],
+    "extreme": [
+      {
+        "from": "brisk",
+        "to": "fresh",
+        "par": 8
+      },
+      {
+        "from": "beef",
+        "to": "oxen",
+        "par": 7
+      },
+      {
+        "from": "jolly",
+        "to": "merry",
+        "par": 8
+      },
+      {
+        "from": "sleek",
+        "to": "slick",
+        "par": 8
+      },
+      {
+        "from": "cart",
+        "to": "drag",
+        "par": 7
+      },
+      {
+        "from": "dress",
+        "to": "frock",
+        "par": 8
+      },
+      {
+        "from": "bead",
+        "to": "drop",
+        "par": 7
+      },
+      {
+        "from": "shack",
+        "to": "trail",
+        "par": 7
+      },
+      {
+        "from": "draw",
+        "to": "line",
+        "par": 8
+      },
+      {
+        "from": "pout",
+        "to": "sulk",
+        "par": 7
+      }
+    ]
+  },
+  "fetchedAt": "2026-09-26T13:04:00.002Z"
+}

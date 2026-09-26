@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-26",
+  "byDifficulty": {
+    "easy": {
+      "from": "buns",
+      "to": "rump",
+      "par": 3
+    },
+    "hard": {
+      "from": "boot",
+      "to": "kick",
+      "par": 5
+    },
+    "extreme": {
+      "from": "puss",
+      "to": "slit",
+      "par": 7
+    }
+  },
+  "fetchedAt": "2026-09-26T13:03:06.554Z"
+}

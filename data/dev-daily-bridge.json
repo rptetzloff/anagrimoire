@@ -1,0 +1,84 @@
+{
+  "date": "2026-09-26",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "take",
+          "y": "patient"
+        },
+        {
+          "x": "play",
+          "y": "fire"
+        },
+        {
+          "x": "hold",
+          "y": "bear"
+        },
+        {
+          "x": "hand",
+          "y": "pipe"
+        },
+        {
+          "x": "fore",
+          "y": "some"
+        }
+      ],
+      "answers": "WyJvdXQiLCJiYWNrIiwib3ZlciIsImJhZyIsImhhbmQiXQ==",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "tool",
+          "y": "rage"
+        },
+        {
+          "x": "skin",
+          "y": "wind"
+        },
+        {
+          "x": "clergy",
+          "y": "date"
+        },
+        {
+          "x": "sub",
+          "y": "back"
+        },
+        {
+          "x": "side",
+          "y": "hand"
+        }
+      ],
+      "answers": "WyJiYXIiLCJoZWFkIiwibWFuIiwic2V0IiwibG9uZyJd",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "gun",
+          "y": "proof"
+        },
+        {
+          "x": "champion",
+          "y": "wreck"
+        },
+        {
+          "x": "under",
+          "y": "ball"
+        },
+        {
+          "x": "wrist",
+          "y": "man"
+        },
+        {
+          "x": "win",
+          "y": "day"
+        }
+      ],
+      "answers": "WyJmaXJlIiwic2hpcCIsImZvb3QiLCJ3YXRjaCIsInNvbWUiXQ==",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-09-26T13:03:06.554Z"
+}

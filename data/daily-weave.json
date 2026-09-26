@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-26",
+  "byDifficulty": {
+    "easy": {
+      "clue": "Ahoy, matey",
+      "cols": 6,
+      "board": [
+        "sildsl",
+        "apopbo",
+        "arbuyo",
+        "burong",
+        "cootyl",
+        "tcansa",
+        "eyeaes",
+        "hctpre"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYnVjY2FuZWVyIiwicGF0aCI6WzE4LDE5LDI0LDMxLDMyLDMzLDQwLDQ3LDQ2XX0sIndvcmRzIjpbeyJ3Ijoic2FpbCIsInBhdGgiOlswLDYsMSwyXX0seyJ3IjoiZG91Ymxvb24iLCJwYXRoIjpbMyw4LDE1LDEwLDUsMTEsMTcsMjJdfSx7InciOiJzcHlnbGFzcyIsInBhdGgiOls0LDksMTYsMjMsMjksMzUsNDEsMzRdfSx7InciOiJwYXJyb3QiLCJwYXRoIjpbNywxMiwxMywyMCwyNSwzMF19LHsidyI6ImJvb3R5IiwicGF0aCI6WzE0LDIxLDI2LDI3LDI4XX0seyJ3IjoiZXllcGF0Y2giLCJwYXRoIjpbMzYsMzcsMzgsNDUsMzksNDQsNDMsNDJdfV19"
+    },
+    "hard": {
+      "clue": "Turn up the volume",
+      "cols": 7,
+      "board": [
+        "cpuabtc",
+        "ounanhe",
+        "fkntlon",
+        "otrhlrd",
+        "luyemao",
+        "jkkfunc",
+        "jazebkk",
+        "mzlgpox",
+        "etasoel"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoianVrZWJveCIsInBhdGgiOlszNSwyOSwzNyw0NSw0Niw1NCw1NV19LCJ3b3JkcyI6W3sidyI6ImNvdW50cnkiLCJwYXRoIjpbMCw3LDgsMTYsMjIsMjMsMzBdfSx7InciOiJwdW5rIiwicGF0aCI6WzEsMiw5LDE1XX0seyJ3IjoiYW50aGVtIiwicGF0aCI6WzMsMTEsMTcsMjQsMzEsMzJdfSx7InciOiJiYWxsYWQiLCJwYXRoIjpbNCwxMCwxOCwyNSwzMywyN119LHsidyI6InRlY2hubyIsInBhdGgiOls1LDEzLDYsMTIsMjAsMTldfSx7InciOiJmb2xrIiwicGF0aCI6WzE0LDIxLDI4LDM2XX0seyJ3Ijoicm9jayIsInBhdGgiOlsyNiwzNCw0MSw0N119LHsidyI6ImZ1bmsiLCJwYXRoIjpbMzgsMzksNDAsNDhdfSx7InciOiJqYXp6IiwicGF0aCI6WzQyLDQzLDQ0LDUwXX0seyJ3IjoibWV0YWwiLCJwYXRoIjpbNDksNTYsNTcsNTgsNTFdfSx7InciOiJnb3NwZWwiLCJwYXRoIjpbNTIsNjAsNTksNTMsNjEsNjJdfV19"
+    },
+    "extreme": {
+      "clue": "Feel the burn",
+      "cols": 8,
+      "board": [
+        "dbmcrpla",
+        "eubsunit",
+        "bltrluce",
+        "prlewnsh",
+        "usestege",
+        "hcaacyat",
+        "auskohtr",
+        "rpbigaea",
+        "idturpld",
+        "oupeeiml"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYnJlYWthc3dlYXQiLCJwYXRoIjpbMTYsMjUsMzQsNDMsNTEsNDIsMzUsMjgsMzcsNDYsNDddfSwid29yZHMiOlt7InciOiJkdW1iYmVsbCIsInBhdGgiOlswLDksMiwxMCwxLDgsMTcsMjZdfSx7InciOiJjcnVuY2giLCJwYXRoIjpbMyw0LDEyLDEzLDIyLDMxXX0seyJ3IjoicGlsYXRlcyIsInBhdGgiOls1LDE0LDYsNywxNSwyMywzMF19LHsidyI6InN0cmV0Y2giLCJwYXRoIjpbMTEsMTgsMTksMjcsMzYsNDQsNTNdfSx7InciOiJsdW5nZSIsInBhdGgiOlsyMCwyMSwyOSwzOCwzOV19LHsidyI6InB1c2h1cCIsInBhdGgiOlsyNCwzMiwzMyw0MCw0OSw1N119LHsidyI6ImNhcmRpbyIsInBhdGgiOls0MSw0OCw1Niw2NSw2NCw3Ml19LHsidyI6InlvZ2EiLCJwYXRoIjpbNDUsNTIsNjAsNjFdfSx7InciOiJzaXR1cCIsInBhdGgiOls1MCw1OSw2Niw3Myw3NF19LHsidyI6InRyZWFkbWlsbCIsInBhdGgiOls1NCw1NSw2Miw2Myw3MSw3OCw3Nyw3MCw3OV19LHsidyI6ImJ1cnBlZSIsInBhdGgiOls1OCw2Nyw2OCw2OSw3Niw3NV19XX0="
+    }
+  },
+  "fetchedAt": "2026-09-26T13:03:03.587Z"
+}

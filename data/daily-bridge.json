@@ -1,0 +1,84 @@
+{
+  "date": "2026-09-26",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "hang",
+          "y": "step"
+        },
+        {
+          "x": "some",
+          "y": "scale"
+        },
+        {
+          "x": "stand",
+          "y": "wit"
+        },
+        {
+          "x": "step",
+          "y": "proof"
+        },
+        {
+          "x": "sure",
+          "y": "brand"
+        }
+      ],
+      "answers": "WyJvdmVyIiwidGltZSIsIm91dCIsImNoaWxkIiwiZmlyZSJd",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "fear",
+          "y": "what"
+        },
+        {
+          "x": "guess",
+          "y": "sheet"
+        },
+        {
+          "x": "sea",
+          "y": "kick"
+        },
+        {
+          "x": "over",
+          "y": "stand"
+        },
+        {
+          "x": "workman",
+          "y": "yard"
+        }
+      ],
+      "answers": "WyJzb21lIiwid29yayIsInNpZGUiLCJoYW5kIiwic2hpcCJd",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "off",
+          "y": "table"
+        },
+        {
+          "x": "fore",
+          "y": "hunt"
+        },
+        {
+          "x": "spear",
+          "y": "wind"
+        },
+        {
+          "x": "tea",
+          "y": "belly"
+        },
+        {
+          "x": "imp",
+          "y": "craft"
+        }
+      ],
+      "answers": "WyJzZXQiLCJtYW4iLCJoZWFkIiwicG90IiwiYWlyIl0=",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-09-26T13:03:03.587Z"
+}

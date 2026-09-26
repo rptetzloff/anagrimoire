@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-26",
+  "byDifficulty": {
+    "easy": {
+      "from": "hood",
+      "to": "punk",
+      "par": 4
+    },
+    "hard": {
+      "from": "fuse",
+      "to": "weld",
+      "par": 6
+    },
+    "extreme": {
+      "from": "rapid",
+      "to": "river",
+      "par": 7
+    }
+  },
+  "fetchedAt": "2026-09-26T13:03:03.587Z"
+}

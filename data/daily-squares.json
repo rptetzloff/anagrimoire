@@ -1,0 +1,90 @@
+{
+  "date": "2026-09-26",
+  "byDifficulty": {
+    "easy": {
+      "size": 4,
+      "cells": [
+        "s",
+        "p",
+        null,
+        "n",
+        "l",
+        null,
+        "s",
+        null,
+        null,
+        "l",
+        null,
+        null,
+        "p",
+        null,
+        "e",
+        null
+      ],
+      "answer": "eyJyb3dzIjpbInNwaW4iLCJsb3NlIiwiaWxscyIsInBvZXQiXX0="
+    },
+    "hard": {
+      "size": 5,
+      "cells": [
+        null,
+        null,
+        null,
+        "f",
+        null,
+        null,
+        null,
+        null,
+        null,
+        "e",
+        null,
+        "c",
+        null,
+        "r",
+        null,
+        "n",
+        "a",
+        "m",
+        null,
+        "s",
+        null,
+        "p",
+        null,
+        null,
+        "e"
+      ],
+      "answer": "eyJyb3dzIjpbImRyYWZ0IiwiZWVyaWUiLCJhY29ybiIsIm5hbWVzIiwic3BhZGUiXX0="
+    },
+    "extreme": {
+      "size": 5,
+      "cells": [
+        null,
+        "u",
+        null,
+        null,
+        null,
+        null,
+        "t",
+        null,
+        null,
+        null,
+        null,
+        null,
+        "v",
+        null,
+        null,
+        null,
+        null,
+        null,
+        "e",
+        null,
+        "s",
+        null,
+        null,
+        "l",
+        "y"
+      ],
+      "answer": "eyJyb3dzIjpbImh1bmtzIiwiYXRvbmUiLCJsZXZlZSIsInRyZWVkIiwic2lsbHkiXX0="
+    }
+  },
+  "fetchedAt": "2026-09-26T13:03:03.587Z"
+}
