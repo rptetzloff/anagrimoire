@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-03",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "tab",
+        "cms",
+        "ori",
+        "ney"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "ozs",
+        "prm",
+        "tge",
+        "ian"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "eto",
+        "mhn",
+        "yir",
+        "pac"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-10-03T13:21:45.031Z"
+}

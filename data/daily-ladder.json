@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-03",
+  "byDifficulty": {
+    "easy": {
+      "from": "famed",
+      "to": "noted",
+      "par": 4
+    },
+    "hard": {
+      "from": "scant",
+      "to": "skimp",
+      "par": 6
+    },
+    "extreme": {
+      "from": "even",
+      "to": "flat",
+      "par": 8
+    }
+  },
+  "fetchedAt": "2026-10-03T13:21:45.031Z"
+}

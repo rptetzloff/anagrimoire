@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-03",
+  "byDifficulty": {
+    "easy": [
+      {
+        "from": "cake",
+        "to": "coat",
+        "par": 4
+      },
+      {
+        "from": "bend",
+        "to": "flex",
+        "par": 4
+      },
+      {
+        "from": "lack",
+        "to": "want",
+        "par": 4
+      },
+      {
+        "from": "buns",
+        "to": "rump",
+        "par": 3
+      },
+      {
+        "from": "hint",
+        "to": "mite",
+        "par": 3
+      },
+      {
+        "from": "said",
+        "to": "same",
+        "par": 3
+      },
+      {
+        "from": "bang",
+        "to": "bolt",
+        "par": 4
+      },
+      {
+        "from": "melt",
+        "to": "thaw",
+        "par": 4
+      },
+      {
+        "from": "formed",
+        "to": "molded",
+        "par": 3
+      },
+      {
+        "from": "peck",
+        "to": "pile",
+        "par": 4
+      }
+    ],
+    "hard": [
+      {
+        "from": "lean",
+        "to": "tilt",
+        "par": 6
+      },
+      {
+        "from": "duet",
+        "to": "pair",
+        "par": 6
+      },
+      {
+        "from": "curved",
+        "to": "hooked",
+        "par": 6
+      },
+      {
+        "from": "easy",
+        "to": "soft",
+        "par": 5
+      },
+      {
+        "from": "peak",
+        "to": "rise",
+        "par": 6
+      },
+      {
+        "from": "pony",
+        "to": "trot",
+        "par": 6
+      },
+      {
+        "from": "both",
+        "to": "some",
+        "par": 6
+      },
+      {
+        "from": "bird",
+        "to": "rump",
+        "par": 6
+      },
+      {
+        "from": "bark",
+        "to": "root",
+        "par": 5
+      },
+      {
+        "from": "boot",
+        "to": "kick",
+        "par": 5
+      }
+    ],
+    "extreme": [
+      {
+        "from": "clay",
+        "to": "tile",
+        "par": 8
+      },
+      {
+        "from": "downy",
+        "to": "hairy",
+        "par": 7
+      },
+      {
+        "from": "flap",
+        "to": "wave",
+        "par": 8
+      },
+      {
+        "from": "beef",
+        "to": "oxen",
+        "par": 7
+      },
+      {
+        "from": "deep",
+        "to": "late",
+        "par": 7
+      },
+      {
+        "from": "keep",
+        "to": "lose",
+        "par": 7
+      },
+      {
+        "from": "phase",
+        "to": "stage",
+        "par": 7
+      },
+      {
+        "from": "burned",
+        "to": "cooked",
+        "par": 8
+      },
+      {
+        "from": "hump",
+        "to": "neck",
+        "par": 7
+      },
+      {
+        "from": "only",
+        "to": "sole",
+        "par": 7
+      }
+    ]
+  },
+  "fetchedAt": "2026-10-03T13:22:23.071Z"
+}

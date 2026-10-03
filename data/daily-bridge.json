@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-03",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "bother",
+          "y": "thing"
+        },
+        {
+          "x": "over",
+          "y": "strong"
+        },
+        {
+          "x": "cook",
+          "y": "law"
+        },
+        {
+          "x": "throw",
+          "y": "bone"
+        },
+        {
+          "x": "over",
+          "y": "read"
+        }
+      ],
+      "answers": "WyJzb21lIiwiaGVhZCIsIm91dCIsImJhY2siLCJzaWdodCJd",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "big",
+          "y": "wash"
+        },
+        {
+          "x": "one",
+          "y": "keeper"
+        },
+        {
+          "x": "wonder",
+          "y": "lord"
+        },
+        {
+          "x": "note",
+          "y": "case"
+        },
+        {
+          "x": "cross",
+          "y": "joy"
+        }
+      ],
+      "answers": "WyJtb3V0aCIsInRpbWUiLCJsYW5kIiwiYm9vayIsIm92ZXIiXQ==",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "tinder",
+          "y": "car"
+        },
+        {
+          "x": "flower",
+          "y": "side"
+        },
+        {
+          "x": "shake",
+          "y": "size"
+        },
+        {
+          "x": "cross",
+          "y": "cracker"
+        },
+        {
+          "x": "ring",
+          "y": "down"
+        }
+      ],
+      "answers": "WyJib3giLCJiZWQiLCJkb3duIiwiZmlyZSIsImxldCJd",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-10-03T13:21:45.031Z"
+}

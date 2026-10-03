@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-03",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "fly",
+          "y": "shadow"
+        },
+        {
+          "x": "salt",
+          "y": "melon"
+        },
+        {
+          "x": "hand",
+          "y": "law"
+        },
+        {
+          "x": "spear",
+          "y": "line"
+        },
+        {
+          "x": "lunch",
+          "y": "scale"
+        }
+      ],
+      "answers": "WyJvdmVyIiwid2F0ZXIiLCJvdXQiLCJoZWFkIiwidGltZSJd",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "fisher",
+          "y": "slaughter"
+        },
+        {
+          "x": "hard",
+          "y": "track"
+        },
+        {
+          "x": "flop",
+          "y": "husband"
+        },
+        {
+          "x": "cross",
+          "y": "ship"
+        },
+        {
+          "x": "champion",
+          "y": "load"
+        }
+      ],
+      "answers": "WyJtYW4iLCJiYWNrIiwiaG91c2UiLCJ0b3duIiwic2hpcCJd",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "bad",
+          "y": "piece"
+        },
+        {
+          "x": "screen",
+          "y": "wright"
+        },
+        {
+          "x": "home",
+          "y": "mate"
+        },
+        {
+          "x": "nap",
+          "y": "ship"
+        },
+        {
+          "x": "swim",
+          "y": "case"
+        }
+      ],
+      "answers": "WyJtb3V0aCIsInBsYXkiLCJyb29tIiwia2luIiwic3VpdCJd",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-10-03T13:21:49.069Z"
+}

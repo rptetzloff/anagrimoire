@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-03",
+  "byDifficulty": {
+    "easy": {
+      "clue": "Ahoy, matey",
+      "cols": 6,
+      "board": [
+        "eytcut",
+        "eahcls",
+        "pugypa",
+        "bclass",
+        "canesr",
+        "ptsaes",
+        "akokil",
+        "rrraen"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYnVjY2FuZWVyIiwicGF0aCI6WzE4LDEzLDE5LDI0LDI1LDI2LDI3LDM0LDI5XX0sIndvcmRzIjpbeyJ3IjoiZXllcGF0Y2giLCJwYXRoIjpbMCwxLDYsMTIsNywyLDksOF19LHsidyI6ImN1dGxhc3MiLCJwYXRoIjpbMyw0LDUsMTAsMTcsMjMsMjJdfSx7InciOiJzcHlnbGFzcyIsInBhdGgiOlsxMSwxNiwxNSwxNCwyMCwyMSwyOCwzNV19LHsidyI6InBhcnJvdCIsInBhdGgiOlszMCwzNiw0Miw0MywzOCwzMV19LHsidyI6InNhaWwiLCJwYXRoIjpbMzIsMzMsNDAsNDFdfSx7InciOiJrcmFrZW4iLCJwYXRoIjpbMzcsNDQsNDUsMzksNDYsNDddfV19"
+    },
+    "hard": {
+      "clue": "Bird watching",
+      "cols": 7,
+      "board": [
+        "snlcrwa",
+        "oagaayr",
+        "rssbnlb",
+        "ktpcier",
+        "raarars",
+        "clroddl",
+        "ihirwia",
+        "cngfinn",
+        "kadeehc"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3Ijoic29uZ2JpcmRzIiwicGF0aCI6WzAsNywxLDksMTcsMjUsMzMsNDAsMzRdfSwid29yZHMiOlt7InciOiJsYXJrIiwicGF0aCI6WzIsOCwxNCwyMV19LHsidyI6ImNhbmFyeSIsInBhdGgiOlszLDEwLDE4LDExLDQsMTJdfSx7InciOiJ3YXJibGVyIiwicGF0aCI6WzUsNiwxMywyMCwxOSwyNiwyN119LHsidyI6InNwYXJyb3ciLCJwYXRoIjpbMTUsMjMsMzAsMzcsNDUsMzgsNDZdfSx7InciOiJzdGFybGluZyIsInBhdGgiOlsxNiwyMiwyOSwyOCwzNiw0NCw1MCw1MV19LHsidyI6ImNhcmRpbmFsIiwicGF0aCI6WzI0LDMyLDMxLDM5LDQ3LDU1LDQ4LDQxXX0seyJ3IjoiY2hpY2thZGVlIiwicGF0aCI6WzM1LDQzLDQyLDQ5LDU2LDU3LDU4LDU5LDYwXX0seyJ3IjoiZmluY2giLCJwYXRoIjpbNTIsNTMsNTQsNjIsNjFdfV19"
+    },
+    "extreme": {
+      "clue": "Days of yore",
+      "cols": 8,
+      "board": [
+        "swrjeter",
+        "ahodcsma",
+        "mrersaot",
+        "mortaval",
+        "dedlelkn",
+        "suniejdi",
+        "qgetotdg",
+        "dueosuhr",
+        "rrindira",
+        "agongebw"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibWVkaWV2YWwiLCJwYXRoIjpbMjQsMzMsMzQsNDMsMzYsMjksMzAsMzFdfSwid29yZHMiOlt7InciOiJzd29yZCIsInBhdGgiOlswLDEsMTAsMiwxMV19LHsidyI6Implc3RlciIsInBhdGgiOlszLDQsMTMsNSw2LDddfSx7InciOiJhcm1vciIsInBhdGgiOls4LDE3LDE2LDI1LDI2XX0seyJ3IjoiaGVyYWxkIiwicGF0aCI6WzksMTgsMTksMjgsMzcsNDZdfSx7InciOiJjYXN0bGUiLCJwYXRoIjpbMTIsMjEsMjAsMjcsMzUsNDRdfSx7InciOiJtb2F0IiwicGF0aCI6WzE0LDIyLDE1LDIzXX0seyJ3IjoiZHVuZ2VvbiIsInBhdGgiOlszMiw0MSw0Miw0OSw1MCw1OSw2N119LHsidyI6ImtuaWdodCIsInBhdGgiOlszOCwzOSw0Nyw1NSw2Miw1M119LHsidyI6InNxdWlyZSIsInBhdGgiOls0MCw0OCw1Nyw2Niw2NSw1OF19LHsidyI6ImpvdXN0IiwicGF0aCI6WzQ1LDUyLDYxLDYwLDUxXX0seyJ3IjoiZHJhd2JyaWRnZSIsInBhdGgiOls1NCw2Myw3MSw3OSw3OCw3MCw2OSw2OCw3Niw3N119LHsidyI6ImRyYWdvbiIsInBhdGgiOls1Niw2NCw3Miw3Myw3NCw3NV19XX0="
+    }
+  },
+  "fetchedAt": "2026-10-03T13:21:49.069Z"
+}
