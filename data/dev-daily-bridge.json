@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-10",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "lone",
+          "y": "what"
+        },
+        {
+          "x": "play",
+          "y": "drop"
+        },
+        {
+          "x": "white",
+          "y": "room"
+        },
+        {
+          "x": "clamp",
+          "y": "play"
+        },
+        {
+          "x": "change",
+          "y": "board"
+        }
+      ],
+      "answers": "WyJzb21lIiwiYmFjayIsIndhc2giLCJkb3duIiwib3ZlciJd",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "day",
+          "y": "table"
+        },
+        {
+          "x": "drug",
+          "y": "room"
+        },
+        {
+          "x": "under",
+          "y": "field"
+        },
+        {
+          "x": "may",
+          "y": "dream"
+        },
+        {
+          "x": "guess",
+          "y": "book"
+        }
+      ],
+      "answers": "WyJ0aW1lIiwic3RvcmUiLCJtaW5lIiwiZGF5Iiwid29yayJd",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "owner",
+          "y": "load"
+        },
+        {
+          "x": "store",
+          "y": "hold"
+        },
+        {
+          "x": "imp",
+          "y": "anger"
+        },
+        {
+          "x": "dash",
+          "y": "room"
+        },
+        {
+          "x": "spar",
+          "y": "boat"
+        }
+      ],
+      "answers": "WyJzaGlwIiwiaG91c2UiLCJlbmQiLCJib2FyZCIsInJvdyJd",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-10-10T14:27:19.290Z"
+}

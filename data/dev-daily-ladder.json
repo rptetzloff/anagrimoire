@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-10",
+  "byDifficulty": {
+    "easy": {
+      "from": "said",
+      "to": "same",
+      "par": 3
+    },
+    "hard": {
+      "from": "bump",
+      "to": "find",
+      "par": 5
+    },
+    "extreme": {
+      "from": "glint",
+      "to": "spark",
+      "par": 8
+    }
+  },
+  "fetchedAt": "2026-10-10T14:27:19.290Z"
+}

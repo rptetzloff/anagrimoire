@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-10",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "disinfect",
+          "y": "hem"
+        },
+        {
+          "x": "pull",
+          "y": "land"
+        },
+        {
+          "x": "club",
+          "y": "boat"
+        },
+        {
+          "x": "hobby",
+          "y": "man"
+        },
+        {
+          "x": "work",
+          "y": "shop"
+        }
+      ],
+      "answers": "WyJhbnQiLCJvdmVyIiwiaG91c2UiLCJob3JzZSIsImJvb2siXQ==",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "skin",
+          "y": "hunter"
+        },
+        {
+          "x": "sun",
+          "y": "cast"
+        },
+        {
+          "x": "out",
+          "y": "space"
+        },
+        {
+          "x": "wood",
+          "y": "load"
+        },
+        {
+          "x": "knock",
+          "y": "right"
+        }
+      ],
+      "answers": "WyJoZWFkIiwiZG93biIsImJhY2siLCJ3b3JrIiwib3V0Il0=",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "watch",
+          "y": "hunt"
+        },
+        {
+          "x": "adult",
+          "y": "wink"
+        },
+        {
+          "x": "arm",
+          "y": "man"
+        },
+        {
+          "x": "cast",
+          "y": "stage"
+        },
+        {
+          "x": "flood",
+          "y": "weight"
+        }
+      ],
+      "answers": "WyJtYW4iLCJob29kIiwiY2hhaXIiLCJvZmYiLCJsaWdodCJd",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-10-10T14:27:16.255Z"
+}

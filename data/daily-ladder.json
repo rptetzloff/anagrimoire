@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-10",
+  "byDifficulty": {
+    "easy": {
+      "from": "jar",
+      "to": "lid",
+      "par": 4
+    },
+    "hard": {
+      "from": "pair",
+      "to": "span",
+      "par": 6
+    },
+    "extreme": {
+      "from": "board",
+      "to": "plank",
+      "par": 8
+    }
+  },
+  "fetchedAt": "2026-10-10T14:27:16.255Z"
+}

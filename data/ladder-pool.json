@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-10",
+  "byDifficulty": {
+    "easy": [
+      {
+        "from": "gist",
+        "to": "meat",
+        "par": 4
+      },
+      {
+        "from": "jump",
+        "to": "leap",
+        "par": 4
+      },
+      {
+        "from": "better",
+        "to": "punter",
+        "par": 3
+      },
+      {
+        "from": "cot",
+        "to": "leg",
+        "par": 3
+      },
+      {
+        "from": "dad",
+        "to": "pop",
+        "par": 3
+      },
+      {
+        "from": "lay",
+        "to": "lie",
+        "par": 3
+      },
+      {
+        "from": "cod",
+        "to": "due",
+        "par": 4
+      },
+      {
+        "from": "bettor",
+        "to": "punter",
+        "par": 4
+      },
+      {
+        "from": "land",
+        "to": "soil",
+        "par": 4
+      },
+      {
+        "from": "hand",
+        "to": "mitt",
+        "par": 4
+      }
+    ],
+    "hard": [
+      {
+        "from": "game",
+        "to": "punt",
+        "par": 5
+      },
+      {
+        "from": "loads",
+        "to": "rafts",
+        "par": 6
+      },
+      {
+        "from": "jute",
+        "to": "rope",
+        "par": 5
+      },
+      {
+        "from": "age",
+        "to": "old",
+        "par": 5
+      },
+      {
+        "from": "backed",
+        "to": "coated",
+        "par": 6
+      },
+      {
+        "from": "bread",
+        "to": "flour",
+        "par": 6
+      },
+      {
+        "from": "more",
+        "to": "much",
+        "par": 5
+      },
+      {
+        "from": "muck",
+        "to": "ooze",
+        "par": 6
+      },
+      {
+        "from": "heaps",
+        "to": "slews",
+        "par": 5
+      },
+      {
+        "from": "mire",
+        "to": "slop",
+        "par": 6
+      }
+    ],
+    "extreme": [
+      {
+        "from": "feller",
+        "to": "logger",
+        "par": 8
+      },
+      {
+        "from": "nape",
+        "to": "neck",
+        "par": 7
+      },
+      {
+        "from": "dress",
+        "to": "frock",
+        "par": 8
+      },
+      {
+        "from": "chip",
+        "to": "nick",
+        "par": 7
+      },
+      {
+        "from": "clump",
+        "to": "flock",
+        "par": 7
+      },
+      {
+        "from": "thin",
+        "to": "wiry",
+        "par": 7
+      },
+      {
+        "from": "gawk",
+        "to": "lump",
+        "par": 7
+      },
+      {
+        "from": "drab",
+        "to": "dull",
+        "par": 8
+      },
+      {
+        "from": "hart",
+        "to": "stag",
+        "par": 7
+      },
+      {
+        "from": "fore",
+        "to": "prow",
+        "par": 7
+      }
+    ]
+  },
+  "fetchedAt": "2026-10-10T14:28:01.308Z"
+}

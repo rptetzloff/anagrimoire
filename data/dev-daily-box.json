@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-10",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "ogw",
+        "had",
+        "tbe",
+        "riu"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "gbl",
+        "ims",
+        "upr",
+        "ano"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "rth",
+        "sap",
+        "eob",
+        "dul"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-10-10T14:27:19.290Z"
+}
