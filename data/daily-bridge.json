@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-17",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "stop",
+          "y": "tone"
+        },
+        {
+          "x": "buy",
+          "y": "last"
+        },
+        {
+          "x": "shell",
+          "y": "tail"
+        },
+        {
+          "x": "result",
+          "y": "hill"
+        },
+        {
+          "x": "dead",
+          "y": "feed"
+        }
+      ],
+      "answers": "WyJvdmVyIiwib3V0IiwiZmlzaCIsImFudCIsImxpbmUiXQ==",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "crack",
+          "y": "pour"
+        },
+        {
+          "x": "waste",
+          "y": "ball"
+        },
+        {
+          "x": "woo",
+          "y": "ounce"
+        },
+        {
+          "x": "moon",
+          "y": "weight"
+        },
+        {
+          "x": "here",
+          "y": "noon"
+        }
+      ],
+      "answers": "WyJkb3duIiwiYmFza2V0IiwiZGVuIiwibGlnaHQiLCJhZnRlciJd",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "may",
+          "y": "dreamer"
+        },
+        {
+          "x": "goal",
+          "y": "box"
+        },
+        {
+          "x": "screen",
+          "y": "pen"
+        },
+        {
+          "x": "figure",
+          "y": "light"
+        },
+        {
+          "x": "ring",
+          "y": "ship"
+        }
+      ],
+      "answers": "WyJkYXkiLCJwb3N0IiwicGxheSIsImhlYWQiLCJsZWFkZXIiXQ==",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-10-17T12:10:10.983Z"
+}

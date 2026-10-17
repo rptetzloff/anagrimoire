@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-17",
+  "byDifficulty": {
+    "easy": [
+      {
+        "from": "pane",
+        "to": "wall",
+        "par": 3
+      },
+      {
+        "from": "foot",
+        "to": "sole",
+        "par": 4
+      },
+      {
+        "from": "dent",
+        "to": "slit",
+        "par": 4
+      },
+      {
+        "from": "calm",
+        "to": "lull",
+        "par": 3
+      },
+      {
+        "from": "furred",
+        "to": "haired",
+        "par": 4
+      },
+      {
+        "from": "have",
+        "to": "lack",
+        "par": 4
+      },
+      {
+        "from": "call",
+        "to": "dial",
+        "par": 4
+      },
+      {
+        "from": "gob",
+        "to": "yap",
+        "par": 3
+      },
+      {
+        "from": "babble",
+        "to": "gurgle",
+        "par": 4
+      },
+      {
+        "from": "track",
+        "to": "trail",
+        "par": 3
+      }
+    ],
+    "hard": [
+      {
+        "from": "deal",
+        "to": "mass",
+        "par": 6
+      },
+      {
+        "from": "move",
+        "to": "push",
+        "par": 5
+      },
+      {
+        "from": "bust",
+        "to": "snap",
+        "par": 6
+      },
+      {
+        "from": "cooked",
+        "to": "stewed",
+        "par": 5
+      },
+      {
+        "from": "lone",
+        "to": "only",
+        "par": 6
+      },
+      {
+        "from": "deal",
+        "to": "mint",
+        "par": 6
+      },
+      {
+        "from": "gasp",
+        "to": "pant",
+        "par": 5
+      },
+      {
+        "from": "cull",
+        "to": "pick",
+        "par": 5
+      },
+      {
+        "from": "bird",
+        "to": "doll",
+        "par": 6
+      },
+      {
+        "from": "bully",
+        "to": "dandy",
+        "par": 6
+      }
+    ],
+    "extreme": [
+      {
+        "from": "buck",
+        "to": "clam",
+        "par": 8
+      },
+      {
+        "from": "lean",
+        "to": "wiry",
+        "par": 7
+      },
+      {
+        "from": "helm",
+        "to": "ship",
+        "par": 7
+      },
+      {
+        "from": "stump",
+        "to": "tooth",
+        "par": 8
+      },
+      {
+        "from": "teeth",
+        "to": "tooth",
+        "par": 8
+      },
+      {
+        "from": "brisk",
+        "to": "fresh",
+        "par": 8
+      },
+      {
+        "from": "deep",
+        "to": "late",
+        "par": 7
+      },
+      {
+        "from": "item",
+        "to": "list",
+        "par": 8
+      },
+      {
+        "from": "pair",
+        "to": "twin",
+        "par": 7
+      },
+      {
+        "from": "skimp",
+        "to": "stint",
+        "par": 7
+      }
+    ]
+  },
+  "fetchedAt": "2026-10-17T12:10:50.291Z"
+}

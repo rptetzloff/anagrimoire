@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-17",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "udc",
+        "inj",
+        "eas",
+        "lmr"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "eca",
+        "lip",
+        "tgu",
+        "sor"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "rux",
+        "tfs",
+        "nod",
+        "eil"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-10-17T12:10:10.983Z"
+}

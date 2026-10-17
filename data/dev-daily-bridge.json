@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-17",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "quarter",
+          "y": "hand"
+        },
+        {
+          "x": "road",
+          "y": "track"
+        },
+        {
+          "x": "case",
+          "y": "book"
+        },
+        {
+          "x": "break",
+          "y": "line"
+        },
+        {
+          "x": "show",
+          "y": "wind"
+        }
+      ],
+      "answers": "WyJiYWNrIiwic2lkZSIsIndvcmsiLCJuZWNrIiwiZG93biJd",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "flex",
+          "y": "zone"
+        },
+        {
+          "x": "walk",
+          "y": "post"
+        },
+        {
+          "x": "wild",
+          "y": "fish"
+        },
+        {
+          "x": "gentle",
+          "y": "slaughter"
+        },
+        {
+          "x": "cease",
+          "y": "place"
+        }
+      ],
+      "answers": "WyJ0aW1lIiwib3V0IiwiY2F0IiwibWFuIiwiZmlyZSJd",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "ten",
+          "y": "eater"
+        },
+        {
+          "x": "sea",
+          "y": "stuff"
+        },
+        {
+          "x": "side",
+          "y": "son"
+        },
+        {
+          "x": "push",
+          "y": "run"
+        },
+        {
+          "x": "wonder",
+          "y": "slide"
+        }
+      ],
+      "answers": "WyJhbnQiLCJmb29kIiwic3RlcCIsIm92ZXIiLCJsYW5kIl0=",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-10-17T12:10:13.391Z"
+}

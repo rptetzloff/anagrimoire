@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-17",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "osy",
+        "gau",
+        "ilf",
+        "rnc"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "its",
+        "ond",
+        "lph",
+        "eac"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "yhu",
+        "sie",
+        "abd",
+        "ptn"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-10-17T12:10:13.391Z"
+}

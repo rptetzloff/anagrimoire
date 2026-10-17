@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-17",
+  "byDifficulty": {
+    "easy": {
+      "from": "form",
+      "to": "kind",
+      "par": 4
+    },
+    "hard": {
+      "from": "hulk",
+      "to": "loom",
+      "par": 5
+    },
+    "extreme": {
+      "from": "bread",
+      "to": "clams",
+      "par": 8
+    }
+  },
+  "fetchedAt": "2026-10-17T12:10:13.391Z"
+}

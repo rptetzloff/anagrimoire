@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-17",
+  "byDifficulty": {
+    "easy": {
+      "from": "cod",
+      "to": "due",
+      "par": 4
+    },
+    "hard": {
+      "from": "heap",
+      "to": "pile",
+      "par": 5
+    },
+    "extreme": {
+      "from": "trash",
+      "to": "tripe",
+      "par": 7
+    }
+  },
+  "fetchedAt": "2026-10-17T12:10:10.983Z"
+}
