@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-24",
+  "byDifficulty": {
+    "easy": {
+      "from": "punt",
+      "to": "push",
+      "par": 3
+    },
+    "hard": {
+      "from": "dear",
+      "to": "love",
+      "par": 6
+    },
+    "extreme": {
+      "from": "nape",
+      "to": "neck",
+      "par": 7
+    }
+  },
+  "fetchedAt": "2026-10-24T12:39:41.678Z"
+}

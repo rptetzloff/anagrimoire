@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-24",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "uel",
+        "rsk",
+        "cpt",
+        "aib"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "riu",
+        "spg",
+        "nat",
+        "efz"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "elt",
+        "poc",
+        "ivg",
+        "nra"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-10-24T12:39:41.678Z"
+}

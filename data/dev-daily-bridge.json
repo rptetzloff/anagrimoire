@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-24",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "come",
+          "y": "turn"
+        },
+        {
+          "x": "foot",
+          "y": "sheet"
+        },
+        {
+          "x": "stand",
+          "y": "bid"
+        },
+        {
+          "x": "long",
+          "y": "out"
+        },
+        {
+          "x": "block",
+          "y": "quarter"
+        }
+      ],
+      "answers": "WyJkb3duIiwid29yayIsIm91dCIsImhhbmQiLCJoZWFkIl0=",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "leg",
+          "y": "anger"
+        },
+        {
+          "x": "hobby",
+          "y": "man"
+        },
+        {
+          "x": "bare",
+          "y": "stool"
+        },
+        {
+          "x": "goal",
+          "y": "box"
+        },
+        {
+          "x": "quick",
+          "y": "blast"
+        }
+      ],
+      "answers": "WyJlbmQiLCJob3JzZSIsImZvb3QiLCJwb3N0Iiwic2FuZCJd",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "pull",
+          "y": "charge"
+        },
+        {
+          "x": "any",
+          "y": "scale"
+        },
+        {
+          "x": "father",
+          "y": "fill"
+        },
+        {
+          "x": "head",
+          "y": "mind"
+        },
+        {
+          "x": "page",
+          "y": "hill"
+        }
+      ],
+      "answers": "WyJvdmVyIiwidGltZSIsImxhbmQiLCJtYXN0ZXIiLCJhbnQiXQ==",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-10-24T12:39:43.072Z"
+}

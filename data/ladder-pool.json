@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-24",
+  "byDifficulty": {
+    "easy": [
+      {
+        "from": "snag",
+        "to": "tear",
+        "par": 4
+      },
+      {
+        "from": "hate",
+        "to": "love",
+        "par": 3
+      },
+      {
+        "from": "mass",
+        "to": "mint",
+        "par": 3
+      },
+      {
+        "from": "eat",
+        "to": "jaw",
+        "par": 3
+      },
+      {
+        "from": "cows",
+        "to": "herd",
+        "par": 4
+      },
+      {
+        "from": "boom",
+        "to": "roar",
+        "par": 3
+      },
+      {
+        "from": "bone",
+        "to": "horn",
+        "par": 3
+      },
+      {
+        "from": "lurch",
+        "to": "pitch",
+        "par": 4
+      },
+      {
+        "from": "bask",
+        "to": "like",
+        "par": 4
+      },
+      {
+        "from": "tons",
+        "to": "wads",
+        "par": 4
+      }
+    ],
+    "hard": [
+      {
+        "from": "bend",
+        "to": "curl",
+        "par": 5
+      },
+      {
+        "from": "muck",
+        "to": "ooze",
+        "par": 6
+      },
+      {
+        "from": "chow",
+        "to": "eats",
+        "par": 6
+      },
+      {
+        "from": "formed",
+        "to": "shaped",
+        "par": 6
+      },
+      {
+        "from": "gone",
+        "to": "past",
+        "par": 5
+      },
+      {
+        "from": "cope",
+        "to": "wall",
+        "par": 5
+      },
+      {
+        "from": "easy",
+        "to": "soft",
+        "par": 5
+      },
+      {
+        "from": "give",
+        "to": "sell",
+        "par": 5
+      },
+      {
+        "from": "scant",
+        "to": "skimp",
+        "par": 6
+      },
+      {
+        "from": "loaf",
+        "to": "loll",
+        "par": 5
+      }
+    ],
+    "extreme": [
+      {
+        "from": "skimp",
+        "to": "stint",
+        "par": 7
+      },
+      {
+        "from": "lazy",
+        "to": "slow",
+        "par": 8
+      },
+      {
+        "from": "damned",
+        "to": "doomed",
+        "par": 8
+      },
+      {
+        "from": "creep",
+        "to": "spook",
+        "par": 8
+      },
+      {
+        "from": "brisk",
+        "to": "fresh",
+        "par": 8
+      },
+      {
+        "from": "heater",
+        "to": "warmer",
+        "par": 8
+      },
+      {
+        "from": "aged",
+        "to": "worn",
+        "par": 8
+      },
+      {
+        "from": "goofy",
+        "to": "silly",
+        "par": 7
+      },
+      {
+        "from": "slops",
+        "to": "swill",
+        "par": 8
+      },
+      {
+        "from": "chow",
+        "to": "grub",
+        "par": 7
+      }
+    ]
+  },
+  "fetchedAt": "2026-10-24T12:40:18.807Z"
+}

@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-24",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "pull",
+          "y": "head"
+        },
+        {
+          "x": "some",
+          "y": "keeper"
+        },
+        {
+          "x": "governor",
+          "y": "shape"
+        },
+        {
+          "x": "service",
+          "y": "hole"
+        },
+        {
+          "x": "wash",
+          "y": "mate"
+        }
+      ],
+      "answers": "WyJvdmVyIiwidGltZSIsInNoaXAiLCJtYW4iLCJyb29tIl0=",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "mad",
+          "y": "break"
+        },
+        {
+          "x": "law",
+          "y": "ability"
+        },
+        {
+          "x": "fore",
+          "y": "wright"
+        },
+        {
+          "x": "try",
+          "y": "put"
+        },
+        {
+          "x": "mortar",
+          "y": "walk"
+        }
+      ],
+      "answers": "WyJob3VzZSIsInN1aXQiLCJwbGF5Iiwib3V0IiwiYm9hcmQiXQ==",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "work",
+          "y": "store"
+        },
+        {
+          "x": "black",
+          "y": "first"
+        },
+        {
+          "x": "fear",
+          "y": "one"
+        },
+        {
+          "x": "workman",
+          "y": "wise"
+        },
+        {
+          "x": "cut",
+          "y": "fire"
+        }
+      ],
+      "answers": "WyJib29rIiwiaGVhZCIsInNvbWUiLCJsaWtlIiwiYmFjayJd",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-10-24T12:39:41.678Z"
+}
