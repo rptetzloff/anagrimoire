@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-31",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "hide",
+          "y": "class"
+        },
+        {
+          "x": "shut",
+          "y": "grade"
+        },
+        {
+          "x": "cast",
+          "y": "beat"
+        },
+        {
+          "x": "red",
+          "y": "master"
+        },
+        {
+          "x": "death",
+          "y": "spread"
+        }
+      ],
+      "answers": "WyJvdXQiLCJkb3duIiwib2ZmIiwiaGVhZCIsImJlZCJd",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "meddle",
+          "y": "how"
+        },
+        {
+          "x": "street",
+          "y": "pet"
+        },
+        {
+          "x": "clock",
+          "y": "load"
+        },
+        {
+          "x": "main",
+          "y": "lord"
+        },
+        {
+          "x": "change",
+          "y": "wrought"
+        }
+      ],
+      "answers": "WyJzb21lIiwiY2FyIiwid29yayIsImxhbmQiLCJvdmVyIl0=",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "farm",
+          "y": "boat"
+        },
+        {
+          "x": "show",
+          "y": "worker"
+        },
+        {
+          "x": "hatch",
+          "y": "packer"
+        },
+        {
+          "x": "basket",
+          "y": "park"
+        },
+        {
+          "x": "flood",
+          "y": "weight"
+        }
+      ],
+      "answers": "WyJob3VzZSIsImNhc2UiLCJiYWNrIiwiYmFsbCIsImxpZ2h0Il0=",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-10-31T14:31:30.369Z"
+}

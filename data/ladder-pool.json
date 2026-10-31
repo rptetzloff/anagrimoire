@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-31",
+  "byDifficulty": {
+    "easy": [
+      {
+        "from": "bolt",
+        "to": "lock",
+        "par": 4
+      },
+      {
+        "from": "con",
+        "to": "pro",
+        "par": 4
+      },
+      {
+        "from": "flock",
+        "to": "stack",
+        "par": 4
+      },
+      {
+        "from": "cart",
+        "to": "hale",
+        "par": 3
+      },
+      {
+        "from": "cod",
+        "to": "due",
+        "par": 4
+      },
+      {
+        "from": "track",
+        "to": "trail",
+        "par": 3
+      },
+      {
+        "from": "gill",
+        "to": "pint",
+        "par": 4
+      },
+      {
+        "from": "rant",
+        "to": "rave",
+        "par": 4
+      },
+      {
+        "from": "rice",
+        "to": "sake",
+        "par": 3
+      },
+      {
+        "from": "back",
+        "to": "hind",
+        "par": 4
+      }
+    ],
+    "hard": [
+      {
+        "from": "real",
+        "to": "very",
+        "par": 6
+      },
+      {
+        "from": "heaps",
+        "to": "slews",
+        "par": 5
+      },
+      {
+        "from": "gait",
+        "to": "pace",
+        "par": 5
+      },
+      {
+        "from": "dupe",
+        "to": "gull",
+        "par": 5
+      },
+      {
+        "from": "body",
+        "to": "head",
+        "par": 5
+      },
+      {
+        "from": "rump",
+        "to": "seat",
+        "par": 5
+      },
+      {
+        "from": "girl",
+        "to": "miss",
+        "par": 5
+      },
+      {
+        "from": "piles",
+        "to": "rafts",
+        "par": 5
+      },
+      {
+        "from": "grit",
+        "to": "sand",
+        "par": 5
+      },
+      {
+        "from": "fast",
+        "to": "slow",
+        "par": 6
+      }
+    ],
+    "extreme": [
+      {
+        "from": "crib",
+        "to": "trot",
+        "par": 7
+      },
+      {
+        "from": "brew",
+        "to": "sour",
+        "par": 7
+      },
+      {
+        "from": "star",
+        "to": "whiz",
+        "par": 7
+      },
+      {
+        "from": "dress",
+        "to": "frock",
+        "par": 8
+      },
+      {
+        "from": "poke",
+        "to": "stab",
+        "par": 8
+      },
+      {
+        "from": "beef",
+        "to": "oxen",
+        "par": 7
+      },
+      {
+        "from": "damned",
+        "to": "doomed",
+        "par": 8
+      },
+      {
+        "from": "draw",
+        "to": "pull",
+        "par": 8
+      },
+      {
+        "from": "spent",
+        "to": "tired",
+        "par": 7
+      },
+      {
+        "from": "clip",
+        "to": "time",
+        "par": 8
+      }
+    ]
+  },
+  "fetchedAt": "2026-10-31T14:32:18.260Z"
+}

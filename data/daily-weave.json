@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-31",
+  "byDifficulty": {
+    "easy": {
+      "clue": "Kitchen drawer",
+      "cols": 6,
+      "board": [
+        "ptlmrs",
+        "ieeeap",
+        "emltas",
+        "urauhg",
+        "teserr",
+        "tnsila",
+        "oisets",
+        "ngevre"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoidXRlbnNpbHMiLCJwYXRoIjpbMTgsMjQsMjUsMzEsMjYsMzMsMzQsNDFdfSwid29yZHMiOlt7InciOiJwZWVsZXIiLCJwYXRoIjpbMCw3LDgsMiw5LDRdfSx7InciOiJ0aW1lciIsInBhdGgiOlsxLDYsMTMsMTIsMTldfSx7InciOiJtYXNoZXIiLCJwYXRoIjpbMywxMCwxNywyMiwyNywyOF19LHsidyI6InNwYXR1bGEiLCJwYXRoIjpbNSwxMSwxNiwxNSwyMSwxNCwyMF19LHsidyI6ImdyYXRlciIsInBhdGgiOlsyMywyOSwzNSw0MCw0Nyw0Nl19LHsidyI6InRvbmdzIiwicGF0aCI6WzMwLDM2LDQyLDQzLDM4XX0seyJ3Ijoic2lldmUiLCJwYXRoIjpbMzIsMzcsNDQsNDUsMzldfV19"
+    },
+    "hard": {
+      "clue": "Under the hood",
+      "cols": 7,
+      "board": [
+        "clhcbum",
+        "hbutfep",
+        "ucrpner",
+        "buaadee",
+        "atweklr",
+        "eoipips",
+        "nmebnti",
+        "gromofe",
+        "ineufrl"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYXV0b21vYmlsZSIsInBhdGgiOlsyOCwyMiwyOSwzNiw0Myw1MSw0NSwzOSwzMywyN119LCJ3b3JkcyI6W3sidyI6ImNsdXRjaCIsInBhdGgiOlswLDEsOSwxMCwzLDJdfSx7InciOiJidW1wZXIiLCJwYXRoIjpbNCw1LDYsMTMsMTksMjBdfSx7InciOiJodWJjYXAiLCJwYXRoIjpbNywxNCwyMSwxNSwyMywxN119LHsidyI6ImJyYWtlIiwicGF0aCI6WzgsMTYsMjQsMzIsMzFdfSx7InciOiJmZW5kZXIiLCJwYXRoIjpbMTEsMTIsMTgsMjUsMjYsMzRdfSx7InciOiJ3aXBlciIsInBhdGgiOlszMCwzNywzOCw0NCw1MF19LHsidyI6ImVuZ2luZSIsInBhdGgiOlszNSw0Miw0OSw1Niw1Nyw1OF19LHsidyI6InBpc3RvbiIsInBhdGgiOls0MCw0OCw0MSw0Nyw1Myw0Nl19LHsidyI6Im11ZmZsZXIiLCJwYXRoIjpbNTIsNTksNjAsNTQsNjIsNTUsNjFdfV19"
+    },
+    "extreme": {
+      "clue": "Feel the burn",
+      "cols": 8,
+      "board": [
+        "bcreestr",
+        "yuapples",
+        "ordpitae",
+        "gjisuhct",
+        "aoositud",
+        "cunghbup",
+        "rcguparm",
+        "gihlebbt",
+        "nrelweab",
+        "bakaslle"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYnJlYWthc3dlYXQiLCJwYXRoIjpbNzIsNjUsNjYsNzMsNzQsNzUsNzYsNjgsNjksNzAsNjNdfSwid29yZHMiOlt7InciOiJidXJwZWUiLCJwYXRoIjpbMCw5LDIsMTEsMyw0XX0seyJ3IjoiY2FyZGlvIiwicGF0aCI6WzEsMTAsMTcsMTgsMjYsMzNdfSx7InciOiJzdHJldGNoIiwicGF0aCI6WzUsNiw3LDE0LDIxLDMwLDI5XX0seyJ3IjoieW9nYSIsInBhdGgiOls4LDE2LDI0LDMyXX0seyJ3IjoicGlsYXRlcyIsInBhdGgiOlsxMiwyMCwxMywyMiwzMSwyMywxNV19LHsidyI6InB1c2h1cCIsInBhdGgiOlsxOSwyOCwzNSw0NCw1MSw1Ml19LHsidyI6ImpvZ2dpbmciLCJwYXRoIjpbMjUsMzQsNDMsNTAsNTcsNjQsNTZdfSx7InciOiJzaXR1cCIsInBhdGgiOlsyNywzNiwzNywzOCw0N119LHsidyI6ImR1bWJiZWxsIiwicGF0aCI6WzM5LDQ2LDU1LDYyLDcxLDc5LDc4LDc3XX0seyJ3IjoiY3J1bmNoIiwicGF0aCI6WzQwLDQ4LDQxLDQyLDQ5LDU4XX0seyJ3IjoiYmFyYmVsbCIsInBhdGgiOls0NSw1Myw1NCw2MSw2MCw1OSw2N119XX0="
+    }
+  },
+  "fetchedAt": "2026-10-31T14:31:30.369Z"
+}

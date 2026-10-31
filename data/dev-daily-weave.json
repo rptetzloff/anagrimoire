@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-31",
+  "byDifficulty": {
+    "easy": {
+      "clue": "Bird watching",
+      "cols": 6,
+      "board": [
+        "ssribf",
+        "owaoni",
+        "lnlcnc",
+        "gawlah",
+        "rboalr",
+        "kwinid",
+        "terrss",
+        "nhrudh"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3Ijoic29uZ2JpcmRzIiwicGF0aCI6WzAsNiwxMywxOCwyNSwzMiwzOSw0Niw0MV19LCJ3b3JkcyI6W3sidyI6InN3YWxsb3ciLCJwYXRoIjpbMSw3LDgsMTQsMjEsMjYsMjBdfSx7InciOiJyb2JpbiIsInBhdGgiOlsyLDksNCwzLDEwXX0seyJ3IjoiZmluY2giLCJwYXRoIjpbNSwxMSwxNiwxNywyM119LHsidyI6ImxhcmsiLCJwYXRoIjpbMTIsMTksMjQsMzBdfSx7InciOiJjYXJkaW5hbCIsInBhdGgiOlsxNSwyMiwyOSwzNSwzNCwzMywyNywyOF19LHsidyI6IndyZW4iLCJwYXRoIjpbMzEsMzgsMzcsNDJdfSx7InciOiJ0aHJ1c2giLCJwYXRoIjpbMzYsNDMsNDQsNDUsNDAsNDddfV19"
+    },
+    "hard": {
+      "clue": "Getting around town",
+      "cols": 7,
+      "board": [
+        "mrsctro",
+        "ohitool",
+        "apscrtl",
+        "waekaee",
+        "rdnsmyr",
+        "tsbiptn",
+        "ubycoir",
+        "wwacyra",
+        "agonlet"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoidHJhbnNwb3J0IiwicGF0aCI6WzM1LDI4LDIyLDMwLDMxLDM5LDQ2LDU0LDYyXX0sIndvcmRzIjpbeyJ3IjoibW9wZWQiLCJwYXRoIjpbMCw3LDE1LDIzLDI5XX0seyJ3Ijoicmlja3NoYXciLCJwYXRoIjpbMSw5LDE3LDI0LDE2LDgsMTQsMjFdfSx7InciOiJzY29vdGVyIiwicGF0aCI6WzIsMywxMSwxMiwxOSwyNiwzNF19LHsidyI6InRyb2xsZXkiLCJwYXRoIjpbNCw1LDYsMTMsMjAsMjcsMzNdfSx7InciOiJ0cmFtIiwicGF0aCI6WzEwLDE4LDI1LDMyXX0seyJ3Ijoic3Vid2F5IiwicGF0aCI6WzM2LDQyLDQzLDUwLDUxLDQ0XX0seyJ3IjoiYmljeWNsZSIsInBhdGgiOlszNywzOCw0NSw1Myw1Miw2MCw2MV19LHsidyI6InRyYWluIiwicGF0aCI6WzQwLDQ4LDU1LDQ3LDQxXX0seyJ3Ijoid2Fnb24iLCJwYXRoIjpbNDksNTYsNTcsNTgsNTldfV19"
+    },
+    "extreme": {
+      "clue": "May I have this dance",
+      "cols": 8,
+      "board": [
+        "twstctan",
+        "blinoogm",
+        "eoagroos",
+        "raslidga",
+        "bolwinms",
+        "jrusabsa",
+        "wimcfaml",
+        "abvooapo",
+        "laexmrtl",
+        "tzobtoka"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYmFsbHJvb20iLCJwYXRoIjpbMzIsMjUsMzQsMjcsMjAsMTMsMjIsMTVdfSwid29yZHMiOlt7InciOiJ0d2lzdCIsInBhdGgiOlswLDEsMTAsMiwzXX0seyJ3IjoiY29uZ2EiLCJwYXRoIjpbNCwxMiwxMSwxOSwxOF19LHsidyI6InRhbmdvIiwicGF0aCI6WzUsNiw3LDE0LDIxXX0seyJ3IjoiYm9sZXJvIiwicGF0aCI6WzgsMTcsOSwxNiwyNCwzM119LHsidyI6InNhbWJhIiwicGF0aCI6WzIzLDMxLDM4LDQ1LDQ0XX0seyJ3Ijoic3dpbmciLCJwYXRoIjpbMjYsMzUsMjgsMzcsMzBdfSx7InciOiJkaXNjbyIsInBhdGgiOlsyOSwzNiw0Myw1MSw1OV19LHsidyI6InNhbHNhIiwicGF0aCI6WzM5LDQ3LDU1LDQ2LDUzXX0seyJ3Ijoiaml2ZSIsInBhdGgiOls0MCw0OSw1OCw2Nl19LHsidyI6InJ1bWJhIiwicGF0aCI6WzQxLDQyLDUwLDU3LDY1XX0seyJ3Ijoid2FsdHoiLCJwYXRoIjpbNDgsNTYsNjQsNzIsNzNdfSx7InciOiJmb3h0cm90IiwicGF0aCI6WzUyLDYwLDY3LDc2LDY5LDc3LDcwXX0seyJ3IjoibWFtYm8iLCJwYXRoIjpbNTQsNjEsNjgsNzUsNzRdfSx7InciOiJwb2xrYSIsInBhdGgiOls2Miw2Myw3MSw3OCw3OV19XX0="
+    }
+  },
+  "fetchedAt": "2026-10-31T14:31:33.823Z"
+}

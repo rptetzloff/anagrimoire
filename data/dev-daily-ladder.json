@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-31",
+  "byDifficulty": {
+    "easy": {
+      "from": "lack",
+      "to": "want",
+      "par": 4
+    },
+    "hard": {
+      "from": "bolt",
+      "to": "slap",
+      "par": 5
+    },
+    "extreme": {
+      "from": "mass",
+      "to": "slew",
+      "par": 7
+    }
+  },
+  "fetchedAt": "2026-10-31T14:31:33.823Z"
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-31",
+  "byDifficulty": {
+    "easy": {
+      "from": "boom",
+      "to": "roar",
+      "par": 3
+    },
+    "hard": {
+      "from": "ruin",
+      "to": "sack",
+      "par": 6
+    },
+    "extreme": {
+      "from": "even",
+      "to": "flat",
+      "par": 8
+    }
+  },
+  "fetchedAt": "2026-10-31T14:31:30.369Z"
+}

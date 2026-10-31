@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-31",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "scholar",
+          "y": "wreck"
+        },
+        {
+          "x": "cross",
+          "y": "land"
+        },
+        {
+          "x": "police",
+          "y": "grove"
+        },
+        {
+          "x": "end",
+          "y": "phone"
+        },
+        {
+          "x": "pull",
+          "y": "shine"
+        }
+      ],
+      "answers": "WyJzaGlwIiwib3ZlciIsIm1hbiIsImVhciIsIm91dCJd",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "week",
+          "y": "anger"
+        },
+        {
+          "x": "pig",
+          "y": "spin"
+        },
+        {
+          "x": "out",
+          "y": "bone"
+        },
+        {
+          "x": "fore",
+          "y": "kerchief"
+        },
+        {
+          "x": "over",
+          "y": "pike"
+        }
+      ],
+      "answers": "WyJlbmQiLCJ0YWlsIiwiYmFjayIsImhhbmQiLCJ0dXJuIl0=",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "shut",
+          "y": "grade"
+        },
+        {
+          "x": "street",
+          "y": "jack"
+        },
+        {
+          "x": "patch",
+          "y": "station"
+        },
+        {
+          "x": "farm",
+          "y": "fill"
+        },
+        {
+          "x": "hand",
+          "y": "pocket"
+        }
+      ],
+      "answers": "WyJkb3duIiwiY2FyIiwid29yayIsImxhbmQiLCJwaWNrIl0=",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-10-31T14:31:33.823Z"
+}
