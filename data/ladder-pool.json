@@ -1,0 +1,162 @@
+{
+  "date": "2026-11-06",
+  "byDifficulty": {
+    "easy": [
+      {
+        "from": "bang",
+        "to": "bolt",
+        "par": 4
+      },
+      {
+        "from": "cling",
+        "to": "stick",
+        "par": 4
+      },
+      {
+        "from": "hook",
+        "to": "soak",
+        "par": 3
+      },
+      {
+        "from": "share",
+        "to": "stock",
+        "par": 4
+      },
+      {
+        "from": "hat",
+        "to": "lid",
+        "par": 3
+      },
+      {
+        "from": "howl",
+        "to": "wail",
+        "par": 4
+      },
+      {
+        "from": "bask",
+        "to": "like",
+        "par": 4
+      },
+      {
+        "from": "hint",
+        "to": "mite",
+        "par": 3
+      },
+      {
+        "from": "beak",
+        "to": "bird",
+        "par": 4
+      },
+      {
+        "from": "dodge",
+        "to": "hedge",
+        "par": 3
+      }
+    ],
+    "hard": [
+      {
+        "from": "goad",
+        "to": "prod",
+        "par": 5
+      },
+      {
+        "from": "dart",
+        "to": "flit",
+        "par": 6
+      },
+      {
+        "from": "howl",
+        "to": "roar",
+        "par": 5
+      },
+      {
+        "from": "puny",
+        "to": "weak",
+        "par": 5
+      },
+      {
+        "from": "best",
+        "to": "good",
+        "par": 5
+      },
+      {
+        "from": "heap",
+        "to": "pile",
+        "par": 5
+      },
+      {
+        "from": "care",
+        "to": "fear",
+        "par": 6
+      },
+      {
+        "from": "bats",
+        "to": "daft",
+        "par": 5
+      },
+      {
+        "from": "age",
+        "to": "old",
+        "par": 5
+      },
+      {
+        "from": "lope",
+        "to": "trot",
+        "par": 5
+      }
+    ],
+    "extreme": [
+      {
+        "from": "bang",
+        "to": "clap",
+        "par": 7
+      },
+      {
+        "from": "flex",
+        "to": "hump",
+        "par": 7
+      },
+      {
+        "from": "chunk",
+        "to": "clump",
+        "par": 8
+      },
+      {
+        "from": "poor",
+        "to": "rich",
+        "par": 7
+      },
+      {
+        "from": "sleek",
+        "to": "slick",
+        "par": 8
+      },
+      {
+        "from": "goofy",
+        "to": "silly",
+        "par": 7
+      },
+      {
+        "from": "keep",
+        "to": "lose",
+        "par": 7
+      },
+      {
+        "from": "soap",
+        "to": "wash",
+        "par": 7
+      },
+      {
+        "from": "draw",
+        "to": "pull",
+        "par": 8
+      },
+      {
+        "from": "flip",
+        "to": "toss",
+        "par": 8
+      }
+    ]
+  },
+  "fetchedAt": "2026-11-06T15:55:21.849Z"
+}

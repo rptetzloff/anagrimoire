@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-06",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "hold",
+          "y": "dose"
+        },
+        {
+          "x": "carry",
+          "y": "live"
+        },
+        {
+          "x": "kick",
+          "y": "ward"
+        },
+        {
+          "x": "sac",
+          "y": "head"
+        },
+        {
+          "x": "black",
+          "y": "way"
+        }
+      ],
+      "answers": "WyJvdmVyIiwib3V0IiwiYmFjayIsInJlZCIsImhlYWQiXQ==",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "trench",
+          "y": "elope"
+        },
+        {
+          "x": "sweat",
+          "y": "lift"
+        },
+        {
+          "x": "lumber",
+          "y": "hammer"
+        },
+        {
+          "x": "gang",
+          "y": "owner"
+        },
+        {
+          "x": "hand",
+          "y": "road"
+        }
+      ],
+      "answers": "WyJhbnQiLCJzaG9wIiwiamFjayIsImxhbmQiLCJyYWlsIl0=",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "bother",
+          "y": "body"
+        },
+        {
+          "x": "every",
+          "y": "self"
+        },
+        {
+          "x": "coward",
+          "y": "box"
+        },
+        {
+          "x": "over",
+          "y": "cuff"
+        },
+        {
+          "x": "student",
+          "y": "yard"
+        }
+      ],
+      "answers": "WyJzb21lIiwib25lIiwiaWNlIiwiaGFuZCIsInNoaXAiXQ==",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-11-06T15:54:31.337Z"
+}

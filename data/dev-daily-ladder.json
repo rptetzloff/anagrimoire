@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-06",
+  "byDifficulty": {
+    "easy": {
+      "from": "sour",
+      "to": "tart",
+      "par": 4
+    },
+    "hard": {
+      "from": "dart",
+      "to": "tear",
+      "par": 5
+    },
+    "extreme": {
+      "from": "grow",
+      "to": "turn",
+      "par": 8
+    }
+  },
+  "fetchedAt": "2026-11-06T15:54:32.862Z"
+}

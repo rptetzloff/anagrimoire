@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-06",
+  "byDifficulty": {
+    "easy": {
+      "from": "bubble",
+      "to": "gurgle",
+      "par": 3
+    },
+    "hard": {
+      "from": "face",
+      "to": "nose",
+      "par": 5
+    },
+    "extreme": {
+      "from": "dish",
+      "to": "meal",
+      "par": 7
+    }
+  },
+  "fetchedAt": "2026-11-06T15:54:31.337Z"
+}

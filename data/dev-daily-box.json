@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-06",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "rik",
+        "dcl",
+        "uys",
+        "ant"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "toe",
+        "gsw",
+        "hua",
+        "icr"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "rgm",
+        "zxl",
+        "edo",
+        "aiy"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-11-06T15:54:32.862Z"
+}

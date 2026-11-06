@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-06",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "grand",
+          "y": "out"
+        },
+        {
+          "x": "step",
+          "y": "like"
+        },
+        {
+          "x": "milk",
+          "y": "hunt"
+        },
+        {
+          "x": "hide",
+          "y": "live"
+        },
+        {
+          "x": "fore",
+          "y": "some"
+        }
+      ],
+      "answers": "WyJzdGFuZCIsImNoaWxkIiwibWFuIiwib3V0IiwiaGFuZCJd",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "book",
+          "y": "hole"
+        },
+        {
+          "x": "bare",
+          "y": "path"
+        },
+        {
+          "x": "carriage",
+          "y": "ward"
+        },
+        {
+          "x": "match",
+          "y": "shop"
+        },
+        {
+          "x": "companion",
+          "y": "wreck"
+        }
+      ],
+      "answers": "WyJ3b3JtIiwiZm9vdCIsIndheSIsImJvb2siLCJzaGlwIl0=",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "sea",
+          "y": "kick"
+        },
+        {
+          "x": "waste",
+          "y": "ball"
+        },
+        {
+          "x": "down",
+          "y": "side"
+        },
+        {
+          "x": "inform",
+          "y": "acid"
+        },
+        {
+          "x": "box",
+          "y": "rot"
+        }
+      ],
+      "answers": "WyJzaWRlIiwiYmFza2V0IiwiaGlsbCIsImFudCIsImNhciJd",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-11-06T15:54:32.862Z"
+}

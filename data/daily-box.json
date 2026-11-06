@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-06",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "cig",
+        "nrv",
+        "efs",
+        "ayl"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "tgc",
+        "elw",
+        "rof",
+        "aus"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "nae",
+        "ykl",
+        "tbu",
+        "oir"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-11-06T15:54:31.337Z"
+}
