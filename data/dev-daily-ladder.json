@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-14",
+  "byDifficulty": {
+    "easy": {
+      "from": "better",
+      "to": "punter",
+      "par": 3
+    },
+    "hard": {
+      "from": "loud",
+      "to": "soft",
+      "par": 5
+    },
+    "extreme": {
+      "from": "blamed",
+      "to": "cursed",
+      "par": 8
+    }
+  },
+  "fetchedAt": "2026-11-14T15:02:02.746Z"
+}

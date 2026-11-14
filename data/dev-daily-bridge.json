@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-14",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "hand",
+          "y": "shine"
+        },
+        {
+          "x": "green",
+          "y": "pack"
+        },
+        {
+          "x": "low",
+          "y": "wind"
+        },
+        {
+          "x": "pony",
+          "y": "light"
+        },
+        {
+          "x": "main",
+          "y": "feed"
+        }
+      ],
+      "answers": "WyJvdXQiLCJiYWNrIiwiZG93biIsInRhaWwiLCJsaW5lIl0=",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "hat",
+          "y": "dish"
+        },
+        {
+          "x": "counter",
+          "y": "way"
+        },
+        {
+          "x": "crow",
+          "y": "room"
+        },
+        {
+          "x": "rough",
+          "y": "husband"
+        },
+        {
+          "x": "river",
+          "y": "show"
+        }
+      ],
+      "answers": "WyJyZWQiLCJwYXJ0IiwiYmFyIiwiaG91c2UiLCJzaWRlIl0=",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "busy",
+          "y": "work"
+        },
+        {
+          "x": "take",
+          "y": "throw"
+        },
+        {
+          "x": "fear",
+          "y": "way"
+        },
+        {
+          "x": "hand",
+          "y": "down"
+        },
+        {
+          "x": "out",
+          "y": "water"
+        }
+      ],
+      "answers": "WyJib2R5Iiwib3ZlciIsInNvbWUiLCJzaGFrZSIsImJyZWFrIl0=",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-11-14T15:02:02.746Z"
+}

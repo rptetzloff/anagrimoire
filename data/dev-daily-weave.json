@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-14",
+  "byDifficulty": {
+    "easy": {
+      "clue": "Deal me in",
+      "cols": 6,
+      "board": [
+        "ryspsa",
+        "muonpd",
+        "mkapee",
+        "erhcus",
+        "ergmes",
+        "rdacrb",
+        "cawiba",
+        "tsiheg"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY2FyZGdhbWVzIiwicGF0aCI6WzM2LDM3LDMwLDMxLDI2LDMyLDI3LDI4LDI5XX0sIndvcmRzIjpbeyJ3IjoicnVtbXkiLCJwYXRoIjpbMCw3LDEyLDYsMV19LHsidyI6InNuYXAiLCJwYXRoIjpbMiw5LDE0LDE1XX0seyJ3IjoicG9rZXIiLCJwYXRoIjpbMyw4LDEzLDE4LDE5XX0seyJ3Ijoic3BhZGVzIiwicGF0aCI6WzQsMTAsNSwxMSwxNywyM119LHsidyI6ImV1Y2hyZSIsInBhdGgiOlsxNiwyMiwyMSwyMCwyNSwyNF19LHsidyI6ImNyaWJiYWdlIiwicGF0aCI6WzMzLDM0LDM5LDQwLDM1LDQxLDQ3LDQ2XX0seyJ3Ijoid2hpc3QiLCJwYXRoIjpbMzgsNDUsNDQsNDMsNDJdfV19"
+    },
+    "hard": {
+      "clue": "Creepy crawlies",
+      "cols": 7,
+      "board": [
+        "alidbci",
+        "ophweec",
+        "ucaslta",
+        "fstepdg",
+        "iewiahn",
+        "rfevlao",
+        "ilyeter",
+        "mnsistn",
+        "antects"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiaW5zZWN0cyIsInBhdGgiOls0Miw1MCw1MSw1OSw2MCw2MSw2Ml19LCJ3b3JkcyI6W3sidyI6ImFwaGlkIiwicGF0aCI6WzAsOCw5LDIsM119LHsidyI6ImxvY3VzdCIsInBhdGgiOlsxLDcsMTUsMTQsMjIsMjNdfSx7InciOiJiZWV0bGUiLCJwYXRoIjpbNCwxMiwxMSwxOSwxOCwyNF19LHsidyI6ImNpY2FkYSIsInBhdGgiOls1LDYsMTMsMjAsMjYsMzJdfSx7InciOiJ3YXNwIiwicGF0aCI6WzEwLDE2LDE3LDI1XX0seyJ3IjoiZmlyZWZseSIsInBhdGgiOlsyMSwyOCwzNSwyOSwzNiw0Myw0NF19LHsidyI6ImduYXQiLCJwYXRoIjpbMjcsMzQsNDAsNDZdfSx7InciOiJ3ZWV2aWwiLCJwYXRoIjpbMzAsMzcsNDUsMzgsMzEsMzldfSx7InciOiJob3JuZXQiLCJwYXRoIjpbMzMsNDEsNDgsNTUsNDcsNTRdfSx7InciOiJtYW50aXMiLCJwYXRoIjpbNDksNTYsNTcsNTgsNTIsNTNdfV19"
+    },
+    "extreme": {
+      "clue": "Bundle up",
+      "cols": 8,
+      "board": [
+        "sovesfro",
+        "ihslaksi",
+        "ictcragt",
+        "cbofsitl",
+        "eloglgno",
+        "hgiegceo",
+        "wntaotim",
+        "pinercfu",
+        "kamtaorl",
+        "aritenyr"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3Ijoid2ludGVydGltZSIsInBhdGgiOls0OCw1Nyw0OSw1MCw1OSw2MCw1Myw1NCw1NSw0Nl19LCJ3b3JkcyI6W3sidyI6InNob3ZlbCIsInBhdGgiOlswLDksMSwyLDMsMTFdfSx7InciOiJza2F0aW5nIiwicGF0aCI6WzQsMTMsMjEsMzAsMjksMzgsMzddfSx7InciOiJmcm9zdCIsInBhdGgiOls1LDYsNywxNCwyM119LHsidyI6ImljaWNsZSIsInBhdGgiOls4LDE3LDE2LDI0LDMzLDMyXX0seyJ3Ijoic2NhcmYiLCJwYXRoIjpbMTAsMTksMTIsMjAsMjddfSx7InciOiJpZ2xvbyIsInBhdGgiOlsxNSwyMiwzMSwzOSw0N119LHsidyI6InRvYm9nZ2FuIiwicGF0aCI6WzE4LDI2LDI1LDM0LDM1LDQ0LDUxLDU4XX0seyJ3Ijoic2xlaWdoIiwicGF0aCI6WzI4LDM2LDQzLDQyLDQxLDQwXX0seyJ3IjoiY29jb2EiLCJwYXRoIjpbNDUsNTIsNjEsNjksNjhdfSx7InciOiJwYXJrYSIsInBhdGgiOls1Niw2NSw3Myw2NCw3Ml19LHsidyI6ImZsdXJyeSIsInBhdGgiOls2Miw3MSw2Myw3MCw3OSw3OF19LHsidyI6Im1pdHRlbiIsInBhdGgiOls2Niw3NCw2Nyw3NSw3Niw3N119XX0="
+    }
+  },
+  "fetchedAt": "2026-11-14T15:02:02.746Z"
+}

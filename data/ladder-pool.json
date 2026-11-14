@@ -1,0 +1,162 @@
+{
+  "date": "2026-11-14",
+  "byDifficulty": {
+    "easy": [
+      {
+        "from": "good",
+        "to": "well",
+        "par": 4
+      },
+      {
+        "from": "cake",
+        "to": "coat",
+        "par": 4
+      },
+      {
+        "from": "con",
+        "to": "pro",
+        "par": 4
+      },
+      {
+        "from": "bolt",
+        "to": "lock",
+        "par": 4
+      },
+      {
+        "from": "mass",
+        "to": "mint",
+        "par": 3
+      },
+      {
+        "from": "pare",
+        "to": "peel",
+        "par": 4
+      },
+      {
+        "from": "cant",
+        "to": "tilt",
+        "par": 4
+      },
+      {
+        "from": "pate",
+        "to": "poll",
+        "par": 3
+      },
+      {
+        "from": "heal",
+        "to": "mend",
+        "par": 4
+      },
+      {
+        "from": "flock",
+        "to": "stack",
+        "par": 4
+      }
+    ],
+    "hard": [
+      {
+        "from": "cool",
+        "to": "warm",
+        "par": 5
+      },
+      {
+        "from": "potter",
+        "to": "tinker",
+        "par": 5
+      },
+      {
+        "from": "cheek",
+        "to": "trunk",
+        "par": 6
+      },
+      {
+        "from": "loaf",
+        "to": "loll",
+        "par": 5
+      },
+      {
+        "from": "age",
+        "to": "old",
+        "par": 5
+      },
+      {
+        "from": "dear",
+        "to": "love",
+        "par": 6
+      },
+      {
+        "from": "rugged",
+        "to": "rutted",
+        "par": 5
+      },
+      {
+        "from": "boom",
+        "to": "nail",
+        "par": 6
+      },
+      {
+        "from": "heap",
+        "to": "pile",
+        "par": 5
+      },
+      {
+        "from": "loaf",
+        "to": "lurk",
+        "par": 5
+      }
+    ],
+    "extreme": [
+      {
+        "from": "poor",
+        "to": "rich",
+        "par": 7
+      },
+      {
+        "from": "driven",
+        "to": "goaded",
+        "par": 7
+      },
+      {
+        "from": "booth",
+        "to": "stall",
+        "par": 8
+      },
+      {
+        "from": "haunt",
+        "to": "stalk",
+        "par": 7
+      },
+      {
+        "from": "black",
+        "to": "white",
+        "par": 8
+      },
+      {
+        "from": "flex",
+        "to": "hump",
+        "par": 7
+      },
+      {
+        "from": "cheap",
+        "to": "flash",
+        "par": 8
+      },
+      {
+        "from": "grade",
+        "to": "place",
+        "par": 8
+      },
+      {
+        "from": "drop",
+        "to": "sink",
+        "par": 7
+      },
+      {
+        "from": "case",
+        "to": "suit",
+        "par": 7
+      }
+    ]
+  },
+  "fetchedAt": "2026-11-14T15:03:04.853Z"
+}

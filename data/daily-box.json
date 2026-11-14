@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-14",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "tpr",
+        "sao",
+        "hyn",
+        "eig"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "gcp",
+        "rle",
+        "osm",
+        "unh"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "nra",
+        "ios",
+        "etf",
+        "dhc"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-11-14T15:01:54.592Z"
+}

@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-14",
+  "byDifficulty": {
+    "easy": {
+      "clue": "Little ones",
+      "cols": 6,
+      "board": [
+        "fofdck",
+        "pacaul",
+        "ulywgi",
+        "pygnpn",
+        "pneial",
+        "antmgs",
+        "yaielc",
+        "bbttlo"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYmFieWFuaW1hbHMiLCJwYXRoIjpbNDIsMzcsNDMsMzYsMzAsMzEsMzgsMzMsMjgsMjksMzVdfSwid29yZHMiOlt7InciOiJmb2FsIiwicGF0aCI6WzAsMSw3LDEzXX0seyJ3IjoiZmF3biIsInBhdGgiOlsyLDksMTUsMjFdfSx7InciOiJkdWNrbGluZyIsInBhdGgiOlszLDEwLDQsNSwxMSwxNywyMywxNl19LHsidyI6InB1cHB5IiwicGF0aCI6WzYsMTIsMTgsMjQsMTldfSx7InciOiJjeWduZXQiLCJwYXRoIjpbOCwxNCwyMCwyNSwyNiwzMl19LHsidyI6InBpZ2xldCIsInBhdGgiOlsyMiwyNywzNCw0MCwzOSw0NF19LHsidyI6ImNvbHQiLCJwYXRoIjpbNDEsNDcsNDYsNDVdfV19"
+    },
+    "hard": {
+      "clue": "Pocket change",
+      "cols": 7,
+      "board": [
+        "qtshfra",
+        "ruekiln",
+        "adrrlnc",
+        "deiopii",
+        "omoencn",
+        "clrsakg",
+        "uulpely",
+        "prraenn",
+        "eerency"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY3VycmVuY3kiLCJwYXRoIjpbMzUsNDIsNTAsNTgsNTksNjAsNjEsNjJdfSwid29yZHMiOlt7InciOiJxdWFydGVyIiwicGF0aCI6WzAsOCwxNCw3LDEsOSwxNl19LHsidyI6InNoaWxsaW5nIiwicGF0aCI6WzIsMywxMSwxMiwxOCwyNiwzNCw0MV19LHsidyI6ImZyYW5jIiwicGF0aCI6WzQsNSw2LDEzLDIwXX0seyJ3Ijoia3JvbmEiLCJwYXRoIjpbMTAsMTcsMjQsMzIsMzldfSx7InciOiJkaW1lIiwicGF0aCI6WzE1LDIzLDI5LDIyXX0seyJ3Ijoibmlja2VsIiwicGF0aCI6WzE5LDI3LDMzLDQwLDQ2LDQ3XX0seyJ3IjoiZG9sbGFyIiwicGF0aCI6WzIxLDI4LDM2LDQ0LDUyLDUxXX0seyJ3IjoicGVzbyIsInBhdGgiOlsyNSwzMSwzOCwzMF19LHsidyI6InJ1cGVlIiwicGF0aCI6WzM3LDQzLDQ5LDU3LDU2XX0seyJ3IjoicGVubnkiLCJwYXRoIjpbNDUsNTMsNTQsNTUsNDhdfV19"
+    },
+    "extreme": {
+      "clue": "Airing dirty laundry",
+      "cols": 8,
+      "board": [
+        "drsokrin",
+        "yauncsss",
+        "ledsdemo",
+        "tertroaf",
+        "renaeett",
+        "gwibrnln",
+        "erilehit",
+        "ntknhaan",
+        "waleicng",
+        "sherrore"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibGF1bmRyb21hdCIsInBhdGgiOlsxNiw5LDEwLDExLDIwLDI4LDI5LDIyLDMwLDM5XX0sIndvcmRzIjpbeyJ3IjoiZHJ5ZXIiLCJwYXRoIjpbMCwxLDgsMTcsMjZdfSx7InciOiJzb2NrcyIsInBhdGgiOlsyLDMsMTIsNCwxM119LHsidyI6InJpbnNlIiwicGF0aCI6WzUsNiw3LDE0LDIxXX0seyJ3Ijoic29mdGVuZXIiLCJwYXRoIjpbMTUsMjMsMzEsMzgsMzcsNDUsMzYsNDRdfSx7InciOiJkZXRlcmdlbnQiLCJwYXRoIjpbMTgsMjUsMjQsMzMsMzIsNDAsNDgsNTYsNTddfSx7InciOiJzdGFpbiIsInBhdGgiOlsxOSwyNywzNSw0MiwzNF19LHsidyI6IndyaW5rbGUiLCJwYXRoIjpbNDEsNDksNTAsNTksNTgsNjYsNjddfSx7InciOiJibGVhY2giLCJwYXRoIjpbNDMsNTEsNTIsNjEsNjksNjBdfSx7InciOiJsaW50IiwicGF0aCI6WzQ2LDU0LDQ3LDU1XX0seyJ3IjoiaGFuZ2VyIiwicGF0aCI6WzUzLDYyLDYzLDcxLDc5LDc4XX0seyJ3Ijoid2FzaGVyIiwicGF0aCI6WzY0LDY1LDcyLDczLDc0LDc1XX0seyJ3IjoiaXJvbiIsInBhdGgiOls2OCw3Niw3Nyw3MF19XX0="
+    }
+  },
+  "fetchedAt": "2026-11-14T15:01:54.592Z"
+}

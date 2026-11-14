@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-14",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "toj",
+        "eia",
+        "cmr",
+        "ndu"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "ies",
+        "kmg",
+        "ncz",
+        "art"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "nxl",
+        "tec",
+        "igp",
+        "avm"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-11-14T15:02:02.746Z"
+}

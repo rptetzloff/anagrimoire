@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-14",
+  "byDifficulty": {
+    "easy": {
+      "from": "tons",
+      "to": "wads",
+      "par": 4
+    },
+    "hard": {
+      "from": "lead",
+      "to": "take",
+      "par": 5
+    },
+    "extreme": {
+      "from": "draw",
+      "to": "pull",
+      "par": 8
+    }
+  },
+  "fetchedAt": "2026-11-14T15:01:54.592Z"
+}
