@@ -192,7 +192,7 @@ export default function LeaderboardView({ signedIn }: { signedIn: boolean }) {
               onClick={() => setDays(w.days)}
               aria-pressed={days === w.days}
               className={`px-3 py-1.5 rounded-md text-sm font-semibold transition-colors
-                ${days === w.days ? 'bg-emerald-400/15 text-emerald-300' : 'text-slate-400 hover:text-white'}`}
+                ${days === w.days ? 'bg-accent text-slate-950' : 'text-slate-400 hover:text-white'}`}
             >
               {w.label}
             </button>
@@ -213,7 +213,7 @@ export default function LeaderboardView({ signedIn }: { signedIn: boolean }) {
                 onClick={() => setScope(s)}
                 aria-pressed={scope === s}
                 className={`px-3 py-1.5 rounded-md text-sm font-semibold transition-colors
-                  ${scope === s ? 'bg-emerald-400/15 text-emerald-300' : 'text-slate-400 hover:text-white'}`}
+                  ${scope === s ? 'bg-accent text-slate-950' : 'text-slate-400 hover:text-white'}`}
               >
                 {s === 'global' ? 'Everyone' : 'Friends'}
               </button>

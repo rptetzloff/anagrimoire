@@ -630,7 +630,7 @@ const GridGame = forwardRef<
               <button
                 onMouseDown={(e) => e.preventDefault()}
                 onClick={start}
-                className="inline-flex items-center gap-1.5 px-5 h-10 rounded-lg text-sm font-semibold bg-emerald-400 text-ink shadow-lg shadow-emerald-500/30 hover:bg-emerald-300 transition-colors"
+                className="inline-flex items-center gap-1.5 px-5 h-10 rounded-lg text-sm font-semibold bg-accent text-slate-950 shadow-lg shadow-accent/30 hover:bg-emerald-300 transition-colors"
               >
                 <Play className="w-4 h-4" />
                 Start

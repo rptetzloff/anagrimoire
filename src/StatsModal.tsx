@@ -182,7 +182,7 @@ export default function StatsModal({
               onMouseDown={(e) => e.preventDefault()}
               onClick={() => onView(id)}
               className={`px-3 py-1.5 rounded-md text-sm font-semibold transition-colors
-                ${view === id ? 'bg-emerald-400/15 text-emerald-300' : 'text-slate-400 hover:text-white'}`}
+                ${view === id ? 'bg-accent text-slate-950' : 'text-slate-400 hover:text-white'}`}
             >
               {label}
             </button>

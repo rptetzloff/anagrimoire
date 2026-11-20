@@ -344,7 +344,7 @@ export default function SettingsModal({
               onClick={() => onTab(id)}
               aria-current={tab === id ? 'page' : undefined}
               className={`px-4 h-9 rounded-lg text-sm font-semibold transition-colors
-                ${tab === id ? 'bg-emerald-400 text-ink' : 'text-slate-300 hover:bg-white/10'}`}
+                ${tab === id ? 'bg-accent text-slate-950' : 'text-slate-300 hover:bg-white/10'}`}
             >
               {label}
             </button>
@@ -365,7 +365,7 @@ export default function SettingsModal({
                     aria-pressed={startPage === id}
                     className={`px-3 h-9 rounded-lg text-sm font-semibold transition-colors
                       ${startPage === id
-                        ? 'bg-amber-400 text-ink shadow-lg shadow-amber-500/30'
+                        ? 'bg-accent text-slate-950 shadow-lg shadow-accent/30'
                         : 'bg-white/5 border border-white/10 text-slate-300 hover:bg-white/10'}`}
                   >
                     {label}
@@ -391,7 +391,7 @@ export default function SettingsModal({
                   aria-pressed={theme === id}
                   className={`inline-flex items-center gap-1.5 px-3 h-9 rounded-lg text-sm font-semibold transition-colors
                     ${theme === id
-                      ? 'bg-amber-400 text-ink shadow-lg shadow-amber-500/30'
+                      ? 'bg-accent text-slate-950 shadow-lg shadow-accent/30'
                       : 'text-slate-300 hover:bg-white/10'}`}
                 >
                   <Icon className="w-4 h-4" />
@@ -451,7 +451,7 @@ export default function SettingsModal({
                   aria-pressed={textScale === id}
                   className={`px-3 h-9 rounded-lg font-semibold transition-colors ${size}
                     ${textScale === id
-                      ? 'bg-amber-400 text-ink shadow-lg shadow-amber-500/30'
+                      ? 'bg-accent text-slate-950 shadow-lg shadow-accent/30'
                       : 'text-slate-300 hover:bg-white/10'}`}
                 >
                   {label}
@@ -486,7 +486,7 @@ export default function SettingsModal({
                   aria-pressed={storage === id}
                   className={`px-3 h-9 rounded-lg text-sm font-semibold transition-colors
                     ${storage === id
-                      ? 'bg-amber-400 text-ink shadow-lg shadow-amber-500/30'
+                      ? 'bg-accent text-slate-950 shadow-lg shadow-accent/30'
                       : 'bg-white/5 border border-white/10 text-slate-300 hover:bg-white/10'}`}
                 >
                   {label}
@@ -519,7 +519,7 @@ export default function SettingsModal({
                     disabled={gpc}
                     className={`px-3 h-9 rounded-lg text-sm font-semibold transition-colors
                       ${analytics === id
-                        ? 'bg-amber-400 text-ink shadow-lg shadow-amber-500/30'
+                        ? 'bg-accent text-slate-950 shadow-lg shadow-accent/30'
                         : 'text-slate-300 hover:bg-white/10'}`}
                   >
                     {label}
@@ -566,7 +566,7 @@ export default function SettingsModal({
                   aria-pressed={level === id}
                   className={`px-3 h-9 rounded-lg text-sm font-semibold transition-colors
                     ${level === id
-                      ? 'bg-amber-400 text-ink shadow-lg shadow-amber-500/30'
+                      ? 'bg-accent text-slate-950 shadow-lg shadow-accent/30'
                       : 'bg-white/5 border border-white/10 text-slate-300 hover:bg-white/10'}`}
                 >
                   {DIFFICULTY_LABEL[id]}
@@ -811,7 +811,7 @@ export default function SettingsModal({
                   aria-pressed={navKeys === id}
                   className={`px-3 h-9 rounded-lg text-sm font-semibold transition-colors
                     ${navKeys === id
-                      ? 'bg-amber-400 text-ink shadow-lg shadow-amber-500/30'
+                      ? 'bg-accent text-slate-950 shadow-lg shadow-accent/30'
                       : 'text-slate-300 hover:bg-white/10'}`}
                 >
                   {label}
