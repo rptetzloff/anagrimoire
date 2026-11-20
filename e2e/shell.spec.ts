@@ -1,11 +1,11 @@
 // The shell from the layout spec: the bar on a desktop, the bar and tabs on a
-// phone, the big name on Home alone, and the quick-solve box.
+// phone, and the quick-solve box.
 //
 // What has to hold: every game is one menu away with today's state beside it,
 // and opens on its daily; every solver is one menu away; a menu whose view is
 // hidden is not drawn; a phone reaches the same lists through its tabs, and
-// its title switches game; the masthead is Home's only; and a line typed into
-// quick solve lands in the solver it reads as, with its letters in place.
+// its title switches game; and a line typed into quick solve lands in the
+// solver it reads as, with its letters in place.
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from './fixtures';
 
@@ -47,10 +47,10 @@ test('a menu whose view is hidden is not drawn', async ({ page }) => {
   await expect(page.getByRole('textbox', { name: 'Quick solve' })).toHaveCount(0);
 });
 
-test('the big name is on Home, and a game page names its game instead', async ({ page }) => {
+test('Home is headed by today, and a game page by its game', async ({ page }) => {
   await page.setViewportSize(desktop);
   await page.goto('/');
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Anagrimoire');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText(/puzzles today|done\./);
   await page.goto('/daily/hive');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Hive');
   // the bar's logo is still the way home

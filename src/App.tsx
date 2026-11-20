@@ -1650,39 +1650,17 @@ function App() {
       <main
         id="main"
         tabIndex={-1}
-        className={`relative max-w-3xl mx-auto px-5 py-8 sm:py-12 outline-none ${kbOpen ? 'pb-80 md:pb-64' : ''}`}
+        className={`relative mx-auto outline-none ${
+          // Home has a rail beside it, so it takes the bar's width and edges;
+          // a game is still one column at a reading measure
+          atHome && !reportPage ? 'max-w-6xl px-4 lg:px-6 py-6 sm:py-8' : 'max-w-3xl px-5 py-8 sm:py-12'
+        } ${kbOpen ? 'pb-80 md:pb-64' : ''}`}
       >
-        {/* The big name on Home alone (the layout spec): everywhere else the
-            bar carries it, and a game page starts with the game's own name.
-            A report page has neither -- the strapline used to describe the
-            game loaded behind it, which nobody asked about. */}
-        {atHome && !reportPage && (
-        <header className="text-center mb-8">
-          {/* The wordmark is a lockup rather than an image file: the mark is
-              the only part that has to be drawn, and the name is real text, so
-              it themes itself, follows the text-size setting, and can't render
-              in the wrong font on someone else's machine. The mark is alt=""
-              because the text beside it already names the heading.
-              Dimensions on the tag so it can't shove the page down as it
-              loads. */}
-          <h1 className="mb-4 flex flex-wrap items-center justify-center gap-x-3 sm:gap-x-4 gap-y-1">
-            <img
-              src="/logo.png"
-              alt=""
-              width={512}
-              height={512}
-              className="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl shadow-lg shadow-black/30 shrink-0"
-            />
-            {/* bg-clip-text paints inside the element's box, so the g's tail
-                needs padding below the line or it gets sliced off. The
-                matching negative margin keeps that padding out of the layout,
-                so the name still sits centred against the mark. */}
-            <span className="pb-[0.4em] -mb-[0.4em] text-4xl sm:text-5xl font-bold tracking-tight bg-gradient-to-br from-white via-white to-slate-400 bg-clip-text text-transparent">
-              Anagrimoire
-            </span>
-          </h1>
-        </header>
-        )}
+        {/* A game page starts with the game's own name; Home's heading is
+            its strip saying where you are with today (HomeView), and the bar
+            carries the site's name everywhere. A report page has neither --
+            the strapline used to describe the game loaded behind it, which
+            nobody asked about. */}
         {!atHome && !reportPage && (
           <header className="text-center mb-8">
             <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">{GAME_NAME[mode].full}</h1>
@@ -1720,9 +1698,8 @@ function App() {
             <HomeView
               modes={shownModes}
               onOpen={openGame}
-              onBoards={() => {
-                openOverlay({ kind: 'stats', tab: 'boards' });
-              }}
+              boards={overlayLink({ kind: 'stats', tab: 'boards' })}
+              solvers={barSolvers.map((b) => ({ key: b.key, label: GAME_NAME[b.key as Mode].short, go: b.go }))}
             />
           )}
 
@@ -2846,6 +2823,30 @@ function App() {
                 </ul>
                 <p className="mt-2 text-xs text-slate-500">
                   No word list is guaranteed to match any game&apos;s official dictionary.
+                </p>
+              </div>
+
+              {/* Both fonts are bundled with the site rather than fetched, so the
+                  site is what redistributes them, and the OFL asks that they
+                  travel with their notice. Inter went uncredited until
+                  Fraunces arrived and the gap was looked for. */}
+              <div>
+                <h3 className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
+                  Typefaces
+                </h3>
+                <p className="text-slate-400">
+                  Text is set in Inter (© 2016 The Inter Project Authors) and the name
+                  in Fraunces (© 2020 The Fraunces Project Authors), both served from this
+                  site under the{' '}
+                  <a
+                    href="https://openfontlicense.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-300 hover:text-amber-200 underline underline-offset-2"
+                  >
+                    SIL Open Font License 1.1
+                  </a>
+                  .
                 </p>
               </div>
 
