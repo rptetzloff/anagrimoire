@@ -39,6 +39,7 @@ test('a word that joins both sides is taken, and one that does not is refused', 
   await page.getByRole('textbox', { name: 'first' }).fill(x);
   await page.getByRole('textbox', { name: 'second' }).fill(y);
   const answer = await page
+    .getByRole('main')
     .locator('ul li')
     .first()
     .innerText({ timeout: 20000 })
@@ -70,7 +71,8 @@ test('the solver lists every word that joins two ends, not just one', async ({ p
   // snowball/ballroom and snowboard/boardroom are both real, which is the
   // reason the solver returns a list: the daily only publishes prompts with a
   // single answer, and the solver says what is true rather than what shipped
-  const results = page.locator('ul li');
+  // the page's own list: the bar's phone tabs are a list too, hidden by CSS
+  const results = page.getByRole('main').locator('ul li');
   await expect(results).toHaveCount(2, { timeout: 20000 });
   await expect(results.first()).toHaveText(/snow\s*ball\s*room/i);
 });

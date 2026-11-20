@@ -13,18 +13,22 @@ export function RouteLink({
   onGo,
   className,
   title,
+  label,
   children,
 }: {
   to: string;
   onGo: () => void;
   className?: string;
   title?: string;
+  /** the link's name, where its content is a picture */
+  label?: string;
   children: ReactNode;
 }) {
   return (
     <a
       href={to}
       title={title}
+      aria-label={label}
       className={className}
       onClick={(e) => {
         if (e.defaultPrevented || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
