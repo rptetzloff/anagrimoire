@@ -519,7 +519,7 @@ const SquaresGame = forwardRef<
               }}
               className={`px-3 h-9 rounded-lg text-sm font-semibold transition-colors
                 ${store.size === s
-                  ? 'bg-amber-400 text-ink shadow-lg shadow-amber-500/30'
+                  ? 'bg-accent text-slate-950 shadow-lg shadow-accent/30'
                   : 'text-slate-300 hover:bg-white/10'}`}
             >
               {s}×{s}

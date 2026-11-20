@@ -1542,9 +1542,6 @@ function App() {
     <PrefsContext.Provider value={prefs}>
     <OskContext.Provider value={kbOpen}>
     <div className="min-h-screen bg-slate-950 text-white relative overflow-x-clip">
-      {/* ambient glow */}
-      <div className="pointer-events-none absolute -top-40 -left-40 w-[500px] h-[500px] bg-amber-500/10 rounded-full blur-[120px]" />
-      <div className="pointer-events-none absolute top-1/3 -right-40 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[120px]" />
 
       {/* keyboard users can jump the mode tabs and land on the puzzle */}
       <a
@@ -1598,7 +1595,7 @@ function App() {
                   title={m.blurb}
                   className={`flex flex-col items-center justify-center gap-0.5 px-1 py-1.5 rounded-lg whitespace-nowrap text-xs font-semibold transition-colors
                     ${!atHome && mode === m.id
-                      ? 'bg-emerald-400/15 text-emerald-300'
+                      ? 'bg-accent text-slate-950'
                       : 'text-slate-400 hover:text-white hover:bg-white/5'}`}
                 >
                   <Icon className="w-5 h-5" />
@@ -1770,7 +1767,7 @@ function App() {
                       onGo={() => goToView(view)}
                       className={`inline-flex items-center gap-1.5 px-4 sm:px-5 h-10 rounded-lg text-sm font-semibold transition-all duration-150
                         ${active
-                          ? 'bg-emerald-400 text-ink shadow-lg shadow-emerald-500/30'
+                          ? 'bg-accent text-slate-950 shadow-lg shadow-accent/30'
                           : 'text-slate-300 hover:bg-white/10'}`}
                     >
                       <Icon className="w-4 h-4" />
@@ -1794,7 +1791,7 @@ function App() {
                     aria-pressed={level === id}
                     className={`px-3.5 h-9 rounded-lg text-sm font-semibold transition-colors
                       ${level === id
-                        ? 'bg-amber-400 text-ink shadow-lg shadow-amber-500/30'
+                        ? 'bg-accent text-slate-950 shadow-lg shadow-accent/30'
                         : 'text-slate-300 hover:bg-white/10'}`}
                   >
                     {DIFFICULTY_LABEL[id]}
@@ -1828,7 +1825,7 @@ function App() {
                   title={d.blurb}
                   className={`inline-flex items-center gap-1.5 px-4 h-9 rounded-lg text-sm font-semibold transition-all duration-150
                     ${dictionaryId === d.id
-                      ? 'bg-amber-400 text-ink shadow-lg shadow-amber-500/30'
+                      ? 'bg-accent text-slate-950 shadow-lg shadow-accent/30'
                       : 'text-slate-300 hover:bg-white/10'}`}
                 >
                   {d.id === 'easy' && <BookOpen className="w-3.5 h-3.5" />}
@@ -1953,7 +1950,7 @@ function App() {
                   onClick={() => setLength(n)}
                   className={`w-11 h-11 rounded-xl text-sm font-semibold transition-all duration-150
                     ${length === n
-                      ? 'bg-amber-400 text-ink shadow-lg shadow-amber-500/30 scale-105'
+                      ? 'bg-accent text-slate-950 shadow-lg shadow-accent/30 scale-105'
                       : 'bg-white/5 border border-white/10 text-slate-300 hover:bg-white/10 hover:border-white/20'}`}
                 >
                   {n}
@@ -2784,7 +2781,7 @@ function App() {
                   aria-current={legalTab === id ? 'page' : undefined}
                   className={`px-4 h-9 rounded-lg text-sm font-semibold transition-colors
                     ${legalTab === id
-                      ? 'bg-emerald-400 text-ink'
+                      ? 'bg-accent text-slate-950'
                       : 'text-slate-300 hover:bg-white/10'}`}
                 >
                   {label}

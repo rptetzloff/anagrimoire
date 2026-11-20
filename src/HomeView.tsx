@@ -6,9 +6,8 @@
 // Regulars who don't want a lobby can set Settings -> Site -> Start on to a
 // game and never see this again.
 
-import { Grid3x3, Hexagon, KeyRound, LayoutGrid, Puzzle, Shuffle, Square, Table2, Trophy } from 'lucide-react';
-import { Combine } from 'lucide-react';
-import LadderIcon from '@/LadderIcon';
+import { Trophy } from 'lucide-react';
+import GameTile from '@/GameTile';
 import { useEffect, useState } from 'react';
 import { MODE_SLUG, pathOf, SLUG_NAME, type Slug } from '@/routes';
 import { difficulty, onDifficultyChange } from '@/difficulty';
@@ -25,19 +24,6 @@ import {
   type Boards,
 } from '@/leaderboard';
 import type { Mode } from '@/storage';
-
-const ICONS: Record<Slug, typeof Grid3x3> = {
-  guess: Grid3x3,
-  scramble: Shuffle,
-  hive: Hexagon,
-  grid: LayoutGrid,
-  boxed: Square,
-  weave: Puzzle,
-  squares: Table2,
-  cryptogram: KeyRound,
-  ladder: LadderIcon,
-  bridge: Combine,
-};
 
 // One line each, written for somebody who has never seen the game.
 const BLURB: Record<Slug, string> = {
@@ -138,7 +124,6 @@ export default function HomeView({
         <div className="grid gap-2 sm:grid-cols-2">
           {modes.map((m) => {
             const slug = MODE_SLUG[m];
-            const Icon = ICONS[slug];
             const state = status[m] ?? 'none';
             return (
               <RouteLink
@@ -147,14 +132,18 @@ export default function HomeView({
                 onGo={() => onOpen(m)}
                 className="block text-left rounded-xl bg-white/5 border border-white/10 p-4 hover:bg-white/10 hover:border-white/20 transition-colors"
               >
-                <span className="flex items-center gap-2 mb-1">
-                  <Icon className="w-4 h-4 text-accent shrink-0" />
-                  <span className="font-semibold text-white">{SLUG_NAME[slug]}</span>
-                  <span className={`ml-auto text-xs shrink-0 ${STATE_STYLE[state]}`}>
-                    {STATE_LABEL[state]}
+                <span className="flex items-start gap-3">
+                  <GameTile slug={slug} />
+                  <span className="min-w-0 flex-1">
+                    <span className="flex items-baseline gap-2 mb-1">
+                      <span className="font-semibold text-white">{SLUG_NAME[slug]}</span>
+                      <span className={`ml-auto text-xs shrink-0 ${STATE_STYLE[state]}`}>
+                        {STATE_LABEL[state]}
+                      </span>
+                    </span>
+                    <span className="block text-sm text-slate-400">{BLURB[slug]}</span>
                   </span>
                 </span>
-                <span className="block text-sm text-slate-400">{BLURB[slug]}</span>
               </RouteLink>
             );
           })}

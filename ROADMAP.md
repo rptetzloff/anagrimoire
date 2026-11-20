@@ -6,6 +6,34 @@ don't have to re-derive the reasoning each time.
 
 ## Near term
 
+### Layout redesign — in progress
+The layout spec of November 2026 (mockups shared with Amherst Games, which
+built it first): a persistent shell, a home page with rails, game pages with
+a game list on the left and progress, the board and Hint / Share / Report on
+the right, and the remaining pop-ups as pages. Ported by hand from Amherst one
+piece at a time rather than merged — the fork has diverged too far for that.
+
+1. **The look** — done. The room moves to the spec's neutral slate (page
+   #0A0F1C, cards #111827), the accent to its amber #F5B83D, Inter is bundled
+   with the site (not fetched from Google, which would tell a third party who
+   visited), each game gets a tile — its icon on a colour of its own, the
+   colours in `index.css` and measured in `tests/unit/gameTiles.test.ts` —
+   and the ambient glow goes. Every control that picks one of several, and
+   every primary button, is solid accent; green means done and nothing else.
+   Letter states inside the games keep their colours. The site keeps its own
+   logo rather than the spec's lettered tile.
+
+   A tinted version (accent text on a 15% accent wash) was tried first for the
+   lighter picks — Daily/Practice, the current game — and failed AA on sepia,
+   ocean and ember by day (3.99–4.36:1). Solid accent clears every theme ×
+   palette, which `e2e/contrast.spec.ts` checks.
+2. The shell: top bar with Games and Solvers menus, quick solve, phone tab bar
+   (Today · Games · Solvers · Boards · Me), slim footer.
+3. Home: today's progress, the puzzles, boards and solvers in a rail.
+4. Game pages with both rails.
+5. Each game's own progress in the right rail.
+6. Stats, Settings, Account, About and Legal as pages rather than pop-ups.
+
 ### ~~Share buttons~~ — done
 Guess posts the tile grid, Weave one mark per word in find order (gold
 spangram, bulb per hint), the rest a score-and-rank line. Emoji follow the

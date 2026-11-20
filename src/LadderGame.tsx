@@ -480,7 +480,7 @@ const LadderGame = forwardRef<LadderGameHandle>(function LadderGame(_props, ref)
         <div className="mt-2 flex items-center justify-center gap-2">
           <button
             onClick={submit}
-            className="inline-flex items-center gap-1.5 px-3 h-9 rounded-lg bg-amber-400 text-ink text-sm font-semibold"
+            className="inline-flex items-center gap-1.5 px-3 h-9 rounded-lg bg-accent text-slate-950 text-sm font-semibold"
           >
             <CornerDownLeft className="w-4 h-4" />
             Add rung

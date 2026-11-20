@@ -21,8 +21,11 @@
   --c-black: 0 0 0;
   --c-ink: 2 6 23;
 
-  --c-slate-950: 2 6 23;
-  --c-slate-900: 15 23 42;
+  /* The layout spec's room (November 2026): a page of #0A0F1C with cards of
+     #111827 on it, where it was Tailwind's #020617 and #0F172A. The edges at
+     800 and 700 were already the spec's. */
+  --c-slate-950: 10 15 28;
+  --c-slate-900: 17 24 39;
   --c-slate-800: 30 41 59;
   --c-slate-700: 51 65 85;
   /* the two dimmest text tiers are lifted off Tailwind's stock values so
@@ -62,12 +65,15 @@
   --c-violet-300: 196 181 253;
   --c-violet-400: 167 139 250;
 
-  --c-accent: 251 191 36;
+  /* The spec's amber, #F5B83D, a touch warmer and softer than amber-400
+     (#FBBF24) which it was. Only the accent and the ring move: amber-400 is
+     also a game state, and that stays where every board expects it. */
+  --c-accent: 245 184 61;
   --c-success: 52 211 153;
   --c-danger: 251 113 133;
 
   /* keyboard focus ring */
-  --c-focus: 251 191 36;
+  --c-focus: 245 184 61;
 
   /* board overlays drawn as SVG */
   --trace: 125 211 252;
@@ -694,8 +700,40 @@
   --c-accent: 130 32 56;
 }
 
+/* Each game's tile: its icon on a colour of its own (the layout spec,
+   November 2026), on the home page now and on the rail and menus after.
+   The game, not the theme or the palette: the same in light and dark, and a
+   decorative palette may not repaint it. Each glyph clears 4.5:1 on its fill
+   and each fill is its own -- tests/unit/gameTiles.test.ts measures. Never
+   the only way to tell games apart: the name is always beside it. */
+:root {
+  --tile-guess-fill: 20 83 45;
+  --tile-guess-glyph: 134 239 172;
+  --tile-scramble-fill: 30 58 138;
+  --tile-scramble-glyph: 147 197 253;
+  --tile-hive-fill: 120 53 15;
+  --tile-hive-glyph: 252 211 77;
+  --tile-boxed-fill: 76 29 149;
+  --tile-boxed-glyph: 196 181 253;
+  --tile-grid-fill: 19 78 74;
+  --tile-grid-glyph: 94 234 212;
+  --tile-weave-fill: 131 24 67;
+  --tile-weave-glyph: 249 168 212;
+  --tile-squares-fill: 63 63 70;
+  --tile-squares-glyph: 228 228 231;
+  --tile-cryptogram-fill: 124 45 18;
+  --tile-cryptogram-glyph: 253 186 116;
+  --tile-ladder-fill: 22 78 99;
+  --tile-ladder-glyph: 103 232 249;
+  --tile-bridge-fill: 54 83 20;
+  --tile-bridge-glyph: 190 242 100;
+}
+
 /* keep overscroll and the area behind the app in the active theme */
 body {
+  /* Inter is bundled with the site (@fontsource-variable/inter), not fetched
+     from Google: a font request would tell a third party who visited. */
+  font-family: 'Inter Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   background-color: rgb(var(--c-slate-950));
 }
 

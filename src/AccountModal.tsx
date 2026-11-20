@@ -342,7 +342,7 @@ export default function AccountModal({
                   onClick={() => onTab(id)}
                   aria-current={tab === id ? 'page' : undefined}
                   className={`px-4 h-9 rounded-lg text-sm font-semibold transition-colors
-                    ${tab === id ? 'bg-emerald-400 text-ink' : 'text-slate-300 hover:bg-white/10'}`}
+                    ${tab === id ? 'bg-accent text-slate-950' : 'text-slate-300 hover:bg-white/10'}`}
                 >
                   {label}
                 </button>
@@ -371,7 +371,7 @@ export default function AccountModal({
                 <button
                   onClick={saveName}
                   disabled={nameState === 'saving' || nameDraft.trim() === (name ?? '')}
-                  className="inline-flex items-center px-4 h-10 rounded-lg text-sm font-semibold bg-emerald-400 text-ink hover:bg-emerald-300 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                  className="inline-flex items-center px-4 h-10 rounded-lg text-sm font-semibold bg-accent text-slate-950 hover:brightness-110 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
                 >
                   {nameState === 'saving' ? 'Saving…' : 'Save'}
                 </button>
@@ -713,7 +713,7 @@ export default function AccountModal({
                   <button
                     type="submit"
                     disabled={verifying || code.length < 6}
-                    className="w-full inline-flex items-center justify-center gap-1.5 h-11 rounded-lg text-sm font-semibold bg-emerald-400 text-ink shadow-lg shadow-emerald-500/30 hover:bg-emerald-300 transition-colors disabled:opacity-50"
+                    className="w-full inline-flex items-center justify-center gap-1.5 h-11 rounded-lg text-sm font-semibold bg-accent text-slate-950 shadow-lg shadow-accent/30 hover:bg-emerald-300 transition-colors disabled:opacity-50"
                   >
                     {verifying ? 'Verifying…' : 'Verify code'}
                   </button>
@@ -733,7 +733,7 @@ export default function AccountModal({
                 <button
                   type="submit"
                   disabled={status === 'sending'}
-                  className="w-full inline-flex items-center justify-center gap-1.5 h-11 rounded-lg text-sm font-semibold bg-emerald-400 text-ink shadow-lg shadow-emerald-500/30 hover:bg-emerald-300 transition-colors disabled:opacity-50"
+                  className="w-full inline-flex items-center justify-center gap-1.5 h-11 rounded-lg text-sm font-semibold bg-accent text-slate-950 shadow-lg shadow-accent/30 hover:bg-emerald-300 transition-colors disabled:opacity-50"
                 >
                   <Mail className="w-4 h-4" />
                   {status === 'sending' ? 'Sending…' : 'Send magic link'}

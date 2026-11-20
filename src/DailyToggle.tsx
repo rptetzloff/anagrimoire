@@ -56,7 +56,7 @@ export default function DailyToggle({
           onClick={() => onChange(id)}
           aria-pressed={daily === id}
           className={`inline-flex items-center gap-1.5 px-4 h-9 rounded-lg text-sm font-semibold transition-colors
-            ${daily === id ? 'bg-emerald-400/15 text-emerald-300' : 'text-slate-400 hover:text-white'}`}
+            ${daily === id ? 'bg-accent text-slate-950' : 'text-slate-400 hover:text-white'}`}
         >
           <Icon className="w-4 h-4" />
           {label}

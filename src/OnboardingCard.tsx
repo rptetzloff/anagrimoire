@@ -34,7 +34,7 @@ export default function OnboardingCard({
         </p>
         <button
           onClick={onLearn}
-          className="inline-flex items-center gap-1.5 px-4 h-10 rounded-lg text-sm font-semibold bg-emerald-400 text-ink hover:bg-emerald-300 transition-colors shrink-0"
+          className="inline-flex items-center gap-1.5 px-4 h-10 rounded-lg text-sm font-semibold bg-accent text-slate-950 hover:brightness-110 transition-colors shrink-0"
         >
           <BookOpen className="w-4 h-4" />
           Show me
