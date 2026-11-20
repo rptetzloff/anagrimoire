@@ -737,6 +737,21 @@ body {
   background-color: rgb(var(--c-slate-950));
 }
 
+/* The name in the bar, in Fraunces as the layout spec draws it. Only the
+   name: a serif elsewhere would be a second voice for the same site. */
+.font-display {
+  font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+}
+
+/* A sideways row with more to its right fades out there. A mask rather than a
+   gradient laid over it, so it fades into whatever is behind, on any theme;
+   the colour is only the mask's alpha. */
+.fade-right {
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 3rem), transparent);
+  mask-image: linear-gradient(to right, #000 calc(100% - 3rem), transparent);
+}
+
 @layer utilities {
   /* A visible keyboard focus ring on everything focusable. Element+pseudo
      specificity beats Tailwind's `outline-none` utility, which several

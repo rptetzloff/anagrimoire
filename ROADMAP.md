@@ -37,8 +37,8 @@ piece at a time rather than merged — the fork has diverged too far for that.
    logo, the page's name (on a game, a tap switches game) and the avatar at the
    top, and Today · Games · Solvers · Boards · Me along the bottom; the tabs
    step aside while a panel is open, and the on-screen keyboard sits above
-   them. The big name is Home's alone; a game page starts with the game's own
-   name. The footer is About & FAQ, Privacy, Terms, Report a problem, GitHub
+   them. ~~The big name is Home's alone~~ (gone in step 3, when Home's heading
+   became its strip of today); a game page starts with the game's own name. The footer is About & FAQ, Privacy, Terms, Report a problem, GitHub
    and WordLock — WordLock kept, though the mockup's footer did not show it.
 
    Quick solve reads one line two ways: with a `?` (or `.` or `_`) it is a
@@ -51,10 +51,36 @@ piece at a time rather than merged — the fork has diverged too far for that.
    `e2e/nav-fit.spec.ts` checks the bar at ten widths, including where the box
    is.
 
-   Not in this step: the mockup's Fraunces for the name. The bar and the
-   masthead set it in Inter; Home (step 3) redraws the masthead, and the face
-   is decided there.
-3. Home: today's progress, the puzzles, boards and solvers in a rail.
+   ~~Not in this step: the mockup's Fraunces for the name.~~ Decided in step
+   3: yes.
+3. **Home** — done. A strip of today is the page's heading: the puzzle day's
+   date (the day the puzzles belong to, which between midnight and 3am
+   Eastern is yesterday's), how many are done, a bar of them (green done,
+   accent in progress) and one button — Continue the first started, else Play
+   the first not, else See the boards. Before the first move of the day it
+   says "Ten new puzzles today." and the sentence about what the site is,
+   which is when somebody new is reading; a regular has seen it. The big
+   masthead is gone; the bar carries the name. Under the strip, today's
+   puzzles two across, and a rail beside them from 1024px (under them below):
+   the boards a card at a time in a row that scrolls sideways, with the
+   difficulty tabs and All boards; a solver chip for every shown game; and
+   "nothing you type into a solver leaves your device". Home takes the bar's
+   width; a game page keeps its reading measure until step 4.
+
+   Three departures from the mockup. Its "new puzzles at midnight" is not when
+   they arrive: the site says about 3:15 a.m. Eastern everywhere else, so this
+   does too. It shows five solver chips and "All 10 →", but there is no page
+   of all the solvers for that to open, so every shown game gets a chip
+   instead (ten fit in four rows of the rail). And it heads the boards with
+   one game's top three; this keeps every board that has rows, one at a time,
+   because the rule for which board leads has been wrong twice and a single
+   card would hide it again.
+
+   The name in the bar is Fraunces, as drawn: one weight of Latin letters,
+   18 KB, bundled like Inter rather than fetched (`@fontsource/fraunces`, the
+   one new dependency; a font from Google would tell it who visited). The
+   rejected option was keeping Inter and no package. Notices now credits both
+   faces under the OFL — Inter had gone uncredited since it was bundled.
 4. Game pages with both rails.
 5. Each game's own progress in the right rail.
 6. Stats, Settings, Account, About and Legal as pages rather than pop-ups.
