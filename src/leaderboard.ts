@@ -38,7 +38,7 @@ export const WINDOWS = [
 
 // Which board belongs to which game. Squares fields one per size, so finishing
 // it can put you on two.
-const MODE_BOARDS: Record<Mode, BoardGame[]> = {
+export const MODE_BOARDS: Record<Mode, BoardGame[]> = {
   pattern: ['guess'],
   bee: ['hive'],
   descramble: ['scramble'],

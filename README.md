@@ -24,7 +24,7 @@ The Scramble, Hive, Grid, Boxed, and Weave solvers can autofill **today's daily 
 
 ### Play mode
 
-Every mode has a **Solve / Play / Learn** switch.
+Every mode has a **Solve / Play / Learn** switch, beside the game's name at the top of its page. On a wide screen the games run down the left — today's, with how far you've got in each, while playing; the solvers while solving; the lessons while learning — and while playing, the right-hand column holds that game's leaderboard at the difficulty you're on.
 
 - **Guess the Word**: six tries at any length from 3 to 12 letters, duplicate-aware coloring, physical and on-screen keyboard support (with letter coloring), and persistent boards and stats. **Daily** serves the same word to everyone per length — generated deterministically by the daily GitHub Action — with a win streak; **Practice** deals unlimited random words. Answers come from the word list one rung below what's accepted, so the answer is always recognisable while guesses get the benefit of the doubt.
 - **Scramble**: a three-minute sprint to find every word you can from a seven-letter rack (each letter usable once per word). Racks are shuffled real words, so a full-rack bonus word always exists; 3-letter words score 1, longer words their length, whole-rack +7. When time's up, one click reveals every answer in the solver. **Daily** rack for everyone; **Practice** deals unlimited racks.
@@ -136,9 +136,10 @@ The site is fully functional with no backend — solving and playing stay in the
 A generator drawing from 240,000 words will eventually publish something
 offensive, and a display name field will eventually hold something worse. Both
 have preventive filters, and neither is a substitute for someone saying "this
-one is wrong" at the moment they see it. So every daily board carries a **Report
-this puzzle** link throughout play, and every name on a leaderboard carries a
-flag beside it. Anyone can file one, signed in or not — the site plays without
+one is wrong" at the moment they see it. So every daily board has **Report
+this puzzle** beside it throughout play (in the column to its right on a
+desktop, under it on a phone), **Report a problem** at the bottom of every page
+takes the rest, and every name on a leaderboard carries a flag beside it. Anyone can file one, signed in or not — the site plays without
 an account, and the person who sees the bad word usually has none.
 
 What the browser sends is where the thing was, never what it said: a puzzle

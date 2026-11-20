@@ -293,7 +293,7 @@ export default function SiteBar(p: BarProps) {
     <>
       {/* ---- desktop ---- */}
       <header className="hidden md:block sticky top-0 z-40 h-16 bg-slate-950/90 backdrop-blur border-b border-white/10">
-        <div className="max-w-6xl mx-auto h-full px-4 lg:px-6 flex items-center gap-4 lg:gap-6">
+        <div className="max-w-[82rem] mx-auto h-full px-4 lg:px-6 flex items-center gap-4 lg:gap-6">
           <RouteLink {...p.home} label="Anagrimoire, home" className="flex items-center gap-2.5 shrink-0 rounded-lg">
             <img src="/logo.png" alt="" width={512} height={512} className="w-9 h-9 rounded-lg" />
             <span className="font-display text-xl text-white whitespace-nowrap">Anagrimoire</span>

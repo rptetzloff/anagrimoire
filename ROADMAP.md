@@ -81,7 +81,35 @@ piece at a time rather than merged — the fork has diverged too far for that.
    one new dependency; a font from Google would tell it who visited). The
    rejected option was keeping Inter and no package. Notices now credits both
    faces under the OFL — Inter had gone uncredited since it was bundled.
-4. Game pages with both rails.
+4. **Game pages** — done. A game between two rails, at the bar's width:
+   - Left, from 1280px: the games, the one on screen marked as the page. It
+     lists the side you are on — today's games with a dot for each one's
+     state (and the state in words, for a screen reader) while playing, the
+     solvers while solving, the lessons while learning — so a click keeps
+     you there rather than throwing a solver back to a daily. The mockup only
+     drew the daily list; the other two are ours. The dots are re-read every
+     three seconds, because a game writes its save and tells nobody.
+   - The heading: "Daily · Fri, Nov 20" (or Practice, Solver, Learn), the
+     game's name, what this view of it does, and the Solve / Play / Learn
+     switch beside them — still the first rung of the ladder. On a phone the
+     bar's title names the game, so the words are kept for a screen reader.
+   - The game in a card; on a phone no frame, so the board has the width.
+   - Right, while playing, from 1024px (under the game below that): this
+     game's board at the difficulty being played — two for Squares, one per
+     size — top three and you, Full board, and **Report this puzzle** on a
+     daily. Not on practice, which was never published and has nothing on the
+     server to point at; not while solving or learning, which have no board
+     to be on.
+
+   Found on the way: a game reported its board's date as it mounted, before
+   App was listening (a child's effects run before its parent's), and never
+   again unless the date changed. So a player back for a daily they had
+   started that day had no date: the page could not say which daily it was,
+   and the footer's report menu could not offer the puzzle. The bus now hands
+   a new listener every game's last report (`tests/unit/dailyBus.test.ts`).
+   And the readme had promised "Report this puzzle" on every daily board since
+   reporting shipped, long after the control became the footer's general
+   "Report a problem"; it is true again.
 5. Each game's own progress in the right rail.
 6. Stats, Settings, Account, About and Legal as pages rather than pop-ups.
 
