@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useState, useEffect, useRef } from 'react';
-import { Search, X, BookOpen, Grid3x3, Shuffle, Hexagon, Keyboard, Delete, Github, Info, Square, CalendarDays, Star, Gamepad2, CornerDownLeft, LayoutGrid, Puzzle, BarChart3, UserRound, Scale, Settings, Home, Table2, KeyRound } from 'lucide-react';
+import { Search, X, BookOpen, Keyboard, Delete, Github, CalendarDays, Star, Gamepad2, CornerDownLeft, BarChart3, UserRound, Settings } from 'lucide-react';
 import LearnMode, { type LearnModeHandle } from '@/LearnMode';
 import type { Session } from '@supabase/supabase-js';
 import StatsModal from '@/StatsModal';
@@ -12,10 +12,12 @@ import { colorWords, PALETTES, PaletteContext, resolveTheme, TEXT_SCALES, THEME_
 import { PrefsContext } from '@/prefs';
 import OnboardingCard from '@/OnboardingCard';
 import { useModalA11y } from '@/useModalA11y';
-import { Combine, Flag as FlagIcon } from 'lucide-react';
+import { Flag as FlagIcon } from 'lucide-react';
 import BridgeGame, { type BridgeGameHandle } from '@/BridgeGame';
-import GameMenu from '@/GameMenu';
-import LadderIcon from '@/LadderIcon';
+import SiteBar, { type BarItem, type Section } from '@/SiteBar';
+import { parseQuickSolve } from '@/quickSolve';
+import { allDailyStatus } from '@/dailyStatus';
+import { fetchDisplayName } from '@/leaderboard';
 import { supabase } from '@/supabase';
 import { importBaselineOnce } from '@/stats';
 import GuessGame, { type GuessGameHandle, type LetterState } from '@/GuessGame';
@@ -63,6 +65,7 @@ import {
   MODE_SLUG,
   modeOf,
   pathOf,
+  titleOf,
   type Route,
 } from '@/routes';
 import {
@@ -192,19 +195,6 @@ const MODES: { id: Mode; blurb: string; description: string; playDescription: st
       'Five prompts, and the answer is the word that joins both sides — SNOW · BALL · ROOM. Hints turn over a length or a letter, and you get three, one or none.',
   },
 ];
-
-const MODE_ICONS: Record<Mode, typeof Grid3x3> = {
-  pattern: Grid3x3,
-  descramble: Shuffle,
-  bee: Hexagon,
-  grid: LayoutGrid,
-  boxed: Square,
-  weave: Puzzle,
-  squares: Table2,
-  cryptogram: KeyRound,
-  ladder: LadderIcon,
-  bridge: Combine,
-};
 
 /** WordLock's mark, drawn the way the footer's other icons are drawn.
  *
@@ -600,6 +590,19 @@ function App() {
       alive = false;
     };
   }, [session]);
+
+  // The avatar's letter: the leaderboard name's, else the address's. Read
+  // again when the account panel closes, which is where the name is changed.
+  const [displayName, setDisplayName] = useState<string | null>(null);
+  const accountShowing = !!nav.overlays.find((o) => o.kind === 'account');
+  useEffect(() => {
+    if (!session || accountShowing) return;
+    let alive = true;
+    fetchDisplayName().then((n) => alive && setDisplayName(n));
+    return () => {
+      alive = false;
+    };
+  }, [session, accountShowing]);
 
   useTheme(theme, palette, textScale);
 
@@ -1537,13 +1540,91 @@ function App() {
     setStrandsClue(null);
   }
 
+  // A game, opened from anywhere: its daily, as the layout spec has it. The
+  // home cards and the bar's Games menu both come here.
+  function openGame(m: Mode) {
+    setAtHome(false);
+    setMode(m);
+    // not goToView: that reads `mode`, which is still the game we're leaving
+    // until this render commits, so it would flip the wrong game's tab
+    setLearnMode(false);
+    playFlags[m][1](true);
+    requestDaily(m, true);
+  }
+
+  function openSolver(m: Mode) {
+    setAtHome(false);
+    setMode(m);
+    setLearnMode(false);
+    playFlags[m][1](false);
+  }
+
+  // ---- what the bar holds ----
+  // Games is the play side and Solvers the solve side, so hiding a view in
+  // settings takes its menu away with it rather than leaving one whose links
+  // all bounce to another tab.
+  const shownRows = MODES.filter((m) => shownModes.includes(m.id));
+  const barGames: BarItem[] = !shownViews.includes('play') ? [] : shownRows.map((m) => ({
+    key: m.id,
+    label: GAME_NAME[m.id].full,
+    tile: MODE_SLUG[m.id],
+    // read when the list opens, not on every keystroke the page takes
+    status: () => allDailyStatus([m.id])[m.id] ?? 'none',
+    go: { to: pathOf({ kind: 'game', view: 'play', slug: MODE_SLUG[m.id], daily: true }), onGo: () => openGame(m.id) },
+  }));
+  const barSolvers: BarItem[] = !shownViews.includes('solve') ? [] : shownRows.map((m) => ({
+    key: m.id,
+    label: GAME_NAME[m.id].full,
+    tile: MODE_SLUG[m.id],
+    note: m.blurb,
+    go: { to: pathOf({ kind: 'game', view: 'solve', slug: MODE_SLUG[m.id], daily: false }), onGo: () => openSolver(m.id) },
+  }));
+  const barMe: BarItem[] = [
+    { key: 'stats', label: 'Stats', icon: <BarChart3 className="w-4 h-4" />, go: overlayLink({ kind: 'stats', tab: nav.last.stats }) },
+    { key: 'settings', label: 'Settings', icon: <Settings className="w-4 h-4" />, go: overlayLink({ kind: 'settings', tab: nav.last.settings }) },
+    { key: 'keys', label: 'Keys', icon: <Keyboard className="w-4 h-4" />, go: overlayLink({ kind: 'panel', panel: 'keys' }) },
+    ...(supabase && session ? [{ key: 'account', label: 'Account and friends', icon: <UserRound className="w-4 h-4" />,
+                                 go: overlayLink({ kind: 'account', tab: nav.last.account }) }] : []),
+    // The server says who is an owner, and the RPCs behind the queue check
+    // again; this only decides whether to draw a link.
+    ...(owner ? [{ key: 'reports', label: 'Open reports', icon: <FlagIcon className="w-4 h-4" />, go: pageLink({ kind: 'reportQueue' }) }] : []),
+  ];
+  const quickCan = {
+    pattern: shownViews.includes('solve') && shownModes.includes('pattern'),
+    anagram: shownViews.includes('solve') && shownModes.includes('descramble'),
+  };
+  // A problem comes back as a sentence for the box to show; null means it went.
+  const quickSolve = (text: string): string | null => {
+    const q = parseQuickSolve(text, lengthRange, quickCan);
+    if (q.kind === 'problem') return q.why;
+    if (q.kind === 'pattern') {
+      setLength(q.known.length);
+      setKnown(q.known);
+      setContainsStr('');
+      setExcludedStr('');
+      openSolver('pattern');
+    } else {
+      setRackStr(q.letters);
+      openSolver('descramble');
+    }
+    return null;
+  };
+  const barSection: Section =
+    atHome ? 'today'
+    : reportPage ? null
+    : statsOpen && statsTab === 'boards' ? 'boards'
+    : currentView === 'solve' ? 'solvers'
+    : 'games';
+  const barTitle = atHome ? 'Today' : reportPage ? titleOf(reportPage).replace(/ · .*$/, '') : GAME_NAME[mode].full;
+  const you = session ? { initial: (displayName ?? session.user.email ?? '?').trim().charAt(0).toUpperCase() || '?' } : null;
+
   return (
     <PaletteContext.Provider value={palette}>
     <PrefsContext.Provider value={prefs}>
     <OskContext.Provider value={kbOpen}>
     <div className="min-h-screen bg-slate-950 text-white relative overflow-x-clip">
 
-      {/* keyboard users can jump the mode tabs and land on the puzzle */}
+      {/* keyboard users can jump the bar and land on the page */}
       <a
         href="#main"
         className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[70] focus:px-4 focus:py-2.5 focus:rounded-lg focus:bg-amber-400 focus:text-ink focus:text-sm focus:font-semibold focus:shadow-lg"
@@ -1551,90 +1632,31 @@ function App() {
         Skip to content
       </a>
 
-      {/* Top nav bar — gone entirely with one game. A bar holding a single
-          tab is a switch with one position, and dropping to just the wordmark
-          would only print the site's name directly above the h1 that already
-          says it. The page header below carries the identity instead. */}
-      {shownModes.length > 1 && (
-      <nav
-        aria-label="Game modes"
-        className="sticky top-0 z-40 bg-slate-950/80 backdrop-blur border-b border-white/10"
-      >
-        {/* Nine tabs do not fit on one row at this width: the horizontal layout
-            wanted 888px inside a 768px bar, so it never fit at any viewport —
-            it squeezed, and "Word Ladder" ran out of its column on a phone.
-            Wrapping to two and three rows fixed the overflow and cost a third
-            of a phone screen, which is worse: this bar is sticky, so that is a
-            third of every screen, on every page, forever.
-
-            So the bar stops being a row of tabs when it cannot be one. Below
-            lg it is the game you are in plus a menu holding the rest — one
-            row, one height, however many games there are. The bar runs a
-            little wider than the content at lg and above, which is the width
-            at which nine full-size labels genuinely fit. */}
-        <div className="max-w-3xl lg:max-w-5xl mx-auto px-2 sm:px-5 flex items-center justify-center">
-          <div className="hidden lg:grid flex-1 gap-1 py-1.5"
-            style={{ gridTemplateColumns: `repeat(${shownModes.length}, minmax(0, 1fr))` }}
-          >
-            {MODES.filter((m) => shownModes.includes(m.id)).map((m) => {
-              const Icon = MODE_ICONS[m.id];
-              return (
-                <RouteLink
-                  key={m.id}
-                  to={pathOf({
-                    kind: 'game',
-                    view: currentView,
-                    slug: MODE_SLUG[m.id],
-                    daily: dailyByMode[m.id],
-                  })}
-                  onGo={() => {
-                    // picking a game from the nav is also how you leave home
-                    setAtHome(false);
-                    setMode(m.id);
-                  }}
-                  title={m.blurb}
-                  className={`flex flex-col items-center justify-center gap-0.5 px-1 py-1.5 rounded-lg whitespace-nowrap text-xs font-semibold transition-colors
-                    ${!atHome && mode === m.id
-                      ? 'bg-accent text-slate-950'
-                      : 'text-slate-400 hover:text-white hover:bg-white/5'}`}
-                >
-                  <Icon className="w-5 h-5" />
-                  <span>{GAME_NAME[m.id].short}</span>
-                </RouteLink>
-              );
-            })}
-          </div>
-
-          {/* the same nine games, one row high */}
-          <div className="lg:hidden flex-1 py-1.5">
-            <GameMenu
-              modes={MODES.filter((m) => shownModes.includes(m.id))}
-              icons={MODE_ICONS}
-              current={atHome ? null : mode}
-              href={(id) =>
-                pathOf({
-                  kind: 'game',
-                  view: currentView,
-                  slug: MODE_SLUG[id],
-                  daily: dailyByMode[id],
-                })
-              }
-              onGo={(id) => {
-                setAtHome(false);
-                setMode(id);
-              }}
-            />
-          </div>
-        </div>
-      </nav>
-      )}
+      <SiteBar
+        home={pageLink({ kind: 'home' })}
+        boards={overlayLink({ kind: 'stats', tab: 'boards' })}
+        current={barSection}
+        title={barTitle}
+        titleSwitchesGame={!atHome && !reportPage}
+        games={barGames}
+        solvers={barSolvers}
+        me={barMe}
+        quickSolve={quickCan.pattern || quickCan.anagram ? quickSolve : null}
+        signIn={supabase && !session ? { to: '/sign-in', onGo: () => openOverlay({ kind: 'account', tab: 'personal' }) } : null}
+        you={you}
+        covered={nav.overlays.length > 0}
+      />
 
       <main
         id="main"
         tabIndex={-1}
-        className={`relative max-w-3xl mx-auto px-5 py-10 sm:py-16 outline-none ${kbOpen ? 'pb-64 sm:pb-64' : ''}`}
+        className={`relative max-w-3xl mx-auto px-5 py-8 sm:py-12 outline-none ${kbOpen ? 'pb-80 md:pb-64' : ''}`}
       >
-        {/* header */}
+        {/* The big name on Home alone (the layout spec): everywhere else the
+            bar carries it, and a game page starts with the game's own name.
+            A report page has neither -- the strapline used to describe the
+            game loaded behind it, which nobody asked about. */}
+        {atHome && !reportPage && (
         <header className="text-center mb-8">
           {/* The wordmark is a lockup rather than an image file: the mark is
               the only part that has to be drawn, and the name is real text, so
@@ -1659,18 +1681,18 @@ function App() {
               Anagrimoire
             </span>
           </h1>
-          {/* The strapline describes whichever game is loaded behind all this,
-              which on a report page is a game nobody asked for — a ticket
-              opened from an email introduced itself as "Play the themed tiling
-              puzzle". The wordmark stays, since it is the way home. */}
-          {!atHome && !reportPage && (
-            <p className="text-slate-400 max-w-md mx-auto text-sm sm:text-base">
+        </header>
+        )}
+        {!atHome && !reportPage && (
+          <header className="text-center mb-8">
+            <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">{GAME_NAME[mode].full}</h1>
+            <p className="mt-2 text-slate-400 max-w-md mx-auto text-sm sm:text-base">
               {shownViews.includes('solve')
                 ? MODES.find((m) => m.id === mode)?.description
                 : MODES.find((m) => m.id === mode)?.playDescription}
             </p>
-          )}
-        </header>
+          </header>
+        )}
 
         {/* A report page is the whole page. Gating the games and the home
             view left every other section standing — the Solve/Play/Learn
@@ -1678,7 +1700,7 @@ function App() {
             so a reader arriving from an email got a report wearing the
             chrome of a word game. One conditional rather than a dozen,
             because a dozen is a list somebody will add the thirteenth to.
-            The header and footer stay: they are the way back out. */}
+            The bar and the footer stay: they are the way back out. */}
         {reportPage ? (
           <>
           {reportPage?.kind === 'ticket' && <TicketView ticket={reportPage.ticket} />}
@@ -1697,16 +1719,7 @@ function App() {
           {atHome && (
             <HomeView
               modes={shownModes}
-              onOpen={(m) => {
-                setAtHome(false);
-                setMode(m);
-                // not goToView: that reads `mode`, which is still the game we're
-                // leaving until this render commits, so it would flip the wrong
-                // game's tab
-                setLearnMode(false);
-                playFlags[m][1](true);
-                requestDaily(m, true);
-              }}
+              onOpen={openGame}
               onBoards={() => {
                 openOverlay({ kind: 'stats', tab: 'boards' });
               }}
@@ -2249,8 +2262,9 @@ function App() {
           </>
         )}
 
-        {/* pb keeps the last row clear of the floating keyboard button */}
-        <footer className="mt-14 pb-24 sm:pb-4 text-center text-xs text-slate-500">
+        {/* pb keeps the last row clear of the phone's tab bar and the floating
+            keyboard button above it */}
+        <footer className="mt-14 pb-40 md:pb-4 text-center text-xs text-slate-500">
           {/* only where a word list is what is being searched — the ladder
               and bridge solvers answer from a rule, so naming a dictionary
               size under them describes work they do not do */}
@@ -2261,30 +2275,28 @@ function App() {
               list).
             </p>
           )}
-          {/* wraps into centered rows rather than one overflowing line */}
+          {/* The slim footer (the layout spec): the documents and the way to
+              report a problem. Stats, settings, keys and the account moved to
+              the bar's own menu; Home is the logo and Today. */}
           <div className="mt-3 flex flex-wrap items-center justify-center gap-x-5 gap-y-2.5">
             <RouteLink
-              {...pageLink({ kind: 'home' })}
+              {...overlayLink({ kind: 'panel', panel: 'about' })}
               className="inline-flex items-center gap-1.5 hover:text-slate-300 transition-colors"
             >
-              <Home className="w-3.5 h-3.5" />
-              Home
+              About &amp; FAQ
             </RouteLink>
-            {/* The footer is on every page by construction, which is the whole
-                reason this lives here: the previous home was a link on the
-                daily board, gated on a date the game had to volunteer, and six
-                of the ten games keep their date somewhere the gate never saw.
-                A control whose only job is to be findable cannot be somewhere
-                it might not appear. */}
-            {owner && (
-              <RouteLink
-                {...pageLink({ kind: 'reportQueue' })}
-                className="inline-flex items-center gap-1.5 text-accent hover:brightness-110 transition"
-              >
-                <FlagIcon className="w-3.5 h-3.5" aria-hidden="true" />
-                Open reports
-              </RouteLink>
-            )}
+            <RouteLink
+              {...overlayLink({ kind: 'legal', doc: 'privacy' })}
+              className="inline-flex items-center gap-1.5 hover:text-slate-300 transition-colors"
+            >
+              Privacy
+            </RouteLink>
+            <RouteLink
+              {...overlayLink({ kind: 'legal', doc: 'terms' })}
+              className="inline-flex items-center gap-1.5 hover:text-slate-300 transition-colors"
+            >
+              Terms
+            </RouteLink>
             <ReportMenu
               context={{
                 game: FEED_NAME[mode],
@@ -2317,56 +2329,6 @@ function App() {
               <WordLockMark />
               WordLock
             </a>
-            <RouteLink
-              {...overlayLink({ kind: 'stats', tab: nav.last.stats })}
-              className="inline-flex items-center gap-1.5 hover:text-slate-300 transition-colors"
-            >
-              <BarChart3 className="w-3.5 h-3.5" />
-              Stats
-            </RouteLink>
-            <RouteLink
-              {...overlayLink({ kind: 'settings', tab: nav.last.settings })}
-              className="inline-flex items-center gap-1.5 hover:text-slate-300 transition-colors"
-            >
-              <Settings className="w-3.5 h-3.5" />
-              Settings
-            </RouteLink>
-            <RouteLink
-              {...overlayLink({ kind: 'panel', panel: 'keys' })}
-              className="inline-flex items-center gap-1.5 hover:text-slate-300 transition-colors"
-            >
-              <Keyboard className="w-3.5 h-3.5" />
-              Keys
-            </RouteLink>
-            {supabase && (
-              <RouteLink
-                // Signed out there is only one tab to be on, and /sign-in is
-                // the friendlier address for it — but it has to be the address
-                // the click actually goes to, which is why the target is pinned
-                // rather than read from the remembered tab.
-                {...(session
-                  ? overlayLink({ kind: 'account', tab: nav.last.account })
-                  : { to: '/sign-in', onGo: () => openOverlay({ kind: 'account', tab: 'personal' }) })}
-                className="inline-flex items-center gap-1.5 hover:text-slate-300 transition-colors"
-              >
-                <UserRound className="w-3.5 h-3.5" />
-                {session ? 'Account' : 'Sign in'}
-              </RouteLink>
-            )}
-            <RouteLink
-              {...overlayLink({ kind: 'panel', panel: 'about' })}
-              className="inline-flex items-center gap-1.5 hover:text-slate-300 transition-colors"
-            >
-              <Info className="w-3.5 h-3.5" />
-              About &amp; FAQ
-            </RouteLink>
-            <RouteLink
-              {...overlayLink({ kind: 'legal', doc: nav.last.legal })}
-              className="inline-flex items-center gap-1.5 hover:text-slate-300 transition-colors"
-            >
-              <Scale className="w-3.5 h-3.5" />
-              Legal
-            </RouteLink>
           </div>
         </footer>
       </main>
@@ -2912,7 +2874,7 @@ function App() {
 
       {/* on-screen keyboard */}
       {kbOpen ? (
-        <div className="fixed bottom-0 inset-x-0 z-50 bg-slate-900/95 backdrop-blur border-t border-white/10 px-2 pt-3 pb-4">
+        <div className="fixed bottom-16 md:bottom-0 inset-x-0 z-50 bg-slate-900/95 backdrop-blur border-t border-white/10 px-2 pt-3 pb-4">
           <button
             onClick={() => setKbOpen(false)}
             aria-label="Hide keyboard"
@@ -2970,7 +2932,7 @@ function App() {
           onClick={() => setKbOpen(true)}
           aria-label="Show keyboard"
           title="Show on-screen keyboard"
-          className="fixed bottom-4 right-4 z-50 w-12 h-12 flex items-center justify-center rounded-full bg-slate-800 border border-white/15 text-slate-300 hover:text-white hover:bg-slate-700 hover:border-white/30 shadow-lg transition-colors"
+          className="fixed bottom-20 md:bottom-4 right-4 z-50 w-12 h-12 flex items-center justify-center rounded-full bg-slate-800 border border-white/15 text-slate-300 hover:text-white hover:bg-slate-700 hover:border-white/30 shadow-lg transition-colors"
         >
           <Keyboard className="w-5 h-5" />
         </button>

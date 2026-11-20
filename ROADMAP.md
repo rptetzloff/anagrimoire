@@ -27,8 +27,33 @@ piece at a time rather than merged — the fork has diverged too far for that.
    lighter picks — Daily/Practice, the current game — and failed AA on sepia,
    ocean and ember by day (3.99–4.36:1). Solid accent clears every theme ×
    palette, which `e2e/contrast.spec.ts` checks.
-2. The shell: top bar with Games and Solvers menus, quick solve, phone tab bar
-   (Today · Games · Solvers · Boards · Me), slim footer.
+2. **The shell** — done. A bar across the top of every page in place of the
+   strip of game tabs: the logo and name (home), Today, Games, Solvers and
+   Boards, the quick-solve box, and a menu of your own things — Stats,
+   Settings, Keys, Account, and Open reports for an owner — beside Sign in.
+   Games lists every shown game with today's state and opens it on its daily;
+   Solvers opens each on its solver. Hiding Play or Solve in Settings takes
+   that menu away rather than leaving one whose links bounce. On a phone: the
+   logo, the page's name (on a game, a tap switches game) and the avatar at the
+   top, and Today · Games · Solvers · Boards · Me along the bottom; the tabs
+   step aside while a panel is open, and the on-screen keyboard sits above
+   them. The big name is Home's alone; a game page starts with the game's own
+   name. The footer is About & FAQ, Privacy, Terms, Report a problem, GitHub
+   and WordLock — WordLock kept, though the mockup's footer did not show it.
+
+   Quick solve reads one line two ways: with a `?` (or `.` or `_`) it is a
+   pattern and opens the Guess solver with the letters in place; letters alone
+   are a rack for Scramble's. The mockup only showed the pattern; the rack
+   reading is ours, because a bare `retains` has nothing else to mean.
+   Anything else is refused with a sentence, and the box keeps what was typed.
+   It sits in the bar from 1024px and inside the Solvers menu below that —
+   at 768px the bar holds the rest with no room left for a 240px box.
+   `e2e/nav-fit.spec.ts` checks the bar at ten widths, including where the box
+   is.
+
+   Not in this step: the mockup's Fraunces for the name. The bar and the
+   masthead set it in Inter; Home (step 3) redraws the masthead, and the face
+   is decided there.
 3. Home: today's progress, the puzzles, boards and solvers in a rail.
 4. Game pages with both rails.
 5. Each game's own progress in the right rail.

@@ -30,10 +30,10 @@ test('a played hive puts the hive board on the page — started counts, done is 
 
 test('nothing played falls back to a single board rather than none', async ({ page }) => {
   await page.goto('/');
-  // the stub gives four boards rows; exactly one should show unplayed
-  await expect
-    .poll(async () => page.getByText('Anagrimoire', { exact: true }).count())
-    .toBeGreaterThanOrEqual(1);
+  // the stub gives four boards rows; exactly one should show unplayed. Counted
+  // as boards rather than as the text: the wordmark and the bar both say
+  // "Anagrimoire", so counting the word passed with no board on the page.
+  await expect(page.getByRole('main').getByRole('button', { name: /Anagrimoire/ })).toHaveCount(1);
 });
 
 test('the difficulty tabs re-ask the server for that difficulty', async ({ page, rpcCalls }) => {

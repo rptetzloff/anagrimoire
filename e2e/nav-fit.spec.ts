@@ -1,68 +1,50 @@
-// The game bar has to hold every tab at every width, and it stopped doing that
-// when the ninth game arrived — quietly, because nothing overflowed the page.
-// The horizontal layout wanted 888px of tabs inside a 768px bar, so it never
-// fit at any viewport; it just squeezed, and "Word Ladder" ran out of its
-// column on a phone.
+// The bar at the top has to stay one row and fit at every width. It wrapped to
+// a second row once, when it was a strip of game tabs and the ninth game
+// arrived: the tabs wanted 888px inside a 768px bar, and a sticky bar that
+// wraps costs a slice of every screen on every page. The layout spec's answer
+// is a bar of sections rather than games (desktop) and a bar at the top with
+// tabs at the bottom (phone); this asserts each holds at its widths.
 //
 // Nothing else would catch it. axe does not measure layout, and the a11y sweep
-// walks one width. This asserts the two things that are actually wrong when a
-// tab bar is too full: a label wider than the column it sits in, and a page
-// that scrolls sideways.
+// walks one width.
 import { test, expect } from '@playwright/test';
 
-// narrow phone, common phones, small tablet, the old breakpoint, and desktop
-const WIDTHS = [320, 375, 414, 640, 768, 900, 1024, 1280, 1440];
+// narrow phone, common phones, small tablet, either side of the breakpoint,
+// the width the quick-solve box appears at, and desktop
+const WIDTHS = [320, 375, 414, 640, 767, 768, 900, 1024, 1280, 1440];
 
-test('the game bar stays one row and fits its labels at every width', async ({ page }) => {
+test('the bar stays one row, and the page never scrolls sideways, at every width', async ({ page }) => {
   const bad: string[] = [];
   for (const w of WIDTHS) {
     await page.setViewportSize({ width: w, height: 900 });
     await page.goto('/daily/ladder');
     const r = await page.evaluate(() => {
-      const nav = document.querySelector('nav[aria-label="Game modes"]');
-      if (!nav) return null;
-      const navH = Math.round(nav.getBoundingClientRect().height);
-      // whichever of the two layouts is showing
-      const row = [...nav.querySelectorAll('div')].find(
-        (d) => getComputedStyle(d).display === 'grid' && d.children.length > 1
+      const shown = (el: Element | null) => !!el && el.getBoundingClientRect().height > 0;
+      const headers = [...document.querySelectorAll('header')].filter((h) => h.querySelector('img[src="/logo.png"]'));
+      const top = headers.find(shown) ?? null;
+      const tabs = [...document.querySelectorAll('nav[aria-label="Site"]')].find(
+        (n) => shown(n) && getComputedStyle(n).position === 'fixed'
       );
-      const cells = row ? [...row.children] : [];
       return {
-        navH,
-        rows: new Set(cells.map((c) => Math.round(c.getBoundingClientRect().top))).size,
-        // Measure the item against itself. Comparing the label to the whole
-        // cell was too lenient by exactly the width of the icon and padding
-        // beside it, so a label that had already outgrown its share of the
-        // column still passed — until a runner with a wider font pushed it
-        // past even that.
-        over: cells
-          .filter((c) => c.scrollWidth > c.clientWidth)
-          .map((c) => c.querySelector('span')?.textContent ?? '?'),
+        topH: top ? Math.round(top.getBoundingClientRect().height) : 0,
+        // a row that wrapped is taller than the bar; anything sticking out is clipped
+        overflowing: top ? [...top.querySelectorAll('*')].some((el) => {
+          const b = el.getBoundingClientRect();
+          return b.width > 0 && (b.right > window.innerWidth + 1 || b.left < -1);
+        }) : false,
+        quick: !!top && [...top.querySelectorAll('input')].some(shown),
+        tabs: !!tabs,
+        tabsH: tabs ? Math.round(tabs.getBoundingClientRect().height) : 0,
         scrolls: document.documentElement.scrollWidth > document.documentElement.clientWidth,
-        visibleTabs: [...nav.querySelectorAll('a')].filter(
-          (a) => a.getBoundingClientRect().width > 0
-        ).length,
-        // both layouts are always in the DOM; only one has a box
-        menuButton: [...nav.querySelectorAll('button[aria-expanded]')].some(
-          (b) => b.getBoundingClientRect().width > 0
-        ),
       };
     });
-    if (!r) throw new Error(`no game bar at ${w}px`);
-    // Below lg the tab row is display:none, so the checks above have nothing
-    // to look at and would pass on an empty bar. Assert which layout is
-    // actually showing, or this test measures a hidden element.
-    if (w >= 1024) {
-      if (r.visibleTabs < 2) bad.push(`${w}px: expected a row of tabs, saw ${r.visibleTabs}`);
-      if (r.menuButton) bad.push(`${w}px: the compact menu is showing on desktop`);
-    } else {
-      if (!r.menuButton) bad.push(`${w}px: no game menu`);
-      if (r.visibleTabs > 1) bad.push(`${w}px: ${r.visibleTabs} tabs are showing instead of a menu`);
-    }
-    // sticky, so its height is a tax on every screen of every page
-    if (r.navH > 64) bad.push(`${w}px: the bar is ${r.navH}px tall`);
-    if (r.rows > 1) bad.push(`${w}px: tabs wrapped to ${r.rows} rows`);
-    if (r.over.length) bad.push(`${w}px: ${r.over.join(', ')} overflow their columns`);
+    const phone = w < 768;
+    if (r.topH !== (phone ? 56 : 64)) bad.push(`${w}px: the top bar is ${r.topH}px tall`);
+    if (r.overflowing) bad.push(`${w}px: something in the top bar runs off the screen`);
+    // the box is in the bar from lg up; below that it is in the Solvers menu
+    if (r.quick !== w >= 1024) bad.push(`${w}px: the quick-solve box is ${r.quick ? '' : 'not '}in the bar`);
+    if (phone && (!r.tabs || r.tabsH !== 64)) bad.push(`${w}px: no tab bar along the bottom`);
+    if (!phone && r.tabs) bad.push(`${w}px: the phone tab bar is showing on a desktop`);
     if (r.scrolls) bad.push(`${w}px: the page scrolls sideways`);
   }
   expect(bad, bad.join(' | ')).toEqual([]);

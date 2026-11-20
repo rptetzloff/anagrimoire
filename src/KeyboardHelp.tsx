@@ -99,7 +99,7 @@ export default function KeyboardHelp({
           <Section title="Getting around">
             <Row keys={['Tab', '⇧ Tab']}>
               Move between controls. The very first Tab offers “Skip to content”, which
-              jumps {shownModes.length > 1 ? 'past the mode tabs to the puzzle' : 'straight to the puzzle'}.
+              jumps past the bar at the top to the page.
             </Row>
             <Row keys={['Enter', 'Space']}>Activate the focused button.</Row>
             <Row keys={['Esc']}>Close whichever dialog is open.</Row>

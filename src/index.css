@@ -753,6 +753,17 @@ body {
     border-radius: 2px;
   }
 
+  /* A field drawn as a box with its input inside (the bar's quick-solve,
+     beside a search icon): the box takes the ring. On the bare input it
+     drew a second outline a few pixels inside the box's own border. */
+  .field:has(> input:focus-visible) {
+    outline: 2px solid rgb(var(--c-focus));
+    outline-offset: 2px;
+  }
+  .field > input:focus-visible {
+    outline: none;
+  }
+
   /* the invisible type-here overlay can't show its own ring (opacity: 0),
      so the entry box around it takes one instead */
   :has(> input[data-key-overlay]:focus-visible) {
