@@ -128,6 +128,27 @@ piece at a time rather than merged — the fork has diverged too far for that.
    - Next: Grid, Boxed, Weave; then Squares, Cryptogram, Ladder, Bridge.
 6. Stats, Settings, Account, About and Legal as pages rather than pop-ups.
 
+### ~~A rack dealt as its own answer~~ — fixed November 2026
+Every shuffle in the site and the generator was `sort(() => rng() - 0.5)`,
+which is not a shuffle: a comparator answering at random favours the order it
+started from. On a seven-letter word it left the word as it was 2.36% of the
+time, where a fair shuffle would 0.079% — so about one daily Scramble rack in
+42, per difficulty, was dealt reading as its own answer. Seen in the dev feed
+for 2026-11-20, whose easy rack was p-r-o-s-p-e-r, while building the layout.
+
+Now one Fisher–Yates shuffle a side (`src/shuffle.ts`, `scripts/shuffle.mjs`;
+the two copies squares and weave kept in the generator are that module now),
+and a rack is dealt until it spells no seven-letter word in the widest list,
+blocked words included — not only the word it was cut from, since parsley
+dealt as "players" gives the bonus away just the same. A practice rack is
+dealt the same way against its band, and the Shuffle buttons in Scramble and
+Hive always move something (Scramble's never landing on a word). The
+generator's other shuffles — Box sides, Hive's centre and outer letters, Grid
+cells — are fair now too, which changes those puzzles from the next run on.
+`tests/contract/racks.test.ts` pins 2026-11-20 and fails on the old shuffle.
+
+Not done: today's and earlier dailies stay as published.
+
 ### ~~Share buttons~~ — done
 Guess posts the tile grid, Weave one mark per word in find order (gold
 spangram, bulb per hint), the rest a score-and-rank line. Emoji follow the

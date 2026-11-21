@@ -2,6 +2,7 @@
 // words whose lengths exactly tile the board alongside the spangram, and
 // packs every word as a self-avoiding adjacency path covering all cells.
 // Fully deterministic for a given rng.
+import { shuffled } from './shuffle.mjs';
 
 function neighborsOf(rows, cols) {
   const out = [];
@@ -22,14 +23,6 @@ function neighborsOf(rows, cols) {
   return out;
 }
 
-function shuffled(arr, rng) {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(rng() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
 
 // random subset of words whose lengths sum to target (each word 4-10 letters)
 function pickSubset(words, target, rng) {

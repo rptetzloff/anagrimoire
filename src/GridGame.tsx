@@ -20,6 +20,7 @@ import { fetchDailyData } from '@/dailyData';
 import DailyStats from '@/DailyStats';
 import MobileKeyInput from '@/MobileKeyInput';
 import ShareButton from '@/ShareButton';
+import { shuffled } from '@/shuffle';
 import { dailyIntent } from '@/routing/entry';
 import { offerDailySwitch, reportDaily } from '@/dailyBus';
 import DailyToggle from '@/DailyToggle';
@@ -59,7 +60,7 @@ function diceFor(size: number): string[] {
   if (size === 5) return GRID_DICE_5;
   if (size === 3) {
     // sample nine of the classic sixteen dice
-    return [...GRID_DICE_4].sort(() => Math.random() - 0.5).slice(0, 9);
+    return shuffled(GRID_DICE_4).slice(0, 9);
   }
   return GRID_DICE_4;
 }
@@ -242,9 +243,7 @@ const GridGame = forwardRef<
   }, [difficultyTick]);
 
   function rollPracticeGrid(size = GRID_SHAPE[difficulty()]): GridRecord {
-    const cells = diceFor(size)
-      .map((d) => d[Math.floor(Math.random() * 6)])
-      .sort(() => Math.random() - 0.5);
+    const cells = shuffled(diceFor(size).map((d) => d[Math.floor(Math.random() * 6)]));
     return { cells, found: [], endsAt: null, finished: false };
   }
 

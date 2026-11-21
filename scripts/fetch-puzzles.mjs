@@ -24,6 +24,7 @@ import {
   TIER_HINTS,
 } from './bridge.mjs';
 import { cycleOf, permutedIndex } from './walk.mjs';
+import { shuffled, shuffledUntil } from './shuffle.mjs';
 import { blockedSet, neverPublish as neverPublishSet } from './blocked.mjs';
 
 const require = createRequire(import.meta.url);
@@ -319,7 +320,7 @@ function assignSides(w1, w2, rng) {
   const bt = (i) => {
     if (i === letters.length) return true;
     const c = letters[i];
-    const order = [0, 1, 2, 3].sort(() => rng() - 0.5);
+    const order = shuffled([0, 1, 2, 3], rng);
     for (const s of order) {
       if (sides[s].length >= 3) continue;
       if (sides[s].some((x) => adjacent.has(x + c))) continue;
@@ -340,6 +341,17 @@ const poolCache = new Map();
 
 /** How many candidates a length needs to go a year without repeating itself. */
 const YEAR = 365;
+
+// Every seven-letter word in the widest list, the blocked ones included: what
+// a dealt rack must not spell. The widest rather than the difficulty's own,
+// because a rack that reads as a word gives something away whether or not
+// that difficulty accepts it; unfiltered, because the one a rack must least
+// spell is a blocked one.
+let sevensCache = null;
+function allSevens() {
+  sevensCache ??= new Set([...loadTierSet(TIER_FILES.extreme)].filter((w) => w.length === 7));
+  return sevensCache;
+}
 
 function poolsFor(difficulty) {
   const cached = poolCache.get(difficulty);
@@ -493,7 +505,7 @@ for (const variant of ['', 'dev']) {
     for (let attempt = 0; attempt < 300 && !picked; attempt++) {
       const base = hiveBases[Math.floor(hiveRng() * hiveBases.length)];
       const letters = [...new Set(base)];
-      for (const center of letters.slice().sort(() => hiveRng() - 0.5)) {
+      for (const center of shuffled(letters, hiveRng)) {
         const count = hiveWordCount(letters, center);
         if (!best || count > best.count) best = { letters, center, count };
         if (count >= HIVE_MIN_WORDS) {
@@ -511,7 +523,7 @@ for (const variant of ['', 'dev']) {
         `hive ${difficulty}: no board reached ${HIVE_MIN_WORDS} words; using ${best.count}`
       );
     }
-    const outers = picked.letters.filter((c) => c !== picked.center).sort(() => hiveRng() - 0.5);
+    const outers = shuffled(picked.letters.filter((c) => c !== picked.center), hiveRng);
     hiveByDifficulty[difficulty] = { center: picked.center, outers };
     hiveByDifficulty[difficulty].words = picked.count;
   }
@@ -569,9 +581,12 @@ for (const variant of ['', 'dev']) {
       xmur3(`${SEED_SALT}anagrimoire-scramble-${etDate}${salt}${diffSalt(difficulty)}`)()
     );
     const { rackBases } = poolsFor(difficulty);
+    const sevens = allSevens();
     const rackBase = rackBases[Math.floor(scrambleRng() * rackBases.length)];
     scrambleByDifficulty[difficulty] = {
-      letters: rackBase.split('').sort(() => scrambleRng() - 0.5),
+      // dealt so the rack does not read as a word (shuffle.mjs): shuffled with
+      // sort(), it was its own answer about one day in 42
+      letters: shuffledUntil(rackBase.split(''), (d) => sevens.has(d.join('')), scrambleRng),
     };
   }
   await writeFile(
@@ -600,7 +615,7 @@ for (const variant of ['', 'dev']) {
     );
     const dice = GRID_SHAPE[difficulty] === 5 ? GRID_DICE_5 : GRID_DICE;
     gridByDifficulty[difficulty] = {
-      cells: dice.map((d) => d[Math.floor(gridRng() * 6)]).sort(() => gridRng() - 0.5),
+      cells: shuffled(dice.map((d) => d[Math.floor(gridRng() * 6)]), gridRng),
     };
   }
   await writeFile(

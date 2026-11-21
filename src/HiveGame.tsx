@@ -19,6 +19,7 @@ import { fetchDailyData } from '@/dailyData';
 import DailyStats from '@/DailyStats';
 import MobileKeyInput from '@/MobileKeyInput';
 import ShareButton from '@/ShareButton';
+import { shuffled, shuffledUntil } from '@/shuffle';
 import { useRailSlot } from '@/railSlot';
 import { InRail, RailPanel, WordChips } from '@/RailPanel';
 import { GAME_NAME } from '@/games';
@@ -234,7 +235,7 @@ const HiveGame = forwardRef<
     const base = bases[Math.floor(Math.random() * bases.length)];
     const letters = [...new Set(base)];
     const center = letters[Math.floor(Math.random() * letters.length)];
-    const outers = letters.filter((c) => c !== center).sort(() => Math.random() - 0.5);
+    const outers = shuffled(letters.filter((c) => c !== center));
     return { center, outers, found: [] };
   }
 
@@ -412,7 +413,8 @@ const HiveGame = forwardRef<
   });
 
   function shuffleOuters() {
-    updateRecord((r) => ({ ...r, outers: [...r.outers].sort(() => Math.random() - 0.5) }));
+    // a shuffle that leaves the letters where they were looks like a dead button
+    updateRecord((r) => ({ ...r, outers: shuffledUntil(r.outers, (d) => d.join('') === r.outers.join('')) }));
   }
 
   function newPracticeHive() {
