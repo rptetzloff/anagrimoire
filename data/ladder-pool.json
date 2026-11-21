@@ -1,0 +1,162 @@
+{
+  "date": "2026-11-21",
+  "byDifficulty": {
+    "easy": [
+      {
+        "from": "slew",
+        "to": "veer",
+        "par": 4
+      },
+      {
+        "from": "bang",
+        "to": "bolt",
+        "par": 4
+      },
+      {
+        "from": "banded",
+        "to": "belted",
+        "par": 4
+      },
+      {
+        "from": "flock",
+        "to": "stack",
+        "par": 4
+      },
+      {
+        "from": "famed",
+        "to": "noted",
+        "par": 4
+      },
+      {
+        "from": "fool",
+        "to": "gull",
+        "par": 4
+      },
+      {
+        "from": "sum",
+        "to": "tot",
+        "par": 4
+      },
+      {
+        "from": "sage",
+        "to": "wise",
+        "par": 4
+      },
+      {
+        "from": "pass",
+        "to": "walk",
+        "par": 4
+      },
+      {
+        "from": "rent",
+        "to": "tear",
+        "par": 3
+      }
+    ],
+    "hard": [
+      {
+        "from": "bill",
+        "to": "soak",
+        "par": 5
+      },
+      {
+        "from": "bad",
+        "to": "ill",
+        "par": 5
+      },
+      {
+        "from": "dash",
+        "to": "tear",
+        "par": 6
+      },
+      {
+        "from": "prod",
+        "to": "spur",
+        "par": 6
+      },
+      {
+        "from": "heaps",
+        "to": "slews",
+        "par": 5
+      },
+      {
+        "from": "bolt",
+        "to": "slap",
+        "par": 5
+      },
+      {
+        "from": "barb",
+        "to": "gibe",
+        "par": 6
+      },
+      {
+        "from": "good",
+        "to": "keen",
+        "par": 6
+      },
+      {
+        "from": "dull",
+        "to": "soft",
+        "par": 5
+      },
+      {
+        "from": "heaps",
+        "to": "rafts",
+        "par": 6
+      }
+    ],
+    "extreme": [
+      {
+        "from": "rafts",
+        "to": "slews",
+        "par": 7
+      },
+      {
+        "from": "thin",
+        "to": "trim",
+        "par": 8
+      },
+      {
+        "from": "loins",
+        "to": "trunk",
+        "par": 8
+      },
+      {
+        "from": "blamed",
+        "to": "cursed",
+        "par": 8
+      },
+      {
+        "from": "clay",
+        "to": "tile",
+        "par": 8
+      },
+      {
+        "from": "slops",
+        "to": "swill",
+        "par": 8
+      },
+      {
+        "from": "goof",
+        "to": "zany",
+        "par": 8
+      },
+      {
+        "from": "dose",
+        "to": "drug",
+        "par": 8
+      },
+      {
+        "from": "black",
+        "to": "white",
+        "par": 8
+      },
+      {
+        "from": "crown",
+        "to": "tooth",
+        "par": 7
+      }
+    ]
+  },
+  "fetchedAt": "2026-11-21T16:08:26.282Z"
+}

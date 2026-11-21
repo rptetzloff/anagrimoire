@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-21",
+  "byDifficulty": {
+    "easy": {
+      "from": "like",
+      "to": "wish",
+      "par": 4
+    },
+    "hard": {
+      "from": "cube",
+      "to": "dice",
+      "par": 5
+    },
+    "extreme": {
+      "from": "drag",
+      "to": "hale",
+      "par": 8
+    }
+  },
+  "fetchedAt": "2026-11-21T16:07:50.320Z"
+}

@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-21",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "turn",
+          "y": "skirt"
+        },
+        {
+          "x": "stop",
+          "y": "write"
+        },
+        {
+          "x": "lone",
+          "y": "time"
+        },
+        {
+          "x": "pig",
+          "y": "chant"
+        },
+        {
+          "x": "cease",
+          "y": "wall"
+        }
+      ],
+      "answers": "WyJvdXQiLCJvdmVyIiwic29tZSIsInBlbiIsImZpcmUiXQ==",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "figure",
+          "y": "band"
+        },
+        {
+          "x": "mail",
+          "y": "power"
+        },
+        {
+          "x": "cut",
+          "y": "ward"
+        },
+        {
+          "x": "con",
+          "y": "ally"
+        },
+        {
+          "x": "south",
+          "y": "robe"
+        }
+      ],
+      "answers": "WyJoZWFkIiwibWFuIiwiYmFjayIsImZvcm0iLCJ3YXJkIl0=",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "note",
+          "y": "shop"
+        },
+        {
+          "x": "death",
+          "y": "time"
+        },
+        {
+          "x": "partner",
+          "y": "shape"
+        },
+        {
+          "x": "mother",
+          "y": "walk"
+        },
+        {
+          "x": "low",
+          "y": "town"
+        }
+      ],
+      "answers": "WyJib29rIiwiYmVkIiwic2hpcCIsImJvYXJkIiwiZG93biJd",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-11-21T16:07:53.081Z"
+}

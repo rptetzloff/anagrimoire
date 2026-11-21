@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-21",
+  "byDifficulty": {
+    "easy": {
+      "clue": "Little ones",
+      "cols": 6,
+      "board": [
+        "bfoafa",
+        "katnlw",
+        "itbenl",
+        "gaymac",
+        "nodbot",
+        "siualg",
+        "ilmcln",
+        "ngklis"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYmFieWFuaW1hbHMiLCJwYXRoIjpbMCw3LDE0LDIwLDE5LDI0LDMxLDM4LDMzLDQwLDQ3XX0sIndvcmRzIjpbeyJ3IjoiZm9hbCIsInBhdGgiOlsxLDIsMywxMF19LHsidyI6ImZhd24iLCJwYXRoIjpbNCw1LDExLDE2XX0seyJ3Ijoia2l0dGVuIiwicGF0aCI6WzYsMTIsMTMsOCwxNSw5XX0seyJ3IjoibGFtYiIsInBhdGgiOlsxNywyMiwyMSwyN119LHsidyI6Imdvc2xpbmciLCJwYXRoIjpbMTgsMjUsMzAsMzcsMzYsNDIsNDNdfSx7InciOiJjb2x0IiwicGF0aCI6WzIzLDI4LDM0LDI5XX0seyJ3IjoiZHVja2xpbmciLCJwYXRoIjpbMjYsMzIsMzksNDQsNDUsNDYsNDEsMzVdfV19"
+    },
+    "hard": {
+      "clue": "Solve the case",
+      "cols": 7,
+      "board": [
+        "mycldst",
+        "tstuuee",
+        "recestc",
+        "wyepiit",
+        "whsunvs",
+        "iodletk",
+        "ntsseae",
+        "cepituo",
+        "ulrhttu"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3Ijoid2hvZHVuaXQiLCJwYXRoIjpbMjEsMjksMzYsMzcsMzEsMzIsMjYsMjddfSwid29yZHMiOlt7InciOiJteXN0ZXJ5IiwicGF0aCI6WzAsMSw4LDcsMTUsMTQsMjJdfSx7InciOiJjbHVlIiwicGF0aCI6WzIsMywxMCwxN119LHsidyI6ImRldGVjdGl2ZSIsInBhdGgiOls0LDEyLDYsMTMsMjAsMTksMjUsMzMsMzldfSx7InciOiJzdXNwZWN0IiwicGF0aCI6WzUsMTEsMTgsMjQsMjMsMTYsOV19LHsidyI6IndpdG5lc3MiLCJwYXRoIjpbMjgsMzUsNDMsNDIsNTAsNDQsNDVdfSx7InciOiJzbGV1dGgiLCJwYXRoIjpbMzAsMzgsNDYsNTQsNjAsNTldfSx7InciOiJzdGFrZW91dCIsInBhdGgiOlszNCw0MCw0Nyw0MSw0OCw1NSw2Miw2MV19LHsidyI6ImN1bHByaXQiLCJwYXRoIjpbNDksNTYsNTcsNTEsNTgsNTIsNTNdfV19"
+    },
+    "extreme": {
+      "clue": "Picture perfect",
+      "cols": 8,
+      "board": [
+        "paxlexfl",
+        "pieerpas",
+        "eruusoht",
+        "prtsfier",
+        "heeldopi",
+        "odognega",
+        "ztaprait",
+        "omorkvph",
+        "oramroel",
+        "titrosne"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoicGhvdG9ncmFwaCIsInBhdGgiOlsyNCwzMiw0MCw0OSw0Miw0Myw1Miw1Myw2Miw2M119LCJ3b3JkcyI6W3sidyI6InBpeGVsIiwicGF0aCI6WzAsOSwyLDEwLDNdfSx7InciOiJhcGVydHVyZSIsInBhdGgiOlsxLDgsMTYsMTcsMjYsMTgsMjUsMzNdfSx7InciOiJleHBvc3VyZSIsInBhdGgiOls0LDUsMTMsMjEsMjAsMTksMTIsMTFdfSx7InciOiJmbGFzaCIsInBhdGgiOls2LDcsMTQsMTUsMjJdfSx7InciOiJ0cmlwb2QiLCJwYXRoIjpbMjMsMzEsMzksMzgsMzcsMzZdfSx7InciOiJzZWxmaWUiLCJwYXRoIjpbMjcsMzQsMzUsMjgsMjksMzBdfSx7InciOiJkYXJrcm9vbSIsInBhdGgiOls0MSw1MCw1OSw2MCw2OCw2OSw3Niw2N119LHsidyI6Im5lZ2F0aXZlIiwicGF0aCI6WzQ0LDQ1LDQ2LDQ3LDU1LDU0LDYxLDcwXX0seyJ3Ijoiem9vbSIsInBhdGgiOls0OCw1Niw2NCw1N119LHsidyI6InBvcnRyYWl0IiwicGF0aCI6WzUxLDU4LDY1LDc0LDc1LDY2LDczLDcyXX0seyJ3IjoibGVucyIsInBhdGgiOls3MSw3OSw3OCw3N119XX0="
+    }
+  },
+  "fetchedAt": "2026-11-21T16:07:50.320Z"
+}

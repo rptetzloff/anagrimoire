@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-21",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "ige",
+        "rdl",
+        "nbt",
+        "auo"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "tgp",
+        "iea",
+        "bol",
+        "hns"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "tui",
+        "nxg",
+        "say",
+        "eol"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-11-21T16:07:53.081Z"
+}

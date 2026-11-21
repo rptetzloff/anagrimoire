@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-21",
+  "byDifficulty": {
+    "easy": {
+      "from": "pour",
+      "to": "pump",
+      "par": 4
+    },
+    "hard": {
+      "from": "dupe",
+      "to": "gull",
+      "par": 5
+    },
+    "extreme": {
+      "from": "goon",
+      "to": "thug",
+      "par": 8
+    }
+  },
+  "fetchedAt": "2026-11-21T16:07:53.081Z"
+}

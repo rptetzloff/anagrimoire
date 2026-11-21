@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-21",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "take",
+          "y": "compensate"
+        },
+        {
+          "x": "statesman",
+          "y": "yard"
+        },
+        {
+          "x": "mad",
+          "y": "keeper"
+        },
+        {
+          "x": "fire",
+          "y": "fare"
+        },
+        {
+          "x": "may",
+          "y": "lock"
+        }
+      ],
+      "answers": "WyJvdmVyIiwic2hpcCIsImhvdXNlIiwid29yayIsImhlbSJd",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "fall",
+          "y": "grow"
+        },
+        {
+          "x": "sail",
+          "y": "walk"
+        },
+        {
+          "x": "horse",
+          "y": "grove"
+        },
+        {
+          "x": "band",
+          "y": "still"
+        },
+        {
+          "x": "figure",
+          "y": "line"
+        }
+      ],
+      "answers": "WyJvdXQiLCJib2FyZCIsIm1hbiIsInN0YW5kIiwiaGVhZCJd",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "cast",
+          "y": "hand"
+        },
+        {
+          "x": "combat",
+          "y": "eater"
+        },
+        {
+          "x": "horse",
+          "y": "lace"
+        },
+        {
+          "x": "fore",
+          "y": "pen"
+        },
+        {
+          "x": "ring",
+          "y": "line"
+        }
+      ],
+      "answers": "WyJvZmYiLCJhbnQiLCJzaG9lIiwicGxheSIsInNpZGUiXQ==",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-11-21T16:07:50.320Z"
+}

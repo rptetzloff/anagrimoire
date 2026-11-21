@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-21",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "orw",
+        "stm",
+        "iac",
+        "neu"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "psg",
+        "cre",
+        "nlw",
+        "aoi"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "tvd",
+        "onc",
+        "irl",
+        "egy"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-11-21T16:07:50.320Z"
+}
