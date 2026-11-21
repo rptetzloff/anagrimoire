@@ -14,6 +14,7 @@ export function RouteLink({
   className,
   title,
   label,
+  current,
   children,
 }: {
   to: string;
@@ -22,6 +23,8 @@ export function RouteLink({
   title?: string;
   /** the link's name, where its content is a picture */
   label?: string;
+  /** the page this link is for is the one on screen */
+  current?: boolean;
   children: ReactNode;
 }) {
   return (
@@ -29,6 +32,7 @@ export function RouteLink({
       href={to}
       title={title}
       aria-label={label}
+      aria-current={current ? 'page' : undefined}
       className={className}
       onClick={(e) => {
         if (e.defaultPrevented || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;

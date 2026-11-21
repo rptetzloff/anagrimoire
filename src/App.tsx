@@ -16,6 +16,8 @@ import { Flag as FlagIcon } from 'lucide-react';
 import BridgeGame, { type BridgeGameHandle } from '@/BridgeGame';
 import SiteBar, { type BarItem, type Section } from '@/SiteBar';
 import { parseQuickSolve } from '@/quickSolve';
+import { GameRail, GameSide, type RailGame } from '@/GamePageRails';
+import { MODE_BOARDS } from '@/leaderboard';
 import { allDailyStatus } from '@/dailyStatus';
 import { fetchDisplayName } from '@/leaderboard';
 import { supabase } from '@/supabase';
@@ -1609,6 +1611,42 @@ function App() {
     }
     return null;
   };
+  // ---- the rails either side of a game ----
+  // The left one lists the side of the site you are on (see GamePageRails).
+  function openLearn(m: Mode) {
+    setAtHome(false);
+    setMode(m);
+    setLearnMode(true);
+  }
+  const railGames: RailGame[] =
+    currentView === 'learn'
+      ? shownRows.map((m) => ({
+          key: m.id,
+          slug: MODE_SLUG[m.id],
+          label: GAME_NAME[m.id].full,
+          current: m.id === mode,
+          go: { to: pathOf({ kind: 'game', view: 'learn', slug: MODE_SLUG[m.id], daily: false }), onGo: () => openLearn(m.id) },
+        }))
+      : (currentView === 'play' ? barGames : barSolvers).map((b) => ({
+          key: b.key,
+          slug: b.tile!,
+          label: b.label,
+          current: b.key === mode,
+          go: b.go,
+        }));
+  const railHeading = currentView === 'learn' ? 'Learn' : currentView === 'play' ? 'Today' : 'Solvers';
+  // The heading's small line: which puzzle this is.
+  const dayWord = (d?: string) =>
+    d ? new Date(`${d}T12:00:00Z`).toLocaleDateString('en-US', { timeZone: 'UTC', weekday: 'short', month: 'short', day: 'numeric' }) : '';
+  const pageKind =
+    currentView === 'learn' ? 'Learn'
+    : currentView === 'solve' ? 'Solver'
+    : dailyByMode[mode] ? `Daily${dateByMode[mode] ? ` · ${dayWord(dateByMode[mode])}` : ''}`
+    : 'Practice';
+  // The board and Report beside the game while playing; a solver has no
+  // board to be on, and a lesson no puzzle to report.
+  const sideRail = currentView === 'play';
+
   const barSection: Section =
     atHome ? 'today'
     : reportPage ? null
@@ -1651,27 +1689,11 @@ function App() {
         id="main"
         tabIndex={-1}
         className={`relative mx-auto outline-none ${
-          // Home has a rail beside it, so it takes the bar's width and edges;
-          // a game is still one column at a reading measure
-          atHome && !reportPage ? 'max-w-6xl px-4 lg:px-6 py-6 sm:py-8' : 'max-w-3xl px-5 py-8 sm:py-12'
+          // Home and a game have rails, so they take the bar's width and
+          // edges; a report page is one column at a reading measure
+          !reportPage ? 'max-w-[82rem] px-4 lg:px-6 py-6 sm:py-8' : 'max-w-3xl px-5 py-8 sm:py-12'
         } ${kbOpen ? 'pb-80 md:pb-64' : ''}`}
       >
-        {/* A game page starts with the game's own name; Home's heading is
-            its strip saying where you are with today (HomeView), and the bar
-            carries the site's name everywhere. A report page has neither --
-            the strapline used to describe the game loaded behind it, which
-            nobody asked about. */}
-        {!atHome && !reportPage && (
-          <header className="text-center mb-8">
-            <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">{GAME_NAME[mode].full}</h1>
-            <p className="mt-2 text-slate-400 max-w-md mx-auto text-sm sm:text-base">
-              {shownViews.includes('solve')
-                ? MODES.find((m) => m.id === mode)?.description
-                : MODES.find((m) => m.id === mode)?.playDescription}
-            </p>
-          </header>
-        )}
-
         {/* A report page is the whole page. Gating the games and the home
             view left every other section standing — the Solve/Play/Learn
             switch, the difficulty tabs, the dictionary and length pickers —
@@ -1704,36 +1726,37 @@ function App() {
           )}
 
           {!atHome && (
-          <>
-          {/* Only where there's a Learn tab to point at, and only until it's
-              been answered either way. `currentView` keeps it off the Learn tab
-              itself, where it would be telling someone about the page they're
-              already reading. */}
-          {!onboarded &&
-            // signed in, the account gets the deciding vote — wait for it rather
-            // than flashing "new here?" at someone who answered on another device
-            (!session || settingsPulled) &&
-            shownViews.includes('learn') &&
-            currentView !== 'learn' && (
-            <OnboardingCard
-              game={GAME_NAME[mode].full}
-              onLearn={() => {
-                goToView('learn');
-                setOnboarded(true);
-              }}
-              onDismiss={() => setOnboarded(true)}
-            />
-          )}
-
-          {/* solve / play / learn toggle — gone entirely when only one is left,
-              since a switch with one position is just clutter. Hiding Solve and
-              Learn is how the site becomes a game site rather than a tool with
-              games attached. */}
-          <section className={`mb-7 text-center ${shownViews.length > 1 ? '' : 'hidden'}`}>
-            {/* wraps rather than overflowing: at 320px with the largest text
-                this row is wider than the viewport, and the page clips its
-                horizontal overflow, so Learn was cut off with no way to reach
-                it */}
+          <div className={`grid gap-6 items-start ${sideRail
+            ? 'lg:grid-cols-[minmax(0,1fr)_18.75rem] xl:grid-cols-[13.75rem_minmax(0,1fr)_18.75rem]'
+            : 'xl:grid-cols-[13.75rem_minmax(0,1fr)]'}`}>
+          {/* Left: the games, from the width at which the board still has
+              room beside both rails. Narrower, the bar's menus do it. */}
+          <div className="hidden xl:block">
+            <GameRail heading={railHeading} games={railGames} daily={currentView === 'play' ? shownModes : undefined} />
+          </div>
+          <div className={`min-w-0 ${sideRail ? '' : 'w-full max-w-3xl'}`}>
+          {/* The page's heading (the layout spec): which puzzle, the game's
+              name, and the Solve / Play / Learn switch beside it -- still the
+              first rung of the ladder above the board. On a phone the bar's
+              title already names the game, so the words are kept for a
+              screen reader and the switch sits at the top. */}
+          <div className="mb-5 flex flex-wrap items-end justify-between gap-x-6 gap-y-3">
+            <div className="min-w-0 sr-only md:not-sr-only">
+              <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">{pageKind}</p>
+              <h1 className="mt-1 text-2xl sm:text-3xl font-bold tracking-tight text-white">{GAME_NAME[mode].full}</h1>
+              {/* what this view of it does: beside the switch, a solver's
+                  description under Play read as the wrong page */}
+              <p className="mt-1.5 text-sm text-slate-400 max-w-xl">
+                {currentView === 'play'
+                  ? MODES.find((m) => m.id === mode)?.playDescription
+                  : MODES.find((m) => m.id === mode)?.description}
+              </p>
+            </div>
+            {/* gone entirely when only one is left, since a switch with one
+                position is just clutter. Hiding Solve and Learn is how the
+                site becomes a game site rather than a tool with games
+                attached. */}
+            <div className={shownViews.length > 1 ? 'shrink-0 max-w-full' : 'hidden'}>
             <div className="inline-flex flex-wrap justify-center max-w-full rounded-xl bg-white/5 border border-white/10 p-1 gap-1">
                 {(
                   [
@@ -1766,7 +1789,30 @@ function App() {
                   );
                 })}
             </div>
-          </section>
+            </div>
+          </div>
+          {/* The game in a card; on a phone, no frame, so the board has the
+              width. */}
+          <div className="sm:rounded-2xl sm:border sm:border-white/10 sm:bg-slate-900/60 sm:p-6">
+          {/* Only where there's a Learn tab to point at, and only until it's
+              been answered either way. `currentView` keeps it off the Learn tab
+              itself, where it would be telling someone about the page they're
+              already reading. */}
+          {!onboarded &&
+            // signed in, the account gets the deciding vote — wait for it rather
+            // than flashing "new here?" at someone who answered on another device
+            (!session || settingsPulled) &&
+            shownViews.includes('learn') &&
+            currentView !== 'learn' && (
+            <OnboardingCard
+              game={GAME_NAME[mode].full}
+              onLearn={() => {
+                goToView('learn');
+                setOnboarded(true);
+              }}
+              onDismiss={() => setOnboarded(true)}
+            />
+          )}
 
           {showDifficultySwitch && (
             <section className="mb-7 text-center">
@@ -2233,7 +2279,36 @@ function App() {
           )}
           </>
           )}
-          </>
+                    </div>
+          </div>
+          {/* Right: this game's board, and reporting this puzzle. Below the
+              game when there is no room beside it. */}
+          {sideRail && (
+            <div className="min-w-0">
+              <GameSide
+                boards={MODE_BOARDS[mode]}
+                level={level}
+                levelWord={DIFFICULTY_LABEL[level]}
+                allBoards={overlayLink({ kind: 'stats', tab: 'boards' })}
+                // a daily only: a practice board was never published, so
+                // there is nothing on the server for a report to point at
+                // (the footer's takes every other kind)
+                report={dailyByMode[mode] && dateByMode[mode] ? (
+                  <ReportMenu
+                    label="Report this puzzle"
+                    context={{
+                      game: FEED_NAME[mode],
+                      gameLabel: GAME_NAME[mode].full,
+                      date: dateByMode[mode],
+                      level,
+                    }}
+                    className="inline-flex items-center gap-1.5 h-10 px-4 rounded-lg border border-white/15 text-sm text-slate-300 hover:bg-white/5 hover:text-white"
+                  />
+                ) : null}
+              />
+            </div>
+          )}
+          </div>
           )}
 
           </>

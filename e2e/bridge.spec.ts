@@ -7,6 +7,12 @@ import { expect, test } from './fixtures';
 const rows = (page: import('@playwright/test').Page) =>
   page.getByRole('list', { name: 'bridges' }).locator('li');
 
+/** The solver's answers: the page's own list, not one in a navigation -- the
+ *  bar's phone tabs are a list (hidden by CSS), and so is the column of games
+ *  down the left of a game page, whose first item read as the answer. */
+const solverResults = (page: import('@playwright/test').Page) =>
+  page.getByRole('main').locator('ul:not(nav ul) li');
+
 test('the board gives five prompts and a hint budget', async ({ page }) => {
   await page.goto('/daily/bridge');
   await expect(rows(page)).toHaveCount(5);
@@ -38,9 +44,7 @@ test('a word that joins both sides is taken, and one that does not is refused', 
   await page.goto('/solve/bridge');
   await page.getByRole('textbox', { name: 'first' }).fill(x);
   await page.getByRole('textbox', { name: 'second' }).fill(y);
-  const answer = await page
-    .getByRole('main')
-    .locator('ul li')
+  const answer = await solverResults(page)
     .first()
     .innerText({ timeout: 20000 })
     .then((t) => t.trim().slice(x.length, t.trim().length - y.length));
@@ -71,8 +75,7 @@ test('the solver lists every word that joins two ends, not just one', async ({ p
   // snowball/ballroom and snowboard/boardroom are both real, which is the
   // reason the solver returns a list: the daily only publishes prompts with a
   // single answer, and the solver says what is true rather than what shipped
-  // the page's own list: the bar's phone tabs are a list too, hidden by CSS
-  const results = page.getByRole('main').locator('ul li');
+  const results = solverResults(page);
   await expect(results).toHaveCount(2, { timeout: 20000 });
   await expect(results.first()).toHaveText(/snow\s*ball\s*room/i);
 });

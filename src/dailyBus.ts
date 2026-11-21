@@ -18,6 +18,14 @@ const switches = new Map<Mode, (daily: boolean) => void>();
 // page. So a request with nobody to hear it waits for whoever turns up.
 const pending = new Map<Mode, boolean>();
 
+// And the other direction: the last word each game said. A game reports on
+// mount, and a child's effects run before its parent's, so the report from
+// the game an address opens arrived before App was listening and was lost --
+// and it only came again if the board's date changed. A player back for the
+// same day's puzzle had no date at all: the page could not say which daily
+// it was, and the report menu could not offer the puzzle.
+const latest = new Map<Mode, { daily: boolean; date: string }>();
+
 /** A game saying which board it currently has open, and which date that
  *  board carries — the puzzle's own, which is not always today's: a tab left
  *  open past the 3:15 a.m. roll is still showing yesterday. Anything acting on
@@ -25,12 +33,15 @@ const pending = new Map<Mode, boolean>();
  *  clock's. Empty for a practice board, which has no date because it was
  *  never published. */
 export function reportDaily(mode: Mode, daily: boolean, date = ''): void {
+  latest.set(mode, { daily, date });
   for (const fn of reporters) fn(mode, daily, date);
 }
 
-/** App listening for the above. Returns an unsubscribe. */
+/** App listening for the above, told at once what every game last said.
+ *  Returns an unsubscribe. */
 export function onDailyReport(fn: Report): () => void {
   reporters.add(fn);
+  for (const [mode, r] of latest) fn(mode, r.daily, r.date);
   return () => {
     reporters.delete(fn);
   };
