@@ -19,6 +19,8 @@ import { fetchDailyData } from '@/dailyData';
 import DailyStats from '@/DailyStats';
 import MobileKeyInput from '@/MobileKeyInput';
 import ShareButton from '@/ShareButton';
+import { useRailSlot } from '@/railSlot';
+import { InRail, RailPanel } from '@/RailPanel';
 import { shuffled } from '@/shuffle';
 import { GAME_NAME } from '@/games';
 import { dailyIntent } from '@/routing/entry';
@@ -207,6 +209,9 @@ const BoxGame = forwardRef<
   }
 >(function BoxGame({ standardWords, commonWords, onLetterStates, onReveal, practiceWords }, ref) {
   const [store, setStore] = useState<BoxStore>(loadStore);
+  // Beside the board on a wide page, the game's own panel goes in the rail
+  // (railSlot.ts); narrower, it is drawn here, where it always was.
+  const rail = useRailSlot();
   const { practiceAllowed } = usePrefs();
   // pinned to the daily: someone who switched practice off shouldn't be left
   // looking at a practice board they can no longer leave
@@ -521,6 +526,7 @@ const BoxGame = forwardRef<
 
       {record && (
         <>
+          {!rail && (
           <div className="mb-3 flex items-center justify-center gap-4 text-xs text-slate-400">
             <span className="inline-flex items-center gap-1.5 tabular-nums">
               <Timer className="w-3.5 h-3.5 text-slate-500" />
@@ -534,6 +540,7 @@ const BoxGame = forwardRef<
               <span className="text-slate-500">{store.dailyDate}</span>
             )}
           </div>
+          )}
 
           {/* committed chain — extra clearance when the entry box between it
               and the board is gone (finished) */}
@@ -666,7 +673,7 @@ const BoxGame = forwardRef<
                 New box
               </button>
             )}
-            {done && (
+            {!rail && done && (
               <ShareButton
                 build={() =>
                   buildShare({
@@ -740,7 +747,7 @@ const BoxGame = forwardRef<
             )}
           </div>
 
-          {(record.invalid?.length ?? 0) > 0 && (
+          {!rail && (record.invalid?.length ?? 0) > 0 && (
             <div className="mt-3 max-w-md mx-auto">
               <p className="mb-2 text-xs font-medium text-slate-500 uppercase tracking-wider">
                 Not in dictionary <span className="text-slate-600">· {record.invalid!.length}</span>
@@ -770,6 +777,45 @@ const BoxGame = forwardRef<
             {store.dailyMode && ' A fresh daily box arrives about 15 minutes after 3:00 a.m. Eastern.'}
           </p>
         </>
+      )}
+      {rail && record && (
+        <InRail slot={rail}>
+          <RailPanel label="Your box" figure={`${committedCovered.size} / 12 letters`}>
+            <p className="flex items-center gap-1.5 text-sm text-slate-300 tabular-nums">
+              <Timer className="w-3.5 h-3.5 text-slate-500" aria-hidden="true" />
+              {formatElapsed(record.elapsedMs ?? 0)}
+              {store.dailyMode && store.dailyDate && <span className="ml-auto text-xs text-slate-500">{store.dailyDate}</span>}
+            </p>
+            <p className="mt-2 text-xs text-slate-400">
+              {chain.length} {chain.length === 1 ? 'word' : 'words'} so far · solvable in {record.par ?? 2}
+            </p>
+            {done && (
+              <div className="mt-3">
+                <ShareButton build={() => buildShare({
+                      game: GAME_NAME.boxed.full,
+                      slug: 'boxed',
+                      daily: store.dailyMode,
+                      date: store.dailyDate,
+                      // word count and time only; the chain itself is the answer
+                      body: [
+                        solved
+                          ? `Solved in ${chain.length} word${chain.length === 1 ? '' : 's'} · ${formatElapsed(record.elapsedMs ?? 0)}`
+                          : 'Revealed',
+                      ],
+                    })} />
+              </div>
+            )}
+          </RailPanel>
+          {(record.invalid?.length ?? 0) > 0 && (
+            <RailPanel label="Not in dictionary" figure={record.invalid!.length}>
+              <ul className="flex flex-wrap gap-1.5">
+                {[...record.invalid!].sort().map((w) => (
+                  <li key={w} className="px-2 py-0.5 rounded-md border text-sm tracking-wide bg-amber-400/10 border-amber-400/30 text-amber-300">{w}</li>
+                ))}
+              </ul>
+            </RailPanel>
+          )}
+        </InRail>
       )}
     </div>
   );

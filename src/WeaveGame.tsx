@@ -18,6 +18,8 @@ import {
 import { fetchDailyData, fetchPool } from '@/dailyData';
 import DailyStats from '@/DailyStats';
 import ShareButton from '@/ShareButton';
+import { useRailSlot } from '@/railSlot';
+import { InRail, RailPanel, WordChips } from '@/RailPanel';
 import { GAME_NAME } from '@/games';
 import { dailyIntent } from '@/routing/entry';
 import { offerDailySwitch, reportDaily } from '@/dailyBus';
@@ -177,6 +179,9 @@ const WeaveGame = forwardRef<
   { standardWords: string[] | null; navKeys: NavKeys }
 >(function WeaveGame({ standardWords, navKeys }, ref) {
   const [store, setStore] = useState<WeaveStore>(loadStore);
+  // Beside the board on a wide page, the game's own panel goes in the rail
+  // (railSlot.ts); narrower, it is drawn here, where it always was.
+  const rail = useRailSlot();
   const { practiceAllowed } = usePrefs();
   // pinned to the daily: someone who switched practice off shouldn't be left
   // looking at a practice board they can no longer leave
@@ -657,6 +662,7 @@ const WeaveGame = forwardRef<
           </div>
 
           {/* progress */}
+          {!rail && (
           <div className="mb-4 flex items-center justify-center gap-4 text-xs text-slate-400">
             <span className="inline-flex items-center gap-1.5 tabular-nums">
               <Timer className="w-3.5 h-3.5 text-slate-500" />
@@ -675,6 +681,7 @@ const WeaveGame = forwardRef<
               <span className="text-slate-500">{store.dailyDate}</span>
             )}
           </div>
+          )}
 
           {/* the traced letters are visible on the board itself; this only
               announces them to screen readers */}
@@ -754,7 +761,7 @@ const WeaveGame = forwardRef<
 
           {/* controls */}
           <div className="mt-4 flex flex-wrap items-center justify-center gap-2.5">
-            <button
+            {!rail && <button
               onMouseDown={(e) => e.preventDefault()}
               onClick={useHint}
               disabled={!canHint}
@@ -763,8 +770,8 @@ const WeaveGame = forwardRef<
             >
               <Lightbulb className="w-4 h-4" />
               Hint {Math.min(Math.max(hintBank, 0), HINT_COST)}/{HINT_COST}
-            </button>
-            {complete && (
+            </button>}
+            {!rail && complete && (
               <ShareButton
                 build={() => {
                   const e = WEAVE_EMOJI[palette];
@@ -833,7 +840,7 @@ const WeaveGame = forwardRef<
           </div>
 
           {/* found theme words */}
-          {record.found.length > 0 && (
+          {!rail && record.found.length > 0 && (
             <div className="mt-2 flex flex-wrap justify-center gap-1.5 max-w-md mx-auto">
               {record.found.map((w) => (
                 <span
@@ -865,6 +872,62 @@ const WeaveGame = forwardRef<
             {store.dailyMode && ' A fresh daily puzzle arrives about 15 minutes after 3:00 a.m. Eastern.'}
           </p>
         </>
+      )}
+      {rail && record && answers && (
+        <InRail slot={rail}>
+          <RailPanel label="Your progress" figure={`${record.found.length} / ${answers.words.length + 1} found`}>
+            <p className="flex items-center gap-1.5 text-sm text-slate-300 tabular-nums">
+              <Timer className="w-3.5 h-3.5 text-slate-500" aria-hidden="true" />
+              {formatElapsed(record.elapsedMs ?? 0)}
+              {store.dailyMode && store.dailyDate && <span className="ml-auto text-xs text-slate-500">{store.dailyDate}</span>}
+            </p>
+            {record.hintsUsed > 0 && (
+              <p className="mt-1 inline-flex items-center gap-1.5 text-xs text-slate-400">
+                <Lightbulb className="w-3.5 h-3.5 text-slate-500" aria-hidden="true" />
+                {record.hintsUsed} hint{record.hintsUsed === 1 ? '' : 's'} used
+              </p>
+            )}
+            {record.found.length > 0 && (
+              <div className="mt-3">
+                <WordChips words={record.found} strong={(w) => w === answers.spangram.w} />
+              </div>
+            )}
+            <div className="mt-3 flex flex-wrap gap-2">
+              <button
+                onMouseDown={(e) => e.preventDefault()}
+                onClick={useHint}
+                disabled={!canHint}
+                title={`Find ${HINT_COST} non-theme words to earn a hint`}
+                className="inline-flex items-center gap-1.5 px-4 h-10 rounded-lg text-sm font-semibold bg-white/5 border border-white/10 text-slate-300 hover:bg-white/10 hover:text-white transition-colors disabled:opacity-40"
+              >
+                <Lightbulb className="w-4 h-4" />
+                Hint {Math.min(Math.max(hintBank, 0), HINT_COST)}/{HINT_COST}
+              </button>
+              {complete && <ShareButton build={() => {
+                  const e = WEAVE_EMOJI[palette];
+                  // one mark per word in the order they were found — never
+                  // the board, which would give the shape away
+                  const marks = record.found
+                    .map((w) => (w === answers.spangram.w ? e.span : e.theme))
+                    .join('');
+                  // deliberately no clue: working out the theme is half the
+                  // puzzle, so posting it would spoil the board
+                  return buildShare({
+                    game: GAME_NAME.weave.full,
+                    slug: 'weave',
+                    daily: store.dailyMode,
+                    date: store.dailyDate,
+                    body: [
+                      marks + e.hint.repeat(record.hintsUsed),
+                      solvedAll
+                        ? `Solved in ${formatElapsed(record.elapsedMs ?? 0)}`
+                        : 'Revealed',
+                    ],
+                  });
+                }} />}
+            </div>
+          </RailPanel>
+        </InRail>
       )}
     </div>
   );

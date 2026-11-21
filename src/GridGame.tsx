@@ -29,6 +29,8 @@ import { useDailySync } from '@/useDailySync';
 import { buildShare } from '@/share';
 import { recordSprint } from '@/stats';
 import { store as siteStore } from '@/siteStorage';
+import { useRailSlot } from '@/railSlot';
+import { InRail, RailPanel, WordChips } from '@/RailPanel';
 
 export type GridGameHandle = { pressKey: (k: string) => void };
 
@@ -145,6 +147,9 @@ const GridGame = forwardRef<
   }
 >(function GridGame({ standardWords, displayWord, onLetterStates, onReveal }, ref) {
   const [store, setStore] = useState<GridStore>(loadStore);
+  // Beside the board on a wide page, the game's own panel goes in the rail
+  // (railSlot.ts); narrower, it is drawn here, where it always was.
+  const rail = useRailSlot();
   const [playedAt, setPlayedAt] = useState<Difficulty>(difficulty);
   const [difficultyTick, setDifficultyTick] = useState(0);
   useEffect(
@@ -668,7 +673,7 @@ const GridGame = forwardRef<
             )}
             {record.finished && (
               <>
-                <ShareButton
+                {!rail && <ShareButton
                   build={() =>
                     buildShare({
                       game: `Grid ${Math.round(Math.sqrt(record.cells.length))}×${Math.round(Math.sqrt(record.cells.length))}`,
@@ -681,7 +686,7 @@ const GridGame = forwardRef<
                       ],
                     })
                   }
-                />
+                />}
                 {/* nothing to reveal into when the solver is hidden */}
                 {onReveal && (
                   <button
@@ -716,7 +721,7 @@ const GridGame = forwardRef<
           </div>
 
           {/* found words */}
-          {record.found.length > 0 && (
+          {!rail && record.found.length > 0 && (
             <div className="mt-3 max-w-md mx-auto">
               <div className="flex flex-wrap justify-center gap-1.5">
                 {[...record.found].sort().map((w) => (
@@ -737,7 +742,7 @@ const GridGame = forwardRef<
           )}
 
           {/* rejected non-words */}
-          {(record.invalid?.length ?? 0) > 0 && (
+          {!rail && (record.invalid?.length ?? 0) > 0 && (
             <div className="mt-4 max-w-md mx-auto">
               <p className="mb-2 text-xs font-medium text-slate-500 uppercase tracking-wider text-center">
                 Not in dictionary <span className="text-slate-600">· {record.invalid!.length}</span>
@@ -805,6 +810,41 @@ const GridGame = forwardRef<
             {store.dailyMode && ' A fresh daily grid arrives about 15 minutes after 3:00 a.m. Eastern.'}
           </p>
         </>
+      )}
+      {rail && record && (
+        <InRail slot={rail}>
+          <RailPanel label="Found" figure={`${record.found.length} ${record.found.length === 1 ? 'word' : 'words'} · ${score} pts`}>
+            {record.found.length > 0 ? (
+              <WordChips
+                words={[...record.found].sort()}
+                strong={(w) => w.length >= 7}
+                chipProps={(w) => ({ ...traceHandlers(w), title: 'Hover to trace on the board', style: { cursor: 'pointer', userSelect: 'none' } })}
+              />
+            ) : (
+              <p className="text-sm text-slate-400">{running ? 'Nothing yet. Type or trace a word.' : 'Start the clock to play.'}</p>
+            )}
+            {record.finished && (
+              <div className="mt-3">
+                <ShareButton build={() => buildShare({
+                      game: `Grid ${Math.round(Math.sqrt(record.cells.length))}×${Math.round(Math.sqrt(record.cells.length))}`,
+                      slug: 'grid',
+                      daily: store.dailyMode,
+                      date: store.dailyDate,
+                      body: [`${score}/${maxScore} pts`, `${record.found.length}/${answers?.length ?? 0} words`],
+                    })} />
+              </div>
+            )}
+          </RailPanel>
+          {(record.invalid?.length ?? 0) > 0 && (
+            <RailPanel label="Not in dictionary" figure={record.invalid!.length}>
+              <ul className="flex flex-wrap gap-1.5">
+                {[...record.invalid!].sort().map((w) => (
+                  <li key={w} className="px-2 py-0.5 rounded-md border text-sm tracking-wide bg-amber-400/10 border-amber-400/30 text-amber-300">{w}</li>
+                ))}
+              </ul>
+            </RailPanel>
+          )}
+        </InRail>
       )}
     </div>
   );
