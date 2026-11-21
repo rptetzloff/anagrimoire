@@ -19,6 +19,8 @@ import { fetchDailyData } from '@/dailyData';
 import DailyStats from '@/DailyStats';
 import MobileKeyInput from '@/MobileKeyInput';
 import ShareButton from '@/ShareButton';
+import { useRailSlot } from '@/railSlot';
+import { InRail, RailPanel, WordChips } from '@/RailPanel';
 import { GAME_NAME } from '@/games';
 import { dailyIntent } from '@/routing/entry';
 import { offerDailySwitch, reportDaily } from '@/dailyBus';
@@ -410,6 +412,20 @@ const ScrambleGame = forwardRef<
     });
   }, [record, current]);
 
+  // Beside the board on a wide page, the game's own panel goes in the rail
+  // (railSlot.ts); narrower, it is drawn here, where it always was. The clock
+  // and score stay with the rack, which is where the eye is while it runs.
+  const rail = useRailSlot();
+  const shareIt = () =>
+    buildShare({
+      game: GAME_NAME.descramble.full,
+      slug: 'scramble',
+      daily: store.dailyMode,
+      date: store.dailyDate,
+      body: [`${score}/${maxScore} pts`, `${record?.found.length ?? 0}/${answers?.length ?? 0} words`],
+    });
+  const longest = answers && answers.length ? Math.max(...answers.map((w) => w.length)) : 0;
+
   return (
     <div className="text-center">
       <DailyToggle
@@ -547,20 +563,7 @@ const ScrambleGame = forwardRef<
             )}
             {record.finished && (
               <>
-                <ShareButton
-                  build={() =>
-                    buildShare({
-                      game: GAME_NAME.descramble.full,
-                      slug: 'scramble',
-                      daily: store.dailyMode,
-                      date: store.dailyDate,
-                      body: [
-                        `${score}/${maxScore} pts`,
-                        `${record.found.length}/${answers?.length ?? 0} words`,
-                      ],
-                    })
-                  }
-                />
+                {!rail && <ShareButton build={shareIt} />}
                 {/* nothing to reveal into when the solver is hidden */}
                 {onReveal && (
                   <button
@@ -595,7 +598,7 @@ const ScrambleGame = forwardRef<
           </div>
 
           {/* found words */}
-          {record.found.length > 0 && (
+          {!rail && record.found.length > 0 && (
             <div className="mt-3 max-w-md mx-auto">
               <div className="flex flex-wrap justify-center gap-1.5">
                 {[...record.found].sort().map((w) => (
@@ -644,6 +647,39 @@ const ScrambleGame = forwardRef<
             word list for the difficulty you&apos;re playing.
             {store.dailyMode && ' A fresh daily rack arrives about 15 minutes after 3:00 a.m. Eastern.'}
           </p>
+          {rail && (
+            <InRail slot={rail}>
+              <RailPanel label="Found" figure={`${record.found.length} ${record.found.length === 1 ? 'word' : 'words'}`}>
+                {record.found.length > 0 ? (
+                  <WordChips words={[...record.found].sort()} strong={(w) => w.length === record.rack.length} />
+                ) : (
+                  <p className="text-sm text-slate-400">
+                    {running ? 'Nothing yet. Type a word and press Enter.' : record.finished ? 'Nothing found this time.' : 'Start the clock to play.'}
+                  </p>
+                )}
+                {record.finished && <div className="mt-3"><ShareButton build={shareIt} /></div>}
+              </RailPanel>
+              {longest > 0 && (
+                <RailPanel label="Longest possible">
+                  <p className="text-sm text-slate-300">
+                    {longest} letters
+                    {/* the word itself only once the clock is done: shown
+                        while it runs, it is the answer to the bonus */}
+                    {record.finished ? (
+                      <>
+                        :{' '}
+                        <span className="font-semibold uppercase tracking-wide text-white">
+                          {answers!.filter((w) => w.length === longest).slice(0, 3).join(', ')}
+                        </span>
+                      </>
+                    ) : (
+                      <span className="text-slate-500"> · shown when the clock stops</span>
+                    )}
+                  </p>
+                </RailPanel>
+              )}
+            </InRail>
+          )}
         </>
       )}
     </div>

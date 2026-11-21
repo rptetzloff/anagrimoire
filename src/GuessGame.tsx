@@ -17,6 +17,8 @@ import {
 import DailyStats from '@/DailyStats';
 import MobileKeyInput from '@/MobileKeyInput';
 import ShareButton from '@/ShareButton';
+import { useRailSlot } from '@/railSlot';
+import { InRail, RailPanel } from '@/RailPanel';
 import { GAME_NAME } from '@/games';
 import { asRecord, asRecords, type GameRecord } from '@/guessRecord';
 import { dailyIntent } from '@/routing/entry';
@@ -489,6 +491,26 @@ const GuessGame = forwardRef<
   // hold the board until the synced copy has merged — reconciling after
   // someone has typed a guess is worse than a moment of waiting
   const loading = (dailyMode ? !dailyData && !dailyError : !commonWords) || syncing;
+  // Beside the board on a wide page, the game's own panel goes in the rail
+  // (railSlot.ts); narrower, it is drawn here, where it always was.
+  const rail = useRailSlot();
+  const shareIt = () =>
+    buildShare({
+      game: `${GAME_NAME.pattern.full} (${length})`,
+      slug: 'guess',
+      daily: dailyMode,
+      date: dailyData?.date,
+      body: [
+        won ? `${guesses.length}/${MAX_GUESSES}` : `X/${MAX_GUESSES}`,
+        '',
+        // colours only — the letters stay secret
+        ...guesses.map((g) =>
+          scoreGuess(answer!, g)
+            .map((st) => TILE_EMOJI[palette][st])
+            .join('')
+        ),
+      ],
+    });
 
   return (
     <div className="text-center">
@@ -499,6 +521,7 @@ const GuessGame = forwardRef<
         }}
       />
 
+      {!rail && (
       <div className="mb-4 flex items-center justify-center gap-4 text-xs text-slate-400">
         {record && (
           <span className="inline-flex items-center gap-1.5 tabular-nums">
@@ -518,6 +541,7 @@ const GuessGame = forwardRef<
           </>
         )}
       </div>
+      )}
 
       {loading && <p className="text-sm text-slate-400 py-8">Loading…</p>}
       {dailyMode && dailyError && (
@@ -587,28 +611,7 @@ const GuessGame = forwardRef<
                 New word
               </button>
             )}
-            {(won || lost) && answer && (
-              <ShareButton
-                build={() =>
-                  buildShare({
-                    game: `${GAME_NAME.pattern.full} (${length})`,
-                    slug: 'guess',
-                    daily: dailyMode,
-                    date: dailyData?.date,
-                    body: [
-                      won ? `${guesses.length}/${MAX_GUESSES}` : `X/${MAX_GUESSES}`,
-                      '',
-                      // colours only — the letters stay secret
-                      ...guesses.map((g) =>
-                        scoreGuess(answer, g)
-                          .map((s) => TILE_EMOJI[palette][s])
-                          .join('')
-                      ),
-                    ],
-                  })
-                }
-              />
-            )}
+            {!rail && (won || lost) && answer && <ShareButton build={shareIt} />}
             {/* hands the board's clues to the solver, so it goes with it */}
             {onReveal && guesses.length > 0 && (
               <button
@@ -634,6 +637,40 @@ const GuessGame = forwardRef<
             <DailyStats level={playedAt} game="guess" date={dailyData.date} />
           )}
         </>
+      )}
+      {rail && !loading && (
+        <InRail slot={rail}>
+          <RailPanel
+            label="Your game"
+            figure={won ? `Solved in ${guesses.length}` : lost ? 'Not this time' : `Guess ${Math.min(guesses.length + 1, MAX_GUESSES)} of ${MAX_GUESSES}`}
+          >
+            <p className="flex items-center gap-1.5 text-sm text-slate-300 tabular-nums">
+              <Timer className="w-3.5 h-3.5 text-slate-500" aria-hidden="true" />
+              {formatElapsed(record?.elapsedMs ?? 0)}
+              {dailyMode && dailyData && <span className="ml-auto text-xs text-slate-500">{dailyData.date}</span>}
+            </p>
+            {/* the daily's counts: practice keeps none */}
+            {dailyMode && (
+              <dl className="mt-3 grid grid-cols-3 gap-2 text-center">
+                <div className="flex flex-col-reverse">
+                  <dt className="text-xs text-slate-400">Played</dt>
+                  <dd className="text-xl font-bold text-white tabular-nums">{store.stats.played}</dd>
+                </div>
+                <div className="flex flex-col-reverse">
+                  <dt className="text-xs text-slate-400">Streak</dt>
+                  <dd className="text-xl font-bold text-white tabular-nums">{store.stats.streak}</dd>
+                </div>
+                <div className="flex flex-col-reverse">
+                  <dt className="text-xs text-slate-400">Win %</dt>
+                  <dd className="text-xl font-bold text-white tabular-nums">
+                    {store.stats.played ? Math.round((store.stats.won / store.stats.played) * 100) : 0}
+                  </dd>
+                </div>
+              </dl>
+            )}
+            {(won || lost) && answer && <div className="mt-3"><ShareButton build={shareIt} /></div>}
+          </RailPanel>
+        </InRail>
       )}
     </div>
   );

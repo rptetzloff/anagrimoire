@@ -110,7 +110,22 @@ piece at a time rather than merged — the fork has diverged too far for that.
    And the readme had promised "Report this puzzle" on every daily board since
    reporting shipped, long after the control became the footer's general
    "Report a problem"; it is true again.
-5. Each game's own progress in the right rail.
+5. **Each game's own progress in the right rail** — in batches.
+   The rail offers a slot above the board, and a game draws its own panel
+   there through a portal while the rail sits beside the board (1024px up);
+   narrower, the rail drops under the game and the game draws its panel
+   inline where it always did, so a found-words list is never a scroll away
+   from the board. The game keeps its state; nothing is lifted out of it
+   (`railSlot.ts`, `RailPanel.tsx`). Drawn once either way — a panel in the
+   rail and its twin above the board would be two clocks.
+   - First batch, done: **Guess the Word** ("Your game": guess n of 6 or
+     solved in n, the clock, Played / Streak / Win %, Share once it is
+     over), **Hive** ("Your progress": the rank, a bar toward Genius, points,
+     the clock, the words found with pangrams marked, Share), **Scramble**
+     ("Found", Share, and "Longest possible": the length while the clock runs
+     and the word once it stops; the clock and score stay with the rack,
+     where the eye is).
+   - Next: Grid, Boxed, Weave; then Squares, Cryptogram, Ladder, Bridge.
 6. Stats, Settings, Account, About and Legal as pages rather than pop-ups.
 
 ### ~~Share buttons~~ — done
