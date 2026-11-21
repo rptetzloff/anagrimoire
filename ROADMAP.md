@@ -125,7 +125,16 @@ piece at a time rather than merged — the fork has diverged too far for that.
      ("Found", Share, and "Longest possible": the length while the clock runs
      and the word once it stops; the clock and score stay with the rack,
      where the eye is).
-   - Next: Grid, Boxed, Weave; then Squares, Cryptogram, Ladder, Bridge.
+   - Second batch, done: **Grid** ("Found": the words with seven-plus
+     marked, still hover-to-trace on the board, the count and points, Share;
+     the three-minute clock stays above the board, where the eye is while
+     tracing), **Boxed** ("Your box": letters used of 12, the clock, words so
+     far against par, Share), **Weave** ("Your progress": found of total, the
+     clock, hints used, the words with the spangram marked, and the Hint
+     button — moved, not copied). Grid and Boxed put their rejected words in a
+     "Not in dictionary" panel under it. Their solver buttons (Reveal, Help)
+     stay with the board: they leave the game.
+   - Next: Squares, Cryptogram, Ladder, Bridge.
 6. Stats, Settings, Account, About and Legal as pages rather than pop-ups.
 
 ### ~~A rack dealt as its own answer~~ — fixed November 2026

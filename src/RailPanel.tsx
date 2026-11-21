@@ -1,6 +1,6 @@
 // A game's panel in the rail: a card with a label, an optional figure on the
 // right of it, and whatever the game has to say. `InRail` puts it there.
-import type { ReactNode } from 'react';
+import type { HTMLAttributes, ReactNode } from 'react';
 import { createPortal } from 'react-dom';
 
 export function RailPanel({ label, figure, children }: { label: string; figure?: ReactNode; children: ReactNode }) {
@@ -22,11 +22,17 @@ export function InRail({ slot, children }: { slot: HTMLElement; children: ReactN
 
 /** Found words as chips, the notable ones marked: a long list scrolls inside
  *  the panel rather than stretching the rail. */
-export function WordChips({ words, strong }: { words: string[]; strong?: (w: string) => boolean }) {
+export function WordChips({ words, strong, chipProps }: {
+  words: string[];
+  strong?: (w: string) => boolean;
+  /** extra props per chip -- Grid's hover-to-trace */
+  chipProps?: (w: string) => HTMLAttributes<HTMLLIElement>;
+}) {
   return (
     <ul className="flex flex-wrap gap-1.5 max-h-64 overflow-y-auto">
       {words.map((w) => (
         <li key={w}
+            {...chipProps?.(w)}
             className={`px-2 py-0.5 rounded-md border text-sm tracking-wide ${
               strong?.(w)
                 ? 'bg-emerald-400/25 border-emerald-300 text-emerald-100 font-semibold'
