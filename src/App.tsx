@@ -18,6 +18,7 @@ import SiteBar, { type BarItem, type Section } from '@/SiteBar';
 import { parseQuickSolve } from '@/quickSolve';
 import { GameRail, GameSide, type RailGame } from '@/GamePageRails';
 import { MODE_BOARDS } from '@/leaderboard';
+import { RailSlotContext } from '@/railSlot';
 import { allDailyStatus } from '@/dailyStatus';
 import { fetchDisplayName } from '@/leaderboard';
 import { supabase } from '@/supabase';
@@ -557,6 +558,8 @@ function App() {
   // link, and the RPCs behind it check again regardless.
   const [owner, setOwner] = useState(false);
   const [learnMode, setLearnMode] = useState(entryGame()?.view === 'learn');
+  // The rail's slot for the game's own panel (railSlot.ts).
+  const [railSlot, setRailSlot] = useState<HTMLElement | null>(null);
   const [theme, setTheme] = useState<ThemeMode>(initial.theme);
   const [palette, setPalette] = useState<Palette>(initial.palette);
   const [navKeys, setNavKeys] = useState<NavKeys>(initial.navKeys);
@@ -1726,6 +1729,7 @@ function App() {
           )}
 
           {!atHome && (
+          <RailSlotContext.Provider value={sideRail ? railSlot : null}>
           <div className={`grid gap-6 items-start ${sideRail
             ? 'lg:grid-cols-[minmax(0,1fr)_18.75rem] xl:grid-cols-[13.75rem_minmax(0,1fr)_18.75rem]'
             : 'xl:grid-cols-[13.75rem_minmax(0,1fr)]'}`}>
@@ -2290,6 +2294,7 @@ function App() {
                 level={level}
                 levelWord={DIFFICULTY_LABEL[level]}
                 allBoards={overlayLink({ kind: 'stats', tab: 'boards' })}
+                slotRef={setRailSlot}
                 // a daily only: a practice board was never published, so
                 // there is nothing on the server for a report to point at
                 // (the footer's takes every other kind)
@@ -2309,6 +2314,7 @@ function App() {
             </div>
           )}
           </div>
+          </RailSlotContext.Provider>
           )}
 
           </>

@@ -7,10 +7,10 @@
 // learning, so a click keeps you on the same side rather than throwing a
 // solver back to a daily.
 //
-// Right, while playing: this game's board at the difficulty being played, top
-// three and you, the way to the full boards, and reporting this puzzle. What
-// the game itself has to say -- your progress, its hints, sharing -- moves here
-// game by game in the next step.
+// Right, while playing: the game's own panel (your progress, what you found,
+// sharing -- drawn by the game itself, see railSlot.ts), then this game's
+// board at the difficulty being played, top three and you, the way to the
+// full boards, and reporting this puzzle.
 import { useEffect, useState, type ReactNode } from 'react';
 import { ArrowRight, Trophy } from 'lucide-react';
 import RouteLink from '@/RouteLink';
@@ -97,13 +97,15 @@ export function GameRail({ heading, games, daily }: {
 }
 
 /** This game's board(s) at this difficulty, and what to do about the puzzle. */
-export function GameSide({ boards: which, level, levelWord, allBoards, report }: {
+export function GameSide({ boards: which, level, levelWord, allBoards, report, slotRef }: {
   boards: BoardGame[];
   level: Difficulty;
   levelWord: string;
   allBoards: Go;
   /** reporting this puzzle, which knows which puzzle it is */
   report: ReactNode;
+  /** where the game's own panel is portalled to (railSlot.ts) */
+  slotRef?: (el: HTMLDivElement | null) => void;
 }) {
   const [boards, setBoards] = useState<Boards | null>(null);
   // so you can find yourself in the column; null signed out or unnamed
@@ -119,6 +121,8 @@ export function GameSide({ boards: which, level, levelWord, allBoards, report }:
 
   return (
     <div className="space-y-4">
+      {/* the game's own panel first: it is about what you are doing */}
+      <div ref={slotRef} className="space-y-4 empty:hidden" />
       {which.map((g) => {
         const rows = boards?.[g] ?? [];
         const label = BOARD_LABELS[g];
