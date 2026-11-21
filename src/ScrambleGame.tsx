@@ -19,6 +19,7 @@ import { fetchDailyData } from '@/dailyData';
 import DailyStats from '@/DailyStats';
 import MobileKeyInput from '@/MobileKeyInput';
 import ShareButton from '@/ShareButton';
+import { shuffledUntil } from '@/shuffle';
 import { useRailSlot } from '@/railSlot';
 import { InRail, RailPanel, WordChips } from '@/RailPanel';
 import { GAME_NAME } from '@/games';
@@ -204,8 +205,10 @@ const ScrambleGame = forwardRef<
     const bases = from.filter((w) => w.length === 7);
     if (!bases.length) return null;
     const base = bases[Math.floor(Math.random() * bases.length)];
+    const sevens = new Set(bases);
     return {
-      rack: base.split('').sort(() => Math.random() - 0.5),
+      // dealt so it does not read as a word (shuffle.ts)
+      rack: shuffledUntil(base.split(''), (d) => sevens.has(d.join(''))),
       found: [],
       endsAt: null,
       finished: false,
@@ -382,7 +385,12 @@ const ScrambleGame = forwardRef<
   });
 
   function shuffleRack() {
-    updateRecord((r) => ({ ...r, rack: [...r.rack].sort(() => Math.random() - 0.5) }));
+    // moves something, and does not land on a word: a Shuffle that deals the
+    // answer has played the bonus for you
+    updateRecord((r) => ({
+      ...r,
+      rack: shuffledUntil(r.rack, (d) => d.join('') === r.rack.join('') || !!answersSet?.has(d.join(''))),
+    }));
   }
 
   function newPracticeRack() {

@@ -19,6 +19,7 @@ import { fetchDailyData } from '@/dailyData';
 import DailyStats from '@/DailyStats';
 import MobileKeyInput from '@/MobileKeyInput';
 import ShareButton from '@/ShareButton';
+import { shuffled } from '@/shuffle';
 import { GAME_NAME } from '@/games';
 import { dailyIntent } from '@/routing/entry';
 import { offerDailySwitch, reportDaily } from '@/dailyBus';
@@ -131,7 +132,7 @@ function generateBox(commonWords: string[]): BoxRecord | null {
     const bt = (i: number): boolean => {
       if (i === letters.length) return true;
       const c = letters[i];
-      for (const s of [0, 1, 2, 3].sort(() => Math.random() - 0.5)) {
+      for (const s of shuffled([0, 1, 2, 3])) {
         if (sides[s].length >= 3) continue;
         if (sides[s].some((x) => adjacent.has(x + c))) continue;
         sides[s].push(c);

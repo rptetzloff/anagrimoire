@@ -15,15 +15,8 @@
 // forces extra letters when it has to.
 //
 // Fully deterministic for a given rng.
+import { shuffled } from './shuffle.mjs';
 
-function shuffled(arr, rng) {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(rng() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
 
 /** words of one length, plus every prefix of them, so a partial column can be
  *  abandoned the moment no word can finish it */
