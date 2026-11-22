@@ -134,7 +134,14 @@ piece at a time rather than merged — the fork has diverged too far for that.
      button — moved, not copied). Grid and Boxed put their rejected words in a
      "Not in dictionary" panel under it. Their solver buttons (Reveal, Help)
      stay with the board: they leave the game.
-   - Next: Squares, Cryptogram, Ladder, Bridge.
+   - Third batch, done, and with it every game: **Word Squares** ("Your
+     square": words made of rows plus columns, the clock, Share),
+     **Cryptogram** ("Your passage": letters worked out, the clock, Share;
+     and "Letters used", the crossed-off alphabet, beside the passage rather
+     than under it), **Word Ladder** ("Your ladder": steps against par, the
+     clock, the two ends, Share), **Bridge** ("Your board": found of five,
+     the clock, hints left, Share). Each game's own controls (Reveal, Add
+     rung, the hint buttons) stay with the board.
 6. Stats, Settings, Account, About and Legal as pages rather than pop-ups.
 
 ### ~~A rack dealt as its own answer~~ — fixed November 2026

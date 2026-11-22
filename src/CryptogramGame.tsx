@@ -11,6 +11,8 @@ import { fetchDailyData, fetchPool } from '@/dailyData';
 import { difficulty, isDifficulty, onDifficultyChange, type Difficulty } from '@/difficulty';
 import MobileKeyInput from '@/MobileKeyInput';
 import ShareButton from '@/ShareButton';
+import { useRailSlot } from '@/railSlot';
+import { InRail, RailPanel } from '@/RailPanel';
 import { GAME_NAME } from '@/games';
 import { buildShare } from '@/share';
 import { dailyIntent } from '@/routing/entry';
@@ -196,6 +198,9 @@ function usedTokens(rec: CryptogramRecord): string[] {
 const CryptogramGame = forwardRef<CryptogramGameHandle, object>(
   function CryptogramGame(_props, ref) {
     const [store, setStore] = useState<CryptogramStore>(loadStore);
+    // Beside the board on a wide page, the game's own panel goes in the rail
+    // (railSlot.ts); narrower, it is drawn here, where it always was.
+    const rail = useRailSlot();
     const [playedAt, setPlayedAt] = useState<Difficulty>(difficulty);
     const [difficultyTick, setDifficultyTick] = useState(0);
     const [level, setLevel] = useState<Difficulty>(difficulty);
@@ -513,7 +518,7 @@ const CryptogramGame = forwardRef<CryptogramGameHandle, object>(
           onChange={(d) => setStore((prev) => ({ ...prev, dailyMode: d }))}
         />
 
-        {record && (
+        {record && !rail && (
           <div className="mb-5 flex items-center justify-center">
             <span className="inline-flex items-center gap-1.5 text-sm text-slate-400 tabular-nums">
               <Timer className="w-4 h-4" />
@@ -659,7 +664,7 @@ const CryptogramGame = forwardRef<CryptogramGameHandle, object>(
                   : 'No plaintext letters used yet.'}
               </p>
             )}
-            {!record.homophonic && (
+            {!rail && !record.homophonic && (
               <div className="mt-6 flex flex-wrap justify-center gap-1 max-w-md mx-auto">
                 {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((l) => (
                   <span
@@ -694,7 +699,7 @@ const CryptogramGame = forwardRef<CryptogramGameHandle, object>(
                   Reveal
                 </button>
               )}
-              {done && (
+              {!rail && done && (
                 <ShareButton
                   build={() =>
                     buildShare({
@@ -718,6 +723,57 @@ const CryptogramGame = forwardRef<CryptogramGameHandle, object>(
             </div>
 
           </>
+        )}
+        {rail && record && (
+          <InRail slot={rail}>
+            <RailPanel label="Your passage" figure={done ? (record.revealed ? 'Revealed' : 'Solved') : `${Object.keys(solutionFor(record)).length} / ${cipherTokens.length} letters`}>
+              <p className="flex items-center gap-1.5 text-sm text-slate-300 tabular-nums">
+                <Timer className="w-3.5 h-3.5 text-slate-500" aria-hidden="true" />
+                {formatElapsed(record.elapsedMs ?? 0)}
+                {store.dailyMode && store.dailyDate && <span className="ml-auto text-xs text-slate-500">{store.dailyDate}</span>}
+              </p>
+              {done && (
+                <div className="mt-3">
+                  <ShareButton
+                    build={() =>
+                    buildShare({
+                      game: GAME_NAME.cryptogram.full,
+                      slug: 'cryptogram',
+                      daily: store.dailyMode,
+                      date: store.dailyDate,
+                      // The passage is the answer, so nothing about it can go
+                      // out — not a letter of it, and not its author, who is
+                      // half the puzzle's reward. Time and whether you needed
+                      // the reveal is the whole honest report.
+                      body: [
+                        record.revealed
+                          ? 'Revealed'
+                          : `Solved in ${formatElapsed(record.elapsedMs ?? 0)}`,
+                      ],
+                    })
+                  }
+                  />
+                </div>
+              )}
+            </RailPanel>
+            {/* the crossed-off alphabet, beside the passage rather than under it */}
+            {!record.homophonic && (
+              <RailPanel label="Letters used" figure={`${usedPlain.size} / 26`}>
+                <div className="flex flex-wrap gap-1" aria-hidden>
+                  {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((l) => (
+                    <span
+                      key={l}
+                      className={`w-5 text-center text-sm font-semibold uppercase ${
+                        usedPlain.has(l.toLowerCase()) ? 'text-slate-600 line-through' : 'text-slate-300'
+                      }`}
+                    >
+                      {l}
+                    </span>
+                  ))}
+                </div>
+              </RailPanel>
+            )}
+          </InRail>
         )}
       </div>
     );

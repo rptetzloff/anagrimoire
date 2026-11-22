@@ -9,6 +9,8 @@ import {
 } from '@/difficulty';
 import MobileKeyInput from '@/MobileKeyInput';
 import ShareButton from '@/ShareButton';
+import { useRailSlot } from '@/railSlot';
+import { InRail, RailPanel } from '@/RailPanel';
 import { GAME_NAME } from '@/games';
 import { buildShare, TILE_EMOJI } from '@/share';
 import { usePalette } from '@/theme';
@@ -178,6 +180,9 @@ const SquaresGame = forwardRef<
   }
 >(function SquaresGame({ standardWords }, ref) {
   const [store, setStore] = useState<SquaresStore>(loadStore);
+  // Beside the board on a wide page, the game's own panel goes in the rail
+  // (railSlot.ts); narrower, it is drawn here, where it always was.
+  const rail = useRailSlot();
   // The difficulty this board actually is — the one asked for, unless the feed
   // predates difficulty and only the easy board exists.
   const [playedAt, setPlayedAt] = useState<Difficulty>(difficulty);
@@ -528,7 +533,7 @@ const SquaresGame = forwardRef<
         </div>
       </div>
 
-      {record && (
+      {record && !rail && (
         <div className="mb-5 flex items-center justify-center">
           <span className="inline-flex items-center gap-1.5 text-sm text-slate-400 tabular-nums">
             <Timer className="w-4 h-4" />
@@ -639,7 +644,7 @@ const SquaresGame = forwardRef<
           </p>
 
           <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
-            {done && (
+            {!rail && done && (
               <ShareButton
                 build={() =>
                   buildShare({
@@ -689,6 +694,55 @@ const SquaresGame = forwardRef<
 
 
         </>
+      )}
+      {rail && record && (
+        <InRail slot={rail}>
+          <RailPanel
+            label="Your square"
+            figure={`${rowStates.filter((s) => s === 'good').length + colStates.filter((s) => s === 'good').length} / ${n * 2} words`}
+          >
+            <p className="flex items-center gap-1.5 text-sm text-slate-300 tabular-nums">
+              <Timer className="w-3.5 h-3.5 text-slate-500" aria-hidden="true" />
+              {formatElapsed(record.elapsedMs ?? 0)}
+              {store.dailyMode && store.dailyDate && <span className="ml-auto text-xs text-slate-500">{store.dailyDate}</span>}
+            </p>
+            <p className="mt-2 text-xs text-slate-400">
+              {done
+                ? record.revealed ? 'Revealed.' : 'Solved.'
+                : 'Lines that read as words, across and down.'}
+            </p>
+            {done && (
+              <div className="mt-3">
+                <ShareButton
+                  build={() =>
+                  buildShare({
+                    game: `${GAME_NAME.squares.full} (${n}×${n})`,
+                    slug: 'squares',
+                    daily: store.dailyMode,
+                    date: store.dailyDate,
+                    body: [
+                      record.revealed
+                        ? 'Revealed'
+                        : `Solved in ${formatElapsed(record.elapsedMs ?? 0)}`,
+                      // The grid is the puzzle's shape, not a record of play —
+                      // it is the same for everyone today. Under "Revealed" a
+                      // wall of filled cells would read as "I did all these",
+                      // so it only goes out with a genuine solve.
+                      ...(record.revealed ? [] : Array.from({ length: n }, (_, r) =>
+                        Array.from({ length: n }, (_, c) =>
+                          record.cells[r * n + c] !== null
+                            ? TILE_EMOJI[palette].absent
+                            : TILE_EMOJI[palette].correct
+                        ).join('')
+                      )),
+                    ],
+                  })
+                }
+                />
+              </div>
+            )}
+          </RailPanel>
+        </InRail>
       )}
     </div>
   );

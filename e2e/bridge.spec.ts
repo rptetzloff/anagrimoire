@@ -18,7 +18,8 @@ test('the board gives five prompts and a hint budget', async ({ page }) => {
   await expect(rows(page)).toHaveCount(5);
   await expect(page.getByText(/0 \/ 5 found/)).toBeVisible();
   // easy grants three; the count is the difficulty setting, so it is on screen
-  await expect(page.getByText(/\d+ left/)).toBeVisible();
+  // ("3 left" above the board, "3 hints left" in the rail beside it)
+  await expect(page.getByText(/\d+ (hints? )?left/)).toBeVisible();
 });
 
 test('a word that joins both sides is taken, and one that does not is refused', async ({
@@ -61,9 +62,9 @@ test('a word that joins both sides is taken, and one that does not is refused', 
 // you are on and comes out of a budget, rather than lighting up the board.
 test('a hint is spent on one prompt and comes out of the budget', async ({ page }) => {
   await page.goto('/daily/bridge');
-  await expect(page.getByText(/3 left/)).toBeVisible();
+  await expect(page.getByText(/3 (hints )?left/)).toBeVisible();
   await page.getByRole('button', { name: 'Length' }).click();
-  await expect(page.getByText(/2 left/)).toBeVisible();
+  await expect(page.getByText(/2 (hints )?left/)).toBeVisible();
   // exactly one row now states a length; the other four are untouched
   await expect(rows(page).filter({ hasText: /\d+ letters/ })).toHaveCount(1);
 });
