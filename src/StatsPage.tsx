@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
-import { Grid3x3, Hexagon, KeyRound, LayoutGrid, Puzzle, Shuffle, Square, Table2, X } from 'lucide-react';
+import { useEffect, useMemo, useState } from 'react';
+import { Grid3x3, Hexagon, KeyRound, LayoutGrid, Puzzle, Shuffle, Square, Table2 } from 'lucide-react';
 import {
   combineStats,
   fetchSyncedStats,
@@ -8,7 +8,7 @@ import {
   type StatsStore,
 } from '@/stats';
 import { formatElapsed } from '@/useUpTimer';
-import { useModalA11y } from '@/useModalA11y';
+import PageWithRail, { PageTabs, RailCard } from '@/PageWithRail';
 import HistoryView from '@/HistoryView';
 import LeaderboardView from '@/LeaderboardView';
 
@@ -17,9 +17,9 @@ import { store as siteStore } from '@/siteStorage';
 
 function Stat({ label, value }: { label: string; value: string | number }) {
   return (
-    <div className="rounded-lg bg-white/5 border border-white/10 px-3 py-2">
-      <p className="text-lg font-bold text-white tabular-nums leading-tight">{value}</p>
-      <p className="text-[0.6875rem] text-slate-500">{label}</p>
+    <div className="rounded-xl bg-slate-900 border border-white/10 px-3 py-2.5">
+      <p className="text-xl font-bold text-white tabular-nums leading-tight">{value}</p>
+      <p className="text-xs text-slate-400">{label}</p>
     </div>
   );
 }
@@ -34,13 +34,13 @@ function Section({
   children: React.ReactNode;
 }) {
   return (
-    <div>
-      <h3 className="flex items-center gap-2 text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
-        <Icon className="w-3.5 h-3.5 text-accent" />
+    <section aria-label={title}>
+      <h2 className="flex items-center gap-2 text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
+        <Icon className="w-3.5 h-3.5 text-accent" aria-hidden="true" />
         {title}
-      </h3>
+      </h2>
       {children}
-    </div>
+    </section>
   );
 }
 
@@ -56,17 +56,26 @@ function time(ms: number | null): string {
   return ms === null ? '—' : formatElapsed(ms);
 }
 
-export default function StatsModal({
+const TABS = [
+  { id: 'overall', label: 'Overall' },
+  { id: 'daily', label: 'Daily' },
+  { id: 'practice', label: 'Practice' },
+  { id: 'history', label: 'History' },
+  { id: 'boards', label: 'Boards' },
+] as const;
+
+/** Your stats and everybody's boards: a page under Boards (the layout spec,
+ *  November 2026). It was a panel over the game; reading a season's numbers
+ *  is not a glance, and the boards want the width. */
+export default function StatsPage({
   signedIn,
   view,
-  onView,
-  onClose,
+  tabLink,
 }: {
   signedIn: boolean;
-  /** the open tab, held by App so it can live in the address bar */
+  /** the open tab, which is the address */
   view: StatsView;
-  onView: (v: StatsView) => void;
-  onClose: () => void;
+  tabLink: (v: StatsView) => { to: string; onGo: () => void };
 }) {
   const [localStore] = useState(loadStats);
   const [synced, setSynced] = useState<StatsStore | null>(null);
@@ -110,9 +119,6 @@ export default function StatsModal({
     }
   });
 
-  const dialogRef = useRef<HTMLDivElement>(null);
-  useModalA11y(dialogRef, onClose);
-
   const maxDist = Math.max(1, ...stats.guess.dist);
   const anyPlay =
     stats.guess.played +
@@ -130,70 +136,58 @@ export default function StatsModal({
       stats.cryptogram.revealed >
     0;
 
+  const totals = view !== 'history' && view !== 'boards';
+  const blurb =
+    view === 'history' ? 'Your dailies, day by day.'
+    : view === 'boards' ? 'How everyone who opted in is doing.'
+    : syncState === 'local' ? 'Lifetime totals, stored only in this browser.'
+    : syncState === 'loading' ? 'Lifetime totals — syncing from your account…'
+    : syncState === 'synced' ? 'Lifetime totals, synced to your account.'
+    : "Couldn't reach your account — showing this browser's totals.";
+  // A glance down every game, beside the detail: how much of each you have
+  // played, so the long page below has a map. Ladder and Bridge are here
+  // although the page has no section for them yet: stats.ts records both.
+  const byGame: [string, number, string][] = [
+    ['Guess the Word', stats.guess.played, 'played'],
+    ['Hive', stats.hive.words, 'words'],
+    ['Scramble', stats.scramble.sprints, 'sprints'],
+    ['Grid', stats.grid.sprints, 'sprints'],
+    ['Boxed', stats.box.solved, 'solved'],
+    ['Word Squares', SQUARE_STAT_SIZES.reduce((t, k) => t + stats.squares[k].solved, 0), 'solved'],
+    ['Weave', stats.weave.solved, 'solved'],
+    ['Cryptogram', stats.cryptogram.solved, 'solved'],
+    ['Word Ladder', stats.ladder.solved, 'solved'],
+    ['Bridge', stats.bridge.found, 'found'],
+  ];
+
   return (
-    <div
-      className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
-      onClick={onClose}
+    <PageWithRail
+      section="Boards"
+      title={view === 'boards' ? 'The boards' : 'Your stats'}
+      blurb={blurb}
+      wide={view === 'boards'}
+      rail={
+        totals && anyPlay ? (
+          <RailCard label="By game">
+            <ul className="divide-y divide-white/10 -my-1.5">
+              {byGame.map(([name, n, what]) => (
+                <li key={name} className="py-1.5 flex items-baseline justify-between gap-3 text-sm">
+                  <span className="text-slate-200">{name}</span>
+                  <span className="text-slate-400 tabular-nums">{n} {what}</span>
+                </li>
+              ))}
+            </ul>
+          </RailCard>
+        ) : undefined
+      }
     >
-      <div
-        ref={dialogRef}
-        tabIndex={-1}
-        role="dialog"
-        aria-modal="true"
-        aria-label="Play statistics"
-        onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-lg max-h-[80vh] flex flex-col rounded-2xl bg-slate-900 border border-white/10 text-left shadow-2xl"
-      >
-        {/* outside the scroll, so it can't slide away mid-read */}
-        <button
-          onClick={onClose}
-          aria-label="Close"
-          className="absolute top-4 right-4 z-10 w-8 h-8 flex items-center justify-center rounded-lg bg-slate-900/95 text-slate-400 hover:bg-slate-800 hover:text-white transition-colors"
-        >
-          <X className="w-4 h-4" />
-        </button>
-
-        <div className="overflow-y-auto p-6 sm:p-8">
-        <h2 className="text-xl font-bold mb-1">Statistics</h2>
-        <p className="text-xs text-slate-500 mb-4">
-          {view === 'history' && 'Your dailies, day by day.'}
-          {view === 'boards' && 'How everyone who opted in is doing.'}
-          {view !== 'history' && view !== 'boards' &&
-            syncState === 'local' &&
-            'Lifetime totals, stored only in this browser.'}
-          {view !== 'history' && view !== 'boards' && syncState === 'loading' && 'Lifetime totals — syncing from your account…'}
-          {view !== 'history' && view !== 'boards' && syncState === 'synced' && 'Lifetime totals, synced to your account.'}
-          {view !== 'history' && view !== 'boards' && syncState === 'error' &&
-            "Couldn't reach your account — showing this browser's totals."}
-        </p>
-
-        <div className="mb-5 inline-flex rounded-lg bg-white/5 border border-white/10 p-0.5 gap-0.5">
-          {(
-            [
-              { id: 'overall', label: 'Overall' },
-              { id: 'daily', label: 'Daily' },
-              { id: 'practice', label: 'Practice' },
-              { id: 'history', label: 'History' },
-              { id: 'boards', label: 'Boards' },
-            ] as const
-          ).map(({ id, label }) => (
-            <button
-              key={id}
-              onMouseDown={(e) => e.preventDefault()}
-              onClick={() => onView(id)}
-              className={`px-3 py-1.5 rounded-md text-sm font-semibold transition-colors
-                ${view === id ? 'bg-accent text-slate-950' : 'text-slate-400 hover:text-white'}`}
-            >
-              {label}
-            </button>
-          ))}
-        </div>
+        <PageTabs label="Stats" tabs={TABS} current={view} link={tabLink} />
 
         {view === 'history' && <HistoryView signedIn={signedIn} />}
         {view === 'boards' && <LeaderboardView signedIn={signedIn} />}
 
         {view !== 'history' && view !== 'boards' && !anyPlay && (
-          <p className="text-sm text-slate-400 py-6 text-center">
+          <p className="text-sm text-slate-400">
             {view === 'overall'
               ? 'Nothing recorded yet — finish a game in any Play mode and it lands here.'
               : `No ${view} games recorded yet.`}
@@ -327,8 +321,6 @@ export default function StatsModal({
             </Section>
           </div>
         )}
-        </div>
-      </div>
-    </div>
+    </PageWithRail>
   );
 }

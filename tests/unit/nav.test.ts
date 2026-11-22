@@ -113,8 +113,14 @@ describe('opening and closing', () => {
   });
 
   it('remembers the tab a panel was left on', () => {
-    let nav = navReducer(start, { type: 'open', overlay: { kind: 'stats', tab: 'boards' } });
+    let nav = navReducer(start, { type: 'open', overlay: { kind: 'settings', tab: 'privacy' } });
     nav = navReducer(nav, { type: 'close' });
+    expect(nav.last.settings).toBe('privacy');
+  });
+
+  it('remembers the Stats tab too, now that Stats is a page', () => {
+    let nav = navReducer(start, { type: 'page', page: { kind: 'stats', tab: 'boards' } });
+    nav = navReducer(nav, { type: 'page', page: { kind: 'home' } });
     expect(nav.last.stats).toBe('boards');
   });
 
@@ -153,7 +159,7 @@ describe('applying an address the browser moved to', () => {
   it('does not forget the other panels’ tabs', () => {
     // applyRoute left tab state alone when the route was not that kind, and
     // that is what made panels remember
-    let nav = navReducer(onGame, { type: 'open', overlay: { kind: 'stats', tab: 'boards' } });
+    let nav = navReducer(onGame, { type: 'page', page: { kind: 'stats', tab: 'boards' } });
     nav = navReducer(nav, { type: 'apply', route: { kind: 'settings', tab: 'games' } });
     expect(nav.last.stats, 'stats tab should survive a trip to settings').toBe('boards');
     expect(nav.last.settings).toBe('games');

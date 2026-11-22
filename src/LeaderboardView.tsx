@@ -74,7 +74,7 @@ function Board({
     // result. No aria-label, so focus reads the card's actual contents.
     <div
       tabIndex={0}
-      className="rounded-xl bg-white/5 border border-white/10 p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-400/70"
+      className="rounded-2xl bg-slate-900 border border-white/10 p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-400/70"
     >
       <h4 className="flex items-center gap-2 text-sm font-semibold text-white mb-2">
         <Icon className="w-3.5 h-3.5 text-accent" />
@@ -247,9 +247,13 @@ export default function LeaderboardView({ signedIn }: { signedIn: boolean }) {
         />
       )}
 
-      {state === 'ready' && played.map((g) => (
-        <Board key={g} game={g} rows={boards![g]} me={me} friends={friends} onReport={setReporting} />
-      ))}
+      {state === 'ready' && played.length > 0 && (
+        <div className="grid gap-3 lg:grid-cols-2 items-start">
+          {played.map((g) => (
+            <Board key={g} game={g} rows={boards![g]} me={me} friends={friends} onReport={setReporting} />
+          ))}
+        </div>
+      )}
 
       <p className="text-xs text-slate-500 pt-1">
         {scope === 'friends' ? 'Dailies only, just your circle.' : 'Dailies only, top ten.'}{' '}

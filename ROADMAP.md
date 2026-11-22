@@ -143,6 +143,18 @@ piece at a time rather than merged — the fork has diverged too far for that.
      the clock, hints left, Share). Each game's own controls (Reveal, Add
      rung, the hint buttons) stay with the board.
 6. Stats, Settings, Account, About and Legal as pages rather than pop-ups.
+   - Stats, done: a page under Boards rather than a panel over the game
+     (`StatsPage.tsx`, in `PageWithRail.tsx`'s shape: section, title, what
+     the numbers are, then the page with a rail). The tabs are links, each its
+     own address as before (`/stats/<tab>`), the open one marked, on one line
+     from a 320px phone up; Back walks back through them. Totals get a By game
+     card beside them; the boards tab takes the full width, two boards across.
+     Every way in -- the bar's Boards, the Me menu, the home page's "All
+     boards", a game's "Full board" -- goes to the page.
+     Not done, and visible beside that card: Ladder and Bridge are recorded
+     (`stats.ts`) and listed in By game, but have no section of their own, and
+     someone who has played only those two is told nothing is recorded yet.
+   - Next: Settings, Account, About and Legal, and the router without overlays.
 
 ### ~~A rack dealt as its own answer~~ — fixed November 2026
 Every shuffle in the site and the generator was `sort(() => rng() - 0.5)`,
