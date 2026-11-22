@@ -82,3 +82,50 @@ test('Weave: progress and the hint button in the rail, once', async ({ page }) =
   await expect(page.getByRole('button', { name: /^Hint / })).toHaveCount(1);
   await expect(page.getByText(/^0 \/ \d+ found$/)).toBeVisible();
 });
+
+test('Word Squares: the clock and the words made, in the rail', async ({ page }) => {
+  await page.setViewportSize(wide);
+  await page.goto('/daily/squares');
+  const panel = page.getByRole('region', { name: 'Your square' });
+  await expect(panel).toContainText(/\d+ \/ \d+ words/);
+  await expect(panel).toContainText('Lines that read as words, across and down.');
+
+  await page.setViewportSize({ width: 900, height: 900 });
+  await expect(panel).toHaveCount(0);
+});
+
+test('Cryptogram: the passage and the crossed-off alphabet beside it', async ({ page }) => {
+  await page.setViewportSize(wide);
+  await page.goto('/daily/cryptogram');
+  const panel = page.getByRole('region', { name: 'Your passage' });
+  await expect(panel).toContainText(/\d+ \/ \d+ letters/);
+  await expect(page.getByRole('region', { name: 'Letters used' })).toContainText(/\d+ \/ 26/);
+
+  await page.setViewportSize({ width: 900, height: 900 });
+  await expect(panel).toHaveCount(0);
+  await expect(page.getByRole('region', { name: 'Letters used' })).toHaveCount(0);
+});
+
+test('Word Ladder: steps against par and the two ends, drawn once', async ({ page }) => {
+  await page.setViewportSize(wide);
+  await page.goto('/daily/ladder');
+  const panel = page.getByRole('region', { name: 'Your ladder' });
+  await expect(panel).toContainText(/From \w+ to \w+, one letter at a time\./);
+  await expect(page.getByText(/^\d+ \/ \d+ steps$/)).toHaveCount(1);
+
+  await page.setViewportSize({ width: 900, height: 900 });
+  await expect(panel).toHaveCount(0);
+  await expect(page.getByText(/^\d+ \/ \d+ steps$/)).toHaveCount(1);
+});
+
+test('Bridge: bridges found and hints left, drawn once', async ({ page }) => {
+  await page.setViewportSize(wide);
+  await page.goto('/daily/bridge');
+  const panel = page.getByRole('region', { name: 'Your board' });
+  await expect(panel).toContainText(/0 \/ \d+ found/);
+  await expect(page.getByText(/^\d+ \/ \d+ found$/)).toHaveCount(1);
+
+  await page.setViewportSize({ width: 900, height: 900 });
+  await expect(panel).toHaveCount(0);
+  await expect(page.getByText(/^\d+ \/ \d+ found$/)).toHaveCount(1);
+});
