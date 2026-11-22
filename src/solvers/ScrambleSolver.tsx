@@ -65,7 +65,7 @@ export default function ScrambleSolver({
           onClick={() => onUseAll(!useAll)}
           className={`inline-flex items-center gap-1.5 px-4 h-10 rounded-lg text-sm font-semibold transition-all duration-150 border
             ${useAll
-              ? 'bg-amber-400 text-ink border-amber-400 shadow-lg shadow-amber-500/30'
+              ? 'bg-accent text-slate-950 border-accent shadow-lg shadow-accent/30'
               : 'bg-white/5 border-white/10 text-slate-300 hover:bg-white/10'}`}
         >
           Use every letter

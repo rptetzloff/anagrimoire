@@ -19,7 +19,7 @@
 // take a ref and lie about its dependencies. Two hooks say the truth: the state
 // is one thing, the browser is another, and the address joins them.
 
-import { useCallback, useEffect, useReducer, useRef } from 'react';
+import { useEffect, useReducer, useRef } from 'react';
 import { parsePath, pathOf, titleOf, type Route } from '@/routes';
 import { FRESH, historyStep } from '@/routing/history';
 import {
@@ -27,20 +27,14 @@ import {
   navReducer,
   type Nav,
   type NavAction,
-  type Overlay,
   type Page,
 } from '@/routing/nav';
 
 export type Nav0 = {
   nav: Nav;
   dispatch: (a: NavAction) => void;
-  /** open an overlay, or move within the one already open */
-  open: (o: Overlay) => void;
-  /** close the top overlay */
-  close: () => void;
   /** an anchor's address and its click, from one value — so the two cannot
    *  disagree, which four of them used to */
-  overlayLink: (o: Overlay) => { to: string; onGo: () => void };
   pageLink: (p: Exclude<Page, { kind: 'game' }>) => { to: string; onGo: () => void };
 };
 
@@ -58,15 +52,9 @@ export function useNav(
     return seeded;
   });
 
-  const open = useCallback((o: Overlay) => dispatch({ type: 'open', overlay: o }), []);
-  const close = useCallback(() => dispatch({ type: 'close' }), []);
-
   return {
     nav,
     dispatch,
-    open,
-    close,
-    overlayLink: (o) => ({ to: pathOf(o), onGo: () => open(o) }),
     pageLink: (page) => ({ to: pathOf(page), onGo: () => dispatch({ type: 'page', page }) }),
   };
 }
@@ -103,9 +91,6 @@ export function useAddressBar(route: Route, apply: (r: Route) => void): void {
       case 'push':
         history.pushState(null, '', op.path);
         return;
-      case 'back':
-        history.back();
-        return;
     }
   }, [route]);
 
@@ -115,11 +100,7 @@ export function useAddressBar(route: Route, apply: (r: Route) => void): void {
   // Through a ref so the listener is registered once but always runs the
   // current closure rather than one holding last render's state.
   const applyRef = useRef(apply);
-  applyRef.current = (r: Route) => {
-    apply(r);
-    // whatever is on top now is the browser's, not ours
-    memo.current = { ...memo.current, ourOverlay: false };
-  };
+  applyRef.current = (r: Route) => apply(r);
 
   useEffect(() => {
     const onPop = () => applyRef.current(parsePath(window.location.pathname) ?? { kind: 'home' });

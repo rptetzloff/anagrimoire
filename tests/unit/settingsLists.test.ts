@@ -11,7 +11,7 @@
 // have refused the eighth while two remained.
 import { describe, expect, it } from 'vitest';
 import { ALL_MODES } from '@/games';
-import { MODE_LABELS, START_OPTIONS } from '@/SettingsModal';
+import { MODE_LABELS, START_OPTIONS } from '@/SettingsPage';
 
 describe('the games you can pick in Settings', () => {
   it('offers every game as a start page', () => {

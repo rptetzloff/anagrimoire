@@ -56,9 +56,6 @@ export type BarProps = {
   signIn: Go | null;
   /** signed in: the letter on the avatar */
   you: { initial: string } | null;
-  /** a panel (stats, settings, legal...) is open over the page: the phone's
-   *  tabs step aside rather than sit under it, unusable */
-  covered?: boolean;
 };
 
 // The same words Home's cards use, so a game is "Finished" in both places.
@@ -185,6 +182,8 @@ function DropMenu({ label, items, active, align = 'left', button, extra, top }: 
         aria-expanded={open}
         aria-controls={id}
         aria-label={button ? label : undefined}
+        // the section you are in, said as well as shown
+        aria-current={active ? 'true' : undefined}
         onClick={() => setOpen((o) => !o)}
         className={button ? 'rounded-full' : `inline-flex items-center gap-1.5 h-10 px-3 rounded-lg text-sm font-medium transition-colors ${
           active ? 'bg-white/10 text-white' : 'text-slate-300 hover:text-white hover:bg-white/5'
@@ -299,14 +298,14 @@ export default function SiteBar(p: BarProps) {
             <span className="font-display text-xl text-white whitespace-nowrap">Anagrimoire</span>
           </RouteLink>
           <nav aria-label="Site" className="flex items-center gap-1 min-w-0">
-            <RouteLink {...p.home} className={navLink(p.current === 'today')}>Today</RouteLink>
+            <RouteLink {...p.home} current={p.current === 'today'} className={navLink(p.current === 'today')}>Today</RouteLink>
             <DropMenu label="Games" items={p.games} active={p.current === 'games'} extra={boardsItem} />
             {/* The box sits in this menu as well as the bar: below lg the bar
                 has no room for it, and this is where someone looking for a
                 solver will already be. */}
             <DropMenu label="Solvers" items={p.solvers} active={p.current === 'solvers'}
                       top={p.quickSolve ? (close) => <QuickSolveBox go={p.quickSolve!} onDone={close} wide /> : undefined} />
-            <RouteLink {...p.boards} className={navLink(p.current === 'boards')}>Boards</RouteLink>
+            <RouteLink {...p.boards} current={p.current === 'boards'} className={navLink(p.current === 'boards')}>Boards</RouteLink>
           </nav>
           <div className="ml-auto flex items-center gap-2">
             {p.quickSolve && <div className="hidden lg:block"><QuickSolveBox go={p.quickSolve} /></div>}
@@ -357,12 +356,12 @@ export default function SiteBar(p: BarProps) {
         </div>
       </header>
 
-      {/* ---- phone: the tabs ---- */}
-      {!p.covered && (
+      {/* ---- phone: the tabs. They stepped aside while a panel covered the
+          page; nothing does now, so they stay. ---- */}
       <nav aria-label="Site" className="md:hidden fixed bottom-0 inset-x-0 z-40 h-16 bg-slate-950/95 backdrop-blur border-t border-white/10">
         <ul className="h-full flex">
           <li className="flex-1">
-            <RouteLink {...p.home} className={tabClass(p.current === 'today')}>
+            <RouteLink {...p.home} current={p.current === 'today'} className={tabClass(p.current === 'today')}>
               <CalendarDays className="w-5 h-5" aria-hidden="true" />
               Today
             </RouteLink>
@@ -376,7 +375,7 @@ export default function SiteBar(p: BarProps) {
                        onClick={() => setSheet('solvers')} />
           )}
           <li className="flex-1">
-            <RouteLink {...p.boards} className={tabClass(p.current === 'boards')}>
+            <RouteLink {...p.boards} current={p.current === 'boards'} className={tabClass(p.current === 'boards')}>
               <Trophy className="w-5 h-5" aria-hidden="true" />
               Boards
             </RouteLink>
@@ -385,7 +384,6 @@ export default function SiteBar(p: BarProps) {
                      onClick={() => setSheet('me')} />
         </ul>
       </nav>
-      )}
 
       {sheet === 'games' && <Sheet title="Games" items={p.games} extra={boardsItem} onClose={() => setSheet(null)} />}
       {sheet === 'solvers' && (
@@ -407,7 +405,7 @@ function TabButton({ label, icon, active, onClick }: {
 }) {
   return (
     <li className="flex-1">
-      <button type="button" onClick={onClick} className={tabClass(active)}>
+      <button type="button" onClick={onClick} aria-current={active ? 'true' : undefined} className={tabClass(active)}>
         {icon}
         {label}
       </button>

@@ -23,63 +23,53 @@ import { expect, test } from './fixtures';
 const depth = (page: import('@playwright/test').Page) =>
   page.evaluate(() => window.history.length);
 
-test('a panel is a place you can come back from', async ({ page }) => {
+// About, Legal, Stats, Settings, Account and Keys were panels over the game,
+// whose Close stepped Back and whose tabs replaced one another. Since the
+// layout spec (November 2026) they are pages, and Back treats them as pages.
+
+test('a former panel is a page you can come back from', async ({ page }) => {
   await page.goto('/daily/hive');
   const before = await depth(page);
 
   await page.getByRole('link', { name: 'About & FAQ' }).click();
   await expect(page).toHaveURL(/\/about$/);
-  await expect(page.getByRole('dialog', { name: 'About and FAQ' })).toBeVisible();
-  expect(await depth(page), 'opening a panel should add one entry').toBe(before + 1);
+  await expect(page.getByRole('heading', { level: 1, name: /^About / })).toBeVisible();
+  await expect(page.getByRole('dialog')).toHaveCount(0);
+  expect(await depth(page), 'going there should add one entry').toBe(before + 1);
 
   await page.goBack();
   await expect(page).toHaveURL(/\/daily\/hive$/);
-  await expect(page.getByRole('dialog')).toHaveCount(0);
 });
 
-test('closing a panel we opened steps back rather than stacking', async ({ page }) => {
-  // otherwise Back would reopen the thing you just closed, which is the one
-  // behaviour a close button must not have
-  await page.goto('/daily/hive');
-  await page.getByRole('link', { name: 'About & FAQ' }).click();
-  const opened = await depth(page);
-
-  await page.getByRole('dialog').getByRole('button', { name: 'Close' }).click();
-  await expect(page).toHaveURL(/\/daily\/hive$/);
-  await expect(page.getByRole('dialog')).toHaveCount(0);
-  expect(await depth(page), 'closing should not add an entry').toBe(opened);
-});
-
-test('moving within a panel replaces, so Back is one step not one per tab', async ({ page }) => {
-  // A modal covers the footer, so panels are not swapped for each other — the
-  // overlay-to-overlay case is moving between a panel's own tabs, and each of
-  // those is a real address. If they stacked, leaving a panel you had read
-  // three tabs of would take four Backs.
+test('each tab is an address of its own, and Back walks back through them', async ({ page }) => {
   await page.goto('/daily/hive');
   await page.locator('footer').getByRole('link', { name: 'Privacy' }).click();
   await expect(page).toHaveURL(/\/legal\/privacy$/);
-  const opened = await depth(page);
 
-  await page.getByRole('dialog').getByRole('button', { name: 'Terms' }).click();
-  await expect(page).toHaveURL(/\/legal\/terms$/);
-  await page.getByRole('dialog').getByRole('button', { name: 'Notices' }).click();
+  const tabs = page.getByRole('navigation', { name: 'Legal' });
+  await tabs.getByRole('link', { name: 'Notices' }).click();
   await expect(page).toHaveURL(/\/legal\/notices$/);
-  expect(await depth(page), 'two tab moves should add no entries').toBe(opened);
+  await tabs.getByRole('link', { name: 'Terms' }).click();
+  await expect(page).toHaveURL(/\/legal\/terms$/);
 
   await page.goBack();
-  await expect(page, 'one Back leaves the panel entirely').toHaveURL(/\/daily\/hive$/);
-  await expect(page.getByRole('dialog')).toHaveCount(0);
+  await expect(page).toHaveURL(/\/legal\/notices$/);
+  await page.goBack();
+  await expect(page).toHaveURL(/\/legal\/privacy$/);
+  await page.goBack();
+  await expect(page).toHaveURL(/\/daily\/hive$/);
 });
 
 test('forward works too, which is the half people forget', async ({ page }) => {
   await page.goto('/daily/hive');
   await page.getByRole('link', { name: 'About & FAQ' }).click();
+  await expect(page).toHaveURL(/\/about$/);
   await page.goBack();
-  await expect(page.getByRole('dialog')).toHaveCount(0);
+  await expect(page).toHaveURL(/\/daily\/hive$/);
 
   await page.goForward();
   await expect(page).toHaveURL(/\/about$/);
-  await expect(page.getByRole('dialog', { name: 'About and FAQ' })).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1, name: /^About / })).toBeVisible();
 });
 
 test('the view switch is an address, and Back returns the board', async ({ page }) => {
@@ -127,27 +117,21 @@ test('the tab title follows the address', async ({ page }) => {
 // Both known bugs, now fixed, kept as the tests that caught them.
 // ---------------------------------------------------------------------------
 
-test('closing a deep-linked panel actually closes it', async ({ page }) => {
-  // It didn't. Landing on /legal/notices and switching to Privacy fell through
-  // to a push — the replace branch required "we opened this panel", which a
-  // deep link is not — and Close then stepped back onto the arrival entry,
-  // which is *also* the panel. The button appeared to do nothing.
-  //
-  // Moving within a panel is a replace whoever opened it, so a deep-linked one
-  // is never mistaken for ours, and Close goes somewhere instead of back.
+test('a deep-linked page is left like any other, and Back returns to it', async ({ page }) => {
+  // This was a bug when Legal was a panel: landing on /legal/notices and
+  // switching tab made Close step back onto the arrival entry, which was the
+  // panel too, so the button appeared to do nothing. A page has no Close; it
+  // is left by going somewhere, and Back comes back to where you really were.
   await page.goto('/legal/notices');
-  await page.getByRole('dialog').getByRole('button', { name: 'Privacy' }).click();
+  await page.getByRole('navigation', { name: 'Legal' }).getByRole('link', { name: 'Privacy' }).click();
   await expect(page).toHaveURL(/\/legal\/privacy$/);
 
-  await page.getByRole('dialog').getByRole('button', { name: 'Close' }).click();
-  await expect(page.getByRole('dialog')).toHaveCount(0);
+  await page.getByRole('link', { name: 'Anagrimoire, home' }).click();
   await expect(page).not.toHaveURL(/\/legal/);
 
-  // and Back returns to the panel, because they really were there — the
-  // deliberate choice over erasing a page somebody actually visited
   await page.goBack();
   await expect(page).toHaveURL(/\/legal\/privacy$/);
-  await expect(page.getByRole('dialog')).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1, name: 'Legal' })).toBeVisible();
 });
 
 test('a menu link goes where its href says', async ({ page }) => {

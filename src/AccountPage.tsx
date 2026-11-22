@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { Session } from '@supabase/supabase-js';
-import { AlertTriangle, Github, LogOut, Mail, Users, X } from 'lucide-react';
+import { AlertTriangle, Github, LogOut, Mail, Users } from 'lucide-react';
 import { supabase } from '@/supabase';
 import { clearMyStats, deleteAccount } from '@/account';
 import {
@@ -23,7 +23,7 @@ import {
   type Circle,
   type InviteFailure,
 } from '@/friends';
-import { useModalA11y } from '@/useModalA11y';
+import PageWithRail, { PageTabs } from '@/PageWithRail';
 import type { AccountTab } from '@/routes';
 
 const INVITE_MESSAGES: Record<Exclude<InviteFailure, 'not signed in'>, string> = {
@@ -50,17 +50,19 @@ function newCode(): string {
   return Array.from(crypto.getRandomValues(new Uint8Array(4)), (b) => alphabet[b % alphabet.length]).join('');
 }
 
-export default function AccountModal({
+export default function AccountPage({
   session,
   tab,
-  onTab,
-  onClose,
+  tabLink,
+  onSignedOut,
 }: {
   session: Session | null;
-  /** the open tab, held by App so it can live in the address bar */
+  /** the open tab, which is the address */
   tab: AccountTab;
-  onTab: (t: AccountTab) => void;
-  onClose: () => void;
+  tabLink: (t: AccountTab) => { to: string; onGo: () => void };
+  /** where to go once signed out: the page is about an account there no
+   *  longer is */
+  onSignedOut: () => void;
 }) {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
@@ -68,9 +70,6 @@ export default function AccountModal({
   const [code, setCode] = useState('');
   const [verifying, setVerifying] = useState(false);
   const [codeError, setCodeError] = useState('');
-
-  const dialogRef = useRef<HTMLDivElement>(null);
-  useModalA11y(dialogRef, onClose);
 
   // The name lives in profiles rather than the synced settings blob, because
   // it has to be unique across accounts — that's a database constraint, not a
@@ -230,13 +229,14 @@ export default function AccountModal({
       type: 'email',
     });
     setVerifying(false);
+    // Signed in, this page redraws as the account once the session arrives;
+    // as a dialog it closed itself here.
     if (err) setCodeError(err.message || 'That code didn’t verify — request a fresh email and try again.');
-    else onClose();
   }
 
   async function signOut() {
     await supabase?.auth.signOut();
-    onClose();
+    onSignedOut();
   }
 
   // Leaving. Nothing here fires on a single click: each one opens a panel
@@ -299,54 +299,25 @@ export default function AccountModal({
   }
 
   return (
-    <div
-      className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
-      onClick={onClose}
+    <PageWithRail
+      section="Me"
+      title={session ? 'Account' : 'Sign in'}
+      blurb={session ? <>Signed in as <span className="text-slate-200">{session.user.email}</span></> : undefined}
     >
-      <div
-        ref={dialogRef}
-        tabIndex={-1}
-        role="dialog"
-        aria-modal="true"
-        aria-label="Account"
-        onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-sm max-h-[85vh] flex flex-col rounded-2xl bg-slate-900 border border-white/10 text-left shadow-2xl"
-      >
-        {/* outside the scroll, so it can't slide away mid-read */}
-        <button
-          onClick={onClose}
-          aria-label="Close"
-          className="absolute top-4 right-4 z-10 w-8 h-8 flex items-center justify-center rounded-lg bg-slate-900/95 text-slate-400 hover:bg-slate-800 hover:text-white transition-colors"
-        >
-          <X className="w-4 h-4" />
-        </button>
-
-        <div className="overflow-y-auto p-6 sm:p-8">
         {session ? (
           <>
-            <h2 className="text-xl font-bold mb-1">Account</h2>
-            <p className="text-sm text-slate-400 mb-5">
-              Signed in as <span className="text-slate-200">{session.user.email}</span>
-            </p>
 
             {/* Two halves here too: who you are, and who you play against. */}
-            <div className="inline-flex flex-wrap rounded-xl bg-white/5 border border-white/10 p-1 gap-1 mb-5">
-              {(
-                [
+            <div className="mb-6">
+              <PageTabs
+                label="Account"
+                tabs={[
                   { id: 'personal', label: 'Personal' },
                   { id: 'friends', label: 'Friends' },
-                ] as const
-              ).map(({ id, label }) => (
-                <button
-                  key={id}
-                  onClick={() => onTab(id)}
-                  aria-current={tab === id ? 'page' : undefined}
-                  className={`px-4 h-9 rounded-lg text-sm font-semibold transition-colors
-                    ${tab === id ? 'bg-accent text-slate-950' : 'text-slate-300 hover:bg-white/10'}`}
-                >
-                  {label}
-                </button>
-              ))}
+                ]}
+                current={tab}
+                link={tabLink}
+              />
             </div>
 
             <div className={`mb-6 ${tab === 'personal' ? '' : 'hidden'}`}>
@@ -661,7 +632,6 @@ export default function AccountModal({
           </>
         ) : (
           <>
-            <h2 className="text-xl font-bold mb-1">Sign in</h2>
             <p className="text-sm text-slate-400 mb-5">
               No password needed. Accounts are optional — they carry your statistics
               and today&apos;s unfinished puzzles between devices, so you can start on
@@ -713,7 +683,7 @@ export default function AccountModal({
                   <button
                     type="submit"
                     disabled={verifying || code.length < 6}
-                    className="w-full inline-flex items-center justify-center gap-1.5 h-11 rounded-lg text-sm font-semibold bg-accent text-slate-950 shadow-lg shadow-accent/30 hover:bg-emerald-300 transition-colors disabled:opacity-50"
+                    className="w-full inline-flex items-center justify-center gap-1.5 h-11 rounded-lg text-sm font-semibold bg-accent text-slate-950 shadow-lg shadow-accent/30 hover:brightness-110 transition-colors disabled:opacity-50"
                   >
                     {verifying ? 'Verifying…' : 'Verify code'}
                   </button>
@@ -733,7 +703,7 @@ export default function AccountModal({
                 <button
                   type="submit"
                   disabled={status === 'sending'}
-                  className="w-full inline-flex items-center justify-center gap-1.5 h-11 rounded-lg text-sm font-semibold bg-accent text-slate-950 shadow-lg shadow-accent/30 hover:bg-emerald-300 transition-colors disabled:opacity-50"
+                  className="w-full inline-flex items-center justify-center gap-1.5 h-11 rounded-lg text-sm font-semibold bg-accent text-slate-950 shadow-lg shadow-accent/30 hover:brightness-110 transition-colors disabled:opacity-50"
                 >
                   <Mail className="w-4 h-4" />
                   {status === 'sending' ? 'Sending…' : 'Send magic link'}
@@ -743,8 +713,6 @@ export default function AccountModal({
             )}
           </>
         )}
-        </div>
-      </div>
-    </div>
+    </PageWithRail>
   );
 }

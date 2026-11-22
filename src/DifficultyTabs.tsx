@@ -32,7 +32,7 @@ export default function DifficultyTabs({
           aria-pressed={value === id}
           className={`px-2.5 py-1 rounded-md text-xs font-semibold transition-colors
             ${value === id
-              ? 'bg-white/15 text-white'
+              ? 'bg-accent text-slate-950'
               : 'text-slate-400 hover:text-white hover:bg-white/10'}`}
         >
           {DIFFICULTY_LABEL[id]}

@@ -109,7 +109,7 @@ export default function ResultsPanel({
                   key={k}
                   onClick={() => onSort({ key: k })}
                   className={`px-2.5 py-1.5 rounded-md text-xs font-medium whitespace-nowrap transition-colors
-                    ${sort.key === k ? 'bg-white/15 text-white' : 'text-slate-400 hover:text-white'}`}
+                    ${sort.key === k ? 'bg-accent text-slate-950' : 'text-slate-400 hover:text-white'}`}
                 >
                   {k === 'length' ? 'Length' : 'A–Z'}
                 </button>

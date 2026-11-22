@@ -136,7 +136,7 @@ export default function CryptogramSolver({
               onClick={() => { setCryptoMode(id); setCryptoPicks([]); setCryptoOpen([]); }}
               aria-pressed={cryptoMode === id}
               className={`px-3 py-1.5 rounded-md text-sm font-semibold transition-colors
-                ${cryptoMode === id ? 'bg-emerald-400/15 text-emerald-300' : 'text-slate-400 hover:text-white'}`}
+                ${cryptoMode === id ? 'bg-accent text-slate-950' : 'text-slate-400 hover:text-white'}`}
             >
               {label}
             </button>
