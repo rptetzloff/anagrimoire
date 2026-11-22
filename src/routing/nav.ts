@@ -36,11 +36,13 @@ export type Page =
   | { kind: 'game' }
   | { kind: 'ticket'; ticket: string }
   | { kind: 'reportAction'; id: string; token: string; action: string }
-  | { kind: 'reportQueue' };
+  | { kind: 'reportQueue' }
+  // A page since the layout spec (November 2026), under Boards, rather than a
+  // panel over the game: it is where you go to read, not a glance.
+  | { kind: 'stats'; tab: StatsTab };
 
 export type Overlay =
   | { kind: 'panel'; panel: Panel }
-  | { kind: 'stats'; tab: StatsTab }
   | { kind: 'settings'; tab: SettingsTab }
   | { kind: 'account'; tab: AccountTab }
   | { kind: 'legal'; doc: LegalDoc };
@@ -106,7 +108,10 @@ export function navOf(route: Route, last: Tabs = DEFAULT_TABS): { nav: Nav; game
     case 'panel':
       return { nav: over({ kind: 'panel', panel: route.panel }, last), game: null };
     case 'stats':
-      return { nav: over({ kind: 'stats', tab: route.tab }, { ...last, stats: route.tab }), game: null };
+      return {
+        nav: { page: { kind: 'stats', tab: route.tab }, overlays: [], last: { ...last, stats: route.tab } },
+        game: null,
+      };
     case 'settings':
       return {
         nav: over({ kind: 'settings', tab: route.tab }, { ...last, settings: route.tab }),
@@ -135,8 +140,6 @@ export type NavAction =
 
 function remember(last: Tabs, o: Overlay): Tabs {
   switch (o.kind) {
-    case 'stats':
-      return { ...last, stats: o.tab };
     case 'settings':
       return { ...last, settings: o.tab };
     case 'account':
@@ -171,7 +174,13 @@ export function navReducer(nav: Nav, action: NavAction): Nav {
     case 'close':
       return { ...nav, overlays: nav.overlays.slice(0, -1) };
     case 'page':
-      // going somewhere clears what was laid over it
-      return { ...nav, page: action.page, overlays: [] };
+      // going somewhere clears what was laid over it; Stats remembers its tab
+      // the way the panels do
+      return {
+        ...nav,
+        page: action.page,
+        overlays: [],
+        last: action.page.kind === 'stats' ? { ...nav.last, stats: action.page.tab } : nav.last,
+      };
   }
 }

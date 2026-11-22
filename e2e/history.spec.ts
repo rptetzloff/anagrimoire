@@ -164,10 +164,10 @@ test('a menu link goes where its href says', async ({ page }) => {
   await page.goto('/');
   await menu.click();
   await page.getByRole('link', { name: 'Stats' }).click();
-  // plain buttons rather than a tablist — worth marking up properly one day,
-  // but that is not what this test is about
-  await page.getByRole('dialog').getByRole('button', { name: 'Boards' }).click();
-  await page.getByRole('dialog').getByRole('button', { name: 'Close' }).click();
+  // Stats is a page now, its tabs links of their own
+  await page.getByRole('navigation', { name: 'Stats' }).getByRole('link', { name: 'Boards' }).click();
+  await expect(page).toHaveURL(/\/stats\/boards$/);
+  await page.getByRole('link', { name: 'Anagrimoire, home' }).click();
 
   await menu.click();
   const stats = page.getByRole('link', { name: 'Stats' });

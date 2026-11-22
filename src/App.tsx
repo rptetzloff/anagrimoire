@@ -2,7 +2,7 @@ import { useCallback, useMemo, useState, useEffect, useRef } from 'react';
 import { Search, X, BookOpen, Keyboard, Delete, Github, CalendarDays, Star, Gamepad2, CornerDownLeft, BarChart3, UserRound, Settings } from 'lucide-react';
 import LearnMode, { type LearnModeHandle } from '@/LearnMode';
 import type { Session } from '@supabase/supabase-js';
-import StatsModal from '@/StatsModal';
+import StatsPage from '@/StatsPage';
 import AccountModal from '@/AccountModal';
 import { stashInvite } from '@/friends';
 import { OskContext } from '@/MobileKeyInput';
@@ -534,14 +534,14 @@ function App() {
     nav.page.kind === 'ticket' || nav.page.kind === 'reportAction' || nav.page.kind === 'reportQueue'
       ? nav.page
       : null;
+  // Stats is a page under Boards (the layout spec), not a panel over the game
+  const statsPage = nav.page.kind === 'stats' ? nav.page : null;
 
   // `some`, not `top` — the consent banner opens Legal over an open Settings,
   // and both modals stay mounted. The address is the top; what renders is
   // whatever is anywhere on the stack.
   const legalOpen = !!overlay('legal');
   const legalTab = overlay('legal')?.doc ?? nav.last.legal;
-  const statsOpen = !!overlay('stats');
-  const statsTab = overlay('stats')?.tab ?? nav.last.stats;
   const settingsOpen = !!overlay('settings');
   const settingsTab = overlay('settings')?.tab ?? nav.last.settings;
   const accountOpen = !!overlay('account');
@@ -1585,7 +1585,7 @@ function App() {
     go: { to: pathOf({ kind: 'game', view: 'solve', slug: MODE_SLUG[m.id], daily: false }), onGo: () => openSolver(m.id) },
   }));
   const barMe: BarItem[] = [
-    { key: 'stats', label: 'Stats', icon: <BarChart3 className="w-4 h-4" />, go: overlayLink({ kind: 'stats', tab: nav.last.stats }) },
+    { key: 'stats', label: 'Stats', icon: <BarChart3 className="w-4 h-4" />, go: pageLink({ kind: 'stats', tab: nav.last.stats }) },
     { key: 'settings', label: 'Settings', icon: <Settings className="w-4 h-4" />, go: overlayLink({ kind: 'settings', tab: nav.last.settings }) },
     { key: 'keys', label: 'Keys', icon: <Keyboard className="w-4 h-4" />, go: overlayLink({ kind: 'panel', panel: 'keys' }) },
     ...(supabase && session ? [{ key: 'account', label: 'Account and friends', icon: <UserRound className="w-4 h-4" />,
@@ -1653,10 +1653,13 @@ function App() {
   const barSection: Section =
     atHome ? 'today'
     : reportPage ? null
-    : statsOpen && statsTab === 'boards' ? 'boards'
+    : statsPage ? 'boards'
     : currentView === 'solve' ? 'solvers'
     : 'games';
-  const barTitle = atHome ? 'Today' : reportPage ? titleOf(reportPage).replace(/ · .*$/, '') : GAME_NAME[mode].full;
+  const barTitle = atHome ? 'Today'
+    : reportPage ? titleOf(reportPage).replace(/ · .*$/, '')
+    : statsPage ? (statsPage.tab === 'boards' ? 'The boards' : 'Your stats')
+    : GAME_NAME[mode].full;
   const you = session ? { initial: (displayName ?? session.user.email ?? '?').trim().charAt(0).toUpperCase() || '?' } : null;
 
   return (
@@ -1675,10 +1678,10 @@ function App() {
 
       <SiteBar
         home={pageLink({ kind: 'home' })}
-        boards={overlayLink({ kind: 'stats', tab: 'boards' })}
+        boards={pageLink({ kind: 'stats', tab: 'boards' })}
         current={barSection}
         title={barTitle}
-        titleSwitchesGame={!atHome && !reportPage}
+        titleSwitchesGame={!atHome && !reportPage && !statsPage}
         games={barGames}
         solvers={barSolvers}
         me={barMe}
@@ -1723,12 +1726,16 @@ function App() {
             <HomeView
               modes={shownModes}
               onOpen={openGame}
-              boards={overlayLink({ kind: 'stats', tab: 'boards' })}
+              boards={pageLink({ kind: 'stats', tab: 'boards' })}
               solvers={barSolvers.map((b) => ({ key: b.key, label: GAME_NAME[b.key as Mode].short, go: b.go }))}
             />
           )}
 
-          {!atHome && (
+          {statsPage && (
+            <StatsPage signedIn={!!session} view={statsPage.tab} tabLink={(tab) => pageLink({ kind: 'stats', tab })} />
+          )}
+
+          {!atHome && !statsPage && (
           <RailSlotContext.Provider value={sideRail ? railSlot : null}>
           <div className={`grid gap-6 items-start ${sideRail
             ? 'lg:grid-cols-[minmax(0,1fr)_18.75rem] xl:grid-cols-[13.75rem_minmax(0,1fr)_18.75rem]'
@@ -2293,7 +2300,7 @@ function App() {
                 boards={MODE_BOARDS[mode]}
                 level={level}
                 levelWord={DIFFICULTY_LABEL[level]}
-                allBoards={overlayLink({ kind: 'stats', tab: 'boards' })}
+                allBoards={pageLink({ kind: 'stats', tab: 'boards' })}
                 slotRef={setRailSlot}
                 // a daily only: a practice board was never published, so
                 // there is nothing on the server for a report to point at
@@ -2405,15 +2412,6 @@ function App() {
             <X className="w-4 h-4" />
           </button>
         </div>
-      )}
-
-      {statsOpen && (
-        <StatsModal
-          signedIn={!!session}
-          view={statsTab}
-          onView={(tab) => openOverlay({ kind: 'stats', tab })}
-          onClose={closeOverlay}
-        />
       )}
 
       {accountOpen && (
