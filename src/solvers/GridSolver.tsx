@@ -51,7 +51,7 @@ export default function GridSolver({
             key={id}
             onClick={() => onPreset(id)}
             className={`px-3 py-1.5 rounded-md text-sm font-semibold whitespace-nowrap transition-colors
-              ${preset === id ? 'bg-white/15 text-white' : 'text-slate-400 hover:text-white'}`}
+              ${preset === id ? 'bg-accent text-slate-950' : 'text-slate-400 hover:text-white'}`}
           >
             {label}
           </button>

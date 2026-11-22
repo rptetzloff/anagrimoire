@@ -54,7 +54,7 @@ export default function SquaresSolver({
             key={sz}
             onClick={() => onSize(sz)}
             className={`px-3 py-1.5 rounded-md text-sm font-semibold transition-colors
-              ${size === sz ? 'bg-white/15 text-white' : 'text-slate-400 hover:text-white'}`}
+              ${size === sz ? 'bg-accent text-slate-950' : 'text-slate-400 hover:text-white'}`}
           >
             {sz}×{sz}
           </button>

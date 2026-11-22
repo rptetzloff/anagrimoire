@@ -477,7 +477,7 @@ export function Terms() {
         Accounts are optional, and exist to carry your statistics, settings and daily
         progress between devices. Use an email address you control, and don&apos;t
         share an account with anyone else. You can delete yours at any time from the
-        Account panel — see the privacy policy. We may suspend or remove an
+        Account page — see the privacy policy. We may suspend or remove an
         account that is being used to attack or abuse the site.
       </P>
 

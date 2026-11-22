@@ -61,21 +61,12 @@ describe('the two halves are inverses', () => {
   });
 
   it('a page with nothing over it is the address', () => {
-    const nav: Nav = { page: { kind: 'reportQueue' }, overlays: [], last: DEFAULT_TABS };
+    const nav: Nav = { page: { kind: 'reportQueue' }, last: DEFAULT_TABS };
     expect(routeOf(nav, ANY_GAME)).toEqual({ kind: 'reportQueue' });
   });
 
-  it('an overlay wins over the page beneath it', () => {
-    const nav: Nav = {
-      page: { kind: 'home' },
-      overlays: [{ kind: 'legal', doc: 'terms' }],
-      last: DEFAULT_TABS,
-    };
-    expect(routeOf(nav, ANY_GAME)).toEqual({ kind: 'legal', doc: 'terms' });
-  });
-
   it('the game underneath is App’s to supply, not the nav’s to remember', () => {
-    const nav: Nav = { page: { kind: 'game' }, overlays: [], last: DEFAULT_TABS };
+    const nav: Nav = { page: { kind: 'game' }, last: DEFAULT_TABS };
     expect(routeOf(nav, { slug: 'bridge', view: 'solve', daily: false })).toEqual({
       kind: 'game',
       view: 'solve',
@@ -85,80 +76,43 @@ describe('the two halves are inverses', () => {
   });
 });
 
-describe('opening and closing', () => {
-  const start: Nav = { page: { kind: 'game' }, overlays: [], last: DEFAULT_TABS };
+describe('going places', () => {
+  const start: Nav = { page: { kind: 'game' }, last: DEFAULT_TABS };
 
-  it('moving within a panel replaces rather than stacks', () => {
-    // otherwise leaving a panel you read three tabs of would take four Backs
-    let nav = navReducer(start, { type: 'open', overlay: { kind: 'legal', doc: 'notices' } });
-    nav = navReducer(nav, { type: 'open', overlay: { kind: 'legal', doc: 'privacy' } });
-    expect(nav.overlays).toHaveLength(1);
-    expect(routeOf(nav, ANY_GAME)).toEqual({ kind: 'legal', doc: 'privacy' });
+  it('every former panel is a page with its own address', () => {
+    for (const page of [
+      { kind: 'panel', panel: 'about' },
+      { kind: 'panel', panel: 'keys' },
+      { kind: 'settings', tab: 'games' },
+      { kind: 'account', tab: 'friends' },
+      { kind: 'legal', doc: 'terms' },
+      { kind: 'stats', tab: 'history' },
+    ] as const) {
+      const nav = navReducer(start, { type: 'page', page });
+      expect(routeOf(nav, ANY_GAME)).toEqual(page);
+    }
   });
 
-  it('stacks a different kind, which is the consent banner over an open panel', () => {
-    // ConsentBanner is z-[70] and the modals are z-[60], so "Read the policy"
-    // is clickable over Settings. Closing Legal must put Settings back — this
-    // is the reachable state a single Route would lose.
-    let nav = navReducer(start, { type: 'open', overlay: { kind: 'settings', tab: 'privacy' } });
-    nav = navReducer(nav, { type: 'open', overlay: { kind: 'legal', doc: 'privacy' } });
-    expect(nav.overlays).toHaveLength(2);
-    expect(routeOf(nav, ANY_GAME)).toEqual({ kind: 'legal', doc: 'privacy' });
-
-    nav = navReducer(nav, { type: 'close' });
-    expect(routeOf(nav, ANY_GAME), 'Settings should still be there').toEqual({
-      kind: 'settings',
-      tab: 'privacy',
-    });
-  });
-
-  it('remembers the tab a panel was left on', () => {
-    let nav = navReducer(start, { type: 'open', overlay: { kind: 'settings', tab: 'privacy' } });
-    nav = navReducer(nav, { type: 'close' });
-    expect(nav.last.settings).toBe('privacy');
-  });
-
-  it('remembers the Stats tab too, now that Stats is a page', () => {
-    let nav = navReducer(start, { type: 'page', page: { kind: 'stats', tab: 'boards' } });
+  it('remembers the tab each tabbed page was left on', () => {
+    let nav = navReducer(start, { type: 'page', page: { kind: 'settings', tab: 'privacy' } });
+    nav = navReducer(nav, { type: 'page', page: { kind: 'legal', doc: 'terms' } });
+    nav = navReducer(nav, { type: 'page', page: { kind: 'stats', tab: 'boards' } });
     nav = navReducer(nav, { type: 'page', page: { kind: 'home' } });
-    expect(nav.last.stats).toBe('boards');
-  });
-
-  it('going to a page clears whatever was over it', () => {
-    let nav = navReducer(start, { type: 'open', overlay: { kind: 'panel', panel: 'about' } });
-    nav = navReducer(nav, { type: 'page', page: { kind: 'home' } });
-    expect(nav.overlays).toEqual([]);
-    expect(routeOf(nav, ANY_GAME)).toEqual({ kind: 'home' });
-  });
-
-  it('closing with nothing open is not an error', () => {
-    expect(navReducer(start, { type: 'close' })).toEqual(start);
+    expect(nav.last).toMatchObject({ settings: 'privacy', legal: 'terms', stats: 'boards' });
   });
 });
 
 describe('applying an address the browser moved to', () => {
-  const onGame: Nav = { page: { kind: 'game' }, overlays: [], last: DEFAULT_TABS };
+  const onGame: Nav = { page: { kind: 'game' }, last: DEFAULT_TABS };
 
-  it('closes everything the address does not name', () => {
-    let nav = navReducer(onGame, { type: 'open', overlay: { kind: 'settings', tab: 'site' } });
-    nav = navReducer(nav, { type: 'open', overlay: { kind: 'legal', doc: 'terms' } });
-    nav = navReducer(nav, { type: 'apply', route: { kind: 'home' } });
-    expect(nav.overlays).toEqual([]);
-    expect(nav.page).toEqual({ kind: 'home' });
+  it('goes where the address says', () => {
+    const nav = navReducer(onGame, { type: 'apply', route: { kind: 'legal', doc: 'privacy' } });
+    expect(nav.page).toEqual({ kind: 'legal', doc: 'privacy' });
   });
 
-  it('keeps the page under an overlay it lands on', () => {
-    // Back onto /about from a report page should put About over the report
-    // page, not over a game nobody asked for
-    const onQueue: Nav = { page: { kind: 'reportQueue' }, overlays: [], last: DEFAULT_TABS };
-    const nav = navReducer(onQueue, { type: 'apply', route: { kind: 'panel', panel: 'about' } });
-    expect(nav.page).toEqual({ kind: 'reportQueue' });
-    expect(routeOf(nav, ANY_GAME)).toEqual({ kind: 'panel', panel: 'about' });
-  });
-
-  it('does not forget the other panels’ tabs', () => {
+  it('does not forget the other pages’ tabs', () => {
     // applyRoute left tab state alone when the route was not that kind, and
-    // that is what made panels remember
+    // that is what made them remember
     let nav = navReducer(onGame, { type: 'page', page: { kind: 'stats', tab: 'boards' } });
     nav = navReducer(nav, { type: 'apply', route: { kind: 'settings', tab: 'games' } });
     expect(nav.last.stats, 'stats tab should survive a trip to settings').toBe('boards');

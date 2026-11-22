@@ -154,7 +154,29 @@ piece at a time rather than merged — the fork has diverged too far for that.
      Not done, and visible beside that card: Ladder and Bridge are recorded
      (`stats.ts`) and listed in By game, but have no section of their own, and
      someone who has played only those two is told nothing is recorded yet.
-   - Next: Settings, Account, About and Legal, and the router without overlays.
+   - The rest, done: Settings, Account (and Sign in), Keys, About and Legal
+     are pages too (`SettingsPage`, `AccountPage`, `KeysPage`, `AboutPage`,
+     `LegalPage`; About and Legal lifted out of `App.tsx`), each with the
+     `PageWithRail` header and the tabbed ones with `PageTabs`. Signing out
+     goes home; signing in by code redraws the same page as the account.
+     The router has no overlays left (Amherst's #188): the stack, open and
+     close, `overlayLink`, and the history special cases (Close steps Back,
+     tabs replace) are gone, so a tab is an address like any other and Back
+     walks back through them. The phone's tab bar no longer steps aside,
+     since nothing covers it; the consent banner's "Read the policy" goes to
+     the privacy page and stays over it until answered. The report dialogs
+     stay dialogs: they are forms over what you were reporting.
+     Found on the way: the bar marked Solvers or Games on these pages, from
+     the last game view. It marks none now, and says which section it marks
+     with `aria-current` as well as colour.
+     Picking one of several is the solid accent everywhere, as Ray asked of
+     Amherst: the word filter, the boards' difficulty, the Cryptogram,
+     Grid, Squares and Weave solvers' pickers, the results sort, Guess's
+     solution-word count and Scramble's Use all were grey, green or amber.
+     Amherst's tinted `accent/15` for Settings' show/hide pills is not used:
+     it falls under AA on the sepia, ocean and ember light grounds. And three
+     accent buttons that turned green on hover (Start in Grid and Scramble,
+     the two sign-in buttons) brighten instead.
 
 ### ~~A rack dealt as its own answer~~ — fixed November 2026
 Every shuffle in the site and the generator was `sort(() => rng() - 0.5)`,

@@ -1,9 +1,7 @@
-import { useRef } from 'react';
-import { X } from 'lucide-react';
 import { GAME_NAME } from '@/games';
 import KeyDiagram from '@/KeyDiagram';
 import type { Mode, NavKeys } from '@/storage';
-import { useModalA11y } from '@/useModalA11y';
+import PageWithRail from '@/PageWithRail';
 
 function Key({ children }: { children: React.ReactNode }) {
   return (
@@ -49,51 +47,17 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   );
 }
 
-export default function KeyboardHelp({
+export default function KeysPage({
   navKeys,
   shownModes,
-  onClose,
 }: {
   navKeys: NavKeys;
   shownModes: Mode[];
-  onClose: () => void;
 }) {
   const typingGames = TYPING_GAMES.filter((g) => shownModes.includes(g.id)).map((g) => g.label);
-  const dialogRef = useRef<HTMLDivElement>(null);
-  useModalA11y(dialogRef, onClose);
 
   return (
-    <div
-      className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
-      onClick={onClose}
-    >
-      <div
-        ref={dialogRef}
-        tabIndex={-1}
-        role="dialog"
-        aria-modal="true"
-        aria-label="Keyboard controls"
-        onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-lg max-h-[80vh] flex flex-col rounded-2xl bg-slate-900 border border-white/10 text-left shadow-2xl"
-      >
-        {/* outside the scroll, so it can't slide away mid-read */}
-        <button
-          onClick={onClose}
-          aria-label="Close"
-          className="absolute top-4 right-4 z-10 w-8 h-8 flex items-center justify-center rounded-lg bg-slate-900/95 text-slate-400 hover:bg-slate-800 hover:text-white transition-colors"
-        >
-          <X className="w-4 h-4" />
-        </button>
-
-        {/* This panel is all text and key diagrams, so nothing inside it takes
-            focus — which left the one page about playing without a mouse
-            impossible to scroll without one. The sibling panels escape the
-            same markup only because they happen to contain buttons. */}
-        <div className="overflow-y-auto p-6 sm:p-8" tabIndex={0}>
-        <h2 className="text-xl font-bold mb-1">Keyboard controls</h2>
-        <p className="text-xs text-slate-500 mb-5">
-          Everything here is playable without a mouse.
-        </p>
+    <PageWithRail section="Me" title="Keyboard controls" blurb="Everything here is playable without a mouse.">
 
         <div className="space-y-5">
           <Section title="Getting around">
@@ -158,8 +122,6 @@ export default function KeyboardHelp({
             </p>
           </Section>
         </div>
-        </div>
-      </div>
-    </div>
+    </PageWithRail>
   );
 }
