@@ -42,3 +42,43 @@ test('Scramble: what was found and how long the longest word is, the clock with 
   const longest = page.getByRole('region', { name: 'Longest possible' });
   await expect(longest).toContainText(/\d+ letters · shown when the clock stops/);
 });
+
+test('Grid: the words found and the score in the rail, the clock with the board', async ({ page }) => {
+  await page.setViewportSize(wide);
+  await page.goto('/daily/grid');
+  const panel = page.getByRole('region', { name: 'Found' });
+  await expect(panel).toContainText('Start the clock to play.');
+  await expect(panel).toContainText(/0 words · 0 pts/);
+  // the clock stays above the board: it is what you watch while tracing
+  await expect(page.getByRole('main').getByText(/^\d:\d\d$/)).toBeVisible();
+
+  await page.setViewportSize({ width: 900, height: 900 });
+  await expect(panel).toHaveCount(0);
+});
+
+test('Boxed: the clock, letters used and par in the rail, not above the board', async ({ page }) => {
+  await page.setViewportSize(wide);
+  await page.goto('/daily/boxed');
+  const panel = page.getByRole('region', { name: 'Your box' });
+  await expect(panel).toContainText('0 / 12 letters');
+  await expect(panel).toContainText(/0 words so far · solvable in \d/);
+  await expect(page.getByText(/^Solvable in \d$/)).toHaveCount(0);
+
+  await page.setViewportSize({ width: 900, height: 900 });
+  await expect(panel).toHaveCount(0);
+  await expect(page.getByText(/^Solvable in \d$/)).toBeVisible();
+});
+
+test('Weave: progress and the hint button in the rail, once', async ({ page }) => {
+  await page.setViewportSize(wide);
+  await page.goto('/daily/weave');
+  const panel = page.getByRole('region', { name: 'Your progress' });
+  await expect(panel).toContainText(/0 \/ \d+ found/);
+  await expect(panel.getByRole('button', { name: /^Hint / })).toBeVisible();
+  await expect(page.getByRole('button', { name: /^Hint / })).toHaveCount(1);
+
+  await page.setViewportSize({ width: 900, height: 900 });
+  await expect(panel).toHaveCount(0);
+  await expect(page.getByRole('button', { name: /^Hint / })).toHaveCount(1);
+  await expect(page.getByText(/^0 \/ \d+ found$/)).toBeVisible();
+});
