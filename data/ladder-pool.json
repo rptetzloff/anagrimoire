@@ -1,0 +1,162 @@
+{
+  "date": "2026-11-27",
+  "byDifficulty": {
+    "easy": [
+      {
+        "from": "hold",
+        "to": "keep",
+        "par": 4
+      },
+      {
+        "from": "pane",
+        "to": "wall",
+        "par": 3
+      },
+      {
+        "from": "care",
+        "to": "wish",
+        "par": 4
+      },
+      {
+        "from": "left",
+        "to": "port",
+        "par": 4
+      },
+      {
+        "from": "sage",
+        "to": "wise",
+        "par": 4
+      },
+      {
+        "from": "hold",
+        "to": "wave",
+        "par": 4
+      },
+      {
+        "from": "clank",
+        "to": "crash",
+        "par": 4
+      },
+      {
+        "from": "lay",
+        "to": "lie",
+        "par": 3
+      },
+      {
+        "from": "hard",
+        "to": "tall",
+        "par": 4
+      },
+      {
+        "from": "fix",
+        "to": "jam",
+        "par": 4
+      }
+    ],
+    "hard": [
+      {
+        "from": "bolt",
+        "to": "slap",
+        "par": 5
+      },
+      {
+        "from": "lean",
+        "to": "tilt",
+        "par": 6
+      },
+      {
+        "from": "cope",
+        "to": "wall",
+        "par": 5
+      },
+      {
+        "from": "need",
+        "to": "want",
+        "par": 5
+      },
+      {
+        "from": "coin",
+        "to": "mint",
+        "par": 6
+      },
+      {
+        "from": "heap",
+        "to": "pile",
+        "par": 5
+      },
+      {
+        "from": "lark",
+        "to": "romp",
+        "par": 6
+      },
+      {
+        "from": "cooked",
+        "to": "stewed",
+        "par": 5
+      },
+      {
+        "from": "flow",
+        "to": "pour",
+        "par": 5
+      },
+      {
+        "from": "dead",
+        "to": "gone",
+        "par": 5
+      }
+    ],
+    "extreme": [
+      {
+        "from": "flap",
+        "to": "fuss",
+        "par": 7
+      },
+      {
+        "from": "ooze",
+        "to": "seep",
+        "par": 8
+      },
+      {
+        "from": "beefy",
+        "to": "husky",
+        "par": 8
+      },
+      {
+        "from": "club",
+        "to": "gild",
+        "par": 8
+      },
+      {
+        "from": "away",
+        "to": "home",
+        "par": 8
+      },
+      {
+        "from": "harsh",
+        "to": "rough",
+        "par": 8
+      },
+      {
+        "from": "lace",
+        "to": "shoe",
+        "par": 7
+      },
+      {
+        "from": "brow",
+        "to": "face",
+        "par": 8
+      },
+      {
+        "from": "drab",
+        "to": "dull",
+        "par": 8
+      },
+      {
+        "from": "poky",
+        "to": "slow",
+        "par": 7
+      }
+    ]
+  },
+  "fetchedAt": "2026-11-27T18:11:17.943Z"
+}

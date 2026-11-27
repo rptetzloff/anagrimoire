@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-27",
+  "byDifficulty": {
+    "easy": {
+      "sides": [
+        "nhc",
+        "osa",
+        "gre",
+        "tiu"
+      ],
+      "par": 2
+    },
+    "hard": {
+      "sides": [
+        "wpu",
+        "eai",
+        "mtr",
+        "nso"
+      ],
+      "par": 2
+    },
+    "extreme": {
+      "sides": [
+        "net",
+        "mso",
+        "auj",
+        "irc"
+      ],
+      "par": 2
+    }
+  },
+  "fetchedAt": "2026-11-27T18:10:09.878Z"
+}

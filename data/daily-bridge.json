@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-27",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "pay",
+          "y": "end"
+        },
+        {
+          "x": "flower",
+          "y": "luck"
+        },
+        {
+          "x": "spear",
+          "y": "ache"
+        },
+        {
+          "x": "hit",
+          "y": "self"
+        },
+        {
+          "x": "intern",
+          "y": "load"
+        }
+      ],
+      "answers": "WyJvZmYiLCJwb3QiLCJoZWFkIiwiaGVyIiwic2hpcCJd",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "cross",
+          "y": "proof"
+        },
+        {
+          "x": "brief",
+          "y": "work"
+        },
+        {
+          "x": "hold",
+          "y": "crowd"
+        },
+        {
+          "x": "patrol",
+          "y": "power"
+        },
+        {
+          "x": "sell",
+          "y": "reach"
+        }
+      ],
+      "answers": "WyJmaXJlIiwiY2FzZSIsIm92ZXIiLCJtYW4iLCJvdXQiXQ==",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "here",
+          "y": "effect"
+        },
+        {
+          "x": "kind",
+          "y": "wood"
+        },
+        {
+          "x": "water",
+          "y": "room"
+        },
+        {
+          "x": "side",
+          "y": "time"
+        },
+        {
+          "x": "inter",
+          "y": "off"
+        }
+      ],
+      "answers": "WyJhZnRlciIsInJlZCIsImJlZCIsImxvbmciLCJwbGF5Il0=",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-11-27T18:10:09.878Z"
+}

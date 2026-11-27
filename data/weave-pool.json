@@ -1,0 +1,1940 @@
+{
+  "date": "2026-11-27",
+  "pool": {
+    "6x8": [
+      {
+        "clue": "On your feet",
+        "cols": 6,
+        "board": [
+          "ftwwad",
+          "loteer",
+          "oagrac",
+          "flalol",
+          "soohmg",
+          "alsreo",
+          "finpcc",
+          "repisa"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZm9vdHdlYXIiLCJwYXRoIjpbMTgsMTIsNywxLDIsOSwxNiwxMV19LCJ3b3JkcyI6W3sidyI6ImZsYXQiLCJwYXRoIjpbMCw2LDEzLDhdfSx7InciOiJ3YWRlciIsInBhdGgiOlszLDQsNSwxMCwxNV19LHsidyI6ImdhbG9zaCIsInBhdGgiOlsxNCwyMCwyMSwyNiwzMiwyN119LHsidyI6ImNsb2ciLCJwYXRoIjpbMTcsMjMsMjIsMjldfSx7InciOiJsb2FmZXIiLCJwYXRoIjpbMTksMjUsMzAsMzYsNDMsNDJdfSx7InciOiJzbGlwcGVyIiwicGF0aCI6WzI0LDMxLDM3LDQ0LDM5LDM0LDMzXX0seyJ3IjoibW9jY2FzaW4iLCJwYXRoIjpbMjgsMzUsNDAsNDEsNDcsNDYsNDUsMzhdfV19"
+      },
+      {
+        "clue": "In bloom",
+        "cols": 6,
+        "board": [
+          "poiris",
+          "ppeted",
+          "pyrbum",
+          "feoina",
+          "wlglri",
+          "doldat",
+          "ayicul",
+          "silapi"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZmxvd2VyYmVkIiwicGF0aCI6WzE4LDI1LDMxLDI0LDE5LDE0LDE1LDEwLDExXX0sIndvcmRzIjpbeyJ3IjoicG9wcHkiLCJwYXRoIjpbMCwxLDYsMTIsMTNdfSx7InciOiJpcmlzIiwicGF0aCI6WzIsMyw0LDVdfSx7InciOiJwZXR1bmlhIiwicGF0aCI6WzcsOCw5LDE2LDIyLDI5LDM0XX0seyJ3IjoibWFyaWdvbGQiLCJwYXRoIjpbMTcsMjMsMjgsMjEsMjYsMjAsMjcsMzNdfSx7InciOiJkYWlzeSIsInBhdGgiOlszMCwzNiw0Myw0MiwzN119LHsidyI6ImxpbGFjIiwicGF0aCI6WzMyLDM4LDQ0LDQ1LDM5XX0seyJ3IjoidHVsaXAiLCJwYXRoIjpbMzUsNDAsNDEsNDcsNDZdfV19"
+      },
+      {
+        "clue": "Bird watching",
+        "cols": 6,
+        "board": [
+          "swwbiw",
+          "aogras",
+          "llntdr",
+          "sohebl",
+          "urrcla",
+          "oscihr",
+          "rhekdk",
+          "iolaee"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3Ijoic29uZ2JpcmRzIiwicGF0aCI6WzE4LDE5LDE0LDgsMyw0LDksMTYsMTFdfSwid29yZHMiOlt7InciOiJzd2FsbG93IiwicGF0aCI6WzAsMSw2LDEzLDEyLDcsMl19LHsidyI6IndhcmJsZXIiLCJwYXRoIjpbNSwxMCwxNywyMiwyOCwyMSwyNl19LHsidyI6InRocnVzaCIsInBhdGgiOlsxNSwyMCwyNSwyNCwzMSwzN119LHsidyI6ImxhcmsiLCJwYXRoIjpbMjMsMjksMzUsNDFdfSx7InciOiJjaGlja2FkZWUiLCJwYXRoIjpbMjcsMzQsMzMsMzIsMzksNDUsNDAsNDYsNDddfSx7InciOiJvcmlvbGUiLCJwYXRoIjpbMzAsMzYsNDIsNDMsNDQsMzhdfV19"
+      },
+      {
+        "clue": "Cold-blooded companions",
+        "cols": 6,
+        "board": [
+          "tustor",
+          "vrkito",
+          "tinesi",
+          "lkperp",
+          "geohty",
+          "censel",
+          "rknais",
+          "oeptke"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoicmVwdGlsZXMiLCJwYXRoIjpbMzYsNDMsNDQsNDUsNDAsMzUsMzQsNDFdfSwid29yZHMiOlt7InciOiJ0dXJ0bGUiLCJwYXRoIjpbMCwxLDcsMTIsMTgsMjVdfSx7InciOiJza2luayIsInBhdGgiOlsyLDgsOSwxNCwxOV19LHsidyI6InRvcnRvaXNlIiwicGF0aCI6WzMsNCw1LDEwLDExLDE3LDE2LDE1XX0seyJ3IjoidmlwZXIiLCJwYXRoIjpbNiwxMywyMCwyMSwyMl19LHsidyI6InB5dGhvbiIsInBhdGgiOlsyMywyOSwyOCwyNywyNiwzMl19LHsidyI6ImdlY2tvIiwicGF0aCI6WzI0LDMxLDMwLDM3LDQyXX0seyJ3Ijoic25ha2UiLCJwYXRoIjpbMzMsMzgsMzksNDYsNDddfV19"
+      },
+      {
+        "clue": "Picture perfect",
+        "cols": 6,
+        "board": [
+          "zotase",
+          "ooieri",
+          "pmrtlf",
+          "ogrnph",
+          "stuaet",
+          "ohtgai",
+          "fhmtev",
+          "praeer"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoicGhvdG9ncmFwaCIsInBhdGgiOls0MiwzNywzMCwyNSwxOCwxOSwyMCwyNywyMiwyM119LCJ3b3JkcyI6W3sidyI6Inpvb20iLCJwYXRoIjpbMCwxLDYsMTNdfSx7InciOiJwb3J0cmFpdCIsInBhdGgiOlsxMiw3LDE0LDE1LDEwLDMsOCwyXX0seyJ3Ijoic2VsZmllIiwicGF0aCI6WzQsOSwxNiwxNywxMSw1XX0seyJ3IjoibmVnYXRpdmUiLCJwYXRoIjpbMjEsMjgsMzMsMzQsMjksMzUsNDEsNDBdfSx7InciOiJzaHV0dGVyIiwicGF0aCI6WzI0LDMxLDI2LDMyLDM5LDQ2LDQ3XX0seyJ3IjoiZnJhbWUiLCJwYXRoIjpbMzYsNDMsNDQsMzgsNDVdfV19"
+      },
+      {
+        "clue": "On the side",
+        "cols": 6,
+        "board": [
+          "mtschs",
+          "auentu",
+          "rmsynt",
+          "doiyek",
+          "cndrce",
+          "svpuht",
+          "laiupa",
+          "sanegr"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY29uZGltZW50cyIsInBhdGgiOlsyNCwxOSwyNSwyNiwyMCwxMyw4LDksMTAsNV19LCJ3b3JkcyI6W3sidyI6Im11c3RhcmQiLCJwYXRoIjpbMCw3LDIsMSw2LDEyLDE4XX0seyJ3IjoiY2h1dG5leSIsInBhdGgiOlszLDQsMTEsMTcsMTYsMjIsMTVdfSx7InciOiJzeXJ1cCIsInBhdGgiOlsxNCwyMSwyNywzMyw0MF19LHsidyI6ImtldGNodXAiLCJwYXRoIjpbMjMsMjksMzUsMjgsMzQsMzksMzJdfSx7InciOiJzYWxzYSIsInBhdGgiOlszMCwzNywzNiw0Miw0M119LHsidyI6InZpbmVnYXIiLCJwYXRoIjpbMzEsMzgsNDQsNDUsNDYsNDEsNDddfV19"
+      },
+      {
+        "clue": "Best in show",
+        "cols": 6,
+        "board": [
+          "msicot",
+          "patfer",
+          "aesrfg",
+          "rnirpi",
+          "ielreo",
+          "brecit",
+          "dgoeen",
+          "ollids"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZG9nYnJlZWRzIiwicGF0aCI6WzM2LDQyLDM3LDMwLDMxLDMyLDM5LDQ2LDQ3XX0sIndvcmRzIjpbeyJ3IjoibWFzdGlmZiIsInBhdGgiOlswLDcsMTQsOCwyLDksMTZdfSx7InciOiJzcGFuaWVsIiwicGF0aCI6WzEsNiwxMiwxOSwyNCwyNSwyNl19LHsidyI6ImNvcmdpIiwicGF0aCI6WzMsNCwxMSwxNywyM119LHsidyI6InRlcnJpZXIiLCJwYXRoIjpbNSwxMCwxNSwyMSwyMCwxMywxOF19LHsidyI6InBvaW50ZXIiLCJwYXRoIjpbMjIsMjksMzQsNDEsMzUsMjgsMjddfSx7InciOiJjb2xsaWUiLCJwYXRoIjpbMzMsMzgsNDMsNDQsNDUsNDBdfV19"
+      },
+      {
+        "clue": "In the tool shed",
+        "cols": 6,
+        "board": [
+          "vdilfs",
+          "irelai",
+          "savlnl",
+          "neeced",
+          "vdlale",
+          "irwmre",
+          "alparc",
+          "hlesih"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiaGFyZHdhcmUiLCJwYXRoIjpbNDIsMzYsMzEsMjUsMzIsMzksNDAsMzVdfSwid29yZHMiOlt7InciOiJ2aXNlIiwicGF0aCI6WzAsNiwxMiwxOV19LHsidyI6ImRyaWxsIiwicGF0aCI6WzEsNywyLDksMTVdfSx7InciOiJsZXZlbCIsInBhdGgiOlszLDgsMTQsMjAsMjZdfSx7InciOiJmaWxlIiwicGF0aCI6WzQsMTEsMTcsMjJdfSx7InciOiJzYW5kZXIiLCJwYXRoIjpbNSwxMCwxNiwyMywyOSwzNF19LHsidyI6ImFudmlsIiwicGF0aCI6WzEzLDE4LDI0LDMwLDM3XX0seyJ3IjoiY2xhbXAiLCJwYXRoIjpbMjEsMjgsMjcsMzMsMzhdfSx7InciOiJjaGlzZWwiLCJwYXRoIjpbNDEsNDcsNDYsNDUsNDQsNDNdfV19"
+      },
+      {
+        "clue": "Under the sea",
+        "cols": 6,
+        "board": [
+          "squiot",
+          "mnldoc",
+          "aauifp",
+          "ecrrue",
+          "olcslb",
+          "snihso",
+          "erotie",
+          "ahersn"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3Ijoib2NlYW5saWZlIiwicGF0aCI6WzI0LDE5LDE4LDEyLDcsOCwxNSwxNiwyM119LCJ3b3JkcyI6W3sidyI6InNxdWlkIiwicGF0aCI6WzAsMSwyLDMsOV19LHsidyI6Im9jdG9wdXMiLCJwYXRoIjpbNCwxMSw1LDEwLDE3LDIyLDI3XX0seyJ3IjoibWFybGluIiwicGF0aCI6WzYsMTMsMjAsMjUsMzIsMzFdfSx7InciOiJ1cmNoaW4iLCJwYXRoIjpbMTQsMjEsMjYsMzMsNDAsNDddfSx7InciOiJsb2JzdGVyIiwicGF0aCI6WzI4LDM1LDI5LDM0LDM5LDQ0LDM3XX0seyJ3Ijoic2VhaG9yc2UiLCJwYXRoIjpbMzAsMzYsNDIsNDMsMzgsNDUsNDYsNDFdfV19"
+      },
+      {
+        "clue": "Family fun after dinner",
+        "cols": 6,
+        "board": [
+          "gaceni",
+          "damptg",
+          "srutho",
+          "bzogek",
+          "zinnti",
+          "lechvr",
+          "dcekia",
+          "eicers"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZ2FtZW5pZ2h0IiwicGF0aCI6WzAsMSw4LDMsNCw1LDExLDE2LDE1XX0sIndvcmRzIjpbeyJ3IjoiY2FyZHMiLCJwYXRoIjpbMiw3LDEzLDYsMTJdfSx7InciOiJwdXp6bGUiLCJwYXRoIjpbOSwxNCwxOSwyNCwzMCwzMV19LHsidyI6InRva2VuIiwicGF0aCI6WzEwLDE3LDIzLDIyLDI3XX0seyJ3IjoiYmluZ28iLCJwYXRoIjpbMTgsMjUsMjYsMjEsMjBdfSx7InciOiJ0cml2aWEiLCJwYXRoIjpbMjgsMzUsMjksMzQsNDAsNDFdfSx7InciOiJjaGVja2VycyIsInBhdGgiOlszMiwzMywzOCw0NCwzOSw0NSw0Niw0N119LHsidyI6ImRpY2UiLCJwYXRoIjpbMzYsNDMsMzcsNDJdfV19"
+      },
+      {
+        "clue": "Turn up the volume",
+        "cols": 6,
+        "board": [
+          "ukereg",
+          "jafbag",
+          "mnoeox",
+          "elthso",
+          "tbkepo",
+          "laaemu",
+          "dldrol",
+          "laaisc"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoianVrZWJveCIsInBhdGgiOls2LDAsMSwyLDksMTYsMTddfSwid29yZHMiOlt7InciOiJyZWdnYWUiLCJwYXRoIjpbMyw0LDUsMTEsMTAsMTVdfSx7InciOiJhbnRoZW0iLCJwYXRoIjpbNywxMywyMCwyMSwyNywzNF19LHsidyI6ImZvbGsiLCJwYXRoIjpbOCwxNCwxOSwyNl19LHsidyI6Im1ldGFsIiwicGF0aCI6WzEyLDE4LDI0LDMxLDMwXX0seyJ3Ijoic291bCIsInBhdGgiOlsyMiwyOSwzNSw0MV19LHsidyI6Im9wZXJhIiwicGF0aCI6WzIzLDI4LDMzLDM5LDQ0XX0seyJ3IjoiYmFsbGFkIiwicGF0aCI6WzI1LDMyLDM3LDQyLDQzLDM2XX0seyJ3IjoiZGlzY28iLCJwYXRoIjpbMzgsNDUsNDYsNDcsNDBdfV19"
+      },
+      {
+        "clue": "Happy campers",
+        "cols": 6,
+        "board": [
+          "thchmm",
+          "ireaao",
+          "femrkc",
+          "tpmtri",
+          "cesoal",
+          "ancnte",
+          "tmraed",
+          "pgounn"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY2FtcGdyb3VuZCIsInBhdGgiOlsyNCwzMCwzNyw0Miw0MywzOCw0NCw0NSw0Niw0MV19LCJ3b3JkcyI6W3sidyI6InRoZXJtb3MiLCJwYXRoIjpbMCwxLDgsMTUsMjAsMjcsMjZdfSx7InciOiJjYW1wZmlyZSIsInBhdGgiOlsyLDksMTQsMTksMTIsNiw3LDEzXX0seyJ3IjoiaGFtbW9jayIsInBhdGgiOlszLDEwLDQsNSwxMSwxNywxNl19LHsidyI6InRlbnQiLCJwYXRoIjpbMTgsMjUsMzEsMzZdfSx7InciOiJ0cmFpbCIsInBhdGgiOlsyMSwyMiwyOCwyMywyOV19LHsidyI6ImNhbnRlZW4iLCJwYXRoIjpbMzIsMzksMzMsMzQsMzUsNDAsNDddfV19"
+      },
+      {
+        "clue": "Coffee break",
+        "cols": 6,
+        "board": [
+          "fohdaf",
+          "rtcmec",
+          "esread",
+          "pgpiro",
+          "rressl",
+          "ifilea",
+          "rndttr",
+          "oastet"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZXNwcmVzc28iLCJwYXRoIjpbMTIsMTMsMTgsMjUsMjYsMjcsMjgsMjNdfSwid29yZHMiOlt7InciOiJmcm90aCIsInBhdGgiOlswLDYsMSw3LDJdfSx7InciOiJkZWNhZiIsInBhdGgiOlszLDEwLDExLDQsNV19LHsidyI6ImNyZW1hIiwicGF0aCI6WzgsMTQsMTUsOSwxNl19LHsidyI6ImRyaXAiLCJwYXRoIjpbMTcsMjIsMjEsMjBdfSx7InciOiJncmluZCIsInBhdGgiOlsxOSwyNCwzMCwzNywzOF19LHsidyI6ImxhdHRlIiwicGF0aCI6WzI5LDM1LDQwLDQ3LDQ2XX0seyJ3IjoiZmlsdGVyIiwicGF0aCI6WzMxLDMyLDMzLDM5LDM0LDQxXX0seyJ3Ijoicm9hc3QiLCJwYXRoIjpbMzYsNDIsNDMsNDQsNDVdfV19"
+      },
+      {
+        "clue": "Sweet dreams",
+        "cols": 6,
+        "board": [
+          "spasze",
+          "iesjno",
+          "ataaso",
+          "bnkmng",
+          "laethi",
+          "lgctuq",
+          "iahout",
+          "ptsilt"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibGlnaHRzb3V0IiwicGF0aCI6WzMwLDM2LDMxLDM4LDQzLDQ0LDM5LDM0LDQxXX0sIndvcmRzIjpbeyJ3Ijoic2llc3RhIiwicGF0aCI6WzAsNiw3LDgsMTMsMTJdfSx7InciOiJwYWphbWFzIiwicGF0aCI6WzEsMiw5LDE0LDIxLDE1LDE2XX0seyJ3Ijoic25vb3plIiwicGF0aCI6WzMsMTAsMTcsMTEsNCw1XX0seyJ3IjoiYmxhbmtldCIsInBhdGgiOlsxOCwyNCwyNSwxOSwyMCwyNiwzM119LHsidyI6Im5pZ2h0Y2FwIiwicGF0aCI6WzIyLDI5LDIzLDI4LDI3LDMyLDM3LDQyXX0seyJ3IjoicXVpbHQiLCJwYXRoIjpbMzUsNDAsNDUsNDYsNDddfV19"
+      },
+      {
+        "clue": "Out on the water",
+        "cols": 6,
+        "board": [
+          "frraft",
+          "weryft",
+          "aecaso",
+          "trralo",
+          "pucsnp",
+          "ntrhco",
+          "rtoaee",
+          "enorwl"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3Ijoid2F0ZXJjcmFmdCIsInBhdGgiOls2LDEyLDE4LDEzLDE5LDI2LDIwLDE1LDEwLDExXX0sIndvcmRzIjpbeyJ3IjoiZmVycnkiLCJwYXRoIjpbMCw3LDEsOCw5XX0seyJ3IjoicmFmdCIsInBhdGgiOlsyLDMsNCw1XX0seyJ3IjoiY2Fub2UiLCJwYXRoIjpbMTQsMjEsMjgsMzUsNDFdfSx7InciOiJzbG9vcCIsInBhdGgiOlsxNiwyMiwxNywyMywyOV19LHsidyI6InB1bnQiLCJwYXRoIjpbMjQsMjUsMzAsMzddfSx7InciOiJzY2hvb25lciIsInBhdGgiOlsyNywzNCwzMywzOCw0NCw0Myw0MiwzNl19LHsidyI6InRyYXdsZXIiLCJwYXRoIjpbMzEsMzIsMzksNDYsNDcsNDAsNDVdfV19"
+      },
+      {
+        "clue": "Save room for it",
+        "cols": 6,
+        "board": [
+          "cissbr",
+          "okeuoe",
+          "ocndtt",
+          "daalfr",
+          "sekeei",
+          "eseetm",
+          "cieros",
+          "rlassu"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZGVzc2VydHMiLCJwYXRoIjpbMTgsMjUsMjQsMzEsMzIsMzksMzQsNDFdfSwid29yZHMiOlt7InciOiJjb29raWUiLCJwYXRoIjpbMCw2LDEyLDcsMSw4XX0seyJ3Ijoic3VuZGFlIiwicGF0aCI6WzIsOSwxNCwxNSwyMCwyN119LHsidyI6InNvcmJldCIsInBhdGgiOlszLDEwLDUsNCwxMSwxNl19LHsidyI6ImNha2UiLCJwYXRoIjpbMTMsMTksMjYsMzNdfSx7InciOiJ0cmlmbGUiLCJwYXRoIjpbMTcsMjMsMjksMjIsMjEsMjhdfSx7InciOiJlY2xhaXIiLCJwYXRoIjpbMzAsMzYsNDMsNDQsMzcsNDJdfSx7InciOiJtb3Vzc2UiLCJwYXRoIjpbMzUsNDAsNDcsNDYsNDUsMzhdfV19"
+      },
+      {
+        "clue": "Little ones",
+        "cols": 6,
+        "board": [
+          "tapock",
+          "cdglhc",
+          "byoaei",
+          "gamsls",
+          "nibyln",
+          "enadgi",
+          "ticula",
+          "lkngmb"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYmFieWFuaW1hbHMiLCJwYXRoIjpbMTIsMTksMjYsMjcsMzIsMzEsMjUsMjAsMTUsMjIsMjNdfSwid29yZHMiOlt7InciOiJ0YWRwb2xlIiwicGF0aCI6WzAsMSw3LDIsMyw5LDE2XX0seyJ3IjoiY2hpY2siLCJwYXRoIjpbNCwxMCwxNywxMSw1XX0seyJ3IjoiY3lnbmV0IiwicGF0aCI6WzYsMTMsMTgsMjQsMzAsMzZdfSx7InciOiJnb3NsaW5nIiwicGF0aCI6WzgsMTQsMjEsMjgsMzUsMjksMzRdfSx7InciOiJkdWNrbGluZyIsInBhdGgiOlszMywzOSwzOCw0Myw0MiwzNyw0NCw0NV19LHsidyI6ImxhbWIiLCJwYXRoIjpbNDAsNDEsNDYsNDddfV19"
+      },
+      {
+        "clue": "In the fruit bowl",
+        "cols": 6,
+        "board": [
+          "lepech",
+          "mihare",
+          "itcyar",
+          "usalbd",
+          "mrnpna",
+          "faglna",
+          "kwouap",
+          "iimrae"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZnJ1aXRzYWxhZCIsInBhdGgiOlszMCwyNSwxOCwxMiwxMywxOSwyMCwyMSwxNiwyM119LCJ3b3JkcyI6W3sidyI6ImxpbWUiLCJwYXRoIjpbMCw3LDYsMV19LHsidyI6InBlYWNoIiwicGF0aCI6WzIsMyw5LDE0LDhdfSx7InciOiJjaGVycnkiLCJwYXRoIjpbNCw1LDExLDE3LDEwLDE1XX0seyJ3IjoiYmFuYW5hIiwicGF0aCI6WzIyLDI5LDI4LDM1LDM0LDQwXX0seyJ3IjoibWFuZ28iLCJwYXRoIjpbMjQsMzEsMjYsMzIsMzhdfSx7InciOiJwbHVtIiwicGF0aCI6WzI3LDMzLDM5LDQ0XX0seyJ3Ijoia2l3aSIsInBhdGgiOlszNiw0MywzNyw0Ml19LHsidyI6InBlYXIiLCJwYXRoIjpbNDEsNDcsNDYsNDVdfV19"
+      },
+      {
+        "clue": "Pocket change",
+        "cols": 6,
+        "board": [
+          "querpe",
+          "cratny",
+          "nufncn",
+          "rieray",
+          "crkrnd",
+          "eksoci",
+          "gllhnm",
+          "niilae"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY3VycmVuY3kiLCJwYXRoIjpbNiwxMywxOCwyNSwyMCwxNSwxNiwxMV19LCJ3b3JkcyI6W3sidyI6InF1YXJ0ZXIiLCJwYXRoIjpbMCwxLDgsMyw5LDIsN119LHsidyI6InBlbm55IiwicGF0aCI6WzQsNSwxMCwxNywyM119LHsidyI6Im5pY2tlbCIsInBhdGgiOlsxMiwxOSwyNCwzMSwzMCwzN119LHsidyI6ImZyYW5jIiwicGF0aCI6WzE0LDIxLDIyLDI4LDM0XX0seyJ3Ijoia3JvbmEiLCJwYXRoIjpbMjYsMjcsMzMsNDAsNDZdfSx7InciOiJkaW1lIiwicGF0aCI6WzI5LDM1LDQxLDQ3XX0seyJ3Ijoic2hpbGxpbmciLCJwYXRoIjpbMzIsMzksNDQsNDUsMzgsNDMsNDIsMzZdfV19"
+      },
+      {
+        "clue": "Lay of the land",
+        "cols": 6,
+        "board": [
+          "pteame",
+          "almcus",
+          "sewaea",
+          "uoanap",
+          "mdoycd",
+          "mncset",
+          "ialdal",
+          "ltniff"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibGFuZHNjYXBlIiwicGF0aCI6WzQyLDM3LDQ0LDM5LDMzLDI4LDIyLDIzLDE2XX0sIndvcmRzIjpbeyJ3IjoicGxhdGVhdSIsInBhdGgiOlswLDcsNiwxLDIsMywxMF19LHsidyI6Im1lc2EiLCJwYXRoIjpbNCw1LDExLDE3XX0seyJ3IjoibWVhZG93IiwicGF0aCI6WzgsMTMsMjAsMjUsMTksMTRdfSx7InciOiJjYW55b24iLCJwYXRoIjpbOSwxNSwyMSwyNywyNiwzMV19LHsidyI6InN1bW1pdCIsInBhdGgiOlsxMiwxOCwyNCwzMCwzNiw0M119LHsidyI6ImRlbHRhIiwicGF0aCI6WzI5LDM0LDQxLDM1LDQwXX0seyJ3IjoiY2xpZmYiLCJwYXRoIjpbMzIsMzgsNDUsNDYsNDddfV19"
+      }
+    ],
+    "7x9": [
+      {
+        "clue": "Ahoy, matey",
+        "cols": 7,
+        "board": [
+          "apartdr",
+          "bnroeeo",
+          "cucanut",
+          "hocoobr",
+          "crncule",
+          "anrersa",
+          "noweeep",
+          "sngshya",
+          "pyalsct"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYnVjY2FuZWVyIiwicGF0aCI6WzcsMTUsMjMsMTYsMTcsMTgsMTEsMTIsNl19LCJ3b3JkcyI6W3sidyI6ImFuY2hvciIsInBhdGgiOlswLDgsMTQsMjEsMjIsMjldfSx7InciOiJwYXJyb3QiLCJwYXRoIjpbMSwyLDksMywxMCw0XX0seyJ3IjoiZG91Ymxvb24iLCJwYXRoIjpbNSwxMywxOSwyNiwzMywyNSwyNCwzMF19LHsidyI6InRyZWFzdXJlIiwicGF0aCI6WzIwLDI3LDM0LDQxLDQwLDMyLDM5LDM4XX0seyJ3IjoiY2Fubm9uIiwicGF0aCI6WzI4LDM1LDQyLDM2LDQzLDUwXX0seyJ3IjoiY3JldyIsInBhdGgiOlszMSwzNyw0NSw0NF19LHsidyI6ImV5ZXBhdGNoIiwicGF0aCI6WzQ2LDU0LDQ3LDQ4LDU1LDYyLDYxLDUzXX0seyJ3Ijoic3B5Z2xhc3MiLCJwYXRoIjpbNDksNTYsNTcsNTEsNTksNTgsNTIsNjBdfV19"
+      },
+      {
+        "clue": "Picture perfect",
+        "cols": 7,
+        "board": [
+          "caplefh",
+          "mianlls",
+          "erxesah",
+          "togzape",
+          "poormxp",
+          "hntospo",
+          "vieaour",
+          "efgtret",
+          "rameiar"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoicGhvdG9ncmFwaCIsInBhdGgiOlsyOCwzNSwyOSwyMSwyMiwyMywzMSwyNSwyNiwyMF19LCJ3b3JkcyI6W3sidyI6ImNhbWVyYSIsInBhdGgiOlswLDEsNywxNCwxNSw5XX0seyJ3IjoicGl4ZWwiLCJwYXRoIjpbMiw4LDE2LDE3LDExXX0seyJ3IjoibGVucyIsInBhdGgiOlszLDQsMTAsMThdfSx7InciOiJmbGFzaCIsInBhdGgiOls1LDEyLDE5LDEzLDZdfSx7InciOiJ6b29tIiwicGF0aCI6WzI0LDMwLDM4LDMyXX0seyJ3IjoiZXhwb3N1cmUiLCJwYXRoIjpbMjcsMzMsNDAsNDYsMzksNDcsNTMsNTRdfSx7InciOiJwb3J0cmFpdCIsInBhdGgiOlszNCw0MSw0OCw1NSw2Miw2MSw2MCw1Ml19LHsidyI6Im5lZ2F0aXZlIiwicGF0aCI6WzM2LDQ0LDUxLDQ1LDM3LDQzLDQyLDQ5XX0seyJ3IjoiZnJhbWUiLCJwYXRoIjpbNTAsNTYsNTcsNTgsNTldfV19"
+      },
+      {
+        "clue": "In bloom",
+        "cols": 7,
+        "board": [
+          "atcptlt",
+          "sereuou",
+          "rocnids",
+          "mgupaaa",
+          "iaosnhy",
+          "rldrbsl",
+          "oowezei",
+          "lrcniad",
+          "fhidnia"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZmxvd2VyYmVkIiwicGF0aCI6WzU2LDQ5LDQzLDQ0LDQ1LDM4LDM5LDQ3LDU1XX0sIndvcmRzIjpbeyJ3IjoiYXN0ZXIiLCJwYXRoIjpbMCw3LDEsOCwxNF19LHsidyI6ImNyb2N1cyIsInBhdGgiOlsyLDksMTUsMTYsMjMsMzFdfSx7InciOiJwZXR1bmlhIiwicGF0aCI6WzMsMTAsNCwxMSwxNywxOCwyNl19LHsidyI6ImxvdHVzIiwicGF0aCI6WzUsMTIsNiwxMywyMF19LHsidyI6ImRhaGxpYSIsInBhdGgiOlsxOSwyNywzMyw0MSw0OCw1NF19LHsidyI6Im1hcmlnb2xkIiwicGF0aCI6WzIxLDI5LDM1LDI4LDIyLDMwLDM2LDM3XX0seyJ3IjoicGFuc3kiLCJwYXRoIjpbMjQsMjUsMzIsNDAsMzRdfSx7InciOiJvcmNoaWQiLCJwYXRoIjpbNDIsNTAsNTEsNTcsNTgsNTldfSx7InciOiJ6aW5uaWEiLCJwYXRoIjpbNDYsNTMsNTIsNjAsNjEsNjJdfV19"
+      },
+      {
+        "clue": "Pocket change",
+        "cols": 7,
+        "board": [
+          "sdolnar",
+          "hrrelcn",
+          "iubiliy",
+          "cllilfc",
+          "penpoek",
+          "suogllr",
+          "fondedu",
+          "ardeipe",
+          "cnemoru"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY3VycmVuY3kiLCJwYXRoIjpbMjEsMTUsOCw5LDEwLDQsMTIsMjBdfSwid29yZHMiOlt7InciOiJzaGlsbGluZyIsInBhdGgiOlswLDcsMTQsMjIsMjMsMjQsMzAsMzhdfSx7InciOiJkb2xsYXIiLCJwYXRoIjpbMSwyLDMsMTEsNSw2XX0seyJ3Ijoibmlja2VsIiwicGF0aCI6WzEzLDE5LDI3LDM0LDMzLDQwXX0seyJ3IjoiYmlsbGZvbGQiLCJwYXRoIjpbMTYsMTcsMTgsMjUsMjYsMzIsMzksNDddfSx7InciOiJwZXNvIiwicGF0aCI6WzI4LDI5LDM1LDQzXX0seyJ3IjoicG91bmQiLCJwYXRoIjpbMzEsMzcsMzYsNDQsNTFdfSx7InciOiJydXBlZSIsInBhdGgiOls0MSw0OCw1NCw0Niw1Ml19LHsidyI6ImZyYW5jIiwicGF0aCI6WzQyLDUwLDQ5LDU3LDU2XX0seyJ3IjoiZGltZSIsInBhdGgiOls0NSw1Myw1OSw1OF19LHsidyI6ImV1cm8iLCJwYXRoIjpbNTUsNjIsNjEsNjBdfV19"
+      },
+      {
+        "clue": "Well-rounded (and otherwise)",
+        "cols": 7,
+        "board": [
+          "pymcucy",
+          "rraibli",
+          "heledno",
+          "polisvd",
+          "rhmpuae",
+          "isebsrl",
+          "mxasehe",
+          "eomgprr",
+          "gnoetey"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZ2VvbWV0cnkiLCJwYXRoIjpbNTYsNDksNTAsNTEsNTksNjAsNTQsNjJdfSwid29yZHMiOlt7InciOiJweXJhbWlkIiwicGF0aCI6WzAsMSw4LDksMiwxMCwxOF19LHsidyI6ImN1YmUiLCJwYXRoIjpbMyw0LDExLDE3XX0seyJ3IjoiY3lsaW5kZXIiLCJwYXRoIjpbNSw2LDEyLDEzLDE5LDI3LDM0LDQwXX0seyJ3IjoicmhvbWJ1cyIsInBhdGgiOls3LDE0LDIyLDMwLDM4LDMyLDI1XX0seyJ3IjoiZWxsaXBzZSIsInBhdGgiOlsxNSwyMywxNiwyNCwzMSwzOSw0Nl19LHsidyI6Im92YWwiLCJwYXRoIjpbMjAsMjYsMzMsNDFdfSx7InciOiJwcmlzbSIsInBhdGgiOlsyMSwyOCwzNSwzNiw0Ml19LHsidyI6ImhleGFnb24iLCJwYXRoIjpbMjksMzcsNDMsNDQsNTIsNTgsNTddfSx7InciOiJzcGhlcmUiLCJwYXRoIjpbNDUsNTMsNDcsNDgsNTUsNjFdfV19"
+      },
+      {
+        "clue": "Weather report",
+        "cols": 7,
+        "board": [
+          "foecass",
+          "wrgaltt",
+          "idserom",
+          "nhrtmsi",
+          "dowihtn",
+          "snzehud",
+          "ozlrafe",
+          "sweitrr",
+          "leetlso"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZm9yZWNhc3QiLCJwYXRoIjpbMCwxLDgsMiwzLDQsNSwxM119LCJ3b3JkcyI6W3sidyI6InN0b3JtIiwicGF0aCI6WzYsMTIsMTksMTgsMjVdfSx7InciOiJ3aW5kIiwicGF0aCI6WzcsMTQsMjEsMjhdfSx7InciOiJnYWxlIiwicGF0aCI6WzksMTAsMTEsMTddfSx7InciOiJkcml6emxlIiwicGF0aCI6WzE1LDIzLDMxLDM3LDQzLDQ0LDUxXX0seyJ3Ijoic2hvd2VyIiwicGF0aCI6WzE2LDIyLDI5LDMwLDM4LDQ1XX0seyJ3IjoibWlzdCIsInBhdGgiOlsyMCwyNywyNiwzM119LHsidyI6InRodW5kZXIiLCJwYXRoIjpbMjQsMzIsNDAsMzQsNDEsNDgsNTRdfSx7InciOiJzbm93IiwicGF0aCI6WzM1LDM2LDQyLDUwXX0seyJ3IjoiaGFpbCIsInBhdGgiOlszOSw0Niw1Miw2MF19LHsidyI6ImZyb3N0IiwicGF0aCI6WzQ3LDU1LDYyLDYxLDUzXX0seyJ3Ijoic2xlZXQiLCJwYXRoIjpbNDksNTYsNTcsNTgsNTldfV19"
+      },
+      {
+        "clue": "Deck the halls",
+        "cols": 7,
+        "board": [
+          "caroeca",
+          "yueglen",
+          "clgtild",
+          "ocncsde",
+          "ooglhiw",
+          "asecnmr",
+          "rtoikee",
+          "bighiya",
+          "bongnht"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoieXVsZXRpZGUiLCJwYXRoIjpbNyw4LDE1LDksMTcsMTgsMjYsMjddfSwid29yZHMiOlt7InciOiJjYXJvbCIsInBhdGgiOlswLDEsMiwzLDExXX0seyJ3IjoiZWdnbm9nIiwicGF0aCI6WzQsMTAsMTYsMjMsMjksMzBdfSx7InciOiJjYW5kbGUiLCJwYXRoIjpbNSw2LDEzLDIwLDE5LDEyXX0seyJ3IjoiY29jb2EiLCJwYXRoIjpbMTQsMjEsMjIsMjgsMzVdfSx7InciOiJjaGltbmV5IiwicGF0aCI6WzI0LDMyLDMzLDQwLDM5LDQ3LDU0XX0seyJ3Ijoic2xlaWdoIiwicGF0aCI6WzI1LDMxLDM3LDQ1LDUxLDUyXX0seyJ3Ijoid3JlYXRoIiwicGF0aCI6WzM0LDQxLDQ4LDU1LDYyLDYxXX0seyJ3Ijoic3RvY2tpbmciLCJwYXRoIjpbMzYsNDMsNDQsMzgsNDYsNTMsNjAsNTldfSx7InciOiJyaWJib24iLCJwYXRoIjpbNDIsNTAsNDksNTYsNTcsNThdfV19"
+      },
+      {
+        "clue": "Little ones",
+        "cols": 7,
+        "board": [
+          "fawjoyl",
+          "cinoewe",
+          "chtfatc",
+          "gkapoly",
+          "sodgogt",
+          "linlene",
+          "yaniaks",
+          "bcfmnli",
+          "baalett"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYmFieWFuaW1hbHMiLCJwYXRoIjpbNTYsNTcsNDksNDIsNDMsNDQsNDUsNTIsNDYsNTQsNDhdfSwid29yZHMiOlt7InciOiJmYXduIiwicGF0aCI6WzAsMSwyLDldfSx7InciOiJqb2V5IiwicGF0aCI6WzMsMTAsMTEsNV19LHsidyI6Im93bGV0IiwicGF0aCI6WzQsMTIsNiwxMywxOV19LHsidyI6ImNoaWNrIiwicGF0aCI6WzcsMTUsOCwxNCwyMl19LHsidyI6InRhZHBvbGUiLCJwYXRoIjpbMTYsMjMsMzAsMjQsMzIsMzgsMzldfSx7InciOiJmb2FsIiwicGF0aCI6WzE3LDI1LDE4LDI2XX0seyJ3IjoiY3lnbmV0IiwicGF0aCI6WzIwLDI3LDMzLDQwLDQxLDM0XX0seyJ3IjoiZ29zbGluZyIsInBhdGgiOlsyMSwyOSwyOCwzNSwzNiwzNywzMV19LHsidyI6ImtpdHRlbiIsInBhdGgiOls0Nyw1NSw2Miw2MSw2MCw1M119LHsidyI6ImNhbGYiLCJwYXRoIjpbNTAsNTgsNTksNTFdfV19"
+      },
+      {
+        "clue": "Kitchen drawer",
+        "cols": 7,
+        "board": [
+          "stusaer",
+          "apklwls",
+          "ueneist",
+          "tgpswco",
+          "krkehon",
+          "anesiog",
+          "tilepss",
+          "ferleie",
+          "erevadl"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoidXRlbnNpbHMiLCJwYXRoIjpbMTQsMjEsMTUsMTYsMjQsMTgsMTIsMTNdfSwid29yZHMiOlt7InciOiJzcGF0dWxhIiwicGF0aCI6WzAsOCw3LDEsMiwxMCw0XX0seyJ3Ijoic2tld2VyIiwicGF0aCI6WzMsOSwxNywxMSw1LDZdfSx7InciOiJzY29vcCIsInBhdGgiOlsxOSwyNiwzMyw0MCw0Nl19LHsidyI6InRvbmdzIiwicGF0aCI6WzIwLDI3LDM0LDQxLDQ3XX0seyJ3IjoiZ3JhdGVyIiwicGF0aCI6WzIyLDI5LDM1LDQyLDUwLDU3XX0seyJ3IjoicGVlbGVyIiwicGF0aCI6WzIzLDMxLDM3LDQ0LDQ1LDUxXX0seyJ3Ijoid2hpc2siLCJwYXRoIjpbMjUsMzIsMzksMzgsMzBdfSx7InciOiJrbmlmZSIsInBhdGgiOlsyOCwzNiw0Myw0OSw1Nl19LHsidyI6InNpZXZlIiwicGF0aCI6WzQ4LDU0LDUzLDU5LDU4XX0seyJ3IjoibGFkbGUiLCJwYXRoIjpbNTIsNjAsNjEsNjIsNTVdfV19"
+      },
+      {
+        "clue": "Lay of the land",
+        "cols": 7,
+        "board": [
+          "cbudeea",
+          "canttlt",
+          "ltuyori",
+          "rinfsnd",
+          "adfumga",
+          "timmees",
+          "adscmpe",
+          "lnraaea",
+          "enivwod"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibGFuZHNjYXBlIiwicGF0aCI6WzQ5LDQyLDUwLDQzLDQ0LDQ1LDUzLDQ3LDQ4XX0sIndvcmRzIjpbeyJ3IjoiY2FueW9uIiwicGF0aCI6WzAsOCw5LDE3LDE4LDI2XX0seyJ3IjoiYnV0dGUiLCJwYXRoIjpbMSwyLDEwLDExLDVdfSx7InciOiJkZWx0YSIsInBhdGgiOlszLDQsMTIsMTMsNl19LHsidyI6ImNsaWZmIiwicGF0aCI6WzcsMTQsMjIsMzAsMjRdfSx7InciOiJ0dW5kcmEiLCJwYXRoIjpbMTUsMTYsMjMsMjksMjEsMjhdfSx7InciOiJyaWRnZSIsInBhdGgiOlsxOSwyMCwyNywzMywzOV19LHsidyI6InN1bW1pdCIsInBhdGgiOlsyNSwzMSwzOCwzNywzNiwzNV19LHsidyI6Im1lc2EiLCJwYXRoIjpbMzIsNDAsNDEsMzRdfSx7InciOiJtZWFkb3ciLCJwYXRoIjpbNDYsNTQsNTUsNjIsNjEsNjBdfSx7InciOiJyYXZpbmUiLCJwYXRoIjpbNTEsNTIsNTksNTgsNTcsNTZdfV19"
+      },
+      {
+        "clue": "Life is better in flip-flops",
+        "cols": 7,
+        "board": [
+          "selcsto",
+          "nrkouwg",
+          "olorfne",
+          "brerils",
+          "oadwana",
+          "ubabdlk",
+          "mrrldun",
+          "seoelew",
+          "lhvaeva"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYm9hcmR3YWxrIiwicGF0aCI6WzIxLDI4LDI5LDIyLDMwLDMxLDMyLDQwLDQxXX0sIndvcmRzIjpbeyJ3Ijoic25vcmtlbCIsInBhdGgiOlswLDcsMTQsOCw5LDEsMl19LHsidyI6ImNvb2xlciIsInBhdGgiOlszLDEwLDE2LDE1LDIzLDI0XX0seyJ3Ijoic3VyZmluZyIsInBhdGgiOls0LDExLDE3LDE4LDI1LDE5LDEzXX0seyJ3IjoidG93ZWwiLCJwYXRoIjpbNSw2LDEyLDIwLDI2XX0seyJ3Ijoic2FuZGJhciIsInBhdGgiOlsyNywzNCwzMywzOSwzOCwzNyw0M119LHsidyI6InVtYnJlbGxhIiwicGF0aCI6WzM1LDQyLDM2LDQ0LDUyLDQ1LDUzLDU5XX0seyJ3IjoiZHVuZSIsInBhdGgiOls0Niw0Nyw0OCw1NF19LHsidyI6InNob3ZlbCIsInBhdGgiOls0OSw1Nyw1MSw1OCw1MCw1Nl19LHsidyI6IndhdmUiLCJwYXRoIjpbNTUsNjIsNjEsNjBdfV19"
+      },
+      {
+        "clue": "Baking day",
+        "cols": 7,
+        "board": [
+          "sytsalc",
+          "usebuto",
+          "ggahttc",
+          "anroero",
+          "irednag",
+          "nuienni",
+          "cfteytg",
+          "relmres",
+          "amouegr"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiaW5ncmVkaWVudHMiLCJwYXRoIjpbMjgsMjIsMTUsMjMsMzAsMzEsMzcsNDUsMzksNDcsNTVdfSwid29yZHMiOlt7InciOiJzdWdhciIsInBhdGgiOlswLDcsMTQsMjEsMjldfSx7InciOiJ5ZWFzdCIsInBhdGgiOlsxLDksMTYsOCwyXX0seyJ3Ijoic2FsdCIsInBhdGgiOlszLDQsNSwxMl19LHsidyI6ImNvY29hIiwicGF0aCI6WzYsMTMsMjAsMjcsMzNdfSx7InciOiJidXR0ZXIiLCJwYXRoIjpbMTAsMTEsMTksMTgsMjUsMjZdfSx7InciOiJob25leSIsInBhdGgiOlsxNywyNCwzMiwzOCw0Nl19LHsidyI6ImdpbmdlciIsInBhdGgiOlszNCw0MSw0MCw0OCw1NCw2Ml19LHsidyI6Im51dG1lZyIsInBhdGgiOlszNSwzNiw0NCw1Miw2MCw2MV19LHsidyI6ImNyZWFtIiwicGF0aCI6WzQyLDQ5LDUwLDU2LDU3XX0seyJ3IjoiZmxvdXIiLCJwYXRoIjpbNDMsNTEsNTgsNTksNTNdfV19"
+      },
+      {
+        "clue": "Grassland giants",
+        "cols": 7,
+        "board": [
+          "chlhipb",
+          "teiopou",
+          "eahfnrf",
+          "gaaeafi",
+          "nszlael",
+          "ornelle",
+          "hihowop",
+          "aytrahn",
+          "nehogta"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3Ijoib25zYWZhcmkiLCJwYXRoIjpbMzUsMjgsMjksMjMsMTcsMjUsMTksMjddfSwid29yZHMiOlt7InciOiJjaGVldGFoIiwicGF0aCI6WzAsMSw4LDE0LDcsMTUsMTZdfSx7InciOiJsaW9uIiwicGF0aCI6WzIsOSwxMCwxOF19LHsidyI6ImhpcHBvIiwicGF0aCI6WzMsNCw1LDExLDEyXX0seyJ3IjoiYnVmZmFsbyIsInBhdGgiOls2LDEzLDIwLDI2LDMyLDQwLDQ3XX0seyJ3IjoiZ2F6ZWxsZSIsInBhdGgiOlsyMSwyMiwzMCwyNCwzMSwzOSwzOF19LHsidyI6ImVsZXBoYW50IiwicGF0aCI6WzMzLDM0LDQxLDQ4LDU0LDYyLDU1LDYxXX0seyJ3Ijoicmhpbm8iLCJwYXRoIjpbMzYsNDIsNDMsMzcsNDVdfSx7InciOiJoeWVuYSIsInBhdGgiOls0NCw1MCw1Nyw1Niw0OV19LHsidyI6IndhcnRob2ciLCJwYXRoIjpbNDYsNTMsNTIsNTEsNTgsNTksNjBdfV19"
+      },
+      {
+        "clue": "Solve the case",
+        "cols": 7,
+        "board": [
+          "fwitnsa",
+          "ogieilt",
+          "erybssa",
+          "mrtrskh",
+          "yselyte",
+          "wsoeuuo",
+          "uhdutdi",
+          "tsesngs",
+          "cepiuit"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3Ijoid2hvZHVuaXQiLCJwYXRoIjpbMzUsNDMsMzcsNDQsNDUsNTMsNjEsNjJdfSwid29yZHMiOlt7InciOiJmb3JnZXJ5IiwicGF0aCI6WzAsNywxNSw4LDE0LDIyLDE2XX0seyJ3Ijoid2l0bmVzcyIsInBhdGgiOlsxLDIsMyw0LDEwLDE4LDE5XX0seyJ3Ijoic3Rha2VvdXQiLCJwYXRoIjpbNSwxMywyMCwyNiwzNCw0MSw0MCw0Nl19LHsidyI6ImFsaWJpIiwicGF0aCI6WzYsMTIsMTEsMTcsOV19LHsidyI6Im15c3RlcnkiLCJwYXRoIjpbMjEsMjgsMjksMjMsMzAsMjQsMzJdfSx7InciOiJzbGV1dGgiLCJwYXRoIjpbMjUsMzEsMzgsMzksMzMsMjddfSx7InciOiJzdXNwZWN0IiwicGF0aCI6WzM2LDQyLDUwLDU4LDU3LDU2LDQ5XX0seyJ3IjoiZGlzZ3Vpc2UiLCJwYXRoIjpbNDcsNDgsNTUsNTQsNjAsNTksNTIsNTFdfV19"
+      },
+      {
+        "clue": "Happy campers",
+        "cols": 7,
+        "board": [
+          "cktngmo",
+          "iaihers",
+          "nmlouml",
+          "pdrtana",
+          "tgcctnd",
+          "rhehoep",
+          "asamrma",
+          "cilmnss",
+          "abinock"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY2FtcGdyb3VuZCIsInBhdGgiOlswLDgsMTUsMjEsMjksMjMsMTcsMTgsMjYsMzRdfSwid29yZHMiOlt7InciOiJraW5kbGluZyIsInBhdGgiOlsxLDcsMTQsMjIsMTYsOSwzLDRdfSx7InciOiJ0aGVybW9zIiwicGF0aCI6WzIsMTAsMTEsMTIsNSw2LDEzXX0seyJ3IjoibWF0Y2hlcyIsInBhdGgiOlsxOSwyNSwyNCwzMCwzOCwzNyw0M119LHsidyI6ImxhbnRlcm4iLCJwYXRoIjpbMjAsMjcsMzMsMzIsNDAsNDYsNTNdfSx7InciOiJ0cmFpbCIsInBhdGgiOlsyOCwzNSw0Miw1MCw1MV19LHsidyI6ImNvbXBhc3MiLCJwYXRoIjpbMzEsMzksNDcsNDEsNDgsNTQsNTVdfSx7InciOiJoYW1tb2NrIiwicGF0aCI6WzM2LDQ0LDQ1LDUyLDYwLDYxLDYyXX0seyJ3IjoiY2FiaW4iLCJwYXRoIjpbNDksNTYsNTcsNTgsNTldfV19"
+      },
+      {
+        "clue": "Al dente",
+        "cols": 7,
+        "board": [
+          "sronila",
+          "pphtias",
+          "ageegti",
+          "noentnr",
+          "gonlgia",
+          "dninoug",
+          "olrntai",
+          "eciaenl",
+          "chivioi"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3Ijoic3BhZ2hldHRpIiwicGF0aCI6WzAsNywxNCwxNSw5LDE3LDI1LDE5LDIwXX0sIndvcmRzIjpbeyJ3Ijoicm90aW5pIiwicGF0aCI6WzEsMiwxMCwxMSwzLDRdfSx7InciOiJsYXNhZ25hIiwicGF0aCI6WzUsNiwxMywxMiwxOCwyNiwzNF19LHsidyI6InBlbm5lIiwicGF0aCI6WzgsMTYsMjQsMzAsMjNdfSx7InciOiJub29kbGUiLCJwYXRoIjpbMjEsMjIsMjksMzUsNDMsNDldfSx7InciOiJyaWdhdG9uaSIsInBhdGgiOlsyNywzMyw0MSw0Nyw0NiwzOSw0NSw1MV19LHsidyI6Imdub2NjaGkiLCJwYXRoIjpbMjgsMzYsNDIsNTAsNTYsNTcsNThdfSx7InciOiJsaW5ndWluZSIsInBhdGgiOlszMSwzNywzOCwzMiw0MCw0OCw1NCw1M119LHsidyI6InJhdmlvbGkiLCJwYXRoIjpbNDQsNTIsNTksNjAsNjEsNTUsNjJdfV19"
+      },
+      {
+        "clue": "Back to school",
+        "cols": 7,
+        "board": [
+          "bqnterc",
+          "uicdeah",
+          "ihacrre",
+          "zklaloh",
+          "noyooom",
+          "assrcem",
+          "lpemrke",
+          "ccnarwr",
+          "ilkroke"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY2xhc3Nyb29tIiwicGF0aCI6WzQ5LDQyLDM1LDM2LDM3LDM4LDMyLDI2LDM0XX0sIndvcmRzIjpbeyJ3IjoiYmluZGVyIiwicGF0aCI6WzAsOCwyLDEwLDQsNV19LHsidyI6InF1aXoiLCJwYXRoIjpbMSw3LDE0LDIxXX0seyJ3IjoidGVhY2hlciIsInBhdGgiOlszLDExLDEyLDYsMTMsMjAsMTldfSx7InciOiJjaGFsayIsInBhdGgiOls5LDE1LDE2LDIzLDIyXX0seyJ3IjoiY3JheW9uIiwicGF0aCI6WzE3LDE4LDI0LDMwLDI5LDI4XX0seyJ3IjoibG9ja2VyIiwicGF0aCI6WzI1LDMxLDM5LDQ3LDQwLDQ2XX0seyJ3IjoiaG9tZXdvcmsiLCJwYXRoIjpbMjcsMzMsNDEsNDgsNTQsNjAsNTksNThdfSx7InciOiJwZW5jaWwiLCJwYXRoIjpbNDMsNDQsNTEsNTAsNTYsNTddfSx7InciOiJtYXJrZXIiLCJwYXRoIjpbNDUsNTIsNTMsNjEsNjIsNTVdfV19"
+      },
+      {
+        "clue": "Creepy crawlies",
+        "cols": 7,
+        "board": [
+          "blehowc",
+          "ettrapi",
+          "meensca",
+          "iretfde",
+          "tnseala",
+          "iefmcas",
+          "cietotp",
+          "rkrhtdh",
+          "iceflyi"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiaW5zZWN0cyIsInBhdGgiOlszNSwyOSwzMCwzMSwzOSw0Nyw0MV19LCJ3b3JkcyI6W3sidyI6ImJlZXRsZSIsInBhdGgiOlswLDcsMTUsOCwxLDJdfSx7InciOiJob3JuZXQiLCJwYXRoIjpbMyw0LDEwLDE3LDIzLDI0XX0seyJ3Ijoid2FzcCIsInBhdGgiOls1LDExLDE4LDEyXX0seyJ3IjoiY2ljYWRhIiwicGF0aCI6WzYsMTMsMTksMjAsMjYsMzJdfSx7InciOiJ0ZXJtaXRlIiwicGF0aCI6WzksMTYsMjIsMTQsMjEsMjgsMzZdfSx7InciOiJmbGVhIiwicGF0aCI6WzI1LDMzLDI3LDM0XX0seyJ3IjoiZmlyZWZseSIsInBhdGgiOlszNyw0Myw1MSw1OCw1OSw2MCw2MV19LHsidyI6Im1vdGgiLCJwYXRoIjpbMzgsNDYsNTMsNTJdfSx7InciOiJhcGhpZCIsInBhdGgiOls0MCw0OCw1NSw2Miw1NF19LHsidyI6ImNyaWNrZXQiLCJwYXRoIjpbNDIsNDksNTYsNTcsNTAsNDQsNDVdfV19"
+      },
+      {
+        "clue": "Nine to five",
+        "cols": 7,
+        "board": [
+          "defmeet",
+          "mnsodei",
+          "ioklcnr",
+          "otpigui",
+          "wrnrlcb",
+          "oterece",
+          "rkplaic",
+          "bdobnoe",
+          "axgeffe"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3Ijoid29ya3BsYWNlIiwicGF0aCI6WzI4LDM1LDQyLDQzLDQ0LDQ1LDQ2LDQwLDQxXX0sIndvcmRzIjpbeyJ3IjoiZGVzayIsInBhdGgiOlswLDEsOSwxNl19LHsidyI6ImZvbGRlciIsInBhdGgiOlsyLDEwLDE3LDExLDEyLDIwXX0seyJ3IjoibWVldGluZyIsInBhdGgiOlszLDQsNSw2LDEzLDE5LDI1XX0seyJ3IjoibW9uaXRvciIsInBhdGgiOls3LDE1LDgsMTQsMjIsMjEsMjldfSx7InciOiJjdWJpY2xlIiwicGF0aCI6WzE4LDI2LDM0LDI3LDMzLDMyLDM5XX0seyJ3IjoicHJpbnRlciIsInBhdGgiOlsyMywzMSwyNCwzMCwzNiwzNywzOF19LHsidyI6ImluYm94IiwicGF0aCI6WzQ3LDUzLDUyLDUxLDU3XX0seyJ3IjoiY29mZmVlIiwicGF0aCI6WzQ4LDU0LDYwLDYxLDU1LDYyXX0seyJ3IjoiYmFkZ2UiLCJwYXRoIjpbNDksNTYsNTAsNTgsNTldfV19"
+      },
+      {
+        "clue": "In the fruit bowl",
+        "cols": 7,
+        "board": [
+          "lemoorg",
+          "fcngara",
+          "hrunepe",
+          "etiamng",
+          "rpsplao",
+          "arcbeaa",
+          "pyhaapd",
+          "ananlep",
+          "ayaimel"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZnJ1aXRzYWxhZCIsInBhdGgiOls3LDE1LDE2LDIzLDIyLDMwLDI0LDMyLDQwLDQ4XX0sIndvcmRzIjpbeyJ3IjoibGVtb24iLCJwYXRoIjpbMCwxLDIsMyw5XX0seyJ3Ijoib3JhbmdlIiwicGF0aCI6WzQsNSwxMSwxNywxMCwxOF19LHsidyI6ImdyYXBlIiwicGF0aCI6WzYsMTIsMTMsMTksMjBdfSx7InciOiJjaGVycnkiLCJwYXRoIjpbOCwxNCwyMSwyOCwzNiw0M119LHsidyI6Im1hbmdvIiwicGF0aCI6WzI1LDMzLDI2LDI3LDM0XX0seyJ3IjoicGFwYXlhIiwicGF0aCI6WzI5LDM1LDQyLDQ5LDU3LDUxXX0seyJ3IjoicGVhY2giLCJwYXRoIjpbMzEsMzksNDUsMzcsNDRdfSx7InciOiJiYW5hbmEiLCJwYXRoIjpbMzgsNDYsNTIsNTgsNTAsNTZdfSx7InciOiJhcHBsZSIsInBhdGgiOls0MSw0Nyw1NSw2Miw2MV19LHsidyI6ImxpbWUiLCJwYXRoIjpbNTMsNTksNjAsNTRdfV19"
+      }
+    ],
+    "8x10": [
+      {
+        "clue": "Deal me in",
+        "cols": 8,
+        "board": [
+          "cpobrmmy",
+          "akridues",
+          "enstgmso",
+          "raawaels",
+          "carghiip",
+          "cidhatsa",
+          "rbaeirdt",
+          "bgtrepee",
+          "eaesuise",
+          "lhconchr"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY2FyZGdhbWVzIiwicGF0aCI6WzMyLDMzLDM0LDQyLDM1LDI4LDIxLDE0LDE1XX0sIndvcmRzIjpbeyJ3IjoiY2FuYXN0YSIsInBhdGgiOlswLDgsMTcsMjUsMTgsMTksMjZdfSx7InciOiJwb2tlciIsInBhdGgiOlsxLDIsOSwxNiwyNF19LHsidyI6ImJyaWRnZSIsInBhdGgiOlszLDEwLDExLDEyLDIwLDI5XX0seyJ3IjoicnVtbXkiLCJwYXRoIjpbNCwxMyw1LDYsN119LHsidyI6InNvbGl0YWlyZSIsInBhdGgiOlsyMiwyMywzMCwzOCw0NSw0NCw1Miw1Myw2Ml19LHsidyI6IndoaXN0IiwicGF0aCI6WzI3LDM2LDM3LDQ2LDU1XX0seyJ3Ijoic3BhZGVzIiwicGF0aCI6WzMxLDM5LDQ3LDU0LDYzLDcwXX0seyJ3IjoiY3JpYmJhZ2UiLCJwYXRoIjpbNDAsNDgsNDEsNDksNTYsNjUsNTcsNjZdfSx7InciOiJoZWFydHMiLCJwYXRoIjpbNDMsNTEsNTAsNTksNTgsNjddfSx7InciOiJldWNocmUiLCJwYXRoIjpbNjAsNjgsNzcsNzgsNzksNzFdfSx7InciOiJwaW5vY2hsZSIsInBhdGgiOls2MSw2OSw3Niw3NSw3NCw3Myw3Miw2NF19XX0="
+      },
+      {
+        "clue": "On the side",
+        "cols": 8,
+        "board": [
+          "petowats",
+          "kspiensi",
+          "oedimlba",
+          "cntsckea",
+          "rchuyrti",
+          "sesapuao",
+          "alliaprl",
+          "vhsrgtim",
+          "igardrus",
+          "enyvarat"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY29uZGltZW50cyIsInBhdGgiOlsyNCwxNiwyNSwxOCwxMSwyMCwxMiwxMyw2LDddfSwid29yZHMiOlt7InciOiJwZXN0byIsInBhdGgiOlswLDEsOSwyLDNdfSx7InciOiJ3YXNhYmkiLCJwYXRoIjpbNCw1LDE0LDIzLDIyLDE1XX0seyJ3Ijoia2V0Y2h1cCIsInBhdGgiOls4LDE3LDI2LDMzLDM0LDM1LDQ0XX0seyJ3IjoicGlja2xlIiwicGF0aCI6WzEwLDE5LDI4LDI5LDIxLDMwXX0seyJ3Ijoic3lydXAiLCJwYXRoIjpbMjcsMzYsMzcsNDUsNTNdfSx7InciOiJhaW9saSIsInBhdGgiOlszMSwzOSw0Nyw1NSw2Ml19LHsidyI6InJlbGlzaCIsInBhdGgiOlszMiw0MSw1MCw1MSw1OCw1N119LHsidyI6InRhcnRhciIsInBhdGgiOlszOCw0Niw1NCw2MSw1Miw1OV19LHsidyI6InNhbHNhIiwicGF0aCI6WzQwLDQ4LDQ5LDQyLDQzXX0seyJ3IjoidmluZWdhciIsInBhdGgiOls1Niw2NCw3Myw3Miw2NSw2Niw2N119LHsidyI6ImdyYXZ5IiwicGF0aCI6WzYwLDY5LDc2LDc1LDc0XX0seyJ3IjoibXVzdGFyZCIsInBhdGgiOls2Myw3MCw3MSw3OSw3OCw3Nyw2OF19XX0="
+      },
+      {
+        "clue": "Cold-blooded companions",
+        "cols": 8,
+        "board": [
+          "ttromecc",
+          "uotoisrh",
+          "trgnorao",
+          "lcetimoc",
+          "keoeelid",
+          "ponlegil",
+          "vythouni",
+          "iepcnaza",
+          "rpotiars",
+          "erbraled"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoicmVwdGlsZXMiLCJwYXRoIjpbNjQsNTcsNTgsNjcsNjgsNzcsNzgsNzFdfSwid29yZHMiOlt7InciOiJ0dXJ0bGUiLCJwYXRoIjpbMCw4LDE3LDE2LDI0LDMzXX0seyJ3IjoidG9ydG9pc2UiLCJwYXRoIjpbMSw5LDIsMTAsMywxMiwxMyw1XX0seyJ3IjoibW9uaXRvciIsInBhdGgiOls0LDExLDE5LDI4LDI3LDIwLDIxXX0seyJ3IjoiY2hhbWVsZW9uIiwicGF0aCI6WzYsMTUsMjIsMjksMzYsNDMsMzUsMzQsNDJdfSx7InciOiJjcm9jb2RpbGUiLCJwYXRoIjpbNywxNCwyMywzMSwzMCwzOSw0NiwzNyw0NF19LHsidyI6ImdlY2tvIiwicGF0aCI6WzE4LDI2LDI1LDMyLDQxXX0seyJ3IjoiaWd1YW5hIiwicGF0aCI6WzM4LDQ1LDUzLDYxLDU0LDYzXX0seyJ3IjoicHl0aG9uIiwicGF0aCI6WzQwLDQ5LDUwLDUxLDUyLDYwXX0seyJ3IjoibGl6YXJkIiwicGF0aCI6WzQ3LDU1LDYyLDY5LDcwLDc5XX0seyJ3IjoidmlwZXIiLCJwYXRoIjpbNDgsNTYsNjUsNzIsNzNdfSx7InciOiJjb2JyYSIsInBhdGgiOls1OSw2Niw3NCw3NSw3Nl19XX0="
+      },
+      {
+        "clue": "Up, up, and away",
+        "cols": 8,
+        "board": [
+          "kitsanez",
+          "aleeepae",
+          "ipanilpp",
+          "raelpget",
+          "tkfaiahl",
+          "bacarrin",
+          "uhllsrkc",
+          "tgpoheob",
+          "lerioati",
+          "idennelp"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoidGFrZWZsaWdodCIsInBhdGgiOlszMiwyNSwzMywyNiwzNCwyNywyMCwyOSwzOCwzMV19LCJ3b3JkcyI6W3sidyI6ImtpdGUiLCJwYXRoIjpbMCwxLDIsMTBdfSx7InciOiJzZWFwbGFuZSIsInBhdGgiOlszLDExLDQsMTMsMjEsMTQsNSw2XX0seyJ3IjoiemVwcGVsaW4iLCJwYXRoIjpbNywxNSwyMiwyMywzMCwzOSw0Niw0N119LHsidyI6ImFpcnBsYW5lIiwicGF0aCI6WzgsMTYsMjQsMTcsOSwxOCwxOSwxMl19LHsidyI6InBhcmFjaHV0ZSIsInBhdGgiOlsyOCwzNyw0NCw0Myw0Miw0OSw0OCw1Niw2NV19LHsidyI6ImFpcnNoaXAiLCJwYXRoIjpbMzUsMzYsNDUsNTIsNjAsNjcsNThdfSx7InciOiJiYWxsb29uIiwicGF0aCI6WzQwLDQxLDUwLDUxLDU5LDY4LDc1XX0seyJ3Ijoicm9ja2V0IiwicGF0aCI6WzUzLDYyLDU1LDU0LDYxLDcwXX0seyJ3IjoiZ2xpZGVyIiwicGF0aCI6WzU3LDY0LDcyLDczLDc0LDY2XX0seyJ3IjoiYmlwbGFuZSIsInBhdGgiOls2Myw3MSw3OSw3OCw2OSw3Niw3N119XX0="
+      },
+      {
+        "clue": "Airing dirty laundry",
+        "cols": 8,
+        "board": [
+          "lrblemch",
+          "iadroaat",
+          "nunsosrn",
+          "sibaofee",
+          "reksctln",
+          "owteksti",
+          "hnrdlter",
+          "amikeeeg",
+          "dypnrtns",
+          "rreeniat"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibGF1bmRyb21hdCIsInBhdGgiOlswLDksMTcsMTgsMTAsMTEsMTIsNSwxNCwxNV19LCJ3b3JkcyI6W3sidyI6InJpbnNlIiwicGF0aCI6WzEsOCwxNiwyNCwzM119LHsidyI6ImJsZWFjaCIsInBhdGgiOlsyLDMsNCwxMyw2LDddfSx7InciOiJzb2Z0ZW5lciIsInBhdGgiOlsxOSwyMCwyOSwzNywzMCwyMywzMSwyMl19LHsidyI6InNvY2tzIiwicGF0aCI6WzIxLDI4LDM2LDQ0LDQ1XX0seyJ3IjoiaXJvbiIsInBhdGgiOlsyNSwzMiw0MCw0OV19LHsidyI6ImJhc2tldCIsInBhdGgiOlsyNiwyNywzNSwzNCw0Myw0Ml19LHsidyI6ImxpbnQiLCJwYXRoIjpbMzgsNDcsMzksNDZdfSx7InciOiJ3cmlua2xlIiwicGF0aCI6WzQxLDUwLDU4LDY3LDU5LDUyLDYxXX0seyJ3IjoiaGFtcGVyIiwicGF0aCI6WzQ4LDU2LDU3LDY2LDc1LDY4XX0seyJ3IjoiZGV0ZXJnZW50IiwicGF0aCI6WzUxLDYwLDUzLDU0LDU1LDYzLDYyLDcwLDY5XX0seyJ3IjoiZHJ5ZXIiLCJwYXRoIjpbNjQsNzIsNjUsNzQsNzNdfSx7InciOiJzdGFpbiIsInBhdGgiOls3MSw3OSw3OCw3Nyw3Nl19XX0="
+      },
+      {
+        "clue": "Family fun after dinner",
+        "cols": 8,
+        "board": [
+          "dmpclema",
+          "oniuhzrb",
+          "ochezele",
+          "estkcsss",
+          "iircesja",
+          "avtardct",
+          "bmeorshk",
+          "iannkghs",
+          "gndeinan",
+          "goiceamg"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZ2FtZW5pZ2h0IiwicGF0aCI6WzY0LDU3LDQ5LDUwLDU5LDY4LDYxLDU0LDQ3XX0sIndvcmRzIjpbeyJ3IjoiZG9taW5vZXMiLCJwYXRoIjpbMCw4LDEsMTAsOSwxNiwyNCwyNV19LHsidyI6InB1enpsZSIsInBhdGgiOlsyLDExLDIwLDEzLDQsNV19LHsidyI6ImNoZXNzIiwicGF0aCI6WzMsMTIsMjEsMjksMzBdfSx7InciOiJtYXJibGVzIiwicGF0aCI6WzYsNywxNCwxNSwyMiwyMywzMV19LHsidyI6ImNoZWNrZXJzIiwicGF0aCI6WzE3LDE4LDE5LDI4LDI3LDM2LDQ0LDM3XX0seyJ3IjoidHJpdmlhIiwicGF0aCI6WzI2LDM0LDMzLDQxLDMyLDQwXX0seyJ3IjoiY2FyZHMiLCJwYXRoIjpbMzUsNDMsNTIsNDUsNTNdfSx7InciOiJqYWNrcyIsInBhdGgiOlszOCwzOSw0Niw1NSw2M119LHsidyI6InRva2VuIiwicGF0aCI6WzQyLDUxLDYwLDY3LDU4XX0seyJ3IjoiYmluZ28iLCJwYXRoIjpbNDgsNTYsNjUsNzIsNzNdfSx7InciOiJoYW5nbWFuIiwicGF0aCI6WzYyLDcwLDcxLDc5LDc4LDc3LDY5XX0seyJ3IjoiZGljZSIsInBhdGgiOls2Niw3NCw3NSw3Nl19XX0="
+      },
+      {
+        "clue": "Feel the burn",
+        "cols": 8,
+        "board": [
+          "ldmpsitc",
+          "uuubupur",
+          "ngshbeup",
+          "pleyogln",
+          "itatllac",
+          "rdmielhj",
+          "eaasweao",
+          "akbssqgt",
+          "eraltuig",
+          "brbelagn"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYnJlYWthc3dlYXQiLCJwYXRoIjpbNzIsNjUsNjQsNTYsNTcsNTAsNTksNTIsNTMsNTQsNjNdfSwid29yZHMiOlt7InciOiJsdW5nZSIsInBhdGgiOlswLDgsMTYsMTcsMjZdfSx7InciOiJkdW1iYmVsbCIsInBhdGgiOlsxLDksMiwxMSwyMCwyMSwzMCwzN119LHsidyI6InB1c2h1cCIsInBhdGgiOlszLDEwLDE4LDE5LDEyLDEzXX0seyJ3Ijoic2l0dXAiLCJwYXRoIjpbNCw1LDYsMTQsMjNdfSx7InciOiJjcnVuY2giLCJwYXRoIjpbNywxNSwyMiwzMSwzOSw0Nl19LHsidyI6InBpbGF0ZXMiLCJwYXRoIjpbMjQsMzIsMjUsMzQsMzUsNDQsNTFdfSx7InciOiJ5b2dhIiwicGF0aCI6WzI3LDI4LDI5LDM4XX0seyJ3IjoidHJlYWRtaWxsIiwicGF0aCI6WzMzLDQwLDQ4LDQ5LDQxLDQyLDQzLDM2LDQ1XX0seyJ3Ijoiam9nZ2luZyIsInBhdGgiOls0Nyw1NSw2Miw3MSw3MCw3OSw3OF19LHsidyI6ImJhcmJlbGwiLCJwYXRoIjpbNTgsNjYsNzMsNzQsNzUsNjcsNzZdfSx7InciOiJzcXVhdCIsInBhdGgiOls2MCw2MSw2OSw3Nyw2OF19XX0="
+      },
+      {
+        "clue": "Best in show",
+        "cols": 8,
+        "board": [
+          "hbsrtcer",
+          "oueeptol",
+          "sxmaowle",
+          "bkseohii",
+          "aeytlddp",
+          "glifeeps",
+          "debrfdte",
+          "ogptarai",
+          "noerelnt",
+          "iterrima"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZG9nYnJlZWRzIiwicGF0aCI6WzQ4LDU2LDU3LDUwLDUxLDQ0LDQ1LDM4LDQ3XX0sIndvcmRzIjpbeyJ3IjoiaHVza3kiLCJwYXRoIjpbMCw5LDE2LDI1LDM0XX0seyJ3IjoiYm94ZXIiLCJwYXRoIjpbMSw4LDE3LDEwLDNdfSx7InciOiJzZXR0ZXIiLCJwYXRoIjpbMiwxMSw0LDEzLDYsN119LHsidyI6ImNvbGxpZSIsInBhdGgiOls1LDE0LDE1LDIyLDMxLDIzXX0seyJ3IjoicG9vZGxlIiwicGF0aCI6WzEyLDIwLDI4LDM3LDM2LDI3XX0seyJ3IjoibWFzdGlmZiIsInBhdGgiOlsxOCwxOSwyNiwzNSw0Miw0Myw1Ml19LHsidyI6IndoaXBwZXQiLCJwYXRoIjpbMjEsMjksMzAsMzksNDYsNTUsNTRdfSx7InciOiJiZWFnbGUiLCJwYXRoIjpbMjQsMzMsMzIsNDAsNDEsNDldfSx7InciOiJkYWxtYXRpYW4iLCJwYXRoIjpbNTMsNjAsNjksNzgsNzksNzEsNjMsNjIsNzBdfSx7InciOiJwb2ludGVyIiwicGF0aCI6WzU4LDY1LDcyLDY0LDczLDc0LDc1XX0seyJ3IjoidGVycmllciIsInBhdGgiOls1OSw2Niw2Nyw3Niw3Nyw2OCw2MV19XX0="
+      },
+      {
+        "clue": "Jewelry box",
+        "cols": 8,
+        "board": [
+          "acorgrdi",
+          "bgataana",
+          "esaelaem",
+          "rjlpbmot",
+          "ayzperne",
+          "dmsihdrm",
+          "eertitea",
+          "gceroodl",
+          "opozpnes",
+          "alnaonyx"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZ2Vtc3RvbmVzIiwicGF0aCI6WzU2LDQ4LDQxLDQyLDUxLDYwLDY5LDcwLDcxXX0sIndvcmRzIjpbeyJ3IjoiYWdhdGUiLCJwYXRoIjpbMCw5LDEwLDExLDE5XX0seyJ3IjoiY29yYWwiLCJwYXRoIjpbMSwyLDMsMTIsMjBdfSx7InciOiJnYXJuZXQiLCJwYXRoIjpbNCwxMyw1LDE0LDIyLDMxXX0seyJ3IjoiZGlhbW9uZCIsInBhdGgiOls2LDcsMTUsMjMsMzAsMzgsNDVdfSx7InciOiJiZXJ5bCIsInBhdGgiOls4LDE2LDI0LDMzLDI2XX0seyJ3Ijoic2FwcGhpcmUiLCJwYXRoIjpbMTcsMTgsMjcsMzUsNDQsNTIsNTksNThdfSx7InciOiJhbWJlciIsInBhdGgiOlsyMSwyOSwyOCwzNiwzN119LHsidyI6ImphZGUiLCJwYXRoIjpbMjUsMzIsNDAsNDldfSx7InciOiJ6aXJjb24iLCJwYXRoIjpbMzQsNDMsNTAsNTcsNjYsNzRdfSx7InciOiJlbWVyYWxkIiwicGF0aCI6WzM5LDQ3LDU0LDQ2LDU1LDYzLDYyXX0seyJ3IjoidG9wYXoiLCJwYXRoIjpbNTMsNjEsNjgsNzUsNjddfSx7InciOiJvcGFsIiwicGF0aCI6WzY0LDY1LDcyLDczXX0seyJ3Ijoib255eCIsInBhdGgiOls3Niw3Nyw3OCw3OV19XX0="
+      },
+      {
+        "clue": "Legendary creatures",
+        "cols": 8,
+        "board": [
+          "cmnotirh",
+          "etirtuty",
+          "naumarad",
+          "undbemnr",
+          "icaiaeap",
+          "wornpeoh",
+          "yrnsheae",
+          "venagcnl",
+          "syssinxi",
+          "muthphix"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibXl0aGljYWwiLCJwYXRoIjpbNzIsNjUsNzQsNzUsNjgsNjEsNTQsNjNdfSwid29yZHMiOlt7InciOiJjZW50YXVyIiwicGF0aCI6WzAsOCwxNiw5LDE3LDE4LDExXX0seyJ3IjoibWlub3RhdXIiLCJwYXRoIjpbMSwxMCwyLDMsMTIsMjAsMTMsNl19LHsidyI6InRpdGFuIiwicGF0aCI6WzQsNSwxNCwyMiwzMF19LHsidyI6Imh5ZHJhIiwicGF0aCI6WzcsMTUsMjMsMzEsMzhdfSx7InciOiJtZXJtYWlkIiwicGF0aCI6WzE5LDI4LDIxLDI5LDM2LDM1LDI2XX0seyJ3IjoidW5pY29ybiIsInBhdGgiOlsyNCwyNSwzMiwzMyw0MSw0Miw1MF19LHsidyI6ImJhbnNoZWUiLCJwYXRoIjpbMjcsMzQsNDMsNTEsNTIsNDUsMzddfSx7InciOiJwaG9lbml4IiwicGF0aCI6WzM5LDQ3LDQ2LDU1LDYyLDcxLDc5XX0seyJ3Ijoid3l2ZXJuIiwicGF0aCI6WzQwLDQ4LDU2LDU3LDQ5LDU4XX0seyJ3IjoicGVnYXN1cyIsInBhdGgiOls0NCw1Myw2MCw1OSw2Niw3Myw2NF19LHsidyI6InNwaGlueCIsInBhdGgiOls2Nyw3Niw3Nyw3OCw2OSw3MF19XX0="
+      },
+      {
+        "clue": "Happy campers",
+        "cols": 8,
+        "board": [
+          "bcomaham",
+          "akamstcm",
+          "ccpsckoh",
+          "aktalcne",
+          "pcetnats",
+          "akntinne",
+          "midlegtr",
+          "pneenmrh",
+          "firgouoe",
+          "camprsnd"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY2FtcGdyb3VuZCIsInBhdGgiOls3Miw3Myw3NCw3NSw2Nyw3Niw2OCw2OSw3OCw3OV19LCJ3b3JkcyI6W3sidyI6ImJhY2twYWNrIiwicGF0aCI6WzAsOCwxNywyNSwzMiwyNCwxNiw5XX0seyJ3IjoiY29tcGFzcyIsInBhdGgiOlsxLDIsMTEsMTgsMTAsMTksMTJdfSx7InciOiJtYXRjaGVzIiwicGF0aCI6WzMsNCwxMywxNCwyMywzMSwzOV19LHsidyI6ImhhbW1vY2siLCJwYXRoIjpbNSw2LDcsMTUsMjIsMjksMjFdfSx7InciOiJjYW50ZWVuIiwicGF0aCI6WzIwLDI3LDM2LDQzLDUyLDU5LDYwXX0seyJ3IjoidGVudCIsInBhdGgiOlsyNiwzNCw0MiwzNV19LHsidyI6ImxhbnRlcm4iLCJwYXRoIjpbMjgsMzcsMzAsMzgsNDcsNTUsNDZdfSx7InciOiJjYW1wZmlyZSIsInBhdGgiOlszMyw0MCw0OCw1Niw2NCw2NSw2Niw1OF19LHsidyI6ImtpbmRsaW5nIiwicGF0aCI6WzQxLDQ5LDU3LDUwLDUxLDQ0LDQ1LDUzXX0seyJ3IjoidGhlcm1vcyIsInBhdGgiOls1NCw2Myw3MSw2Miw2MSw3MCw3N119XX0="
+      },
+      {
+        "clue": "Weather report",
+        "cols": 8,
+        "board": [
+          "dstormra",
+          "brmzsnig",
+          "reiiztla",
+          "ezelshae",
+          "forheali",
+          "cloecwst",
+          "ofwsidcy",
+          "ruenonce",
+          "odrtwrnl",
+          "sthundeo"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZm9yZWNhc3QiLCJwYXRoIjpbMzIsMzMsMzQsNDMsNDQsMzcsNDYsNDddfSwid29yZHMiOlt7InciOiJkcml6emxlIiwicGF0aCI6WzAsOSwxOCwxMSwyMCwyNywzNl19LHsidyI6InN0b3JtIiwicGF0aCI6WzEsMiwzLDQsNV19LHsidyI6InJhaW4iLCJwYXRoIjpbNiw3LDE0LDEzXX0seyJ3IjoiYnJlZXplIiwicGF0aCI6WzgsMTYsMTcsMjQsMjUsMjZdfSx7InciOiJtaXN0IiwicGF0aCI6WzEwLDE5LDEyLDIxXX0seyJ3IjoiZ2FsZSIsInBhdGgiOlsxNSwyMywyMiwzMV19LHsidyI6InNob3dlciIsInBhdGgiOlsyOCwzNSw0Miw1MCw1OCw2Nl19LHsidyI6ImhhaWwiLCJwYXRoIjpbMjksMzAsMzksMzhdfSx7InciOiJjbG91ZCIsInBhdGgiOls0MCw0MSw0OCw1Nyw2NV19LHsidyI6IndpbmQiLCJwYXRoIjpbNDUsNTIsNjEsNTNdfSx7InciOiJmcm9zdCIsInBhdGgiOls0OSw1Niw2NCw3Miw3M119LHsidyI6InNub3ciLCJwYXRoIjpbNTEsNTksNjAsNjhdfSx7InciOiJjeWNsb25lIiwicGF0aCI6WzU0LDU1LDYyLDcxLDc5LDcwLDYzXX0seyJ3IjoidGh1bmRlciIsInBhdGgiOls2Nyw3NCw3NSw3Niw3Nyw3OCw2OV19XX0="
+      },
+      {
+        "clue": "Ahoy, matey",
+        "cols": 8,
+        "board": [
+          "kenenpar",
+          "rkyaceer",
+          "accetrrs",
+          "auhpaoep",
+          "bncodtwy",
+          "gcurocgl",
+          "aletucha",
+          "lolnobas",
+          "nplaolsn",
+          "knassnon"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYnVjY2FuZWVyIiwicGF0aCI6WzMyLDI1LDE3LDE4LDExLDQsMTMsMTQsN119LCJ3b3JkcyI6W3sidyI6ImtyYWtlbiIsInBhdGgiOlswLDgsMTYsOSwxLDJdfSx7InciOiJleWVwYXRjaCIsInBhdGgiOlszLDEwLDE5LDI3LDI4LDM3LDQ1LDU0XX0seyJ3IjoicGFycm90IiwicGF0aCI6WzUsNiwxNSwyMiwyOSwyMF19LHsidyI6ImNyZXciLCJwYXRoIjpbMTIsMjEsMzAsMzhdfSx7InciOiJzcHlnbGFzcyIsInBhdGgiOlsyMywzMSwzOSw0Niw0Nyw1NSw2Myw3MF19LHsidyI6ImFuY2hvciIsInBhdGgiOlsyNCwzMywzNCwyNiwzNSw0M119LHsidyI6ImRvdWJsb29uIiwicGF0aCI6WzM2LDQ0LDUyLDYxLDY5LDY4LDYwLDU5XX0seyJ3IjoiZ2FsbGVvbiIsInBhdGgiOls0MCw0OCw1Niw0OSw1MCw1Nyw2NF19LHsidyI6ImN1dGxhc3MiLCJwYXRoIjpbNDEsNDIsNTEsNTgsNjcsNzUsNzZdfSx7InciOiJjYW5ub24iLCJwYXRoIjpbNTMsNjIsNzEsNzksNzgsNzddfSx7InciOiJwbGFuayIsInBhdGgiOls2NSw2Niw3NCw3Myw3Ml19XX0="
+      },
+      {
+        "clue": "Pocket change",
+        "cols": 8,
+        "board": [
+          "dleurrpe",
+          "olaropus",
+          "pfrdewlo",
+          "ounaeeal",
+          "dimntncy",
+          "secbelol",
+          "hirrilfd",
+          "culipkro",
+          "qrlnreyn",
+          "uategnna"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY3VycmVuY3kiLCJwYXRoIjpbNTYsNTcsNTAsNTEsNDQsMzcsMzgsMzldfSwid29yZHMiOlt7InciOiJkb2xsYXIiLCJwYXRoIjpbMCw4LDksMSwxMCwxMV19LHsidyI6ImV1cm8iLCJwYXRoIjpbMiwzLDQsMTJdfSx7InciOiJydXBlZSIsInBhdGgiOls1LDE0LDEzLDIwLDI4XX0seyJ3IjoicGVzbyIsInBhdGgiOls2LDcsMTUsMjNdfSx7InciOiJwb3VuZCIsInBhdGgiOlsxNiwyNCwyNSwyNiwxOV19LHsidyI6ImZyYW5jIiwicGF0aCI6WzE3LDE4LDI3LDM1LDQyXX0seyJ3Ijoid2FsbGV0IiwicGF0aCI6WzIxLDMwLDMxLDIyLDI5LDM2XX0seyJ3IjoiZGltZSIsInBhdGgiOlszMiwzMywzNCw0MV19LHsidyI6InNoaWxsaW5nIiwicGF0aCI6WzQwLDQ4LDQ5LDU4LDY2LDU5LDY3LDc2XX0seyJ3IjoiYmlsbGZvbGQiLCJwYXRoIjpbNDMsNTIsNDUsNTMsNTQsNDYsNDcsNTVdfSx7InciOiJwZW5ueSIsInBhdGgiOls2MCw2OSw3OCw3Nyw3MF19LHsidyI6Imtyb25hIiwicGF0aCI6WzYxLDYyLDYzLDcxLDc5XX0seyJ3IjoicXVhcnRlciIsInBhdGgiOls2NCw3Miw3Myw2NSw3NCw3NSw2OF19XX0="
+      },
+      {
+        "clue": "Down on the farm",
+        "cols": 8,
+        "board": [
+          "lmhdpiet",
+          "abosulgc",
+          "lirsecka",
+          "dvettcfl",
+          "mokyuohk",
+          "uncericl",
+          "layekacl",
+          "ettlekma",
+          "shegngos",
+          "peeoateo"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibGl2ZXN0b2NrIiwicGF0aCI6WzE2LDE3LDI1LDI2LDE5LDI4LDM3LDQ2LDM5XX0sIndvcmRzIjpbeyJ3IjoibGFtYiIsInBhdGgiOlswLDgsMSw5XX0seyJ3IjoiaG9yc2UiLCJwYXRoIjpbMiwxMCwxOCwxMSwyMF19LHsidyI6ImR1Y2siLCJwYXRoIjpbMywxMiwyMSwyMl19LHsidyI6InBpZ2xldCIsInBhdGgiOls0LDUsMTQsMTMsNiw3XX0seyJ3IjoiY2FsZiIsInBhdGgiOlsxNSwyMywzMSwzMF19LHsidyI6ImRvbmtleSIsInBhdGgiOlsyNCwzMyw0MSwzNCw0MywzNV19LHsidyI6InR1cmtleSIsInBhdGgiOlsyNywzNiw0NCw1Miw1MSw1MF19LHsidyI6ImNoaWNrZW4iLCJwYXRoIjpbMjksMzgsNDUsNTQsNjEsNjAsNjhdfSx7InciOiJtdWxlIiwicGF0aCI6WzMyLDQwLDQ4LDU2XX0seyJ3IjoiY2F0dGxlIiwicGF0aCI6WzQyLDQ5LDU3LDU4LDU5LDY2XX0seyJ3IjoibGxhbWEiLCJwYXRoIjpbNDcsNTUsNjMsNjIsNTNdfSx7InciOiJzaGVlcCIsInBhdGgiOls2NCw2NSw3NCw3Myw3Ml19LHsidyI6ImdvYXQiLCJwYXRoIjpbNjcsNzUsNzYsNzddfSx7InciOiJnb29zZSIsInBhdGgiOls2OSw3MCw3OSw3MSw3OF19XX0="
+      },
+      {
+        "clue": "Look to the night sky",
+        "cols": 8,
+        "board": [
+          "ctconovo",
+          "eosmosra",
+          "msromibp",
+          "attentuy",
+          "rqeagoml",
+          "mousalsa",
+          "ooanears",
+          "ncrubxrt",
+          "ereclyea",
+          "rtaalips"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYXN0cm9ub215IiwicGF0aCI6WzI0LDE3LDI1LDE4LDE5LDI4LDM3LDM4LDMxXX0sIndvcmRzIjpbeyJ3IjoiY29tZXQiLCJwYXRoIjpbMCw5LDE2LDgsMV19LHsidyI6ImNvc21vcyIsInBhdGgiOlsyLDMsMTAsMTEsMTIsMTNdfSx7InciOiJub3ZhIiwicGF0aCI6WzQsNSw2LDE1XX0seyJ3Ijoib3JiaXQiLCJwYXRoIjpbNywxNCwyMiwyMSwyOV19LHsidyI6Im1ldGVvciIsInBhdGgiOlsyMCwyNywyNiwzNCw0MSwzMl19LHsidyI6InB1bHNhciIsInBhdGgiOlsyMywzMCwzOSw0Niw0Nyw1NF19LHsidyI6InF1YXNhciIsInBhdGgiOlszMyw0MiwzNSw0Myw1MCw1OF19LHsidyI6ImdhbGF4eSIsInBhdGgiOlszNiw0NCw0NSw1Myw2MSw2OV19LHsidyI6Im1vb24iLCJwYXRoIjpbNDAsNDgsNDksNTZdfSx7InciOiJuZWJ1bGEiLCJwYXRoIjpbNTEsNTIsNjAsNTksNjgsNzVdfSx7InciOiJzdGFyIiwicGF0aCI6WzU1LDYzLDcxLDYyXX0seyJ3IjoiY3JhdGVyIiwicGF0aCI6WzU3LDY1LDc0LDczLDY0LDcyXX0seyJ3IjoiZWNsaXBzZSIsInBhdGgiOls2Niw2Nyw3Niw3Nyw3OCw3OSw3MF19XX0="
+      },
+      {
+        "clue": "Paint swatches",
+        "cols": 8,
+        "board": [
+          "sobevgdl",
+          "clteiiot",
+          "aeivgole",
+          "rlmevini",
+          "claueagd",
+          "oorchozu",
+          "ocrwcerl",
+          "hnisoeer",
+          "eromrmlu",
+          "nooraats"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY29sb3J3aGVlbCIsInBhdGgiOlszMiw0MCwzMyw0MSw0Miw1MSw0NCw1Myw2Miw1NV19LCJ3b3JkcyI6W3sidyI6InNjYXJsZXQiLCJwYXRoIjpbMCw4LDE2LDI0LDI1LDE3LDEwXX0seyJ3Ijoib2xpdmUiLCJwYXRoIjpbMSw5LDE4LDE5LDExXX0seyJ3IjoiYmVpZ2UiLCJwYXRoIjpbMiwzLDEyLDIwLDI3XX0seyJ3IjoidmlvbGV0IiwicGF0aCI6WzQsMTMsMjEsMjIsMjMsMTVdfSx7InciOiJnb2xkIiwicGF0aCI6WzUsMTQsNyw2XX0seyJ3IjoibWF1dmUiLCJwYXRoIjpbMjYsMzQsMzUsMjgsMzZdfSx7InciOiJpbmRpZ28iLCJwYXRoIjpbMjksMzAsMzksMzEsMzgsNDVdfSx7InciOiJhenVyZSIsInBhdGgiOlszNyw0Niw0Nyw1NCw2MV19LHsidyI6ImNyaW1zb24iLCJwYXRoIjpbNDMsNTAsNTgsNjcsNTksNjYsNTddfSx7InciOiJvY2hyZSIsInBhdGgiOls0OCw0OSw1Niw2NSw2NF19LHsidyI6ImNvcmFsIiwicGF0aCI6WzUyLDYwLDY4LDc3LDcwXX0seyJ3IjoicnVzdCIsInBhdGgiOls2Myw3MSw3OSw3OF19LHsidyI6Im1hcm9vbiIsInBhdGgiOls2OSw3Niw3NSw3NCw3Myw3Ml19XX0="
+      },
+      {
+        "clue": "In the fruit bowl",
+        "cols": 8,
+        "board": [
+          "chlimppa",
+          "meryaeep",
+          "elrapapm",
+          "gnopyrla",
+          "orabeaen",
+          "rananaga",
+          "frtgeonp",
+          "uipsalae",
+          "loluhcad",
+          "menmkiwi"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZnJ1aXRzYWxhZCIsInBhdGgiOls0OCw0OSw1Niw1Nyw1MCw1OSw2MCw2MSw3MCw3MV19LCJ3b3JkcyI6W3sidyI6ImNoZXJyeSIsInBhdGgiOlswLDEsOSwxOCwxMCwxMV19LHsidyI6ImxpbWUiLCJwYXRoIjpbMiwzLDQsMTNdfSx7InciOiJwYXBheWEiLCJwYXRoIjpbNSwxMiwyMCwxOSwyOCwzN119LHsidyI6InBlYXIiLCJwYXRoIjpbNiwxNCwyMSwyOV19LHsidyI6ImFwcGxlIiwicGF0aCI6WzcsMTUsMjIsMzAsMzhdfSx7InciOiJtZWxvbiIsInBhdGgiOls4LDE2LDE3LDI2LDI1XX0seyJ3IjoibWFuZ28iLCJwYXRoIjpbMjMsMzEsMzksNDYsNTNdfSx7InciOiJncmFwZSIsInBhdGgiOlsyNCwzMywzNCwyNywzNl19LHsidyI6Im9yYW5nZSIsInBhdGgiOlszMiw0MCw0MSw0Miw1MSw1Ml19LHsidyI6ImJhbmFuYSIsInBhdGgiOlszNSw0Myw0NCw0NSw1NCw0N119LHsidyI6InBlYWNoIiwicGF0aCI6WzU1LDYzLDYyLDY5LDY4XX0seyJ3IjoicGx1bSIsInBhdGgiOls1OCw2Niw2Nyw3NV19LHsidyI6ImxlbW9uIiwicGF0aCI6WzY0LDczLDcyLDY1LDc0XX0seyJ3Ijoia2l3aSIsInBhdGgiOls3Niw3Nyw3OCw3OV19XX0="
+      },
+      {
+        "clue": "Sweet dreams",
+        "cols": 8,
+        "board": [
+          "powdreas",
+          "ilqilymi",
+          "mlutawne",
+          "tasnoasc",
+          "trssoptr",
+          "ledzzada",
+          "lioejels",
+          "lugaerel",
+          "lyhambuu",
+          "abstsomt"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibGlnaHRzb3V0IiwicGF0aCI6WzQwLDQ5LDU4LDY2LDc1LDc2LDc3LDcwLDc5XX0sIndvcmRzIjpbeyJ3IjoicGlsbG93IiwicGF0aCI6WzAsOCwxNyw5LDEsMl19LHsidyI6ImRyZWFtIiwicGF0aCI6WzMsNCw1LDYsMTRdfSx7InciOiJzaWVzdGEiLCJwYXRoIjpbNywxNSwyMywzMCwzOCwyOV19LHsidyI6InF1aWx0IiwicGF0aCI6WzEwLDE4LDExLDEyLDE5XX0seyJ3IjoieWF3biIsInBhdGgiOlsxMywyMCwyMSwyMl19LHsidyI6Im1hdHRyZXNzIiwicGF0aCI6WzE2LDI1LDI0LDMyLDMzLDQxLDM0LDM1XX0seyJ3Ijoic25vb3plIiwicGF0aCI6WzI2LDI3LDI4LDM2LDQ0LDUzXX0seyJ3IjoiY3JhZGxlIiwicGF0aCI6WzMxLDM5LDQ3LDQ2LDU0LDYyXX0seyJ3IjoicGFqYW1hcyIsInBhdGgiOlszNyw0NSw1Miw1OSw2OCw2Nyw3NF19LHsidyI6ImRvemUiLCJwYXRoIjpbNDIsNTAsNDMsNTFdfSx7InciOiJsdWxsYWJ5IiwicGF0aCI6WzQ4LDU3LDU2LDY0LDcyLDczLDY1XX0seyJ3Ijoic2x1bWJlciIsInBhdGgiOls1NSw2Myw3MSw3OCw2OSw2MCw2MV19XX0="
+      },
+      {
+        "clue": "Under the hood",
+        "cols": 8,
+        "board": [
+          "ugarathr",
+          "atsdelto",
+          "tkoiatlt",
+          "memocioe",
+          "auflbhbr",
+          "lxefwsar",
+          "erbsiisa",
+          "igmuepfk",
+          "epnireee",
+          "ritondnr"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYXV0b21vYmlsZSIsInBhdGgiOls4LDAsOSwxOCwyNiwyNywzNiwyOSwyMiwzMV19LCJ3b3JkcyI6W3sidyI6Imdhc2tldCIsInBhdGgiOlsxLDIsMTAsMTcsMjUsMTZdfSx7InciOiJyYWRpYXRvciIsInBhdGgiOlszLDQsMTEsMTksMjAsMjEsMzAsMzldfSx7InciOiJ0aHJvdHRsZSIsInBhdGgiOls1LDYsNywxNSwyMywxNCwxMywxMl19LHsidyI6Im11ZmZsZXIiLCJwYXRoIjpbMjQsMzMsMzQsNDMsMzUsNDIsNDldfSx7InciOiJjaGFzc2lzIiwicGF0aCI6WzI4LDM3LDQ2LDU0LDQ1LDUyLDUxXX0seyJ3IjoiYXhsZSIsInBhdGgiOlszMiw0MSw0MCw0OF19LHsidyI6ImJyYWtlIiwicGF0aCI6WzM4LDQ3LDU1LDYzLDcxXX0seyJ3Ijoid2lwZXIiLCJwYXRoIjpbNDQsNTMsNjEsNjAsNjhdfSx7InciOiJidW1wZXIiLCJwYXRoIjpbNTAsNTksNTgsNjUsNjQsNzJdfSx7InciOiJpZ25pdGlvbiIsInBhdGgiOls1Niw1Nyw2Niw3Myw3NCw2Nyw3NSw3Nl19LHsidyI6ImZlbmRlciIsInBhdGgiOls2Miw2OSw3OCw3Nyw3MCw3OV19XX0="
+      }
+    ]
+  },
+  "byDifficulty": {
+    "easy": [
+      {
+        "clue": "On your feet",
+        "cols": 6,
+        "board": [
+          "ftwwad",
+          "loteer",
+          "oagrac",
+          "flalol",
+          "soohmg",
+          "alsreo",
+          "finpcc",
+          "repisa"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZm9vdHdlYXIiLCJwYXRoIjpbMTgsMTIsNywxLDIsOSwxNiwxMV19LCJ3b3JkcyI6W3sidyI6ImZsYXQiLCJwYXRoIjpbMCw2LDEzLDhdfSx7InciOiJ3YWRlciIsInBhdGgiOlszLDQsNSwxMCwxNV19LHsidyI6ImdhbG9zaCIsInBhdGgiOlsxNCwyMCwyMSwyNiwzMiwyN119LHsidyI6ImNsb2ciLCJwYXRoIjpbMTcsMjMsMjIsMjldfSx7InciOiJsb2FmZXIiLCJwYXRoIjpbMTksMjUsMzAsMzYsNDMsNDJdfSx7InciOiJzbGlwcGVyIiwicGF0aCI6WzI0LDMxLDM3LDQ0LDM5LDM0LDMzXX0seyJ3IjoibW9jY2FzaW4iLCJwYXRoIjpbMjgsMzUsNDAsNDEsNDcsNDYsNDUsMzhdfV19"
+      },
+      {
+        "clue": "In bloom",
+        "cols": 6,
+        "board": [
+          "poiris",
+          "ppeted",
+          "pyrbum",
+          "feoina",
+          "wlglri",
+          "doldat",
+          "ayicul",
+          "silapi"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZmxvd2VyYmVkIiwicGF0aCI6WzE4LDI1LDMxLDI0LDE5LDE0LDE1LDEwLDExXX0sIndvcmRzIjpbeyJ3IjoicG9wcHkiLCJwYXRoIjpbMCwxLDYsMTIsMTNdfSx7InciOiJpcmlzIiwicGF0aCI6WzIsMyw0LDVdfSx7InciOiJwZXR1bmlhIiwicGF0aCI6WzcsOCw5LDE2LDIyLDI5LDM0XX0seyJ3IjoibWFyaWdvbGQiLCJwYXRoIjpbMTcsMjMsMjgsMjEsMjYsMjAsMjcsMzNdfSx7InciOiJkYWlzeSIsInBhdGgiOlszMCwzNiw0Myw0MiwzN119LHsidyI6ImxpbGFjIiwicGF0aCI6WzMyLDM4LDQ0LDQ1LDM5XX0seyJ3IjoidHVsaXAiLCJwYXRoIjpbMzUsNDAsNDEsNDcsNDZdfV19"
+      },
+      {
+        "clue": "Bird watching",
+        "cols": 6,
+        "board": [
+          "swwbiw",
+          "aogras",
+          "llntdr",
+          "sohebl",
+          "urrcla",
+          "oscihr",
+          "rhekdk",
+          "iolaee"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3Ijoic29uZ2JpcmRzIiwicGF0aCI6WzE4LDE5LDE0LDgsMyw0LDksMTYsMTFdfSwid29yZHMiOlt7InciOiJzd2FsbG93IiwicGF0aCI6WzAsMSw2LDEzLDEyLDcsMl19LHsidyI6IndhcmJsZXIiLCJwYXRoIjpbNSwxMCwxNywyMiwyOCwyMSwyNl19LHsidyI6InRocnVzaCIsInBhdGgiOlsxNSwyMCwyNSwyNCwzMSwzN119LHsidyI6ImxhcmsiLCJwYXRoIjpbMjMsMjksMzUsNDFdfSx7InciOiJjaGlja2FkZWUiLCJwYXRoIjpbMjcsMzQsMzMsMzIsMzksNDUsNDAsNDYsNDddfSx7InciOiJvcmlvbGUiLCJwYXRoIjpbMzAsMzYsNDIsNDMsNDQsMzhdfV19"
+      },
+      {
+        "clue": "Cold-blooded companions",
+        "cols": 6,
+        "board": [
+          "tustor",
+          "vrkito",
+          "tinesi",
+          "lkperp",
+          "geohty",
+          "censel",
+          "rknais",
+          "oeptke"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoicmVwdGlsZXMiLCJwYXRoIjpbMzYsNDMsNDQsNDUsNDAsMzUsMzQsNDFdfSwid29yZHMiOlt7InciOiJ0dXJ0bGUiLCJwYXRoIjpbMCwxLDcsMTIsMTgsMjVdfSx7InciOiJza2luayIsInBhdGgiOlsyLDgsOSwxNCwxOV19LHsidyI6InRvcnRvaXNlIiwicGF0aCI6WzMsNCw1LDEwLDExLDE3LDE2LDE1XX0seyJ3IjoidmlwZXIiLCJwYXRoIjpbNiwxMywyMCwyMSwyMl19LHsidyI6InB5dGhvbiIsInBhdGgiOlsyMywyOSwyOCwyNywyNiwzMl19LHsidyI6ImdlY2tvIiwicGF0aCI6WzI0LDMxLDMwLDM3LDQyXX0seyJ3Ijoic25ha2UiLCJwYXRoIjpbMzMsMzgsMzksNDYsNDddfV19"
+      },
+      {
+        "clue": "Picture perfect",
+        "cols": 6,
+        "board": [
+          "zotase",
+          "ooieri",
+          "pmrtlf",
+          "ogrnph",
+          "stuaet",
+          "ohtgai",
+          "fhmtev",
+          "praeer"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoicGhvdG9ncmFwaCIsInBhdGgiOls0MiwzNywzMCwyNSwxOCwxOSwyMCwyNywyMiwyM119LCJ3b3JkcyI6W3sidyI6Inpvb20iLCJwYXRoIjpbMCwxLDYsMTNdfSx7InciOiJwb3J0cmFpdCIsInBhdGgiOlsxMiw3LDE0LDE1LDEwLDMsOCwyXX0seyJ3Ijoic2VsZmllIiwicGF0aCI6WzQsOSwxNiwxNywxMSw1XX0seyJ3IjoibmVnYXRpdmUiLCJwYXRoIjpbMjEsMjgsMzMsMzQsMjksMzUsNDEsNDBdfSx7InciOiJzaHV0dGVyIiwicGF0aCI6WzI0LDMxLDI2LDMyLDM5LDQ2LDQ3XX0seyJ3IjoiZnJhbWUiLCJwYXRoIjpbMzYsNDMsNDQsMzgsNDVdfV19"
+      },
+      {
+        "clue": "On the side",
+        "cols": 6,
+        "board": [
+          "mtschs",
+          "auentu",
+          "rmsynt",
+          "doiyek",
+          "cndrce",
+          "svpuht",
+          "laiupa",
+          "sanegr"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY29uZGltZW50cyIsInBhdGgiOlsyNCwxOSwyNSwyNiwyMCwxMyw4LDksMTAsNV19LCJ3b3JkcyI6W3sidyI6Im11c3RhcmQiLCJwYXRoIjpbMCw3LDIsMSw2LDEyLDE4XX0seyJ3IjoiY2h1dG5leSIsInBhdGgiOlszLDQsMTEsMTcsMTYsMjIsMTVdfSx7InciOiJzeXJ1cCIsInBhdGgiOlsxNCwyMSwyNywzMyw0MF19LHsidyI6ImtldGNodXAiLCJwYXRoIjpbMjMsMjksMzUsMjgsMzQsMzksMzJdfSx7InciOiJzYWxzYSIsInBhdGgiOlszMCwzNywzNiw0Miw0M119LHsidyI6InZpbmVnYXIiLCJwYXRoIjpbMzEsMzgsNDQsNDUsNDYsNDEsNDddfV19"
+      },
+      {
+        "clue": "Best in show",
+        "cols": 6,
+        "board": [
+          "msicot",
+          "patfer",
+          "aesrfg",
+          "rnirpi",
+          "ielreo",
+          "brecit",
+          "dgoeen",
+          "ollids"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZG9nYnJlZWRzIiwicGF0aCI6WzM2LDQyLDM3LDMwLDMxLDMyLDM5LDQ2LDQ3XX0sIndvcmRzIjpbeyJ3IjoibWFzdGlmZiIsInBhdGgiOlswLDcsMTQsOCwyLDksMTZdfSx7InciOiJzcGFuaWVsIiwicGF0aCI6WzEsNiwxMiwxOSwyNCwyNSwyNl19LHsidyI6ImNvcmdpIiwicGF0aCI6WzMsNCwxMSwxNywyM119LHsidyI6InRlcnJpZXIiLCJwYXRoIjpbNSwxMCwxNSwyMSwyMCwxMywxOF19LHsidyI6InBvaW50ZXIiLCJwYXRoIjpbMjIsMjksMzQsNDEsMzUsMjgsMjddfSx7InciOiJjb2xsaWUiLCJwYXRoIjpbMzMsMzgsNDMsNDQsNDUsNDBdfV19"
+      },
+      {
+        "clue": "In the tool shed",
+        "cols": 6,
+        "board": [
+          "vdilfs",
+          "irelai",
+          "savlnl",
+          "neeced",
+          "vdlale",
+          "irwmre",
+          "alparc",
+          "hlesih"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiaGFyZHdhcmUiLCJwYXRoIjpbNDIsMzYsMzEsMjUsMzIsMzksNDAsMzVdfSwid29yZHMiOlt7InciOiJ2aXNlIiwicGF0aCI6WzAsNiwxMiwxOV19LHsidyI6ImRyaWxsIiwicGF0aCI6WzEsNywyLDksMTVdfSx7InciOiJsZXZlbCIsInBhdGgiOlszLDgsMTQsMjAsMjZdfSx7InciOiJmaWxlIiwicGF0aCI6WzQsMTEsMTcsMjJdfSx7InciOiJzYW5kZXIiLCJwYXRoIjpbNSwxMCwxNiwyMywyOSwzNF19LHsidyI6ImFudmlsIiwicGF0aCI6WzEzLDE4LDI0LDMwLDM3XX0seyJ3IjoiY2xhbXAiLCJwYXRoIjpbMjEsMjgsMjcsMzMsMzhdfSx7InciOiJjaGlzZWwiLCJwYXRoIjpbNDEsNDcsNDYsNDUsNDQsNDNdfV19"
+      },
+      {
+        "clue": "Under the sea",
+        "cols": 6,
+        "board": [
+          "squiot",
+          "mnldoc",
+          "aauifp",
+          "ecrrue",
+          "olcslb",
+          "snihso",
+          "erotie",
+          "ahersn"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3Ijoib2NlYW5saWZlIiwicGF0aCI6WzI0LDE5LDE4LDEyLDcsOCwxNSwxNiwyM119LCJ3b3JkcyI6W3sidyI6InNxdWlkIiwicGF0aCI6WzAsMSwyLDMsOV19LHsidyI6Im9jdG9wdXMiLCJwYXRoIjpbNCwxMSw1LDEwLDE3LDIyLDI3XX0seyJ3IjoibWFybGluIiwicGF0aCI6WzYsMTMsMjAsMjUsMzIsMzFdfSx7InciOiJ1cmNoaW4iLCJwYXRoIjpbMTQsMjEsMjYsMzMsNDAsNDddfSx7InciOiJsb2JzdGVyIiwicGF0aCI6WzI4LDM1LDI5LDM0LDM5LDQ0LDM3XX0seyJ3Ijoic2VhaG9yc2UiLCJwYXRoIjpbMzAsMzYsNDIsNDMsMzgsNDUsNDYsNDFdfV19"
+      },
+      {
+        "clue": "Family fun after dinner",
+        "cols": 6,
+        "board": [
+          "gaceni",
+          "damptg",
+          "srutho",
+          "bzogek",
+          "zinnti",
+          "lechvr",
+          "dcekia",
+          "eicers"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZ2FtZW5pZ2h0IiwicGF0aCI6WzAsMSw4LDMsNCw1LDExLDE2LDE1XX0sIndvcmRzIjpbeyJ3IjoiY2FyZHMiLCJwYXRoIjpbMiw3LDEzLDYsMTJdfSx7InciOiJwdXp6bGUiLCJwYXRoIjpbOSwxNCwxOSwyNCwzMCwzMV19LHsidyI6InRva2VuIiwicGF0aCI6WzEwLDE3LDIzLDIyLDI3XX0seyJ3IjoiYmluZ28iLCJwYXRoIjpbMTgsMjUsMjYsMjEsMjBdfSx7InciOiJ0cml2aWEiLCJwYXRoIjpbMjgsMzUsMjksMzQsNDAsNDFdfSx7InciOiJjaGVja2VycyIsInBhdGgiOlszMiwzMywzOCw0NCwzOSw0NSw0Niw0N119LHsidyI6ImRpY2UiLCJwYXRoIjpbMzYsNDMsMzcsNDJdfV19"
+      },
+      {
+        "clue": "Turn up the volume",
+        "cols": 6,
+        "board": [
+          "ukereg",
+          "jafbag",
+          "mnoeox",
+          "elthso",
+          "tbkepo",
+          "laaemu",
+          "dldrol",
+          "laaisc"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoianVrZWJveCIsInBhdGgiOls2LDAsMSwyLDksMTYsMTddfSwid29yZHMiOlt7InciOiJyZWdnYWUiLCJwYXRoIjpbMyw0LDUsMTEsMTAsMTVdfSx7InciOiJhbnRoZW0iLCJwYXRoIjpbNywxMywyMCwyMSwyNywzNF19LHsidyI6ImZvbGsiLCJwYXRoIjpbOCwxNCwxOSwyNl19LHsidyI6Im1ldGFsIiwicGF0aCI6WzEyLDE4LDI0LDMxLDMwXX0seyJ3Ijoic291bCIsInBhdGgiOlsyMiwyOSwzNSw0MV19LHsidyI6Im9wZXJhIiwicGF0aCI6WzIzLDI4LDMzLDM5LDQ0XX0seyJ3IjoiYmFsbGFkIiwicGF0aCI6WzI1LDMyLDM3LDQyLDQzLDM2XX0seyJ3IjoiZGlzY28iLCJwYXRoIjpbMzgsNDUsNDYsNDcsNDBdfV19"
+      },
+      {
+        "clue": "Happy campers",
+        "cols": 6,
+        "board": [
+          "thchmm",
+          "ireaao",
+          "femrkc",
+          "tpmtri",
+          "cesoal",
+          "ancnte",
+          "tmraed",
+          "pgounn"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY2FtcGdyb3VuZCIsInBhdGgiOlsyNCwzMCwzNyw0Miw0MywzOCw0NCw0NSw0Niw0MV19LCJ3b3JkcyI6W3sidyI6InRoZXJtb3MiLCJwYXRoIjpbMCwxLDgsMTUsMjAsMjcsMjZdfSx7InciOiJjYW1wZmlyZSIsInBhdGgiOlsyLDksMTQsMTksMTIsNiw3LDEzXX0seyJ3IjoiaGFtbW9jayIsInBhdGgiOlszLDEwLDQsNSwxMSwxNywxNl19LHsidyI6InRlbnQiLCJwYXRoIjpbMTgsMjUsMzEsMzZdfSx7InciOiJ0cmFpbCIsInBhdGgiOlsyMSwyMiwyOCwyMywyOV19LHsidyI6ImNhbnRlZW4iLCJwYXRoIjpbMzIsMzksMzMsMzQsMzUsNDAsNDddfV19"
+      },
+      {
+        "clue": "Coffee break",
+        "cols": 6,
+        "board": [
+          "fohdaf",
+          "rtcmec",
+          "esread",
+          "pgpiro",
+          "rressl",
+          "ifilea",
+          "rndttr",
+          "oastet"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZXNwcmVzc28iLCJwYXRoIjpbMTIsMTMsMTgsMjUsMjYsMjcsMjgsMjNdfSwid29yZHMiOlt7InciOiJmcm90aCIsInBhdGgiOlswLDYsMSw3LDJdfSx7InciOiJkZWNhZiIsInBhdGgiOlszLDEwLDExLDQsNV19LHsidyI6ImNyZW1hIiwicGF0aCI6WzgsMTQsMTUsOSwxNl19LHsidyI6ImRyaXAiLCJwYXRoIjpbMTcsMjIsMjEsMjBdfSx7InciOiJncmluZCIsInBhdGgiOlsxOSwyNCwzMCwzNywzOF19LHsidyI6ImxhdHRlIiwicGF0aCI6WzI5LDM1LDQwLDQ3LDQ2XX0seyJ3IjoiZmlsdGVyIiwicGF0aCI6WzMxLDMyLDMzLDM5LDM0LDQxXX0seyJ3Ijoicm9hc3QiLCJwYXRoIjpbMzYsNDIsNDMsNDQsNDVdfV19"
+      },
+      {
+        "clue": "Sweet dreams",
+        "cols": 6,
+        "board": [
+          "spasze",
+          "iesjno",
+          "ataaso",
+          "bnkmng",
+          "laethi",
+          "lgctuq",
+          "iahout",
+          "ptsilt"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibGlnaHRzb3V0IiwicGF0aCI6WzMwLDM2LDMxLDM4LDQzLDQ0LDM5LDM0LDQxXX0sIndvcmRzIjpbeyJ3Ijoic2llc3RhIiwicGF0aCI6WzAsNiw3LDgsMTMsMTJdfSx7InciOiJwYWphbWFzIiwicGF0aCI6WzEsMiw5LDE0LDIxLDE1LDE2XX0seyJ3Ijoic25vb3plIiwicGF0aCI6WzMsMTAsMTcsMTEsNCw1XX0seyJ3IjoiYmxhbmtldCIsInBhdGgiOlsxOCwyNCwyNSwxOSwyMCwyNiwzM119LHsidyI6Im5pZ2h0Y2FwIiwicGF0aCI6WzIyLDI5LDIzLDI4LDI3LDMyLDM3LDQyXX0seyJ3IjoicXVpbHQiLCJwYXRoIjpbMzUsNDAsNDUsNDYsNDddfV19"
+      },
+      {
+        "clue": "Out on the water",
+        "cols": 6,
+        "board": [
+          "frraft",
+          "weryft",
+          "aecaso",
+          "trralo",
+          "pucsnp",
+          "ntrhco",
+          "rtoaee",
+          "enorwl"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3Ijoid2F0ZXJjcmFmdCIsInBhdGgiOls2LDEyLDE4LDEzLDE5LDI2LDIwLDE1LDEwLDExXX0sIndvcmRzIjpbeyJ3IjoiZmVycnkiLCJwYXRoIjpbMCw3LDEsOCw5XX0seyJ3IjoicmFmdCIsInBhdGgiOlsyLDMsNCw1XX0seyJ3IjoiY2Fub2UiLCJwYXRoIjpbMTQsMjEsMjgsMzUsNDFdfSx7InciOiJzbG9vcCIsInBhdGgiOlsxNiwyMiwxNywyMywyOV19LHsidyI6InB1bnQiLCJwYXRoIjpbMjQsMjUsMzAsMzddfSx7InciOiJzY2hvb25lciIsInBhdGgiOlsyNywzNCwzMywzOCw0NCw0Myw0MiwzNl19LHsidyI6InRyYXdsZXIiLCJwYXRoIjpbMzEsMzIsMzksNDYsNDcsNDAsNDVdfV19"
+      },
+      {
+        "clue": "Save room for it",
+        "cols": 6,
+        "board": [
+          "cissbr",
+          "okeuoe",
+          "ocndtt",
+          "daalfr",
+          "sekeei",
+          "eseetm",
+          "cieros",
+          "rlassu"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZGVzc2VydHMiLCJwYXRoIjpbMTgsMjUsMjQsMzEsMzIsMzksMzQsNDFdfSwid29yZHMiOlt7InciOiJjb29raWUiLCJwYXRoIjpbMCw2LDEyLDcsMSw4XX0seyJ3Ijoic3VuZGFlIiwicGF0aCI6WzIsOSwxNCwxNSwyMCwyN119LHsidyI6InNvcmJldCIsInBhdGgiOlszLDEwLDUsNCwxMSwxNl19LHsidyI6ImNha2UiLCJwYXRoIjpbMTMsMTksMjYsMzNdfSx7InciOiJ0cmlmbGUiLCJwYXRoIjpbMTcsMjMsMjksMjIsMjEsMjhdfSx7InciOiJlY2xhaXIiLCJwYXRoIjpbMzAsMzYsNDMsNDQsMzcsNDJdfSx7InciOiJtb3Vzc2UiLCJwYXRoIjpbMzUsNDAsNDcsNDYsNDUsMzhdfV19"
+      },
+      {
+        "clue": "Little ones",
+        "cols": 6,
+        "board": [
+          "tapock",
+          "cdglhc",
+          "byoaei",
+          "gamsls",
+          "nibyln",
+          "enadgi",
+          "ticula",
+          "lkngmb"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYmFieWFuaW1hbHMiLCJwYXRoIjpbMTIsMTksMjYsMjcsMzIsMzEsMjUsMjAsMTUsMjIsMjNdfSwid29yZHMiOlt7InciOiJ0YWRwb2xlIiwicGF0aCI6WzAsMSw3LDIsMyw5LDE2XX0seyJ3IjoiY2hpY2siLCJwYXRoIjpbNCwxMCwxNywxMSw1XX0seyJ3IjoiY3lnbmV0IiwicGF0aCI6WzYsMTMsMTgsMjQsMzAsMzZdfSx7InciOiJnb3NsaW5nIiwicGF0aCI6WzgsMTQsMjEsMjgsMzUsMjksMzRdfSx7InciOiJkdWNrbGluZyIsInBhdGgiOlszMywzOSwzOCw0Myw0MiwzNyw0NCw0NV19LHsidyI6ImxhbWIiLCJwYXRoIjpbNDAsNDEsNDYsNDddfV19"
+      },
+      {
+        "clue": "In the fruit bowl",
+        "cols": 6,
+        "board": [
+          "lepech",
+          "mihare",
+          "itcyar",
+          "usalbd",
+          "mrnpna",
+          "faglna",
+          "kwouap",
+          "iimrae"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZnJ1aXRzYWxhZCIsInBhdGgiOlszMCwyNSwxOCwxMiwxMywxOSwyMCwyMSwxNiwyM119LCJ3b3JkcyI6W3sidyI6ImxpbWUiLCJwYXRoIjpbMCw3LDYsMV19LHsidyI6InBlYWNoIiwicGF0aCI6WzIsMyw5LDE0LDhdfSx7InciOiJjaGVycnkiLCJwYXRoIjpbNCw1LDExLDE3LDEwLDE1XX0seyJ3IjoiYmFuYW5hIiwicGF0aCI6WzIyLDI5LDI4LDM1LDM0LDQwXX0seyJ3IjoibWFuZ28iLCJwYXRoIjpbMjQsMzEsMjYsMzIsMzhdfSx7InciOiJwbHVtIiwicGF0aCI6WzI3LDMzLDM5LDQ0XX0seyJ3Ijoia2l3aSIsInBhdGgiOlszNiw0MywzNyw0Ml19LHsidyI6InBlYXIiLCJwYXRoIjpbNDEsNDcsNDYsNDVdfV19"
+      },
+      {
+        "clue": "Pocket change",
+        "cols": 6,
+        "board": [
+          "querpe",
+          "cratny",
+          "nufncn",
+          "rieray",
+          "crkrnd",
+          "eksoci",
+          "gllhnm",
+          "niilae"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY3VycmVuY3kiLCJwYXRoIjpbNiwxMywxOCwyNSwyMCwxNSwxNiwxMV19LCJ3b3JkcyI6W3sidyI6InF1YXJ0ZXIiLCJwYXRoIjpbMCwxLDgsMyw5LDIsN119LHsidyI6InBlbm55IiwicGF0aCI6WzQsNSwxMCwxNywyM119LHsidyI6Im5pY2tlbCIsInBhdGgiOlsxMiwxOSwyNCwzMSwzMCwzN119LHsidyI6ImZyYW5jIiwicGF0aCI6WzE0LDIxLDIyLDI4LDM0XX0seyJ3Ijoia3JvbmEiLCJwYXRoIjpbMjYsMjcsMzMsNDAsNDZdfSx7InciOiJkaW1lIiwicGF0aCI6WzI5LDM1LDQxLDQ3XX0seyJ3Ijoic2hpbGxpbmciLCJwYXRoIjpbMzIsMzksNDQsNDUsMzgsNDMsNDIsMzZdfV19"
+      },
+      {
+        "clue": "Lay of the land",
+        "cols": 6,
+        "board": [
+          "pteame",
+          "almcus",
+          "sewaea",
+          "uoanap",
+          "mdoycd",
+          "mncset",
+          "ialdal",
+          "ltniff"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibGFuZHNjYXBlIiwicGF0aCI6WzQyLDM3LDQ0LDM5LDMzLDI4LDIyLDIzLDE2XX0sIndvcmRzIjpbeyJ3IjoicGxhdGVhdSIsInBhdGgiOlswLDcsNiwxLDIsMywxMF19LHsidyI6Im1lc2EiLCJwYXRoIjpbNCw1LDExLDE3XX0seyJ3IjoibWVhZG93IiwicGF0aCI6WzgsMTMsMjAsMjUsMTksMTRdfSx7InciOiJjYW55b24iLCJwYXRoIjpbOSwxNSwyMSwyNywyNiwzMV19LHsidyI6InN1bW1pdCIsInBhdGgiOlsxMiwxOCwyNCwzMCwzNiw0M119LHsidyI6ImRlbHRhIiwicGF0aCI6WzI5LDM0LDQxLDM1LDQwXX0seyJ3IjoiY2xpZmYiLCJwYXRoIjpbMzIsMzgsNDUsNDYsNDddfV19"
+      }
+    ],
+    "hard": [
+      {
+        "clue": "Ahoy, matey",
+        "cols": 7,
+        "board": [
+          "apartdr",
+          "bnroeeo",
+          "cucanut",
+          "hocoobr",
+          "crncule",
+          "anrersa",
+          "noweeep",
+          "sngshya",
+          "pyalsct"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYnVjY2FuZWVyIiwicGF0aCI6WzcsMTUsMjMsMTYsMTcsMTgsMTEsMTIsNl19LCJ3b3JkcyI6W3sidyI6ImFuY2hvciIsInBhdGgiOlswLDgsMTQsMjEsMjIsMjldfSx7InciOiJwYXJyb3QiLCJwYXRoIjpbMSwyLDksMywxMCw0XX0seyJ3IjoiZG91Ymxvb24iLCJwYXRoIjpbNSwxMywxOSwyNiwzMywyNSwyNCwzMF19LHsidyI6InRyZWFzdXJlIiwicGF0aCI6WzIwLDI3LDM0LDQxLDQwLDMyLDM5LDM4XX0seyJ3IjoiY2Fubm9uIiwicGF0aCI6WzI4LDM1LDQyLDM2LDQzLDUwXX0seyJ3IjoiY3JldyIsInBhdGgiOlszMSwzNyw0NSw0NF19LHsidyI6ImV5ZXBhdGNoIiwicGF0aCI6WzQ2LDU0LDQ3LDQ4LDU1LDYyLDYxLDUzXX0seyJ3Ijoic3B5Z2xhc3MiLCJwYXRoIjpbNDksNTYsNTcsNTEsNTksNTgsNTIsNjBdfV19"
+      },
+      {
+        "clue": "Picture perfect",
+        "cols": 7,
+        "board": [
+          "caplefh",
+          "mianlls",
+          "erxesah",
+          "togzape",
+          "poormxp",
+          "hntospo",
+          "vieaour",
+          "efgtret",
+          "rameiar"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoicGhvdG9ncmFwaCIsInBhdGgiOlsyOCwzNSwyOSwyMSwyMiwyMywzMSwyNSwyNiwyMF19LCJ3b3JkcyI6W3sidyI6ImNhbWVyYSIsInBhdGgiOlswLDEsNywxNCwxNSw5XX0seyJ3IjoicGl4ZWwiLCJwYXRoIjpbMiw4LDE2LDE3LDExXX0seyJ3IjoibGVucyIsInBhdGgiOlszLDQsMTAsMThdfSx7InciOiJmbGFzaCIsInBhdGgiOls1LDEyLDE5LDEzLDZdfSx7InciOiJ6b29tIiwicGF0aCI6WzI0LDMwLDM4LDMyXX0seyJ3IjoiZXhwb3N1cmUiLCJwYXRoIjpbMjcsMzMsNDAsNDYsMzksNDcsNTMsNTRdfSx7InciOiJwb3J0cmFpdCIsInBhdGgiOlszNCw0MSw0OCw1NSw2Miw2MSw2MCw1Ml19LHsidyI6Im5lZ2F0aXZlIiwicGF0aCI6WzM2LDQ0LDUxLDQ1LDM3LDQzLDQyLDQ5XX0seyJ3IjoiZnJhbWUiLCJwYXRoIjpbNTAsNTYsNTcsNTgsNTldfV19"
+      },
+      {
+        "clue": "In bloom",
+        "cols": 7,
+        "board": [
+          "atcptlt",
+          "sereuou",
+          "rocnids",
+          "mgupaaa",
+          "iaosnhy",
+          "rldrbsl",
+          "oowezei",
+          "lrcniad",
+          "fhidnia"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZmxvd2VyYmVkIiwicGF0aCI6WzU2LDQ5LDQzLDQ0LDQ1LDM4LDM5LDQ3LDU1XX0sIndvcmRzIjpbeyJ3IjoiYXN0ZXIiLCJwYXRoIjpbMCw3LDEsOCwxNF19LHsidyI6ImNyb2N1cyIsInBhdGgiOlsyLDksMTUsMTYsMjMsMzFdfSx7InciOiJwZXR1bmlhIiwicGF0aCI6WzMsMTAsNCwxMSwxNywxOCwyNl19LHsidyI6ImxvdHVzIiwicGF0aCI6WzUsMTIsNiwxMywyMF19LHsidyI6ImRhaGxpYSIsInBhdGgiOlsxOSwyNywzMyw0MSw0OCw1NF19LHsidyI6Im1hcmlnb2xkIiwicGF0aCI6WzIxLDI5LDM1LDI4LDIyLDMwLDM2LDM3XX0seyJ3IjoicGFuc3kiLCJwYXRoIjpbMjQsMjUsMzIsNDAsMzRdfSx7InciOiJvcmNoaWQiLCJwYXRoIjpbNDIsNTAsNTEsNTcsNTgsNTldfSx7InciOiJ6aW5uaWEiLCJwYXRoIjpbNDYsNTMsNTIsNjAsNjEsNjJdfV19"
+      },
+      {
+        "clue": "Pocket change",
+        "cols": 7,
+        "board": [
+          "sdolnar",
+          "hrrelcn",
+          "iubiliy",
+          "cllilfc",
+          "penpoek",
+          "suogllr",
+          "fondedu",
+          "ardeipe",
+          "cnemoru"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY3VycmVuY3kiLCJwYXRoIjpbMjEsMTUsOCw5LDEwLDQsMTIsMjBdfSwid29yZHMiOlt7InciOiJzaGlsbGluZyIsInBhdGgiOlswLDcsMTQsMjIsMjMsMjQsMzAsMzhdfSx7InciOiJkb2xsYXIiLCJwYXRoIjpbMSwyLDMsMTEsNSw2XX0seyJ3Ijoibmlja2VsIiwicGF0aCI6WzEzLDE5LDI3LDM0LDMzLDQwXX0seyJ3IjoiYmlsbGZvbGQiLCJwYXRoIjpbMTYsMTcsMTgsMjUsMjYsMzIsMzksNDddfSx7InciOiJwZXNvIiwicGF0aCI6WzI4LDI5LDM1LDQzXX0seyJ3IjoicG91bmQiLCJwYXRoIjpbMzEsMzcsMzYsNDQsNTFdfSx7InciOiJydXBlZSIsInBhdGgiOls0MSw0OCw1NCw0Niw1Ml19LHsidyI6ImZyYW5jIiwicGF0aCI6WzQyLDUwLDQ5LDU3LDU2XX0seyJ3IjoiZGltZSIsInBhdGgiOls0NSw1Myw1OSw1OF19LHsidyI6ImV1cm8iLCJwYXRoIjpbNTUsNjIsNjEsNjBdfV19"
+      },
+      {
+        "clue": "Well-rounded (and otherwise)",
+        "cols": 7,
+        "board": [
+          "pymcucy",
+          "rraibli",
+          "heledno",
+          "polisvd",
+          "rhmpuae",
+          "isebsrl",
+          "mxasehe",
+          "eomgprr",
+          "gnoetey"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZ2VvbWV0cnkiLCJwYXRoIjpbNTYsNDksNTAsNTEsNTksNjAsNTQsNjJdfSwid29yZHMiOlt7InciOiJweXJhbWlkIiwicGF0aCI6WzAsMSw4LDksMiwxMCwxOF19LHsidyI6ImN1YmUiLCJwYXRoIjpbMyw0LDExLDE3XX0seyJ3IjoiY3lsaW5kZXIiLCJwYXRoIjpbNSw2LDEyLDEzLDE5LDI3LDM0LDQwXX0seyJ3IjoicmhvbWJ1cyIsInBhdGgiOls3LDE0LDIyLDMwLDM4LDMyLDI1XX0seyJ3IjoiZWxsaXBzZSIsInBhdGgiOlsxNSwyMywxNiwyNCwzMSwzOSw0Nl19LHsidyI6Im92YWwiLCJwYXRoIjpbMjAsMjYsMzMsNDFdfSx7InciOiJwcmlzbSIsInBhdGgiOlsyMSwyOCwzNSwzNiw0Ml19LHsidyI6ImhleGFnb24iLCJwYXRoIjpbMjksMzcsNDMsNDQsNTIsNTgsNTddfSx7InciOiJzcGhlcmUiLCJwYXRoIjpbNDUsNTMsNDcsNDgsNTUsNjFdfV19"
+      },
+      {
+        "clue": "Weather report",
+        "cols": 7,
+        "board": [
+          "foecass",
+          "wrgaltt",
+          "idserom",
+          "nhrtmsi",
+          "dowihtn",
+          "snzehud",
+          "ozlrafe",
+          "sweitrr",
+          "leetlso"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZm9yZWNhc3QiLCJwYXRoIjpbMCwxLDgsMiwzLDQsNSwxM119LCJ3b3JkcyI6W3sidyI6InN0b3JtIiwicGF0aCI6WzYsMTIsMTksMTgsMjVdfSx7InciOiJ3aW5kIiwicGF0aCI6WzcsMTQsMjEsMjhdfSx7InciOiJnYWxlIiwicGF0aCI6WzksMTAsMTEsMTddfSx7InciOiJkcml6emxlIiwicGF0aCI6WzE1LDIzLDMxLDM3LDQzLDQ0LDUxXX0seyJ3Ijoic2hvd2VyIiwicGF0aCI6WzE2LDIyLDI5LDMwLDM4LDQ1XX0seyJ3IjoibWlzdCIsInBhdGgiOlsyMCwyNywyNiwzM119LHsidyI6InRodW5kZXIiLCJwYXRoIjpbMjQsMzIsNDAsMzQsNDEsNDgsNTRdfSx7InciOiJzbm93IiwicGF0aCI6WzM1LDM2LDQyLDUwXX0seyJ3IjoiaGFpbCIsInBhdGgiOlszOSw0Niw1Miw2MF19LHsidyI6ImZyb3N0IiwicGF0aCI6WzQ3LDU1LDYyLDYxLDUzXX0seyJ3Ijoic2xlZXQiLCJwYXRoIjpbNDksNTYsNTcsNTgsNTldfV19"
+      },
+      {
+        "clue": "Deck the halls",
+        "cols": 7,
+        "board": [
+          "caroeca",
+          "yueglen",
+          "clgtild",
+          "ocncsde",
+          "ooglhiw",
+          "asecnmr",
+          "rtoikee",
+          "bighiya",
+          "bongnht"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoieXVsZXRpZGUiLCJwYXRoIjpbNyw4LDE1LDksMTcsMTgsMjYsMjddfSwid29yZHMiOlt7InciOiJjYXJvbCIsInBhdGgiOlswLDEsMiwzLDExXX0seyJ3IjoiZWdnbm9nIiwicGF0aCI6WzQsMTAsMTYsMjMsMjksMzBdfSx7InciOiJjYW5kbGUiLCJwYXRoIjpbNSw2LDEzLDIwLDE5LDEyXX0seyJ3IjoiY29jb2EiLCJwYXRoIjpbMTQsMjEsMjIsMjgsMzVdfSx7InciOiJjaGltbmV5IiwicGF0aCI6WzI0LDMyLDMzLDQwLDM5LDQ3LDU0XX0seyJ3Ijoic2xlaWdoIiwicGF0aCI6WzI1LDMxLDM3LDQ1LDUxLDUyXX0seyJ3Ijoid3JlYXRoIiwicGF0aCI6WzM0LDQxLDQ4LDU1LDYyLDYxXX0seyJ3Ijoic3RvY2tpbmciLCJwYXRoIjpbMzYsNDMsNDQsMzgsNDYsNTMsNjAsNTldfSx7InciOiJyaWJib24iLCJwYXRoIjpbNDIsNTAsNDksNTYsNTcsNThdfV19"
+      },
+      {
+        "clue": "Little ones",
+        "cols": 7,
+        "board": [
+          "fawjoyl",
+          "cinoewe",
+          "chtfatc",
+          "gkapoly",
+          "sodgogt",
+          "linlene",
+          "yaniaks",
+          "bcfmnli",
+          "baalett"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYmFieWFuaW1hbHMiLCJwYXRoIjpbNTYsNTcsNDksNDIsNDMsNDQsNDUsNTIsNDYsNTQsNDhdfSwid29yZHMiOlt7InciOiJmYXduIiwicGF0aCI6WzAsMSwyLDldfSx7InciOiJqb2V5IiwicGF0aCI6WzMsMTAsMTEsNV19LHsidyI6Im93bGV0IiwicGF0aCI6WzQsMTIsNiwxMywxOV19LHsidyI6ImNoaWNrIiwicGF0aCI6WzcsMTUsOCwxNCwyMl19LHsidyI6InRhZHBvbGUiLCJwYXRoIjpbMTYsMjMsMzAsMjQsMzIsMzgsMzldfSx7InciOiJmb2FsIiwicGF0aCI6WzE3LDI1LDE4LDI2XX0seyJ3IjoiY3lnbmV0IiwicGF0aCI6WzIwLDI3LDMzLDQwLDQxLDM0XX0seyJ3IjoiZ29zbGluZyIsInBhdGgiOlsyMSwyOSwyOCwzNSwzNiwzNywzMV19LHsidyI6ImtpdHRlbiIsInBhdGgiOls0Nyw1NSw2Miw2MSw2MCw1M119LHsidyI6ImNhbGYiLCJwYXRoIjpbNTAsNTgsNTksNTFdfV19"
+      },
+      {
+        "clue": "Kitchen drawer",
+        "cols": 7,
+        "board": [
+          "stusaer",
+          "apklwls",
+          "ueneist",
+          "tgpswco",
+          "krkehon",
+          "anesiog",
+          "tilepss",
+          "ferleie",
+          "erevadl"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoidXRlbnNpbHMiLCJwYXRoIjpbMTQsMjEsMTUsMTYsMjQsMTgsMTIsMTNdfSwid29yZHMiOlt7InciOiJzcGF0dWxhIiwicGF0aCI6WzAsOCw3LDEsMiwxMCw0XX0seyJ3Ijoic2tld2VyIiwicGF0aCI6WzMsOSwxNywxMSw1LDZdfSx7InciOiJzY29vcCIsInBhdGgiOlsxOSwyNiwzMyw0MCw0Nl19LHsidyI6InRvbmdzIiwicGF0aCI6WzIwLDI3LDM0LDQxLDQ3XX0seyJ3IjoiZ3JhdGVyIiwicGF0aCI6WzIyLDI5LDM1LDQyLDUwLDU3XX0seyJ3IjoicGVlbGVyIiwicGF0aCI6WzIzLDMxLDM3LDQ0LDQ1LDUxXX0seyJ3Ijoid2hpc2siLCJwYXRoIjpbMjUsMzIsMzksMzgsMzBdfSx7InciOiJrbmlmZSIsInBhdGgiOlsyOCwzNiw0Myw0OSw1Nl19LHsidyI6InNpZXZlIiwicGF0aCI6WzQ4LDU0LDUzLDU5LDU4XX0seyJ3IjoibGFkbGUiLCJwYXRoIjpbNTIsNjAsNjEsNjIsNTVdfV19"
+      },
+      {
+        "clue": "Lay of the land",
+        "cols": 7,
+        "board": [
+          "cbudeea",
+          "canttlt",
+          "ltuyori",
+          "rinfsnd",
+          "adfumga",
+          "timmees",
+          "adscmpe",
+          "lnraaea",
+          "enivwod"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibGFuZHNjYXBlIiwicGF0aCI6WzQ5LDQyLDUwLDQzLDQ0LDQ1LDUzLDQ3LDQ4XX0sIndvcmRzIjpbeyJ3IjoiY2FueW9uIiwicGF0aCI6WzAsOCw5LDE3LDE4LDI2XX0seyJ3IjoiYnV0dGUiLCJwYXRoIjpbMSwyLDEwLDExLDVdfSx7InciOiJkZWx0YSIsInBhdGgiOlszLDQsMTIsMTMsNl19LHsidyI6ImNsaWZmIiwicGF0aCI6WzcsMTQsMjIsMzAsMjRdfSx7InciOiJ0dW5kcmEiLCJwYXRoIjpbMTUsMTYsMjMsMjksMjEsMjhdfSx7InciOiJyaWRnZSIsInBhdGgiOlsxOSwyMCwyNywzMywzOV19LHsidyI6InN1bW1pdCIsInBhdGgiOlsyNSwzMSwzOCwzNywzNiwzNV19LHsidyI6Im1lc2EiLCJwYXRoIjpbMzIsNDAsNDEsMzRdfSx7InciOiJtZWFkb3ciLCJwYXRoIjpbNDYsNTQsNTUsNjIsNjEsNjBdfSx7InciOiJyYXZpbmUiLCJwYXRoIjpbNTEsNTIsNTksNTgsNTcsNTZdfV19"
+      },
+      {
+        "clue": "Life is better in flip-flops",
+        "cols": 7,
+        "board": [
+          "selcsto",
+          "nrkouwg",
+          "olorfne",
+          "brerils",
+          "oadwana",
+          "ubabdlk",
+          "mrrldun",
+          "seoelew",
+          "lhvaeva"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYm9hcmR3YWxrIiwicGF0aCI6WzIxLDI4LDI5LDIyLDMwLDMxLDMyLDQwLDQxXX0sIndvcmRzIjpbeyJ3Ijoic25vcmtlbCIsInBhdGgiOlswLDcsMTQsOCw5LDEsMl19LHsidyI6ImNvb2xlciIsInBhdGgiOlszLDEwLDE2LDE1LDIzLDI0XX0seyJ3Ijoic3VyZmluZyIsInBhdGgiOls0LDExLDE3LDE4LDI1LDE5LDEzXX0seyJ3IjoidG93ZWwiLCJwYXRoIjpbNSw2LDEyLDIwLDI2XX0seyJ3Ijoic2FuZGJhciIsInBhdGgiOlsyNywzNCwzMywzOSwzOCwzNyw0M119LHsidyI6InVtYnJlbGxhIiwicGF0aCI6WzM1LDQyLDM2LDQ0LDUyLDQ1LDUzLDU5XX0seyJ3IjoiZHVuZSIsInBhdGgiOls0Niw0Nyw0OCw1NF19LHsidyI6InNob3ZlbCIsInBhdGgiOls0OSw1Nyw1MSw1OCw1MCw1Nl19LHsidyI6IndhdmUiLCJwYXRoIjpbNTUsNjIsNjEsNjBdfV19"
+      },
+      {
+        "clue": "Baking day",
+        "cols": 7,
+        "board": [
+          "sytsalc",
+          "usebuto",
+          "ggahttc",
+          "anroero",
+          "irednag",
+          "nuienni",
+          "cfteytg",
+          "relmres",
+          "amouegr"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiaW5ncmVkaWVudHMiLCJwYXRoIjpbMjgsMjIsMTUsMjMsMzAsMzEsMzcsNDUsMzksNDcsNTVdfSwid29yZHMiOlt7InciOiJzdWdhciIsInBhdGgiOlswLDcsMTQsMjEsMjldfSx7InciOiJ5ZWFzdCIsInBhdGgiOlsxLDksMTYsOCwyXX0seyJ3Ijoic2FsdCIsInBhdGgiOlszLDQsNSwxMl19LHsidyI6ImNvY29hIiwicGF0aCI6WzYsMTMsMjAsMjcsMzNdfSx7InciOiJidXR0ZXIiLCJwYXRoIjpbMTAsMTEsMTksMTgsMjUsMjZdfSx7InciOiJob25leSIsInBhdGgiOlsxNywyNCwzMiwzOCw0Nl19LHsidyI6ImdpbmdlciIsInBhdGgiOlszNCw0MSw0MCw0OCw1NCw2Ml19LHsidyI6Im51dG1lZyIsInBhdGgiOlszNSwzNiw0NCw1Miw2MCw2MV19LHsidyI6ImNyZWFtIiwicGF0aCI6WzQyLDQ5LDUwLDU2LDU3XX0seyJ3IjoiZmxvdXIiLCJwYXRoIjpbNDMsNTEsNTgsNTksNTNdfV19"
+      },
+      {
+        "clue": "Grassland giants",
+        "cols": 7,
+        "board": [
+          "chlhipb",
+          "teiopou",
+          "eahfnrf",
+          "gaaeafi",
+          "nszlael",
+          "ornelle",
+          "hihowop",
+          "aytrahn",
+          "nehogta"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3Ijoib25zYWZhcmkiLCJwYXRoIjpbMzUsMjgsMjksMjMsMTcsMjUsMTksMjddfSwid29yZHMiOlt7InciOiJjaGVldGFoIiwicGF0aCI6WzAsMSw4LDE0LDcsMTUsMTZdfSx7InciOiJsaW9uIiwicGF0aCI6WzIsOSwxMCwxOF19LHsidyI6ImhpcHBvIiwicGF0aCI6WzMsNCw1LDExLDEyXX0seyJ3IjoiYnVmZmFsbyIsInBhdGgiOls2LDEzLDIwLDI2LDMyLDQwLDQ3XX0seyJ3IjoiZ2F6ZWxsZSIsInBhdGgiOlsyMSwyMiwzMCwyNCwzMSwzOSwzOF19LHsidyI6ImVsZXBoYW50IiwicGF0aCI6WzMzLDM0LDQxLDQ4LDU0LDYyLDU1LDYxXX0seyJ3Ijoicmhpbm8iLCJwYXRoIjpbMzYsNDIsNDMsMzcsNDVdfSx7InciOiJoeWVuYSIsInBhdGgiOls0NCw1MCw1Nyw1Niw0OV19LHsidyI6IndhcnRob2ciLCJwYXRoIjpbNDYsNTMsNTIsNTEsNTgsNTksNjBdfV19"
+      },
+      {
+        "clue": "Solve the case",
+        "cols": 7,
+        "board": [
+          "fwitnsa",
+          "ogieilt",
+          "erybssa",
+          "mrtrskh",
+          "yselyte",
+          "wsoeuuo",
+          "uhdutdi",
+          "tsesngs",
+          "cepiuit"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3Ijoid2hvZHVuaXQiLCJwYXRoIjpbMzUsNDMsMzcsNDQsNDUsNTMsNjEsNjJdfSwid29yZHMiOlt7InciOiJmb3JnZXJ5IiwicGF0aCI6WzAsNywxNSw4LDE0LDIyLDE2XX0seyJ3Ijoid2l0bmVzcyIsInBhdGgiOlsxLDIsMyw0LDEwLDE4LDE5XX0seyJ3Ijoic3Rha2VvdXQiLCJwYXRoIjpbNSwxMywyMCwyNiwzNCw0MSw0MCw0Nl19LHsidyI6ImFsaWJpIiwicGF0aCI6WzYsMTIsMTEsMTcsOV19LHsidyI6Im15c3RlcnkiLCJwYXRoIjpbMjEsMjgsMjksMjMsMzAsMjQsMzJdfSx7InciOiJzbGV1dGgiLCJwYXRoIjpbMjUsMzEsMzgsMzksMzMsMjddfSx7InciOiJzdXNwZWN0IiwicGF0aCI6WzM2LDQyLDUwLDU4LDU3LDU2LDQ5XX0seyJ3IjoiZGlzZ3Vpc2UiLCJwYXRoIjpbNDcsNDgsNTUsNTQsNjAsNTksNTIsNTFdfV19"
+      },
+      {
+        "clue": "Happy campers",
+        "cols": 7,
+        "board": [
+          "cktngmo",
+          "iaihers",
+          "nmlouml",
+          "pdrtana",
+          "tgcctnd",
+          "rhehoep",
+          "asamrma",
+          "cilmnss",
+          "abinock"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY2FtcGdyb3VuZCIsInBhdGgiOlswLDgsMTUsMjEsMjksMjMsMTcsMTgsMjYsMzRdfSwid29yZHMiOlt7InciOiJraW5kbGluZyIsInBhdGgiOlsxLDcsMTQsMjIsMTYsOSwzLDRdfSx7InciOiJ0aGVybW9zIiwicGF0aCI6WzIsMTAsMTEsMTIsNSw2LDEzXX0seyJ3IjoibWF0Y2hlcyIsInBhdGgiOlsxOSwyNSwyNCwzMCwzOCwzNyw0M119LHsidyI6ImxhbnRlcm4iLCJwYXRoIjpbMjAsMjcsMzMsMzIsNDAsNDYsNTNdfSx7InciOiJ0cmFpbCIsInBhdGgiOlsyOCwzNSw0Miw1MCw1MV19LHsidyI6ImNvbXBhc3MiLCJwYXRoIjpbMzEsMzksNDcsNDEsNDgsNTQsNTVdfSx7InciOiJoYW1tb2NrIiwicGF0aCI6WzM2LDQ0LDQ1LDUyLDYwLDYxLDYyXX0seyJ3IjoiY2FiaW4iLCJwYXRoIjpbNDksNTYsNTcsNTgsNTldfV19"
+      },
+      {
+        "clue": "Al dente",
+        "cols": 7,
+        "board": [
+          "sronila",
+          "pphtias",
+          "ageegti",
+          "noentnr",
+          "gonlgia",
+          "dninoug",
+          "olrntai",
+          "eciaenl",
+          "chivioi"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3Ijoic3BhZ2hldHRpIiwicGF0aCI6WzAsNywxNCwxNSw5LDE3LDI1LDE5LDIwXX0sIndvcmRzIjpbeyJ3Ijoicm90aW5pIiwicGF0aCI6WzEsMiwxMCwxMSwzLDRdfSx7InciOiJsYXNhZ25hIiwicGF0aCI6WzUsNiwxMywxMiwxOCwyNiwzNF19LHsidyI6InBlbm5lIiwicGF0aCI6WzgsMTYsMjQsMzAsMjNdfSx7InciOiJub29kbGUiLCJwYXRoIjpbMjEsMjIsMjksMzUsNDMsNDldfSx7InciOiJyaWdhdG9uaSIsInBhdGgiOlsyNywzMyw0MSw0Nyw0NiwzOSw0NSw1MV19LHsidyI6Imdub2NjaGkiLCJwYXRoIjpbMjgsMzYsNDIsNTAsNTYsNTcsNThdfSx7InciOiJsaW5ndWluZSIsInBhdGgiOlszMSwzNywzOCwzMiw0MCw0OCw1NCw1M119LHsidyI6InJhdmlvbGkiLCJwYXRoIjpbNDQsNTIsNTksNjAsNjEsNTUsNjJdfV19"
+      },
+      {
+        "clue": "Back to school",
+        "cols": 7,
+        "board": [
+          "bqnterc",
+          "uicdeah",
+          "ihacrre",
+          "zklaloh",
+          "noyooom",
+          "assrcem",
+          "lpemrke",
+          "ccnarwr",
+          "ilkroke"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY2xhc3Nyb29tIiwicGF0aCI6WzQ5LDQyLDM1LDM2LDM3LDM4LDMyLDI2LDM0XX0sIndvcmRzIjpbeyJ3IjoiYmluZGVyIiwicGF0aCI6WzAsOCwyLDEwLDQsNV19LHsidyI6InF1aXoiLCJwYXRoIjpbMSw3LDE0LDIxXX0seyJ3IjoidGVhY2hlciIsInBhdGgiOlszLDExLDEyLDYsMTMsMjAsMTldfSx7InciOiJjaGFsayIsInBhdGgiOls5LDE1LDE2LDIzLDIyXX0seyJ3IjoiY3JheW9uIiwicGF0aCI6WzE3LDE4LDI0LDMwLDI5LDI4XX0seyJ3IjoibG9ja2VyIiwicGF0aCI6WzI1LDMxLDM5LDQ3LDQwLDQ2XX0seyJ3IjoiaG9tZXdvcmsiLCJwYXRoIjpbMjcsMzMsNDEsNDgsNTQsNjAsNTksNThdfSx7InciOiJwZW5jaWwiLCJwYXRoIjpbNDMsNDQsNTEsNTAsNTYsNTddfSx7InciOiJtYXJrZXIiLCJwYXRoIjpbNDUsNTIsNTMsNjEsNjIsNTVdfV19"
+      },
+      {
+        "clue": "Creepy crawlies",
+        "cols": 7,
+        "board": [
+          "blehowc",
+          "ettrapi",
+          "meensca",
+          "iretfde",
+          "tnseala",
+          "iefmcas",
+          "cietotp",
+          "rkrhtdh",
+          "iceflyi"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiaW5zZWN0cyIsInBhdGgiOlszNSwyOSwzMCwzMSwzOSw0Nyw0MV19LCJ3b3JkcyI6W3sidyI6ImJlZXRsZSIsInBhdGgiOlswLDcsMTUsOCwxLDJdfSx7InciOiJob3JuZXQiLCJwYXRoIjpbMyw0LDEwLDE3LDIzLDI0XX0seyJ3Ijoid2FzcCIsInBhdGgiOls1LDExLDE4LDEyXX0seyJ3IjoiY2ljYWRhIiwicGF0aCI6WzYsMTMsMTksMjAsMjYsMzJdfSx7InciOiJ0ZXJtaXRlIiwicGF0aCI6WzksMTYsMjIsMTQsMjEsMjgsMzZdfSx7InciOiJmbGVhIiwicGF0aCI6WzI1LDMzLDI3LDM0XX0seyJ3IjoiZmlyZWZseSIsInBhdGgiOlszNyw0Myw1MSw1OCw1OSw2MCw2MV19LHsidyI6Im1vdGgiLCJwYXRoIjpbMzgsNDYsNTMsNTJdfSx7InciOiJhcGhpZCIsInBhdGgiOls0MCw0OCw1NSw2Miw1NF19LHsidyI6ImNyaWNrZXQiLCJwYXRoIjpbNDIsNDksNTYsNTcsNTAsNDQsNDVdfV19"
+      },
+      {
+        "clue": "Nine to five",
+        "cols": 7,
+        "board": [
+          "defmeet",
+          "mnsodei",
+          "ioklcnr",
+          "otpigui",
+          "wrnrlcb",
+          "oterece",
+          "rkplaic",
+          "bdobnoe",
+          "axgeffe"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3Ijoid29ya3BsYWNlIiwicGF0aCI6WzI4LDM1LDQyLDQzLDQ0LDQ1LDQ2LDQwLDQxXX0sIndvcmRzIjpbeyJ3IjoiZGVzayIsInBhdGgiOlswLDEsOSwxNl19LHsidyI6ImZvbGRlciIsInBhdGgiOlsyLDEwLDE3LDExLDEyLDIwXX0seyJ3IjoibWVldGluZyIsInBhdGgiOlszLDQsNSw2LDEzLDE5LDI1XX0seyJ3IjoibW9uaXRvciIsInBhdGgiOls3LDE1LDgsMTQsMjIsMjEsMjldfSx7InciOiJjdWJpY2xlIiwicGF0aCI6WzE4LDI2LDM0LDI3LDMzLDMyLDM5XX0seyJ3IjoicHJpbnRlciIsInBhdGgiOlsyMywzMSwyNCwzMCwzNiwzNywzOF19LHsidyI6ImluYm94IiwicGF0aCI6WzQ3LDUzLDUyLDUxLDU3XX0seyJ3IjoiY29mZmVlIiwicGF0aCI6WzQ4LDU0LDYwLDYxLDU1LDYyXX0seyJ3IjoiYmFkZ2UiLCJwYXRoIjpbNDksNTYsNTAsNTgsNTldfV19"
+      },
+      {
+        "clue": "In the fruit bowl",
+        "cols": 7,
+        "board": [
+          "lemoorg",
+          "fcngara",
+          "hrunepe",
+          "etiamng",
+          "rpsplao",
+          "arcbeaa",
+          "pyhaapd",
+          "ananlep",
+          "ayaimel"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZnJ1aXRzYWxhZCIsInBhdGgiOls3LDE1LDE2LDIzLDIyLDMwLDI0LDMyLDQwLDQ4XX0sIndvcmRzIjpbeyJ3IjoibGVtb24iLCJwYXRoIjpbMCwxLDIsMyw5XX0seyJ3Ijoib3JhbmdlIiwicGF0aCI6WzQsNSwxMSwxNywxMCwxOF19LHsidyI6ImdyYXBlIiwicGF0aCI6WzYsMTIsMTMsMTksMjBdfSx7InciOiJjaGVycnkiLCJwYXRoIjpbOCwxNCwyMSwyOCwzNiw0M119LHsidyI6Im1hbmdvIiwicGF0aCI6WzI1LDMzLDI2LDI3LDM0XX0seyJ3IjoicGFwYXlhIiwicGF0aCI6WzI5LDM1LDQyLDQ5LDU3LDUxXX0seyJ3IjoicGVhY2giLCJwYXRoIjpbMzEsMzksNDUsMzcsNDRdfSx7InciOiJiYW5hbmEiLCJwYXRoIjpbMzgsNDYsNTIsNTgsNTAsNTZdfSx7InciOiJhcHBsZSIsInBhdGgiOls0MSw0Nyw1NSw2Miw2MV19LHsidyI6ImxpbWUiLCJwYXRoIjpbNTMsNTksNjAsNTRdfV19"
+      }
+    ],
+    "extreme": [
+      {
+        "clue": "Deal me in",
+        "cols": 8,
+        "board": [
+          "cpobrmmy",
+          "akridues",
+          "enstgmso",
+          "raawaels",
+          "carghiip",
+          "cidhatsa",
+          "rbaeirdt",
+          "bgtrepee",
+          "eaesuise",
+          "lhconchr"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY2FyZGdhbWVzIiwicGF0aCI6WzMyLDMzLDM0LDQyLDM1LDI4LDIxLDE0LDE1XX0sIndvcmRzIjpbeyJ3IjoiY2FuYXN0YSIsInBhdGgiOlswLDgsMTcsMjUsMTgsMTksMjZdfSx7InciOiJwb2tlciIsInBhdGgiOlsxLDIsOSwxNiwyNF19LHsidyI6ImJyaWRnZSIsInBhdGgiOlszLDEwLDExLDEyLDIwLDI5XX0seyJ3IjoicnVtbXkiLCJwYXRoIjpbNCwxMyw1LDYsN119LHsidyI6InNvbGl0YWlyZSIsInBhdGgiOlsyMiwyMywzMCwzOCw0NSw0NCw1Miw1Myw2Ml19LHsidyI6IndoaXN0IiwicGF0aCI6WzI3LDM2LDM3LDQ2LDU1XX0seyJ3Ijoic3BhZGVzIiwicGF0aCI6WzMxLDM5LDQ3LDU0LDYzLDcwXX0seyJ3IjoiY3JpYmJhZ2UiLCJwYXRoIjpbNDAsNDgsNDEsNDksNTYsNjUsNTcsNjZdfSx7InciOiJoZWFydHMiLCJwYXRoIjpbNDMsNTEsNTAsNTksNTgsNjddfSx7InciOiJldWNocmUiLCJwYXRoIjpbNjAsNjgsNzcsNzgsNzksNzFdfSx7InciOiJwaW5vY2hsZSIsInBhdGgiOls2MSw2OSw3Niw3NSw3NCw3Myw3Miw2NF19XX0="
+      },
+      {
+        "clue": "On the side",
+        "cols": 8,
+        "board": [
+          "petowats",
+          "kspiensi",
+          "oedimlba",
+          "cntsckea",
+          "rchuyrti",
+          "sesapuao",
+          "alliaprl",
+          "vhsrgtim",
+          "igardrus",
+          "enyvarat"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY29uZGltZW50cyIsInBhdGgiOlsyNCwxNiwyNSwxOCwxMSwyMCwxMiwxMyw2LDddfSwid29yZHMiOlt7InciOiJwZXN0byIsInBhdGgiOlswLDEsOSwyLDNdfSx7InciOiJ3YXNhYmkiLCJwYXRoIjpbNCw1LDE0LDIzLDIyLDE1XX0seyJ3Ijoia2V0Y2h1cCIsInBhdGgiOls4LDE3LDI2LDMzLDM0LDM1LDQ0XX0seyJ3IjoicGlja2xlIiwicGF0aCI6WzEwLDE5LDI4LDI5LDIxLDMwXX0seyJ3Ijoic3lydXAiLCJwYXRoIjpbMjcsMzYsMzcsNDUsNTNdfSx7InciOiJhaW9saSIsInBhdGgiOlszMSwzOSw0Nyw1NSw2Ml19LHsidyI6InJlbGlzaCIsInBhdGgiOlszMiw0MSw1MCw1MSw1OCw1N119LHsidyI6InRhcnRhciIsInBhdGgiOlszOCw0Niw1NCw2MSw1Miw1OV19LHsidyI6InNhbHNhIiwicGF0aCI6WzQwLDQ4LDQ5LDQyLDQzXX0seyJ3IjoidmluZWdhciIsInBhdGgiOls1Niw2NCw3Myw3Miw2NSw2Niw2N119LHsidyI6ImdyYXZ5IiwicGF0aCI6WzYwLDY5LDc2LDc1LDc0XX0seyJ3IjoibXVzdGFyZCIsInBhdGgiOls2Myw3MCw3MSw3OSw3OCw3Nyw2OF19XX0="
+      },
+      {
+        "clue": "Cold-blooded companions",
+        "cols": 8,
+        "board": [
+          "ttromecc",
+          "uotoisrh",
+          "trgnorao",
+          "lcetimoc",
+          "keoeelid",
+          "ponlegil",
+          "vythouni",
+          "iepcnaza",
+          "rpotiars",
+          "erbraled"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoicmVwdGlsZXMiLCJwYXRoIjpbNjQsNTcsNTgsNjcsNjgsNzcsNzgsNzFdfSwid29yZHMiOlt7InciOiJ0dXJ0bGUiLCJwYXRoIjpbMCw4LDE3LDE2LDI0LDMzXX0seyJ3IjoidG9ydG9pc2UiLCJwYXRoIjpbMSw5LDIsMTAsMywxMiwxMyw1XX0seyJ3IjoibW9uaXRvciIsInBhdGgiOls0LDExLDE5LDI4LDI3LDIwLDIxXX0seyJ3IjoiY2hhbWVsZW9uIiwicGF0aCI6WzYsMTUsMjIsMjksMzYsNDMsMzUsMzQsNDJdfSx7InciOiJjcm9jb2RpbGUiLCJwYXRoIjpbNywxNCwyMywzMSwzMCwzOSw0NiwzNyw0NF19LHsidyI6ImdlY2tvIiwicGF0aCI6WzE4LDI2LDI1LDMyLDQxXX0seyJ3IjoiaWd1YW5hIiwicGF0aCI6WzM4LDQ1LDUzLDYxLDU0LDYzXX0seyJ3IjoicHl0aG9uIiwicGF0aCI6WzQwLDQ5LDUwLDUxLDUyLDYwXX0seyJ3IjoibGl6YXJkIiwicGF0aCI6WzQ3LDU1LDYyLDY5LDcwLDc5XX0seyJ3IjoidmlwZXIiLCJwYXRoIjpbNDgsNTYsNjUsNzIsNzNdfSx7InciOiJjb2JyYSIsInBhdGgiOls1OSw2Niw3NCw3NSw3Nl19XX0="
+      },
+      {
+        "clue": "Up, up, and away",
+        "cols": 8,
+        "board": [
+          "kitsanez",
+          "aleeepae",
+          "ipanilpp",
+          "raelpget",
+          "tkfaiahl",
+          "bacarrin",
+          "uhllsrkc",
+          "tgpoheob",
+          "lerioati",
+          "idennelp"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoidGFrZWZsaWdodCIsInBhdGgiOlszMiwyNSwzMywyNiwzNCwyNywyMCwyOSwzOCwzMV19LCJ3b3JkcyI6W3sidyI6ImtpdGUiLCJwYXRoIjpbMCwxLDIsMTBdfSx7InciOiJzZWFwbGFuZSIsInBhdGgiOlszLDExLDQsMTMsMjEsMTQsNSw2XX0seyJ3IjoiemVwcGVsaW4iLCJwYXRoIjpbNywxNSwyMiwyMywzMCwzOSw0Niw0N119LHsidyI6ImFpcnBsYW5lIiwicGF0aCI6WzgsMTYsMjQsMTcsOSwxOCwxOSwxMl19LHsidyI6InBhcmFjaHV0ZSIsInBhdGgiOlsyOCwzNyw0NCw0Myw0Miw0OSw0OCw1Niw2NV19LHsidyI6ImFpcnNoaXAiLCJwYXRoIjpbMzUsMzYsNDUsNTIsNjAsNjcsNThdfSx7InciOiJiYWxsb29uIiwicGF0aCI6WzQwLDQxLDUwLDUxLDU5LDY4LDc1XX0seyJ3Ijoicm9ja2V0IiwicGF0aCI6WzUzLDYyLDU1LDU0LDYxLDcwXX0seyJ3IjoiZ2xpZGVyIiwicGF0aCI6WzU3LDY0LDcyLDczLDc0LDY2XX0seyJ3IjoiYmlwbGFuZSIsInBhdGgiOls2Myw3MSw3OSw3OCw2OSw3Niw3N119XX0="
+      },
+      {
+        "clue": "Airing dirty laundry",
+        "cols": 8,
+        "board": [
+          "lrblemch",
+          "iadroaat",
+          "nunsosrn",
+          "sibaofee",
+          "reksctln",
+          "owteksti",
+          "hnrdlter",
+          "amikeeeg",
+          "dypnrtns",
+          "rreeniat"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibGF1bmRyb21hdCIsInBhdGgiOlswLDksMTcsMTgsMTAsMTEsMTIsNSwxNCwxNV19LCJ3b3JkcyI6W3sidyI6InJpbnNlIiwicGF0aCI6WzEsOCwxNiwyNCwzM119LHsidyI6ImJsZWFjaCIsInBhdGgiOlsyLDMsNCwxMyw2LDddfSx7InciOiJzb2Z0ZW5lciIsInBhdGgiOlsxOSwyMCwyOSwzNywzMCwyMywzMSwyMl19LHsidyI6InNvY2tzIiwicGF0aCI6WzIxLDI4LDM2LDQ0LDQ1XX0seyJ3IjoiaXJvbiIsInBhdGgiOlsyNSwzMiw0MCw0OV19LHsidyI6ImJhc2tldCIsInBhdGgiOlsyNiwyNywzNSwzNCw0Myw0Ml19LHsidyI6ImxpbnQiLCJwYXRoIjpbMzgsNDcsMzksNDZdfSx7InciOiJ3cmlua2xlIiwicGF0aCI6WzQxLDUwLDU4LDY3LDU5LDUyLDYxXX0seyJ3IjoiaGFtcGVyIiwicGF0aCI6WzQ4LDU2LDU3LDY2LDc1LDY4XX0seyJ3IjoiZGV0ZXJnZW50IiwicGF0aCI6WzUxLDYwLDUzLDU0LDU1LDYzLDYyLDcwLDY5XX0seyJ3IjoiZHJ5ZXIiLCJwYXRoIjpbNjQsNzIsNjUsNzQsNzNdfSx7InciOiJzdGFpbiIsInBhdGgiOls3MSw3OSw3OCw3Nyw3Nl19XX0="
+      },
+      {
+        "clue": "Family fun after dinner",
+        "cols": 8,
+        "board": [
+          "dmpclema",
+          "oniuhzrb",
+          "ochezele",
+          "estkcsss",
+          "iircesja",
+          "avtardct",
+          "bmeorshk",
+          "iannkghs",
+          "gndeinan",
+          "goiceamg"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZ2FtZW5pZ2h0IiwicGF0aCI6WzY0LDU3LDQ5LDUwLDU5LDY4LDYxLDU0LDQ3XX0sIndvcmRzIjpbeyJ3IjoiZG9taW5vZXMiLCJwYXRoIjpbMCw4LDEsMTAsOSwxNiwyNCwyNV19LHsidyI6InB1enpsZSIsInBhdGgiOlsyLDExLDIwLDEzLDQsNV19LHsidyI6ImNoZXNzIiwicGF0aCI6WzMsMTIsMjEsMjksMzBdfSx7InciOiJtYXJibGVzIiwicGF0aCI6WzYsNywxNCwxNSwyMiwyMywzMV19LHsidyI6ImNoZWNrZXJzIiwicGF0aCI6WzE3LDE4LDE5LDI4LDI3LDM2LDQ0LDM3XX0seyJ3IjoidHJpdmlhIiwicGF0aCI6WzI2LDM0LDMzLDQxLDMyLDQwXX0seyJ3IjoiY2FyZHMiLCJwYXRoIjpbMzUsNDMsNTIsNDUsNTNdfSx7InciOiJqYWNrcyIsInBhdGgiOlszOCwzOSw0Niw1NSw2M119LHsidyI6InRva2VuIiwicGF0aCI6WzQyLDUxLDYwLDY3LDU4XX0seyJ3IjoiYmluZ28iLCJwYXRoIjpbNDgsNTYsNjUsNzIsNzNdfSx7InciOiJoYW5nbWFuIiwicGF0aCI6WzYyLDcwLDcxLDc5LDc4LDc3LDY5XX0seyJ3IjoiZGljZSIsInBhdGgiOls2Niw3NCw3NSw3Nl19XX0="
+      },
+      {
+        "clue": "Feel the burn",
+        "cols": 8,
+        "board": [
+          "ldmpsitc",
+          "uuubupur",
+          "ngshbeup",
+          "pleyogln",
+          "itatllac",
+          "rdmielhj",
+          "eaasweao",
+          "akbssqgt",
+          "eraltuig",
+          "brbelagn"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYnJlYWthc3dlYXQiLCJwYXRoIjpbNzIsNjUsNjQsNTYsNTcsNTAsNTksNTIsNTMsNTQsNjNdfSwid29yZHMiOlt7InciOiJsdW5nZSIsInBhdGgiOlswLDgsMTYsMTcsMjZdfSx7InciOiJkdW1iYmVsbCIsInBhdGgiOlsxLDksMiwxMSwyMCwyMSwzMCwzN119LHsidyI6InB1c2h1cCIsInBhdGgiOlszLDEwLDE4LDE5LDEyLDEzXX0seyJ3Ijoic2l0dXAiLCJwYXRoIjpbNCw1LDYsMTQsMjNdfSx7InciOiJjcnVuY2giLCJwYXRoIjpbNywxNSwyMiwzMSwzOSw0Nl19LHsidyI6InBpbGF0ZXMiLCJwYXRoIjpbMjQsMzIsMjUsMzQsMzUsNDQsNTFdfSx7InciOiJ5b2dhIiwicGF0aCI6WzI3LDI4LDI5LDM4XX0seyJ3IjoidHJlYWRtaWxsIiwicGF0aCI6WzMzLDQwLDQ4LDQ5LDQxLDQyLDQzLDM2LDQ1XX0seyJ3Ijoiam9nZ2luZyIsInBhdGgiOls0Nyw1NSw2Miw3MSw3MCw3OSw3OF19LHsidyI6ImJhcmJlbGwiLCJwYXRoIjpbNTgsNjYsNzMsNzQsNzUsNjcsNzZdfSx7InciOiJzcXVhdCIsInBhdGgiOls2MCw2MSw2OSw3Nyw2OF19XX0="
+      },
+      {
+        "clue": "Best in show",
+        "cols": 8,
+        "board": [
+          "hbsrtcer",
+          "oueeptol",
+          "sxmaowle",
+          "bkseohii",
+          "aeytlddp",
+          "glifeeps",
+          "debrfdte",
+          "ogptarai",
+          "noerelnt",
+          "iterrima"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZG9nYnJlZWRzIiwicGF0aCI6WzQ4LDU2LDU3LDUwLDUxLDQ0LDQ1LDM4LDQ3XX0sIndvcmRzIjpbeyJ3IjoiaHVza3kiLCJwYXRoIjpbMCw5LDE2LDI1LDM0XX0seyJ3IjoiYm94ZXIiLCJwYXRoIjpbMSw4LDE3LDEwLDNdfSx7InciOiJzZXR0ZXIiLCJwYXRoIjpbMiwxMSw0LDEzLDYsN119LHsidyI6ImNvbGxpZSIsInBhdGgiOls1LDE0LDE1LDIyLDMxLDIzXX0seyJ3IjoicG9vZGxlIiwicGF0aCI6WzEyLDIwLDI4LDM3LDM2LDI3XX0seyJ3IjoibWFzdGlmZiIsInBhdGgiOlsxOCwxOSwyNiwzNSw0Miw0Myw1Ml19LHsidyI6IndoaXBwZXQiLCJwYXRoIjpbMjEsMjksMzAsMzksNDYsNTUsNTRdfSx7InciOiJiZWFnbGUiLCJwYXRoIjpbMjQsMzMsMzIsNDAsNDEsNDldfSx7InciOiJkYWxtYXRpYW4iLCJwYXRoIjpbNTMsNjAsNjksNzgsNzksNzEsNjMsNjIsNzBdfSx7InciOiJwb2ludGVyIiwicGF0aCI6WzU4LDY1LDcyLDY0LDczLDc0LDc1XX0seyJ3IjoidGVycmllciIsInBhdGgiOls1OSw2Niw2Nyw3Niw3Nyw2OCw2MV19XX0="
+      },
+      {
+        "clue": "Jewelry box",
+        "cols": 8,
+        "board": [
+          "acorgrdi",
+          "bgataana",
+          "esaelaem",
+          "rjlpbmot",
+          "ayzperne",
+          "dmsihdrm",
+          "eertitea",
+          "gceroodl",
+          "opozpnes",
+          "alnaonyx"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZ2Vtc3RvbmVzIiwicGF0aCI6WzU2LDQ4LDQxLDQyLDUxLDYwLDY5LDcwLDcxXX0sIndvcmRzIjpbeyJ3IjoiYWdhdGUiLCJwYXRoIjpbMCw5LDEwLDExLDE5XX0seyJ3IjoiY29yYWwiLCJwYXRoIjpbMSwyLDMsMTIsMjBdfSx7InciOiJnYXJuZXQiLCJwYXRoIjpbNCwxMyw1LDE0LDIyLDMxXX0seyJ3IjoiZGlhbW9uZCIsInBhdGgiOls2LDcsMTUsMjMsMzAsMzgsNDVdfSx7InciOiJiZXJ5bCIsInBhdGgiOls4LDE2LDI0LDMzLDI2XX0seyJ3Ijoic2FwcGhpcmUiLCJwYXRoIjpbMTcsMTgsMjcsMzUsNDQsNTIsNTksNThdfSx7InciOiJhbWJlciIsInBhdGgiOlsyMSwyOSwyOCwzNiwzN119LHsidyI6ImphZGUiLCJwYXRoIjpbMjUsMzIsNDAsNDldfSx7InciOiJ6aXJjb24iLCJwYXRoIjpbMzQsNDMsNTAsNTcsNjYsNzRdfSx7InciOiJlbWVyYWxkIiwicGF0aCI6WzM5LDQ3LDU0LDQ2LDU1LDYzLDYyXX0seyJ3IjoidG9wYXoiLCJwYXRoIjpbNTMsNjEsNjgsNzUsNjddfSx7InciOiJvcGFsIiwicGF0aCI6WzY0LDY1LDcyLDczXX0seyJ3Ijoib255eCIsInBhdGgiOls3Niw3Nyw3OCw3OV19XX0="
+      },
+      {
+        "clue": "Legendary creatures",
+        "cols": 8,
+        "board": [
+          "cmnotirh",
+          "etirtuty",
+          "naumarad",
+          "undbemnr",
+          "icaiaeap",
+          "wornpeoh",
+          "yrnsheae",
+          "venagcnl",
+          "syssinxi",
+          "muthphix"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibXl0aGljYWwiLCJwYXRoIjpbNzIsNjUsNzQsNzUsNjgsNjEsNTQsNjNdfSwid29yZHMiOlt7InciOiJjZW50YXVyIiwicGF0aCI6WzAsOCwxNiw5LDE3LDE4LDExXX0seyJ3IjoibWlub3RhdXIiLCJwYXRoIjpbMSwxMCwyLDMsMTIsMjAsMTMsNl19LHsidyI6InRpdGFuIiwicGF0aCI6WzQsNSwxNCwyMiwzMF19LHsidyI6Imh5ZHJhIiwicGF0aCI6WzcsMTUsMjMsMzEsMzhdfSx7InciOiJtZXJtYWlkIiwicGF0aCI6WzE5LDI4LDIxLDI5LDM2LDM1LDI2XX0seyJ3IjoidW5pY29ybiIsInBhdGgiOlsyNCwyNSwzMiwzMyw0MSw0Miw1MF19LHsidyI6ImJhbnNoZWUiLCJwYXRoIjpbMjcsMzQsNDMsNTEsNTIsNDUsMzddfSx7InciOiJwaG9lbml4IiwicGF0aCI6WzM5LDQ3LDQ2LDU1LDYyLDcxLDc5XX0seyJ3Ijoid3l2ZXJuIiwicGF0aCI6WzQwLDQ4LDU2LDU3LDQ5LDU4XX0seyJ3IjoicGVnYXN1cyIsInBhdGgiOls0NCw1Myw2MCw1OSw2Niw3Myw2NF19LHsidyI6InNwaGlueCIsInBhdGgiOls2Nyw3Niw3Nyw3OCw2OSw3MF19XX0="
+      },
+      {
+        "clue": "Happy campers",
+        "cols": 8,
+        "board": [
+          "bcomaham",
+          "akamstcm",
+          "ccpsckoh",
+          "aktalcne",
+          "pcetnats",
+          "akntinne",
+          "midlegtr",
+          "pneenmrh",
+          "firgouoe",
+          "camprsnd"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY2FtcGdyb3VuZCIsInBhdGgiOls3Miw3Myw3NCw3NSw2Nyw3Niw2OCw2OSw3OCw3OV19LCJ3b3JkcyI6W3sidyI6ImJhY2twYWNrIiwicGF0aCI6WzAsOCwxNywyNSwzMiwyNCwxNiw5XX0seyJ3IjoiY29tcGFzcyIsInBhdGgiOlsxLDIsMTEsMTgsMTAsMTksMTJdfSx7InciOiJtYXRjaGVzIiwicGF0aCI6WzMsNCwxMywxNCwyMywzMSwzOV19LHsidyI6ImhhbW1vY2siLCJwYXRoIjpbNSw2LDcsMTUsMjIsMjksMjFdfSx7InciOiJjYW50ZWVuIiwicGF0aCI6WzIwLDI3LDM2LDQzLDUyLDU5LDYwXX0seyJ3IjoidGVudCIsInBhdGgiOlsyNiwzNCw0MiwzNV19LHsidyI6ImxhbnRlcm4iLCJwYXRoIjpbMjgsMzcsMzAsMzgsNDcsNTUsNDZdfSx7InciOiJjYW1wZmlyZSIsInBhdGgiOlszMyw0MCw0OCw1Niw2NCw2NSw2Niw1OF19LHsidyI6ImtpbmRsaW5nIiwicGF0aCI6WzQxLDQ5LDU3LDUwLDUxLDQ0LDQ1LDUzXX0seyJ3IjoidGhlcm1vcyIsInBhdGgiOls1NCw2Myw3MSw2Miw2MSw3MCw3N119XX0="
+      },
+      {
+        "clue": "Weather report",
+        "cols": 8,
+        "board": [
+          "dstormra",
+          "brmzsnig",
+          "reiiztla",
+          "ezelshae",
+          "forheali",
+          "cloecwst",
+          "ofwsidcy",
+          "ruenonce",
+          "odrtwrnl",
+          "sthundeo"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZm9yZWNhc3QiLCJwYXRoIjpbMzIsMzMsMzQsNDMsNDQsMzcsNDYsNDddfSwid29yZHMiOlt7InciOiJkcml6emxlIiwicGF0aCI6WzAsOSwxOCwxMSwyMCwyNywzNl19LHsidyI6InN0b3JtIiwicGF0aCI6WzEsMiwzLDQsNV19LHsidyI6InJhaW4iLCJwYXRoIjpbNiw3LDE0LDEzXX0seyJ3IjoiYnJlZXplIiwicGF0aCI6WzgsMTYsMTcsMjQsMjUsMjZdfSx7InciOiJtaXN0IiwicGF0aCI6WzEwLDE5LDEyLDIxXX0seyJ3IjoiZ2FsZSIsInBhdGgiOlsxNSwyMywyMiwzMV19LHsidyI6InNob3dlciIsInBhdGgiOlsyOCwzNSw0Miw1MCw1OCw2Nl19LHsidyI6ImhhaWwiLCJwYXRoIjpbMjksMzAsMzksMzhdfSx7InciOiJjbG91ZCIsInBhdGgiOls0MCw0MSw0OCw1Nyw2NV19LHsidyI6IndpbmQiLCJwYXRoIjpbNDUsNTIsNjEsNTNdfSx7InciOiJmcm9zdCIsInBhdGgiOls0OSw1Niw2NCw3Miw3M119LHsidyI6InNub3ciLCJwYXRoIjpbNTEsNTksNjAsNjhdfSx7InciOiJjeWNsb25lIiwicGF0aCI6WzU0LDU1LDYyLDcxLDc5LDcwLDYzXX0seyJ3IjoidGh1bmRlciIsInBhdGgiOls2Nyw3NCw3NSw3Niw3Nyw3OCw2OV19XX0="
+      },
+      {
+        "clue": "Ahoy, matey",
+        "cols": 8,
+        "board": [
+          "kenenpar",
+          "rkyaceer",
+          "accetrrs",
+          "auhpaoep",
+          "bncodtwy",
+          "gcurocgl",
+          "aletucha",
+          "lolnobas",
+          "nplaolsn",
+          "knassnon"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYnVjY2FuZWVyIiwicGF0aCI6WzMyLDI1LDE3LDE4LDExLDQsMTMsMTQsN119LCJ3b3JkcyI6W3sidyI6ImtyYWtlbiIsInBhdGgiOlswLDgsMTYsOSwxLDJdfSx7InciOiJleWVwYXRjaCIsInBhdGgiOlszLDEwLDE5LDI3LDI4LDM3LDQ1LDU0XX0seyJ3IjoicGFycm90IiwicGF0aCI6WzUsNiwxNSwyMiwyOSwyMF19LHsidyI6ImNyZXciLCJwYXRoIjpbMTIsMjEsMzAsMzhdfSx7InciOiJzcHlnbGFzcyIsInBhdGgiOlsyMywzMSwzOSw0Niw0Nyw1NSw2Myw3MF19LHsidyI6ImFuY2hvciIsInBhdGgiOlsyNCwzMywzNCwyNiwzNSw0M119LHsidyI6ImRvdWJsb29uIiwicGF0aCI6WzM2LDQ0LDUyLDYxLDY5LDY4LDYwLDU5XX0seyJ3IjoiZ2FsbGVvbiIsInBhdGgiOls0MCw0OCw1Niw0OSw1MCw1Nyw2NF19LHsidyI6ImN1dGxhc3MiLCJwYXRoIjpbNDEsNDIsNTEsNTgsNjcsNzUsNzZdfSx7InciOiJjYW5ub24iLCJwYXRoIjpbNTMsNjIsNzEsNzksNzgsNzddfSx7InciOiJwbGFuayIsInBhdGgiOls2NSw2Niw3NCw3Myw3Ml19XX0="
+      },
+      {
+        "clue": "Pocket change",
+        "cols": 8,
+        "board": [
+          "dleurrpe",
+          "olaropus",
+          "pfrdewlo",
+          "ounaeeal",
+          "dimntncy",
+          "secbelol",
+          "hirrilfd",
+          "culipkro",
+          "qrlnreyn",
+          "uategnna"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY3VycmVuY3kiLCJwYXRoIjpbNTYsNTcsNTAsNTEsNDQsMzcsMzgsMzldfSwid29yZHMiOlt7InciOiJkb2xsYXIiLCJwYXRoIjpbMCw4LDksMSwxMCwxMV19LHsidyI6ImV1cm8iLCJwYXRoIjpbMiwzLDQsMTJdfSx7InciOiJydXBlZSIsInBhdGgiOls1LDE0LDEzLDIwLDI4XX0seyJ3IjoicGVzbyIsInBhdGgiOls2LDcsMTUsMjNdfSx7InciOiJwb3VuZCIsInBhdGgiOlsxNiwyNCwyNSwyNiwxOV19LHsidyI6ImZyYW5jIiwicGF0aCI6WzE3LDE4LDI3LDM1LDQyXX0seyJ3Ijoid2FsbGV0IiwicGF0aCI6WzIxLDMwLDMxLDIyLDI5LDM2XX0seyJ3IjoiZGltZSIsInBhdGgiOlszMiwzMywzNCw0MV19LHsidyI6InNoaWxsaW5nIiwicGF0aCI6WzQwLDQ4LDQ5LDU4LDY2LDU5LDY3LDc2XX0seyJ3IjoiYmlsbGZvbGQiLCJwYXRoIjpbNDMsNTIsNDUsNTMsNTQsNDYsNDcsNTVdfSx7InciOiJwZW5ueSIsInBhdGgiOls2MCw2OSw3OCw3Nyw3MF19LHsidyI6Imtyb25hIiwicGF0aCI6WzYxLDYyLDYzLDcxLDc5XX0seyJ3IjoicXVhcnRlciIsInBhdGgiOls2NCw3Miw3Myw2NSw3NCw3NSw2OF19XX0="
+      },
+      {
+        "clue": "Down on the farm",
+        "cols": 8,
+        "board": [
+          "lmhdpiet",
+          "abosulgc",
+          "lirsecka",
+          "dvettcfl",
+          "mokyuohk",
+          "uncericl",
+          "layekacl",
+          "ettlekma",
+          "shegngos",
+          "peeoateo"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibGl2ZXN0b2NrIiwicGF0aCI6WzE2LDE3LDI1LDI2LDE5LDI4LDM3LDQ2LDM5XX0sIndvcmRzIjpbeyJ3IjoibGFtYiIsInBhdGgiOlswLDgsMSw5XX0seyJ3IjoiaG9yc2UiLCJwYXRoIjpbMiwxMCwxOCwxMSwyMF19LHsidyI6ImR1Y2siLCJwYXRoIjpbMywxMiwyMSwyMl19LHsidyI6InBpZ2xldCIsInBhdGgiOls0LDUsMTQsMTMsNiw3XX0seyJ3IjoiY2FsZiIsInBhdGgiOlsxNSwyMywzMSwzMF19LHsidyI6ImRvbmtleSIsInBhdGgiOlsyNCwzMyw0MSwzNCw0MywzNV19LHsidyI6InR1cmtleSIsInBhdGgiOlsyNywzNiw0NCw1Miw1MSw1MF19LHsidyI6ImNoaWNrZW4iLCJwYXRoIjpbMjksMzgsNDUsNTQsNjEsNjAsNjhdfSx7InciOiJtdWxlIiwicGF0aCI6WzMyLDQwLDQ4LDU2XX0seyJ3IjoiY2F0dGxlIiwicGF0aCI6WzQyLDQ5LDU3LDU4LDU5LDY2XX0seyJ3IjoibGxhbWEiLCJwYXRoIjpbNDcsNTUsNjMsNjIsNTNdfSx7InciOiJzaGVlcCIsInBhdGgiOls2NCw2NSw3NCw3Myw3Ml19LHsidyI6ImdvYXQiLCJwYXRoIjpbNjcsNzUsNzYsNzddfSx7InciOiJnb29zZSIsInBhdGgiOls2OSw3MCw3OSw3MSw3OF19XX0="
+      },
+      {
+        "clue": "Look to the night sky",
+        "cols": 8,
+        "board": [
+          "ctconovo",
+          "eosmosra",
+          "msromibp",
+          "attentuy",
+          "rqeagoml",
+          "mousalsa",
+          "ooanears",
+          "ncrubxrt",
+          "ereclyea",
+          "rtaalips"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYXN0cm9ub215IiwicGF0aCI6WzI0LDE3LDI1LDE4LDE5LDI4LDM3LDM4LDMxXX0sIndvcmRzIjpbeyJ3IjoiY29tZXQiLCJwYXRoIjpbMCw5LDE2LDgsMV19LHsidyI6ImNvc21vcyIsInBhdGgiOlsyLDMsMTAsMTEsMTIsMTNdfSx7InciOiJub3ZhIiwicGF0aCI6WzQsNSw2LDE1XX0seyJ3Ijoib3JiaXQiLCJwYXRoIjpbNywxNCwyMiwyMSwyOV19LHsidyI6Im1ldGVvciIsInBhdGgiOlsyMCwyNywyNiwzNCw0MSwzMl19LHsidyI6InB1bHNhciIsInBhdGgiOlsyMywzMCwzOSw0Niw0Nyw1NF19LHsidyI6InF1YXNhciIsInBhdGgiOlszMyw0MiwzNSw0Myw1MCw1OF19LHsidyI6ImdhbGF4eSIsInBhdGgiOlszNiw0NCw0NSw1Myw2MSw2OV19LHsidyI6Im1vb24iLCJwYXRoIjpbNDAsNDgsNDksNTZdfSx7InciOiJuZWJ1bGEiLCJwYXRoIjpbNTEsNTIsNjAsNTksNjgsNzVdfSx7InciOiJzdGFyIiwicGF0aCI6WzU1LDYzLDcxLDYyXX0seyJ3IjoiY3JhdGVyIiwicGF0aCI6WzU3LDY1LDc0LDczLDY0LDcyXX0seyJ3IjoiZWNsaXBzZSIsInBhdGgiOls2Niw2Nyw3Niw3Nyw3OCw3OSw3MF19XX0="
+      },
+      {
+        "clue": "Paint swatches",
+        "cols": 8,
+        "board": [
+          "sobevgdl",
+          "clteiiot",
+          "aeivgole",
+          "rlmevini",
+          "claueagd",
+          "oorchozu",
+          "ocrwcerl",
+          "hnisoeer",
+          "eromrmlu",
+          "nooraats"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiY29sb3J3aGVlbCIsInBhdGgiOlszMiw0MCwzMyw0MSw0Miw1MSw0NCw1Myw2Miw1NV19LCJ3b3JkcyI6W3sidyI6InNjYXJsZXQiLCJwYXRoIjpbMCw4LDE2LDI0LDI1LDE3LDEwXX0seyJ3Ijoib2xpdmUiLCJwYXRoIjpbMSw5LDE4LDE5LDExXX0seyJ3IjoiYmVpZ2UiLCJwYXRoIjpbMiwzLDEyLDIwLDI3XX0seyJ3IjoidmlvbGV0IiwicGF0aCI6WzQsMTMsMjEsMjIsMjMsMTVdfSx7InciOiJnb2xkIiwicGF0aCI6WzUsMTQsNyw2XX0seyJ3IjoibWF1dmUiLCJwYXRoIjpbMjYsMzQsMzUsMjgsMzZdfSx7InciOiJpbmRpZ28iLCJwYXRoIjpbMjksMzAsMzksMzEsMzgsNDVdfSx7InciOiJhenVyZSIsInBhdGgiOlszNyw0Niw0Nyw1NCw2MV19LHsidyI6ImNyaW1zb24iLCJwYXRoIjpbNDMsNTAsNTgsNjcsNTksNjYsNTddfSx7InciOiJvY2hyZSIsInBhdGgiOls0OCw0OSw1Niw2NSw2NF19LHsidyI6ImNvcmFsIiwicGF0aCI6WzUyLDYwLDY4LDc3LDcwXX0seyJ3IjoicnVzdCIsInBhdGgiOls2Myw3MSw3OSw3OF19LHsidyI6Im1hcm9vbiIsInBhdGgiOls2OSw3Niw3NSw3NCw3Myw3Ml19XX0="
+      },
+      {
+        "clue": "In the fruit bowl",
+        "cols": 8,
+        "board": [
+          "chlimppa",
+          "meryaeep",
+          "elrapapm",
+          "gnopyrla",
+          "orabeaen",
+          "rananaga",
+          "frtgeonp",
+          "uipsalae",
+          "loluhcad",
+          "menmkiwi"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiZnJ1aXRzYWxhZCIsInBhdGgiOls0OCw0OSw1Niw1Nyw1MCw1OSw2MCw2MSw3MCw3MV19LCJ3b3JkcyI6W3sidyI6ImNoZXJyeSIsInBhdGgiOlswLDEsOSwxOCwxMCwxMV19LHsidyI6ImxpbWUiLCJwYXRoIjpbMiwzLDQsMTNdfSx7InciOiJwYXBheWEiLCJwYXRoIjpbNSwxMiwyMCwxOSwyOCwzN119LHsidyI6InBlYXIiLCJwYXRoIjpbNiwxNCwyMSwyOV19LHsidyI6ImFwcGxlIiwicGF0aCI6WzcsMTUsMjIsMzAsMzhdfSx7InciOiJtZWxvbiIsInBhdGgiOls4LDE2LDE3LDI2LDI1XX0seyJ3IjoibWFuZ28iLCJwYXRoIjpbMjMsMzEsMzksNDYsNTNdfSx7InciOiJncmFwZSIsInBhdGgiOlsyNCwzMywzNCwyNywzNl19LHsidyI6Im9yYW5nZSIsInBhdGgiOlszMiw0MCw0MSw0Miw1MSw1Ml19LHsidyI6ImJhbmFuYSIsInBhdGgiOlszNSw0Myw0NCw0NSw1NCw0N119LHsidyI6InBlYWNoIiwicGF0aCI6WzU1LDYzLDYyLDY5LDY4XX0seyJ3IjoicGx1bSIsInBhdGgiOls1OCw2Niw2Nyw3NV19LHsidyI6ImxlbW9uIiwicGF0aCI6WzY0LDczLDcyLDY1LDc0XX0seyJ3Ijoia2l3aSIsInBhdGgiOls3Niw3Nyw3OCw3OV19XX0="
+      },
+      {
+        "clue": "Sweet dreams",
+        "cols": 8,
+        "board": [
+          "powdreas",
+          "ilqilymi",
+          "mlutawne",
+          "tasnoasc",
+          "trssoptr",
+          "ledzzada",
+          "lioejels",
+          "lugaerel",
+          "lyhambuu",
+          "abstsomt"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibGlnaHRzb3V0IiwicGF0aCI6WzQwLDQ5LDU4LDY2LDc1LDc2LDc3LDcwLDc5XX0sIndvcmRzIjpbeyJ3IjoicGlsbG93IiwicGF0aCI6WzAsOCwxNyw5LDEsMl19LHsidyI6ImRyZWFtIiwicGF0aCI6WzMsNCw1LDYsMTRdfSx7InciOiJzaWVzdGEiLCJwYXRoIjpbNywxNSwyMywzMCwzOCwyOV19LHsidyI6InF1aWx0IiwicGF0aCI6WzEwLDE4LDExLDEyLDE5XX0seyJ3IjoieWF3biIsInBhdGgiOlsxMywyMCwyMSwyMl19LHsidyI6Im1hdHRyZXNzIiwicGF0aCI6WzE2LDI1LDI0LDMyLDMzLDQxLDM0LDM1XX0seyJ3Ijoic25vb3plIiwicGF0aCI6WzI2LDI3LDI4LDM2LDQ0LDUzXX0seyJ3IjoiY3JhZGxlIiwicGF0aCI6WzMxLDM5LDQ3LDQ2LDU0LDYyXX0seyJ3IjoicGFqYW1hcyIsInBhdGgiOlszNyw0NSw1Miw1OSw2OCw2Nyw3NF19LHsidyI6ImRvemUiLCJwYXRoIjpbNDIsNTAsNDMsNTFdfSx7InciOiJsdWxsYWJ5IiwicGF0aCI6WzQ4LDU3LDU2LDY0LDcyLDczLDY1XX0seyJ3Ijoic2x1bWJlciIsInBhdGgiOls1NSw2Myw3MSw3OCw2OSw2MCw2MV19XX0="
+      },
+      {
+        "clue": "Under the hood",
+        "cols": 8,
+        "board": [
+          "ugarathr",
+          "atsdelto",
+          "tkoiatlt",
+          "memocioe",
+          "auflbhbr",
+          "lxefwsar",
+          "erbsiisa",
+          "igmuepfk",
+          "epnireee",
+          "ritondnr"
+        ],
+        "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYXV0b21vYmlsZSIsInBhdGgiOls4LDAsOSwxOCwyNiwyNywzNiwyOSwyMiwzMV19LCJ3b3JkcyI6W3sidyI6Imdhc2tldCIsInBhdGgiOlsxLDIsMTAsMTcsMjUsMTZdfSx7InciOiJyYWRpYXRvciIsInBhdGgiOlszLDQsMTEsMTksMjAsMjEsMzAsMzldfSx7InciOiJ0aHJvdHRsZSIsInBhdGgiOls1LDYsNywxNSwyMywxNCwxMywxMl19LHsidyI6Im11ZmZsZXIiLCJwYXRoIjpbMjQsMzMsMzQsNDMsMzUsNDIsNDldfSx7InciOiJjaGFzc2lzIiwicGF0aCI6WzI4LDM3LDQ2LDU0LDQ1LDUyLDUxXX0seyJ3IjoiYXhsZSIsInBhdGgiOlszMiw0MSw0MCw0OF19LHsidyI6ImJyYWtlIiwicGF0aCI6WzM4LDQ3LDU1LDYzLDcxXX0seyJ3Ijoid2lwZXIiLCJwYXRoIjpbNDQsNTMsNjEsNjAsNjhdfSx7InciOiJidW1wZXIiLCJwYXRoIjpbNTAsNTksNTgsNjUsNjQsNzJdfSx7InciOiJpZ25pdGlvbiIsInBhdGgiOls1Niw1Nyw2Niw3Myw3NCw2Nyw3NSw3Nl19LHsidyI6ImZlbmRlciIsInBhdGgiOls2Miw2OSw3OCw3Nyw3MCw3OV19XX0="
+      }
+    ]
+  },
+  "fetchedAt": "2026-11-27T18:10:21.759Z"
+}

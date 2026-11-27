@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-27",
+  "byDifficulty": {
+    "easy": {
+      "from": "cub",
+      "to": "lad",
+      "par": 3
+    },
+    "hard": {
+      "from": "flog",
+      "to": "welt",
+      "par": 5
+    },
+    "extreme": {
+      "from": "puss",
+      "to": "slit",
+      "par": 7
+    }
+  },
+  "fetchedAt": "2026-11-27T18:10:09.878Z"
+}

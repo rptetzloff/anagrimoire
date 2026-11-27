@@ -1,0 +1,792 @@
+{
+  "date": "2026-11-27",
+  "byDifficulty": {
+    "easy": [
+      {
+        "prompts": [
+          {
+            "x": "pull",
+            "y": "strip"
+          },
+          {
+            "x": "trade",
+            "y": "down"
+          },
+          {
+            "x": "play",
+            "y": "end"
+          },
+          {
+            "x": "field",
+            "y": "bench"
+          },
+          {
+            "x": "push",
+            "y": "hang"
+          }
+        ],
+        "answers": "WyJvdXQiLCJtYXJrIiwib2ZmIiwid29yayIsIm92ZXIiXQ==",
+        "hints": 3
+      },
+      {
+        "prompts": [
+          {
+            "x": "cave",
+            "y": "hunt"
+          },
+          {
+            "x": "push",
+            "y": "pass"
+          },
+          {
+            "x": "carry",
+            "y": "door"
+          },
+          {
+            "x": "block",
+            "y": "stone"
+          },
+          {
+            "x": "back",
+            "y": "man"
+          }
+        ],
+        "answers": "WyJtYW4iLCJvdmVyIiwib3V0IiwiaGVhZCIsImZpcmUiXQ==",
+        "hints": 3
+      },
+      {
+        "prompts": [
+          {
+            "x": "pull",
+            "y": "price"
+          },
+          {
+            "x": "there",
+            "y": "finger"
+          },
+          {
+            "x": "wall",
+            "y": "boy"
+          },
+          {
+            "x": "ten",
+            "y": "elope"
+          },
+          {
+            "x": "bother",
+            "y": "where"
+          }
+        ],
+        "answers": "WyJvdmVyIiwiZm9yZSIsInBhcGVyIiwiYW50Iiwic29tZSJd",
+        "hints": 3
+      },
+      {
+        "prompts": [
+          {
+            "x": "over",
+            "y": "ride"
+          },
+          {
+            "x": "hazel",
+            "y": "cracker"
+          },
+          {
+            "x": "sand",
+            "y": "weight"
+          },
+          {
+            "x": "play",
+            "y": "keeper"
+          },
+          {
+            "x": "cannon",
+            "y": "park"
+          }
+        ],
+        "answers": "WyJqb3kiLCJudXQiLCJwYXBlciIsImhvdXNlIiwiYmFsbCJd",
+        "hints": 3
+      },
+      {
+        "prompts": [
+          {
+            "x": "hang",
+            "y": "growth"
+          },
+          {
+            "x": "hold",
+            "y": "hand"
+          },
+          {
+            "x": "toe",
+            "y": "brush"
+          },
+          {
+            "x": "cut",
+            "y": "load"
+          },
+          {
+            "x": "count",
+            "y": "fall"
+          }
+        ],
+        "answers": "WyJvdXQiLCJvdmVyIiwibmFpbCIsIm9mZiIsImRvd24iXQ==",
+        "hints": 3
+      },
+      {
+        "prompts": [
+          {
+            "x": "ply",
+            "y": "land"
+          },
+          {
+            "x": "close",
+            "y": "right"
+          },
+          {
+            "x": "watch",
+            "y": "date"
+          },
+          {
+            "x": "fly",
+            "y": "size"
+          },
+          {
+            "x": "ten",
+            "y": "hill"
+          }
+        ],
+        "answers": "WyJ3b29kIiwib3V0IiwibWFuIiwib3ZlciIsImFudCJd",
+        "hints": 3
+      },
+      {
+        "prompts": [
+          {
+            "x": "print",
+            "y": "skirt"
+          },
+          {
+            "x": "con",
+            "y": "head"
+          },
+          {
+            "x": "arm",
+            "y": "fall"
+          },
+          {
+            "x": "set",
+            "y": "track"
+          },
+          {
+            "x": "patrol",
+            "y": "date"
+          }
+        ],
+        "answers": "WyJvdXQiLCJmaWd1cmUiLCJwaXQiLCJiYWNrIiwibWFuIl0=",
+        "hints": 3
+      },
+      {
+        "prompts": [
+          {
+            "x": "black",
+            "y": "way"
+          },
+          {
+            "x": "push",
+            "y": "flow"
+          },
+          {
+            "x": "black",
+            "y": "come"
+          },
+          {
+            "x": "dictator",
+            "y": "load"
+          },
+          {
+            "x": "kick",
+            "y": "yard"
+          }
+        ],
+        "answers": "WyJoZWFkIiwib3ZlciIsIm91dCIsInNoaXAiLCJiYWNrIl0=",
+        "hints": 3
+      },
+      {
+        "prompts": [
+          {
+            "x": "white",
+            "y": "out"
+          },
+          {
+            "x": "knock",
+            "y": "placement"
+          },
+          {
+            "x": "change",
+            "y": "react"
+          },
+          {
+            "x": "over",
+            "y": "alike"
+          },
+          {
+            "x": "run",
+            "y": "right"
+          }
+        ],
+        "answers": "WyJ3YXNoIiwib3V0Iiwib3ZlciIsImxvb2siLCJkb3duIl0=",
+        "hints": 3
+      },
+      {
+        "prompts": [
+          {
+            "x": "contest",
+            "y": "hill"
+          },
+          {
+            "x": "still",
+            "y": "day"
+          },
+          {
+            "x": "change",
+            "y": "burden"
+          },
+          {
+            "x": "letter",
+            "y": "master"
+          },
+          {
+            "x": "lone",
+            "y": "way"
+          }
+        ],
+        "answers": "WyJhbnQiLCJiaXJ0aCIsIm92ZXIiLCJoZWFkIiwic29tZSJd",
+        "hints": 3
+      }
+    ],
+    "hard": [
+      {
+        "prompts": [
+          {
+            "x": "drop",
+            "y": "set"
+          },
+          {
+            "x": "companion",
+            "y": "load"
+          },
+          {
+            "x": "hot",
+            "y": "rock"
+          },
+          {
+            "x": "play",
+            "y": "yard"
+          },
+          {
+            "x": "lift",
+            "y": "hand"
+          }
+        ],
+        "answers": "WyJvdXQiLCJzaGlwIiwiYmVkIiwiYmFjayIsIm9mZiJd",
+        "hints": 1
+      },
+      {
+        "prompts": [
+          {
+            "x": "hang",
+            "y": "perform"
+          },
+          {
+            "x": "pass",
+            "y": "worm"
+          },
+          {
+            "x": "road",
+            "y": "wife"
+          },
+          {
+            "x": "page",
+            "y": "acid"
+          },
+          {
+            "x": "crack",
+            "y": "play"
+          }
+        ],
+        "answers": "WyJvdXQiLCJib29rIiwiaG91c2UiLCJhbnQiLCJkb3duIl0=",
+        "hints": 1
+      },
+      {
+        "prompts": [
+          {
+            "x": "wood",
+            "y": "mark"
+          },
+          {
+            "x": "hard",
+            "y": "pack"
+          },
+          {
+            "x": "black",
+            "y": "put"
+          },
+          {
+            "x": "out",
+            "y": "rid"
+          },
+          {
+            "x": "sure",
+            "y": "side"
+          }
+        ],
+        "answers": "WyJsYW5kIiwiYmFjayIsIm91dCIsInB1dCIsImZpcmUiXQ==",
+        "hints": 1
+      },
+      {
+        "prompts": [
+          {
+            "x": "hide",
+            "y": "back"
+          },
+          {
+            "x": "fly",
+            "y": "ride"
+          },
+          {
+            "x": "under",
+            "y": "stool"
+          },
+          {
+            "x": "cut",
+            "y": "shoot"
+          },
+          {
+            "x": "black",
+            "y": "rest"
+          }
+        ],
+        "answers": "WyJvdXQiLCJvdmVyIiwiZm9vdCIsIm9mZiIsImhlYWQiXQ==",
+        "hints": 1
+      },
+      {
+        "prompts": [
+          {
+            "x": "buy",
+            "y": "back"
+          },
+          {
+            "x": "pull",
+            "y": "burden"
+          },
+          {
+            "x": "hot",
+            "y": "pan"
+          },
+          {
+            "x": "out",
+            "y": "show"
+          },
+          {
+            "x": "art",
+            "y": "fare"
+          }
+        ],
+        "answers": "WyJvdXQiLCJvdmVyIiwiYmVkIiwic2lkZSIsIndvcmsiXQ==",
+        "hints": 1
+      },
+      {
+        "prompts": [
+          {
+            "x": "fresh",
+            "y": "handle"
+          },
+          {
+            "x": "sweet",
+            "y": "break"
+          },
+          {
+            "x": "work",
+            "y": "class"
+          },
+          {
+            "x": "flash",
+            "y": "stage"
+          },
+          {
+            "x": "push",
+            "y": "crowd"
+          }
+        ],
+        "answers": "WyJtYW4iLCJoZWFydCIsIm91dCIsImJhY2siLCJvdmVyIl0=",
+        "hints": 1
+      },
+      {
+        "prompts": [
+          {
+            "x": "foot",
+            "y": "shop"
+          },
+          {
+            "x": "walk",
+            "y": "bid"
+          },
+          {
+            "x": "path",
+            "y": "ward"
+          },
+          {
+            "x": "kick",
+            "y": "ward"
+          },
+          {
+            "x": "world",
+            "y": "spread"
+          }
+        ],
+        "answers": "WyJ3b3JrIiwib3V0Iiwid2F5IiwiYmFjayIsIndpZGUiXQ==",
+        "hints": 1
+      },
+      {
+        "prompts": [
+          {
+            "x": "show",
+            "y": "state"
+          },
+          {
+            "x": "step",
+            "y": "board"
+          },
+          {
+            "x": "contest",
+            "y": "hem"
+          },
+          {
+            "x": "rest",
+            "y": "coat"
+          },
+          {
+            "x": "cur",
+            "y": "spread"
+          }
+        ],
+        "answers": "WyJkb3duIiwibW90aGVyIiwiYW50IiwicmFpbiIsImJlZCJd",
+        "hints": 1
+      },
+      {
+        "prompts": [
+          {
+            "x": "print",
+            "y": "smart"
+          },
+          {
+            "x": "turn",
+            "y": "tone"
+          },
+          {
+            "x": "time",
+            "y": "spoonful"
+          },
+          {
+            "x": "candle",
+            "y": "weight"
+          },
+          {
+            "x": "draw",
+            "y": "fire"
+          }
+        ],
+        "answers": "WyJvdXQiLCJvdmVyIiwidGFibGUiLCJsaWdodCIsImJhY2siXQ==",
+        "hints": 1
+      },
+      {
+        "prompts": [
+          {
+            "x": "drift",
+            "y": "wind"
+          },
+          {
+            "x": "winter",
+            "y": "table"
+          },
+          {
+            "x": "fly",
+            "y": "board"
+          },
+          {
+            "x": "sell",
+            "y": "strip"
+          },
+          {
+            "x": "green",
+            "y": "hand"
+          }
+        ],
+        "answers": "WyJ3b29kIiwidGltZSIsIm92ZXIiLCJvdXQiLCJiYWNrIl0=",
+        "hints": 1
+      }
+    ],
+    "extreme": [
+      {
+        "prompts": [
+          {
+            "x": "goal",
+            "y": "box"
+          },
+          {
+            "x": "hunch",
+            "y": "side"
+          },
+          {
+            "x": "turn",
+            "y": "charge"
+          },
+          {
+            "x": "hide",
+            "y": "distance"
+          },
+          {
+            "x": "battle",
+            "y": "work"
+          }
+        ],
+        "answers": "WyJwb3N0IiwiYmFjayIsIm92ZXIiLCJvdXQiLCJmaWVsZCJd",
+        "hints": 0
+      },
+      {
+        "prompts": [
+          {
+            "x": "trap",
+            "y": "mat"
+          },
+          {
+            "x": "half",
+            "y": "ward"
+          },
+          {
+            "x": "look",
+            "y": "line"
+          },
+          {
+            "x": "show",
+            "y": "size"
+          },
+          {
+            "x": "out",
+            "y": "stroke"
+          }
+        ],
+        "answers": "WyJkb29yIiwid2F5Iiwib3V0IiwiZG93biIsImJhY2siXQ==",
+        "hints": 0
+      },
+      {
+        "prompts": [
+          {
+            "x": "sea",
+            "y": "power"
+          },
+          {
+            "x": "over",
+            "y": "place"
+          },
+          {
+            "x": "hunch",
+            "y": "lash"
+          },
+          {
+            "x": "here",
+            "y": "ward"
+          },
+          {
+            "x": "war",
+            "y": "wind"
+          }
+        ],
+        "answers": "WyJtYW4iLCJ3b3JrIiwiYmFjayIsImFmdGVyIiwiaGVhZCJd",
+        "hints": 0
+      },
+      {
+        "prompts": [
+          {
+            "x": "hide",
+            "y": "come"
+          },
+          {
+            "x": "mark",
+            "y": "town"
+          },
+          {
+            "x": "road",
+            "y": "step"
+          },
+          {
+            "x": "censor",
+            "y": "shape"
+          },
+          {
+            "x": "rubber",
+            "y": "lace"
+          }
+        ],
+        "answers": "WyJvdXQiLCJkb3duIiwic2lkZSIsInNoaXAiLCJuZWNrIl0=",
+        "hints": 0
+      },
+      {
+        "prompts": [
+          {
+            "x": "fly",
+            "y": "estimate"
+          },
+          {
+            "x": "rain",
+            "y": "way"
+          },
+          {
+            "x": "stand",
+            "y": "shoot"
+          },
+          {
+            "x": "try",
+            "y": "law"
+          },
+          {
+            "x": "copper",
+            "y": "first"
+          }
+        ],
+        "answers": "WyJvdmVyIiwid2F0ZXIiLCJvZmYiLCJvdXQiLCJoZWFkIl0=",
+        "hints": 0
+      },
+      {
+        "prompts": [
+          {
+            "x": "pull",
+            "y": "joy"
+          },
+          {
+            "x": "hard",
+            "y": "hand"
+          },
+          {
+            "x": "coffee",
+            "y": "husband"
+          },
+          {
+            "x": "fire",
+            "y": "read"
+          },
+          {
+            "x": "drop",
+            "y": "burst"
+          }
+        ],
+        "answers": "WyJvdmVyIiwiYmFjayIsImhvdXNlIiwicHJvb2YiLCJvdXQiXQ==",
+        "hints": 0
+      },
+      {
+        "prompts": [
+          {
+            "x": "change",
+            "y": "all"
+          },
+          {
+            "x": "door",
+            "y": "hole"
+          },
+          {
+            "x": "carry",
+            "y": "class"
+          },
+          {
+            "x": "wind",
+            "y": "board"
+          },
+          {
+            "x": "first",
+            "y": "bag"
+          }
+        ],
+        "answers": "WyJvdmVyIiwibWFuIiwib3V0Iiwic3VyZiIsImhhbmQiXQ==",
+        "hints": 0
+      },
+      {
+        "prompts": [
+          {
+            "x": "drop",
+            "y": "stretch"
+          },
+          {
+            "x": "cut",
+            "y": "drop"
+          },
+          {
+            "x": "house",
+            "y": "load"
+          },
+          {
+            "x": "cotton",
+            "y": "wind"
+          },
+          {
+            "x": "over",
+            "y": "father"
+          }
+        ],
+        "answers": "WyJvdXQiLCJiYWNrIiwid29yayIsIndvb2QiLCJzdGVwIl0=",
+        "hints": 0
+      },
+      {
+        "prompts": [
+          {
+            "x": "come",
+            "y": "stage"
+          },
+          {
+            "x": "power",
+            "y": "work"
+          },
+          {
+            "x": "buoy",
+            "y": "eater"
+          },
+          {
+            "x": "back",
+            "y": "fighter"
+          },
+          {
+            "x": "free",
+            "y": "some"
+          }
+        ],
+        "answers": "WyJiYWNrIiwiaG91c2UiLCJhbnQiLCJmaXJlIiwiaGFuZCJd",
+        "hints": 0
+      },
+      {
+        "prompts": [
+          {
+            "x": "out",
+            "y": "maker"
+          },
+          {
+            "x": "take",
+            "y": "lie"
+          },
+          {
+            "x": "pocket",
+            "y": "end"
+          },
+          {
+            "x": "bran",
+            "y": "towel"
+          },
+          {
+            "x": "gall",
+            "y": "acid"
+          }
+        ],
+        "answers": "WyJsYXciLCJvdmVyIiwiYm9vayIsImRpc2giLCJhbnQiXQ==",
+        "hints": 0
+      }
+    ]
+  },
+  "fetchedAt": "2026-11-27T18:11:17.943Z"
+}

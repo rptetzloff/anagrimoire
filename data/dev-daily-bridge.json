@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-27",
+  "byDifficulty": {
+    "easy": {
+      "prompts": [
+        {
+          "x": "sure",
+          "y": "fighter"
+        },
+        {
+          "x": "noble",
+          "y": "hunt"
+        },
+        {
+          "x": "heart",
+          "y": "lady"
+        },
+        {
+          "x": "lumber",
+          "y": "stick"
+        },
+        {
+          "x": "work",
+          "y": "side"
+        }
+      ],
+      "answers": "WyJmaXJlIiwibWFuIiwibGFuZCIsInlhcmQiLCJvdXQiXQ==",
+      "hints": 3
+    },
+    "hard": {
+      "prompts": [
+        {
+          "x": "turn",
+          "y": "population"
+        },
+        {
+          "x": "mine",
+          "y": "work"
+        },
+        {
+          "x": "case",
+          "y": "sheet"
+        },
+        {
+          "x": "consult",
+          "y": "acid"
+        },
+        {
+          "x": "care",
+          "y": "thinker"
+        }
+      ],
+      "answers": "WyJvdmVyIiwiZmllbGQiLCJ3b3JrIiwiYW50IiwiZnJlZSJd",
+      "hints": 1
+    },
+    "extreme": {
+      "prompts": [
+        {
+          "x": "side",
+          "y": "feed"
+        },
+        {
+          "x": "war",
+          "y": "zone"
+        },
+        {
+          "x": "flower",
+          "y": "rock"
+        },
+        {
+          "x": "over",
+          "y": "house"
+        },
+        {
+          "x": "shut",
+          "y": "turn"
+        }
+      ],
+      "answers": "WyJsaW5lIiwidGltZSIsImJlZCIsInBvd2VyIiwiZG93biJd",
+      "hints": 0
+    }
+  },
+  "fetchedAt": "2026-11-27T18:10:13.677Z"
+}

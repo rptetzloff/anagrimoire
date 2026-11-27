@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-27",
+  "byDifficulty": {
+    "easy": {
+      "clue": "Going nuts",
+      "cols": 6,
+      "board": [
+        "chtpit",
+        "esnuas",
+        "ntaotc",
+        "cucrhr",
+        "frnkei",
+        "iacmao",
+        "tlcaai",
+        "rebadm"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibnV0Y3JhY2tlciIsInBhdGgiOlsxMiwxOSwxMywxOCwyNSwzMSwzMiwyNywyOCwyM119LCJ3b3JkcyI6W3sidyI6ImNoZXN0bnV0IiwicGF0aCI6WzAsMSw2LDcsMiw4LDksMTZdfSx7InciOiJwaXN0YWNoaW8iLCJwYXRoIjpbMyw0LDExLDUsMTAsMTcsMjIsMjksMzVdfSx7InciOiJhY29ybiIsInBhdGgiOlsxNCwyMCwxNSwyMSwyNl19LHsidyI6ImZpbGJlcnQiLCJwYXRoIjpbMjQsMzAsMzcsNDQsNDMsNDIsMzZdfSx7InciOiJtYWNhZGFtaWEiLCJwYXRoIjpbMzMsMzksMzgsNDUsNDYsNDAsNDcsNDEsMzRdfV19"
+    },
+    "hard": {
+      "clue": "May I have this dance",
+      "cols": 7,
+      "board": [
+        "rdbsobl",
+        "umiacoe",
+        "wtsasrm",
+        "lazlaoa",
+        "polarmm",
+        "bskloob",
+        "aaljtoi",
+        "tmgaiws",
+        "anbovet"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoiYmFsbHJvb20iLCJwYXRoIjpbMzUsNDMsNDQsMzgsMzIsMzksNDAsMzRdfSwid29yZHMiOlt7InciOiJydW1iYSIsInBhdGgiOlswLDcsOCwyLDEwXX0seyJ3IjoiZGlzY28iLCJwYXRoIjpbMSw5LDMsMTEsNF19LHsidyI6ImJvbGVybyIsInBhdGgiOls1LDEyLDYsMTMsMTksMjZdfSx7InciOiJ3YWx0eiIsInBhdGgiOlsxNCwyMiwyMSwxNSwyM119LHsidyI6InNhbHNhIiwicGF0aCI6WzE2LDE3LDI0LDE4LDI1XX0seyJ3IjoibWFtYm8iLCJwYXRoIjpbMjAsMjcsMzMsNDEsNDddfSx7InciOiJwb2xrYSIsInBhdGgiOlsyOCwyOSwzMCwzNywzMV19LHsidyI6InNhbWJhIiwicGF0aCI6WzM2LDQyLDUwLDU4LDUyXX0seyJ3Ijoiaml2ZSIsInBhdGgiOls0NSw1Myw2MCw2MV19LHsidyI6InR3aXN0IiwicGF0aCI6WzQ2LDU0LDQ4LDU1LDYyXX0seyJ3IjoidGFuZ28iLCJwYXRoIjpbNDksNTYsNTcsNTEsNTldfV19"
+    },
+    "extreme": {
+      "clue": "A stitch in time",
+      "cols": 8,
+      "board": [
+        "tmilepst",
+        "shbqubai",
+        "ealihott",
+        "mdatetbc",
+        "pehrembh",
+        "irltnlni",
+        "cndeinek",
+        "ueebwzrr",
+        "nshiuoie",
+        "nottonpp"
+      ],
+      "answers": "eyJzcGFuZ3JhbSI6eyJ3IjoibmVlZGxld29yayIsInBhdGgiOls2NCw1Nyw1OCw1MCw0Miw1MSw2MCw2OSw2Miw1NV19LCJ3b3JkcyI6W3sidyI6InRoaW1ibGUiLCJwYXRoIjpbMCw5LDIsMSwxMCwzLDRdfSx7InciOiJwYXR0ZXJuIiwicGF0aCI6WzUsMTQsMjIsMjksMzYsMzUsNDRdfSx7InciOiJzdGl0Y2giLCJwYXRoIjpbNiw3LDE1LDIzLDMxLDM5XX0seyJ3Ijoic2VhbSIsInBhdGgiOls4LDE2LDE3LDI0XX0seyJ3IjoicXVpbHQiLCJwYXRoIjpbMTEsMTIsMTksMTgsMjddfSx7InciOiJib2JiaW4iLCJwYXRoIjpbMTMsMjEsMzAsMzgsNDcsNDZdfSx7InciOiJoZW1saW5lIiwicGF0aCI6WzIwLDI4LDM3LDQ1LDUyLDUzLDU0XX0seyJ3IjoidGhyZWFkIiwicGF0aCI6WzQzLDM0LDQxLDMzLDI2LDI1XX0seyJ3IjoicGluY3VzaGlvbiIsInBhdGgiOlszMiw0MCw0OSw0OCw1Niw2NSw2Niw2Nyw3Niw3N119LHsidyI6ImJ1dHRvbiIsInBhdGgiOls1OSw2OCw3NSw3NCw3Myw3Ml19LHsidyI6InppcHBlciIsInBhdGgiOls2MSw3MCw3OSw3OCw3MSw2M119XX0="
+    }
+  },
+  "fetchedAt": "2026-11-27T18:10:09.878Z"
+}

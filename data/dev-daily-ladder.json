@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-27",
+  "byDifficulty": {
+    "easy": {
+      "from": "many",
+      "to": "some",
+      "par": 4
+    },
+    "hard": {
+      "from": "heap",
+      "to": "raft",
+      "par": 6
+    },
+    "extreme": {
+      "from": "fore",
+      "to": "prow",
+      "par": 7
+    }
+  },
+  "fetchedAt": "2026-11-27T18:10:13.677Z"
+}
